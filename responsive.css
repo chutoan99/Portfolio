@@ -69,10 +69,29 @@
     font-size: 25px;
     margin: 0px 0px 20px;
   }
+  .kill-item-des svg {
+    font-size: 60px;
+  }
+  .kill-item-des {
+    width: 75px;
+  }
+  .kill-item span {
+    font-size: 25px !important;
+  }
+  .kill-item-des i {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .padding {
+    padding-left: 30px !important;
+  }
 }
 @media (max-width: 739px) {
   .hide-on-mobile {
     display: none !important;
+  }
+  .show-visibility {
+    visibility: visible !important;
   }
   .show-on-mobile {
     display: block !important;
@@ -212,5 +231,11 @@
   }
   .brand {
     margin-left: 10px;
+  }
+  .kill-item-des i {
+    font-size: 45px;
+  }
+  .padT {
+    padding-top: 10px !important;
   }
 }
