@@ -27,9 +27,6 @@
   .project-heading h1 {
     margin: unset;
   }
-  .paddingT {
-    margin-top: 50px !important;
-  }
   .list-info {
     position: absolute;
     top: 370px;
@@ -173,9 +170,6 @@
   .project-content-button {
     display: flex;
     justify-content: center;
-  }
-  .paddingT {
-    margin-top: 50px !important;
   }
 
   .kill-item-content1::before,
@@ -354,9 +348,6 @@
     display: flex;
     justify-content: center;
   }
-  .paddingT {
-    margin-top: 50px !important;
-  }
 
   .kill-item-content1::before,
   .kill-item-content2::before,
@@ -398,6 +389,7 @@
   }
   .project-content-button {
     text-align: center !important;
+    padding-top: 20px;
   }
   #services .service-bottom {
     padding: 0 10px;
