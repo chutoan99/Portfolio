@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
@@ -61,7 +61,7 @@ p {
   background-color: crimson;
 }
 .brand h1 {
-  font-size: 3rem;
+  font-size: 1.875rem;
   text-transform: uppercase;
   color: white;
 }
@@ -118,7 +118,7 @@ p {
   left: 0%;
 }
 #header .nav-list ul a {
-  font-size: 2.5rem;
+  font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   text-decoration: none;
@@ -684,7 +684,7 @@ li.about-item {
 }
 #about .col-right .cta {
   color: black;
-  font-size: 2rem;
+  font-size: 1.563rem;
   text-decoration: none;
 }
 #about .col-left .about-img {
@@ -758,7 +758,7 @@ li.contac-item {
   /* margin-right: -5px; */
 }
 .mb {
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 .contact-icon {
   width: 3.563rem;

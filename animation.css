@@ -35,16 +35,15 @@
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
   .cta {
-    font-size: 2.5rem;
-    padding: 20px 60px;
+    padding: 1.25rem 3.75rem;
   }
   h1.section-title {
-    font-size: 6rem;
+    font-size: 3.75rem;
   }
 
   /* Hero */
   #hero h1 {
-    font-size: 7rem;
+    font-size: 4.375rem;
   }
   /* End Hero */
 
@@ -153,9 +152,7 @@
   #header .nav-list ul li {
     display: inline-block;
   }
-  #header .nav-list ul li a {
-    font-size: 1.8rem;
-  }
+
   #header .nav-list ul a:after {
     display: none;
   }

@@ -66,9 +66,6 @@
   .kill-item-des {
     width: 75px;
   }
-  .kill-item span {
-    font-size: 25px !important;
-  }
 
   .padding {
     padding-left: 30px !important;
@@ -79,17 +76,20 @@
   }
   .project-content-title h2 {
     margin: 0px 0px 20px !important;
-    font-size: 25px;
     text-align: center;
   }
   .project-content-button.hide-on-mobile {
     text-align: center;
+  }
+  .project-content-button {
+    text-align: center !important;
   }
 }
 @media (max-width: 739px) {
   .hide-on-mobile {
     display: none !important;
   }
+
   .show-visibility {
     visibility: visible !important;
   }
@@ -242,7 +242,7 @@
     order: 2;
   }
   .project-content-title h2 {
-    margin-bottom: unset;
+    margin-bottom: 10px;
     text-align: center;
   }
   .project-content-des p {
