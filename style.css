@@ -29,7 +29,7 @@ p {
   letter-spacing: 0.05rem;
 }
 .section-title {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 300;
   color: black;
   padding-top: 5px;
@@ -228,7 +228,7 @@ p {
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size: 4rem;
+  font-size: 2.5rem;
   position: relative;
   color: transparent;
   animation: text_reveal 0.5s ease forwards;
@@ -476,8 +476,7 @@ li.kill-item {
 
 /* Projects section */
 .project-heading h1 {
-  /* color: #111827; */
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   font-weight: 300;
   line-height: 48px;
@@ -577,7 +576,7 @@ li.kill-item {
   color: white;
 }
 #projects .project-info h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 #projects .project-info h2 {
