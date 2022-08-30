@@ -14,17 +14,12 @@
   .project-img1 {
     height: 250px;
   }
-  .project-overlay {
-    transform: translateX(100px);
+  .dis {
+    display: flex;
+    flex-direction: column;
   }
-  .project-overlay2 {
-    transform: translateY(-19px) translateX(-56px);
-  }
-  .project-overlay3 {
-    transform: translateX(-125px);
-  }
-  .project-overlay5 {
-    transform: translateX(-6px) translateY(38px);
+  .order {
+    order: 2;
   }
   .img-background {
     margin-top: 78px;
@@ -65,12 +60,8 @@
   .brand {
     margin-left: 15px;
   }
-  .project-content-title h2 {
-    font-size: 25px;
-    margin: 0px 0px 20px;
-  }
   .kill-item-des svg {
-    font-size: 60px;
+    font-size: 50px;
   }
   .kill-item-des {
     width: 75px;
@@ -78,12 +69,21 @@
   .kill-item span {
     font-size: 25px !important;
   }
-  .kill-item-des i {
-    font-size: 50px;
-    margin-bottom: 10px;
-  }
+
   .padding {
     padding-left: 30px !important;
+  }
+  .project-img1 {
+    height: 100%;
+    margin-bottom: 30px;
+  }
+  .project-content-title h2 {
+    margin: 0px 0px 20px !important;
+    font-size: 25px;
+    text-align: center;
+  }
+  .project-content-button.hide-on-mobile {
+    text-align: center;
   }
 }
 @media (max-width: 739px) {
@@ -151,9 +151,6 @@
   #about .col-right p {
     text-align: center;
   }
-  .project-img1 {
-    height: 246px;
-  }
   .project-overlay2 img {
     width: 100%;
   }
@@ -171,7 +168,6 @@
     margin-bottom: 15px;
   }
   .project-content-des p {
-    margin: 0px 0px 20px;
     text-align: justify;
   }
   .project-content-button {
@@ -181,10 +177,7 @@
   .paddingT {
     margin-top: 50px !important;
   }
-  .project-content-title h2 {
-    margin: 0px 0px 20px !important;
-    font-size: 25px;
-  }
+
   .kill-item-content1::before,
   .kill-item-content2::before,
   .kill-item-content3::before,
@@ -233,9 +226,33 @@
     margin-left: 10px;
   }
   .kill-item-des i {
-    font-size: 45px;
+    font-size: 30px;
   }
   .padT {
     padding-top: 10px !important;
+  }
+  .dis {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-img1 {
+    height: 247px;
+  }
+  .order {
+    order: 2;
+  }
+  .project-content-title h2 {
+    margin-bottom: unset;
+    text-align: center;
+  }
+  .project-content-des p {
+    line-height: unset;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 2px !important;
+  }
+  #about .col-right p {
+    line-height: 30px;
   }
 }
