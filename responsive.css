@@ -8,6 +8,9 @@
   .show-on-table {
     display: block !important;
   }
+  .kill-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .hero {
     position: relative;
   }
@@ -95,6 +98,9 @@
   }
   .project-heading h1 {
     margin: 8px 91px 0px !important;
+  }
+  .kill-list {
+    grid-template-columns: 1fr 1fr;
   }
   .kill-item-content1,
   .kill-item-content2,
@@ -253,6 +259,9 @@
 @media (max-width: 480px) {
   html {
     font-size: 70%;
+  }
+  .kill-list {
+    grid-template-columns: 1fr 1fr;
   }
   .contact-list {
     padding-left: unset !important;

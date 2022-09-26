@@ -292,6 +292,8 @@ a.cta {
 .kill-list {
   list-style: none;
   padding-left: unset;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .kill-item-des {
   text-align: left;
@@ -455,6 +457,10 @@ li.kill-item {
 #services .service-item p {
   color: white;
   text-align: left;
+}
+.kill-item-des-tailwind svg {
+  font-size: 2rem !important;
+  width: 65px;
 }
 .kill-item-des svg {
   font-size: 2.813rem;
