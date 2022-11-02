@@ -496,7 +496,7 @@ li.kill-item {
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 40px;
-  margin: 0px 0px 20px;
+  margin: 0px 0px 15px;
 }
 .project-content-des p {
   color: #334155;
@@ -504,10 +504,10 @@ li.kill-item {
   text-align: justify;
 
   font-size: 1.125rem;
-  line-height: 29px;
+  line-height: 26px;
 }
 .project-content-button {
-  padding-top: 20px;
+  padding-top: 15px;
 }
 .project-content-button button {
   align-items: center;
@@ -537,7 +537,7 @@ li.kill-item {
   color: #334155;
   font-size: 1.125rem;
   line-height: 32px;
-  background-color: rgb(243 244 246/1);
+  /* background-color: rgb(243 244 246/1); */
   width: 100%;
   height: 455px;
   border-radius: 15px;
@@ -923,3 +923,10 @@ button:not(:disabled) {
 }
 
 /* End Footer */
+.img {
+  width: 100%;
+  height: 100%;
+}
+.hover:hover {
+  opacity: 0.5;
+}
