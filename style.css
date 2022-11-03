@@ -536,6 +536,8 @@ li.kill-item {
 .project-img1 {
   color: #334155;
   font-size: 1.125rem;
+  display: flex;
+  align-items: center;
   line-height: 32px;
   /* background-color: rgb(243 244 246/1); */
   width: 100%;
@@ -930,3 +932,8 @@ button:not(:disabled) {
 .hover:hover {
   opacity: 0.5;
 }
+.img-express {
+  width: 2.813rem;
+  height: 2.813rem;
+}
+project-img1
