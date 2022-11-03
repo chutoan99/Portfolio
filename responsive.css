@@ -262,6 +262,7 @@
   }
   .project {
     gap: unset;
+    padding: 0 20px !important;
   }
   .kill-list {
     grid-template-columns: 1fr 1fr;
