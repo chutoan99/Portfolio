@@ -260,6 +260,9 @@
   html {
     font-size: 70%;
   }
+  .project {
+    gap: unset;
+  }
   .kill-list {
     grid-template-columns: 1fr 1fr;
   }

@@ -936,4 +936,7 @@ button:not(:disabled) {
   width: 2.813rem;
   height: 2.813rem;
 }
-project-img1
+.project {
+  gap: 3.125rem;
+  display: grid;
+}
