@@ -508,6 +508,8 @@ li.kill-item {
 }
 .project-content-button {
   padding-top: 15px;
+  column-gap: 15px;
+  display: flex;
 }
 .project-content-button button {
   align-items: center;
