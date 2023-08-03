@@ -1,0 +1,46 @@
+.app {
+  display: flex;
+  background: rgba(147, 107, 232, 0.05);
+  justify-content: space-between;
+}
+.text {
+  position: relative !important;
+  width: 100px;
+  .text_developer {
+    color: rgba(24, 24, 24, 0.15);
+    font-family: Open Sans;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 165%;
+    top: 79%;
+    transform-origin: bottom left;
+    z-index: 10;
+  }
+}
+#Hero {
+  width: calc(100vw - 100px);
+  height: 100vh;
+  flex-shrink: 0;
+  position: relative;
+  .img_hero-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .img_hero {
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: url(/images/hero.png) 50% / cover no-repeat;
+  }
+}

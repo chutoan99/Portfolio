@@ -1,0 +1,185 @@
+#contact {
+  padding: 6.25rem 0rem;
+  .contact {
+    justify-content: space-between;
+    gap: 1.875rem;
+    display: flex;
+    &_info {
+      display: flex;
+      width: 30.9775rem;
+      padding-bottom: 0px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.5rem;
+    }
+    &_info-item {
+      width: 30.9775rem;
+      height: 3.4375rem;
+      display: flex;
+      gap: 1.5rem;
+    }
+    &_info-icon {
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+        transition: 03s;
+      }
+    }
+    &_info-content {
+      width: 28.4775rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .info {
+      &-content-title {
+        height: 1.8125rem;
+        width: 100%;
+        display: inline-block;
+        span {
+          color: #3f3a64;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 1.5rem; /* 120% */
+        }
+      }
+      &-content-des {
+        width: 100%;
+        display: inline-block;
+        height: 1.6875rem;
+        span {
+          color: #696969;
+          font-size: 1.1875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.75rem;
+        }
+      }
+    }
+  }
+}
+#form {
+  padding-bottom: 0px;
+  width: 40.2725rem;
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    &-content {
+      display: flex;
+      width: 40.2725rem;
+      height: 3.4375rem;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1.25rem;
+      flex-shrink: 0;
+      .form {
+        &_content-item {
+          display: flex;
+          width: 312.17px;
+          height: 3.4375rem;
+          padding: 0.84375rem 1rem;
+          align-items: center;
+          flex-shrink: 0;
+          border-radius: 0.625rem;
+          background: rgba(147, 107, 232, 0.05);
+          &:hover {
+            border: 1px solid #7d11f9;
+            transition: 0.3s;
+            border-radius: 0.625rem;
+          }
+        }
+        &_item-input {
+          display: flex;
+          width: 100%;
+          height: 1.75rem;
+          flex-direction: column;
+          justify-content: center;
+          flex-shrink: 0;
+          border: unset;
+          background-color: unset;
+          color: #6c757d;
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:focus {
+            outline: unset;
+          }
+        }
+      }
+    }
+    &-note {
+      display: flex;
+      width: 40.2725rem;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1.25rem;
+      flex-shrink: 0;
+      .form {
+        &_note-item {
+          box-sizing: border-box;
+          display: flex;
+          width: 100%;
+          padding: 0.84375rem 1rem;
+          align-items: center;
+          flex-shrink: 0;
+          border-radius: 0.625rem;
+          background: rgba(147, 107, 232, 0.05);
+          &:hover {
+            border: 1px solid #7d11f9;
+            transition: 0.3s;
+            border-radius: 0.625rem;
+          }
+        }
+        &_item-textarea {
+          display: flex;
+          height: 8.75rem;
+          border-radius: 0.625rem;
+          flex-direction: column;
+          justify-content: center;
+          flex-shrink: 0;
+          color: #6c757d;
+          font-size: 1.2rem;
+          border: unset;
+          background-color: unset;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:focus {
+            outline: unset;
+          }
+        }
+      }
+    }
+    &-footer {
+      display: flex;
+      justify-content: end;
+      width: 100%;
+      button {
+        display: inline-flex;
+        padding: 0.8125rem 2.2375rem 0.8125rem 2.25rem;
+        align-items: flex-start;
+        border-radius: 0.625rem;
+        border: 1px solid #7d11f9;
+        background: #7d11f9;
+        span {
+          color: #fff;
+          text-align: center;
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.75rem; /* 155.556% */
+          text-transform: capitalize;
+        }
+        &:hover {
+          cursor: pointer;
+          opacity: 0.5;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  line-height: 1;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none !important;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7d11f9 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7d11f9;
+  border-radius: 9px;
+  border: 3px solid #ffffff;
+}
+.wrapper {
+  width: 100%;
+
+  &-inner {
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
+  &-sm {
+    max-width: 56.25rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    width: 100%;
+    padding: 2.5rem 0;
+  }
+}
+
+.container {
+  max-width: 75rem !important;
+  margin: 0 auto;
+}
+
+.img_avatar {
+  width: 23.12375rem;
+  height: 30.5525rem;
+  background: url(/images/avatar.png) 50% / cover no-repeat;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.13);
+}

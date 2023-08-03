@@ -1,0 +1,44 @@
+#header {
+  padding: 0rem 0 0.22438rem 48.9375rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  .header {
+    display: flex;
+    height: 3.55rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .hamburger {
+  }
+  .nav {
+    &_list {
+      list-style: none;
+      display: flex;
+      height: 3.55rem;
+      padding: 0.8125rem 0.62563rem 0.925rem 0.625rem;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1.60125rem;
+      width: 100%;
+    }
+    &_item {
+    }
+    &_item-link {
+      color: #3f3a64;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.8rem; /* 150% */
+      text-transform: capitalize;
+      &:hover {
+        color: #7d11f9;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}
