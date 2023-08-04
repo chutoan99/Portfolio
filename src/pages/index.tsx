@@ -168,7 +168,7 @@ const Home: NextPage = () => {
 
       <Background />
       <div className="flex justify-center section-container">
-        <section className="absolute top-0 flex md:items-center py-8 mb-24  h-full justify-start  2xl:container mx-auto w-[1200px] md:px-12 px-4 min-h-screen ">
+        <section className="absolute top-0 flex md:items-center py-8  h-full justify-start  2xl:container mx-auto w-[1200px] md:px-12 px-4 min-h-screen ">
           <div className="font-medium flex flex-col pt-32 md:pt-0 select-none">
             <div
               className="md:mb-4 mb-2"
