@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <section id="About" className="container">
-      <div className="about">
+    <section id="About">
+      <div className="about container">
         <div className="about_wrapper">
           <div className="about_avatar  shine-overlay">
             <div className="img_avatar "></div>

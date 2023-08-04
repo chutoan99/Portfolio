@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section id="contact" className="container">
-      <div className="contact">
+    <section id="contact">
+      <div className="contact container">
         <div className="contact_info">
           {/* phone */}
           <div className="contact_info-item">

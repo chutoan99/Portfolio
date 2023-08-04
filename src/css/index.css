@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   line-height: 1;
   font-family: "Jost", sans-serif;
@@ -53,6 +56,112 @@ a {
   height: 30.5525rem;
   background: url(/images/avatar.png) 50%/cover no-repeat;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.13); }
+
+body {
+  cursor: none; }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 14px; } }
+  @media (min-width: 1024px) {
+    html {
+      font-size: 15px; } }
+  @media (min-width: 1536px) {
+    html {
+      font-size: 18px; } }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 20px; } }
+  @media (min-width: 2000px) {
+    html {
+      font-size: 22px; } }
+
+.typed-cursor {
+  font-size: 2rem; }
+
+.outer-menu.menu-visible .hamburger > div {
+  transform: rotate(135deg); }
+  .outer-menu.menu-visible .hamburger > div:before {
+    top: 0;
+    transform: rotate(90deg); }
+  .outer-menu.menu-visible .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+    opacity: 0; }
+.outer-menu.menu-visible .menu {
+  pointer-events: auto;
+  visibility: visible !important;
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem); }
+  .outer-menu.menu-visible .menu > div {
+    transform: scale(1);
+    transition-duration: 0.75s; }
+    .outer-menu.menu-visible .menu > div > div {
+      opacity: 1;
+      transition: opacity 0.4s ease 0.4s; }
+.outer-menu.menu-visible:hover .hamburger > div {
+  transform: rotate(225deg); }
+.outer-menu .hamburger {
+  z-index: 1;
+  backface-visibility: hidden; }
+  .outer-menu .hamburger > div {
+    height: 0.125rem;
+    transition: all 0.4s ease;
+    -webkit-box-pack: center; }
+    .outer-menu .hamburger > div:before, .outer-menu .hamburger > div:after {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: -0.5rem;
+      height: 0.125rem;
+      background: inherit;
+      transition: all 0.4s ease; }
+    .outer-menu .hamburger > div:after {
+      top: 0.5rem; }
+.outer-menu .menu {
+  backface-visibility: hidden;
+  outline: 0.0625rem solid transparent; }
+  .outer-menu .menu > div {
+    width: 250vw;
+    height: 250vw;
+    transform: scale(0);
+    will-change: transform;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.5); }
+    @supports not (backdrop-filter: blur(1px)) {
+      .outer-menu .menu > div {
+        background: rgba(0, 0, 0, 0.8); } }
+    .outer-menu .menu > div > div {
+      max-width: 90vw;
+      transition: opacity 0.4s ease; }
+    .outer-menu .menu > div ul li a {
+      background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #6dd5ed 51%, #2193b0 100%);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      .outer-menu .menu > div ul li a:hover, .outer-menu .menu > div ul li a:focus {
+        background-position: 100% 0; }
+
+.text-gradient {
+  background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.text-strong {
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #6dd5ed 51%, #2193b0 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.project-wrapper::-webkit-scrollbar {
+  display: none; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -153,6 +262,7 @@ video {
 #footer {
   padding: 6.66669rem 5.33331rem;
   background: rgba(147, 107, 232, 0.05);
+  background-color: white;
   display: flex;
   justify-content: center; }
   #footer .footer-wrapper {
@@ -218,6 +328,7 @@ video {
     /* 120% */ }
 
 #contact {
+  background-color: white;
   padding: 6.25rem 0rem; }
   #contact .contact {
     justify-content: space-between;
@@ -372,78 +483,80 @@ video {
           opacity: 0.5;
           transition: 0.3s; }
 
-#skills .skills-tags {
-  padding-top: 2.5rem;
-  padding-bottom: 3.75rem;
-  gap: 0.9375rem;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-wrap: wrap;
-  width: 100%; }
-  #skills .skills-tags .tag_item {
-    display: flex;
-    padding: 0.25rem 1.25rem;
+#skills {
+  background-color: white; }
+  #skills .skills-tags {
+    padding-top: 2.5rem;
+    padding-bottom: 3.75rem;
+    gap: 0.9375rem;
     justify-content: center;
+    display: flex;
     align-items: center;
-    border-radius: 0.75rem;
-    color: #4b5563;
-    border: 1px solid #4b5563;
+    align-self: stretch;
+    flex-wrap: wrap;
+    width: 100%; }
+    #skills .skills-tags .tag_item {
+      display: flex;
+      padding: 0.25rem 1.25rem;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.75rem;
+      color: #4b5563;
+      border: 1px solid #4b5563;
+      background: #fff;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.25rem;
+      cursor: pointer; }
+  #skills .skills {
+    padding: 6.25rem 0;
     background: #fff;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.25rem;
-    cursor: pointer; }
-#skills .skills {
-  padding: 6.25rem 0;
-  background: #fff;
-  display: flex;
-  height: 43rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0; }
-  #skills .skills_wrapper {
-    width: 100%;
-    text-align: center;
     display: flex;
+    height: 43rem;
     flex-direction: column;
-    gap: 3rem; }
-  #skills .skills_lists {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr); }
-  #skills .skills_item {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; }
-  #skills .skills .icon_skill {
-    width: 5rem;
-    height: 5rem;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background-color: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
-    fill: rgba(255, 255, 255, 0.1);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
-    #skills .skills .icon_skill:hover {
-      cursor: pointer;
-      transition: 0.2s;
-      overflow: hidden;
-      scale: 1.15;
-      fill: rgba(255, 255, 255, 0.5);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)); }
-  #skills .skills_item-title {
-    color: #4b5563;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75rem; }
+    flex-shrink: 0; }
+    #skills .skills_wrapper {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem; }
+    #skills .skills_lists {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr); }
+    #skills .skills_item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; }
+    #skills .skills .icon_skill {
+      width: 5rem;
+      height: 5rem;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      fill: rgba(255, 255, 255, 0.1);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+      #skills .skills .icon_skill:hover {
+        cursor: pointer;
+        transition: 0.2s;
+        overflow: hidden;
+        scale: 1.15;
+        fill: rgba(255, 255, 255, 0.5);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)); }
+    #skills .skills_item-title {
+      color: #4b5563;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.75rem; }
 
 #Projects {
   display: flex;
@@ -559,6 +672,7 @@ video {
             /* 150% */ }
 
 #About {
+  background-color: white;
   padding: 6.25rem 0rem; }
   #About .about_wrapper {
     display: flex;
@@ -680,7 +794,8 @@ video {
     left: 100%;
     opacity: 0; } }
 #Experience {
-  padding: 6.25rem 3.125rem; }
+  padding: 6.25rem 3.125rem;
+  background-color: white; }
   #Experience .experience {
     width: 100%; }
   #Experience .experience_list {

@@ -1,7 +1,7 @@
 export default function Experience() {
   return (
-    <section id="Experience" className="container">
-      <div className="experience">
+    <section id="Experience">
+      <div className="experience container">
         <div className="experience_list">
           <div className="experience_item">
             <h3 className="experience_item-heading">

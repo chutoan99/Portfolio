@@ -1,6 +1,4 @@
 import { FC, useEffect, useRef } from "react";
-
-import { canvasImages } from "../shared/contants";
 import { m } from "framer-motion";
 
 const Background: FC = () => {
@@ -10,8 +8,37 @@ const Background: FC = () => {
     const canvas = canvasRef.current;
 
     if (!canvas) return;
-
-    const images = canvasImages.map((source) => {
+    const images = [
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_14_jpw2gp.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_15_pdh5uo.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_16_ggkkyt.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_18_ajdsp8.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Group_19_webnwi.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_1_a2yevf.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_aawdqh.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_2_yrau2t.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074046/porfolio/layer1_cwk3ga.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074046/porfolio/Frame_gnn9py.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_1_ml3jzs.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_7_jt8njm.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_6_epoblu.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_3_vfhqur.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_2_lryw7n.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_4_nortik.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_5_kojyi9.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Group_1_ellcr8.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074278/porfolio/Frame_11_kogoh4.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Group_khom9w.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_12_xealla.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_10_owjsrs.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_9_bjjltz.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074278/porfolio/Frame_13_gmau1u.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074278/porfolio/Frame_14_einpl2.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074700/porfolio/Frame_16_eit1vq.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_8_j93ohe.png",
+      "https://res.cloudinary.com/dxcershra/image/upload/v1691074700/porfolio/Frame_15_uub5u1.png",
+    ].map((source) => {
       const image = document.createElement("img");
       image.src = source;
       return image;
@@ -107,7 +134,7 @@ const Background: FC = () => {
             (Math.random() - 0.5) * 1.5,
             (Math.random() - 0.5) * 1.5,
             0,
-            SIZE,
+            40,
             image
           )
       );
@@ -133,7 +160,7 @@ const Background: FC = () => {
   }, []);
 
   return (
-    <div className="relative h-screen flex justify-center items-center flex-col gap-5">
+    <div className="bg-[#fff] z-0 relative h-screen flex justify-center items-center flex-col gap-5">
       <m.canvas
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6 }}
