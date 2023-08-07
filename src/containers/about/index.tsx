@@ -1,23 +1,33 @@
 export default function About() {
   return (
-    <section id="About">
-      <div className="about container">
-        <div className="about_wrapper">
-          <div className="about_avatar  shine-overlay">
-            <div className="img_avatar "></div>
-            <div className="shine"></div>
+    <section id="About" className="bg-[white] px-0 py-[6.25rem]">
+      <div className="max-w-[75rem] mx-auto my-0">
+        <div className=" flex justify-between items-center gap-[1.875rem] px-0 py-[6.25rem]">
+          <div className="w-[23.12375rem] h-[30.5525rem] cursor-pointer rounded-[0.625rem] shine-overlay">
+            <div
+              className="w-[23.12375rem] h-[30.5525rem] shadow-[0px_0px_20px_0px_rgba(0,0,0,0.13)]"
+              style={{
+                background:
+                  "url(/assets/images/avatar.png) 50%/cover no-repeat",
+              }}
+            ></div>
+            <div className="shine bg-[#fff] hidden absolute w-full h-full pointer-events-none z-[3] opacity-0 skew-x-[30deg] animate-[shine_0.75s_linear_1] left-0 top-0"></div>
           </div>
-          <div className="about_content">
-            <span className="about_content-label">About Me</span>
-            <h3 className="about_content-heading">Truong Van Chu Toan</h3>
-            <p className="about_content-description">
+          <div className="  w-[50rem] h-[30.5525rem]">
+            <span className="flex w-[6.26563rem] h-[1.625rem] flex-col justify-center shrink-0 text-[#8c89a2] text-lg not-italic font-semibold leading-9 tracking-[0.0625rem] uppercase">
+              About Me
+            </span>
+            <h3 className=" flex w-[23.4375rem] flex-col justify-center shrink-0 text-[#3f3a64] text-[2.5rem] not-italic font-normal leading-[3rem] mt-2 ">
+              Truong Van Chu Toan
+            </h3>
+            <p className="flex w-[46.875rem] flex-col justify-center text-[#37352f] text-lg not-italic font-normal leading-[1.625rem] mt-[0.8rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
               in faucibus orci luctus et ultrices posuere cubilia curae.Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec
               urna ac tellus volutpat viverra.
             </p>
-            <p className="about_content-description">
+            <p className="flex w-[46.875rem] flex-col justify-center text-[#37352f] text-lg not-italic font-normal leading-[1.625rem] mt-[0.8rem]">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
               posuere cubilia curae.. Maecenas nec urna ac tellus volutpat
               viverra. Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -26,10 +36,16 @@ export default function About() {
               viverra. Vestibulum ante ipsum primis in faucibus orci luctus{" "}
             </p>
 
-            <div className="about_content-button">
-              <button>
-                <a>
+            <div className="mt-12">
+              <button className="w-[17.32438rem] h-[3.375rem] shrink-0 border rounded-[0.625rem] border-solid border-[#7d11f9] hover:opacity-50 hover:transition-[0.3s] hover:cursor-pointer bg-[#7d11f9]">
+                <a
+                  className="flex gap-[5px] justify-center items-center"
+                  href="./assets/files/CV_TruongVanChuToan_FrontEndDev.pdf"
+                  target="_blank"
+                  download
+                >
                   <svg
+                    className="w-[1.20625rem] h-[1.125rem] shrink-0"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="18"
@@ -53,7 +69,9 @@ export default function About() {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>Download My Resume</span>
+                  <span className="text-white text-center text-lg not-italic font-bold leading-7 capitalize">
+                    Download My Resume
+                  </span>
                 </a>
               </button>
             </div>

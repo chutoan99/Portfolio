@@ -1,11 +1,11 @@
 export default function Contact() {
   return (
-    <section id="contact">
-      <div className="contact container">
-        <div className="contact_info">
+    <section id="contact" className="bg-[white] px-0 py-[6.25rem]">
+      <div className="justify-between gap-[1.875rem] flex  max-w-[75rem] mx-auto my-0">
+        <div className="flex w-[30.9775rem] flex-col items-start gap-10 pb-0">
           {/* phone */}
-          <div className="contact_info-item">
-            <div className="contact_info-icon">
+          <div className="w-[30.9775rem] h-[3.4375rem] flex gap-6">
+            <div className="hover:opacity-50 hover:cursor-pointer hover:transition-[03s] ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={17}
@@ -19,14 +19,18 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <div className="contact_info-content">
-              <span className="info-content-title">Call Me</span>
-              <span className="info-content-des">+84 972 712 621</span>
+            <div className="w-[28.4775rem] flex flex-col justify-center">
+              <span className="h-[1.8125rem] w-full inline-block text-[#3f3a64] text-xl not-italic font-semibold leading-6">
+                Call Me
+              </span>
+              <span className="w-full inline-block h-[1.6875rem] text-[#696969] text-[1.1875rem] not-italic font-normal leading-7">
+                +84 972 712 621
+              </span>
             </div>
           </div>
           {/* email */}
-          <div className="contact_info-item">
-            <div className="contact_info-icon">
+          <div className="w-[30.9775rem] h-[3.4375rem] flex gap-6">
+            <div className="hover:opacity-50 hover:cursor-pointer hover:transition-[03s]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={18}
@@ -52,16 +56,18 @@ export default function Contact() {
                 </defs>
               </svg>
             </div>
-            <div className="contact_info-content">
-              <span className="info-content-title">Email Me</span>
-              <span className="info-content-des">
+            <div className="w-[28.4775rem] flex flex-col justify-center">
+              <span className="h-[1.8125rem] w-full inline-block text-[#3f3a64] text-xl not-italic font-semibold leading-6">
+                Email Me
+              </span>
+              <span className="w-full inline-block h-[1.6875rem] text-[#696969] text-[1.1875rem] not-italic font-normal leading-7">
                 truongvanchutoan1999@gmail.com
               </span>
             </div>
           </div>
           {/* github */}
-          <div className="contact_info-item">
-            <div className="contact_info-icon">
+          <div className="w-[30.9775rem] h-[3.4375rem] flex gap-6">
+            <div className="hover:opacity-50 hover:cursor-pointer hover:transition-[03s]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={25}
@@ -85,16 +91,18 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <div className="contact_info-content">
-              <span className="info-content-title">Github Me</span>
-              <span className="info-content-des">
+            <div className="w-[28.4775rem] flex flex-col justify-center">
+              <span className="h-[1.8125rem] w-full inline-block text-[#3f3a64] text-xl not-italic font-semibold leading-6">
+                Github Me
+              </span>
+              <span className="w-full inline-block h-[1.6875rem] text-[#696969] text-[1.1875rem] not-italic font-normal leading-7">
                 https://github.com/chutoan99
               </span>
             </div>
           </div>
           {/* location  */}
-          <div className="contact_info-item">
-            <div className="contact_info-icon">
+          <div className="w-[30.9775rem] h-[3.4375rem] flex gap-6">
+            <div className="hover:opacity-50 hover:cursor-pointer hover:transition-[03s]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width={12}
@@ -108,74 +116,96 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <div className="contact_info-content">
-              <span className="info-content-title">Location</span>
-              <span className="info-content-des">
+            <div className="w-[28.4775rem] flex flex-col justify-center">
+              <span className="h-[1.8125rem] w-full inline-block text-[#3f3a64] text-xl not-italic font-semibold leading-6">
+                Location
+              </span>
+              <span className="w-full inline-block h-[1.6875rem] text-[#696969] text-[1.1875rem] not-italic font-normal leading-7">
                 District 8, Ho Chi Minh City
               </span>
             </div>
           </div>
         </div>
-        <form id="form">
-          <div className="contact_form">
-            <div className="contact_form-content">
+        <form id="form" className=" w-[40.2725rem] pb-0">
+          <div className="flex flex-col items-start gap-5">
+            <div className="flex w-[40.2725rem] h-[3.4375rem] justify-center items-start gap-5 shrink-0">
               {/* Name */}
-              <div className="form_content-item">
-                <label className="form_item-label" id="form-name" />
+              <div
+                className=" flex w-[312.17px] h-[3.4375rem] items-center shrink-0 px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9]"
+                style={{ background: "rgba(147, 107, 232, 0.05)" }}
+              >
+                <label id="form-name" />
                 <input
-                  className="form_item-input"
+                  className=" focus:border-none bg-transparent border-none flex w-full h-7 flex-col justify-center shrink-0 bg-[unset] text-[#6c757d] text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
                   placeholder="Name"
                   type="text"
                   id="form-name"
                 />
               </div>
               {/* Email */}
-              <div className="form_content-item">
-                <label className="form_item-label" id="form-Email" />
+              <div
+                className="flex w-[312.17px] h-[3.4375rem] items-center shrink-0 px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9]"
+                style={{ background: "rgba(147, 107, 232, 0.05)" }}
+              >
+                <label id="form-Email" />
                 <input
-                  className="form_item-input"
+                  className="focus:outline-none bg-transparent border-none flex w-full h-7 flex-col justify-center shrink-0 bg-[unset] text-[#6c757d] text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
                   placeholder="Email"
                   type="text"
                   id="form-Email"
                 />
               </div>
             </div>
-            <div className="contact_form-content">
+            <div className=" flex w-[40.2725rem] h-[3.4375rem] justify-center items-start gap-5 shrink-0">
               {/* Subject */}
-              <div className="form_content-item">
-                <label className="form_item-label" id="form-subject" />
+              <div
+                className="flex w-[312.17px] h-[3.4375rem] items-center shrink-0 px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9]"
+                style={{ background: "rgba(147, 107, 232, 0.05)" }}
+              >
+                <label id="form-subject" />
                 <input
-                  className="form_item-input"
+                  className="focus:outline-none bg-transparent border-none flex w-full h-7 flex-col justify-center shrink-0 bg-[unset] text-[#6c757d] text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
                   placeholder="Subject"
                   type="text"
                   id="form-subject"
                 />
               </div>
               {/* Email */}
-              <div className="form_content-item">
-                <label className="form_item-label" id="form-phone" />
+              <div
+                className="flex w-[312.17px] h-[3.4375rem] items-center shrink-0 px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9]"
+                style={{ background: "rgba(147, 107, 232, 0.05)" }}
+              >
+                <label id="form-phone" />
                 <input
-                  className="form_item-input"
+                  className="focus:outline-none bg-transparent border-none flex w-full h-7 flex-col justify-center shrink-0 bg-[unset] text-[#6c757d] text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
                   placeholder="Phone"
                   type="phone"
                   id="form-phone"
                 />
               </div>
             </div>
-            <div className="contact_form-note">
+            <div className=" flex w-[40.2725rem] justify-center items-start gap-5 shrink-0">
               {/* Note */}
-              <div className="form_note-item">
-                <label className="form_item-label" id="form-content"></label>
+              <div
+                className=" box-border flex w-full items-center shrink-0 px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9] "
+                style={{ background: "rgba(147, 107, 232, 0.05)" }}
+              >
+                <label id="form-content"></label>
                 <textarea
-                  className="form_item-textarea"
+                  className="w-full bg-transparent border-none flex h-[8.75rem] flex-col justify-center shrink-0 text-[#6c757d] text-[1.2rem] bg-[unset] not-italic font-normal leading-[normal] rounded-[0.625rem] border-[unset] focus:outline-none"
                   placeholder="Content"
                   id="form-content"
                 />
               </div>
             </div>
-            <div className="contact_form-footer">
-              <button type="submit">
-                <span>Send Message </span>
+            <div className=" flex w-full justify-end">
+              <button
+                type="submit"
+                className="inline-flex items-start border pl-9 pr-[2.2375rem] py-[0.8125rem] rounded-[0.625rem] border-solid border-[#7d11f9] hover:cursor-pointer hover:opacity-50 hover:transition-[0.3s] bg-[#7d11f9]"
+              >
+                <span className="text-white text-center text-lg not-italic font-normal leading-7 capitalize">
+                  Send Message
+                </span>
               </button>
             </div>
           </div>

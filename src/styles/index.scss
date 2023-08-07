@@ -1,21 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 body {
-  line-height: 1;
+  @apply leading-none text-base scroll-smooth overflow-x-hidden cursor-none;
   font-family: "Jost", sans-serif;
-  font-size: 16px;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
-
 html {
-  scroll-behavior: smooth;
+  @apply scroll-smooth scroll-smooth overflow-x-hidden md:text-sm lg:text-[15px] 2xl:text-lg;
 }
 a {
-  text-decoration: none !important;
+  @apply no-underline;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -27,92 +23,30 @@ a {
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 13px;
+  @apply w-[13px];
 }
-
 *::-webkit-scrollbar-track {
   background: #ffffff;
 }
-
 *::-webkit-scrollbar-thumb {
-  background-color: #7d11f9;
-  border-radius: 9px;
-  border: 3px solid #ffffff;
-}
-.wrapper {
-  width: 100%;
-
-  &-inner {
-    max-width: 90rem;
-    margin: 0 auto;
-  }
-
-  &-sm {
-    max-width: 56.25rem;
-    margin: 0 auto;
-    display: flex;
-    gap: 1.5rem;
-    flex-direction: column;
-    width: 100%;
-    padding: 2.5rem 0;
-  }
+  @apply bg-[#7d11f9] rounded-[9px] border-[3px] border-solid border-white;
 }
 
-.container {
-  max-width: 75rem !important;
-  margin: 0 auto;
+* {
+  @apply box-border m-0 p-0;
 }
 
-.img_avatar {
-  width: 23.12375rem;
-  height: 30.5525rem;
-  background: url(/assets/images/avatar.png) 50% / cover no-repeat;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.13);
+[data-scroll-container] {
+  perspective: 999999px !important;
 }
-
-body {
-  cursor: none;
+.scale-105 {
+  scale: 1.15;
 }
-
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-
-  @media (min-width: 768px) {
-    font-size: 14px;
-  }
-
-  @media (min-width: 1024px) {
-    font-size: 15px;
-  }
-
-  @media (min-width: 1536px) {
-    font-size: 18px;
-  }
-  @media (min-width: 1800px) {
-    font-size: 20px;
-  }
-  @media (min-width: 2000px) {
-    font-size: 22px;
-  }
+.shadow-md {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
-
-// ::-moz-selection {
-//   color: white;
-//   background: black;
-// }
-
-// ::selection {
-//   color: white;
-//   background: black;
-// }
-
-// .section-container {
-//   @apply 2xl:container xl:px-20 md:px-12 px-4 mx-auto;
-// }
-
 .typed-cursor {
-  font-size: 2rem;
+  @apply text-[2rem];
 }
 
 .outer-menu {
@@ -120,6 +54,7 @@ html {
     .hamburger {
       > div {
         transform: rotate(135deg);
+        background-color: white;
         &:before {
           top: 0;
           transform: rotate(90deg);
@@ -244,4 +179,140 @@ html {
 
 .project-wrapper::-webkit-scrollbar {
   display: none;
+}
+
+// * hover avatar
+.shine-overlay {
+  @apply relative overflow-hidden;
+  .shine {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0)),
+      color-stop(50%, rgba(255, 255, 255, 0.8)),
+      to(rgba(255, 255, 255, 0))
+    );
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  &:hover {
+    .shine {
+      @apply block;
+    }
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  @apply text-[100%] align-baseline m-0 p-0 border-0;
+}
+
+@media (min-width: 1800px) {
+  html {
+    @apply text-xl;
+  }
+}
+@media (min-width: 2000px) {
+  html {
+    @apply text-[22px];
+  }
+}
+@keyframes shine {
+  0% {
+    left: -50%;
+    opacity: 0;
+  }
+  50% {
+    left: 25%;
+    opacity: 0.5;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
 }

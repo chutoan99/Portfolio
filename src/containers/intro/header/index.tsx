@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header id="header" className="container">
+    <header id="header" className=" max-w-[75rem] mx-auto my-0">
       <div className="header ">
         <ul className="nav_list">
           <li className="nav_item">

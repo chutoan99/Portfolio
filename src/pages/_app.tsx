@@ -1,12 +1,10 @@
-import "../styles/globals.css";
-import "../css/index.css";
+import "../styles/index.css";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
 import { LazyMotion, domAnimation } from "framer-motion";
 
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

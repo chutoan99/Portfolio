@@ -1,19 +1,32 @@
 export default function Skills() {
   return (
-    <section id="skills">
-      <div className="container">
-        <div className="skills ">
-          <div className="skills-tags">
-            <span className="tag_item">All</span>
-            <span className="tag_item">Front End</span>
-            <span className="tag_item">Back end</span>
-            <span className="tag_item">Orthers</span>
+    <section id="skills" className="bg-[white]">
+      <div className=" max-w-[75rem] mx-auto my-0">
+        <div className="flex h-[43rem] flex-col justify-center items-center shrink-0 px-0 py-[6.25rem] bg-[white]">
+          <div className="gap-[0.9375rem] justify-center flex items-center self-stretch flex-wrap w-full pt-10 pb-[3.75rem]">
+            <span className="bg-[white] flex justify-center items-center text-gray-600 border border-gray-600 text-base not-italic font-medium leading-5 cursor-pointer px-5 py-1 rounded-xl border-solid ">
+              All
+            </span>
+            <span className="bg-[white] flex justify-center items-center text-gray-600 border border-gray-600 text-base not-italic font-medium leading-5 cursor-pointer px-5 py-1 rounded-xl border-solid ">
+              Front End
+            </span>
+            <span className="bg-[white] flex justify-center items-center text-gray-600 border border-gray-600 text-base not-italic font-medium leading-5 cursor-pointer px-5 py-1 rounded-xl border-solid ">
+              Back end
+            </span>
+            <span className="bg-[white] flex justify-center items-center text-gray-600 border border-gray-600 text-base not-italic font-medium leading-5 cursor-pointer px-5 py-1 rounded-xl border-solid ">
+              Orthers
+            </span>
           </div>
-          <div className="skills_wrapper">
-            <div className="skills_lists">
+          <div className="w-full text-center flex flex-col gap-12">
+            <div className="grid grid-cols-[repeat(9,1fr)]">
               {/* HTML */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={55}
@@ -39,11 +52,18 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">Html</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Html
+                </div>
               </div>
               {/* CSS */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={55}
@@ -76,11 +96,18 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">Css</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Css
+                </div>
               </div>
               {/* JAVASCRIPT */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={44}
@@ -114,11 +141,18 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Javascript</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Javascript
+                </div>
               </div>
               {/* TYPESCRIPT */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={54}
@@ -136,11 +170,18 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">Typescript</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Typescript
+                </div>
               </div>
               {/* REACT */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -158,11 +199,18 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">React</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  React
+                </div>
               </div>
               {/* NEXTJS */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -188,11 +236,18 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Next.js</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Next.js
+                </div>
               </div>
               {/* ANGULAR */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -214,11 +269,18 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">Angular</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Angular
+                </div>
               </div>
               {/* VUE */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -240,11 +302,18 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">Vue</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Vue
+                </div>
               </div>
               {/* NODEJS */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -258,14 +327,21 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">Node.js</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Node.js
+                </div>
               </div>
             </div>
 
-            <div className="skills_lists">
+            <div className="grid grid-cols-[repeat(9,1fr)]">
               {/* NESTJS */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -291,12 +367,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Nest.js</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Nest.js
+                </div>
               </div>
 
               {/* EXPRESS */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -314,12 +397,19 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">Express.js</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Express.js
+                </div>
               </div>
 
               {/* REDUX */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -345,12 +435,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Redux</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Redux
+                </div>
               </div>
 
               {/* REACT QUERY */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -388,12 +485,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">React Query</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  React Query
+                </div>
               </div>
 
               {/* NGRX */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={55}
@@ -414,12 +518,19 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">Ngrx</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Ngrx
+                </div>
               </div>
 
               {/* MY SQL */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -441,12 +552,19 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">MySQL</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  MySQL
+                </div>
               </div>
 
               {/* POSTGRE SQL */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -472,12 +590,19 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">PostgreSQL</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  PostgreSQL
+                </div>
               </div>
 
               {/* MONGO DB */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -543,12 +668,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">MongoDB</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  MongoDB
+                </div>
               </div>
 
               {/* GRAPH QL */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -590,14 +722,21 @@ export default function Skills() {
                     />
                   </svg>
                 </div>
-                <div className="skills_item-title">GraphQL</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  GraphQL
+                </div>
               </div>
             </div>
 
-            <div className="skills_lists">
+            <div className=" grid grid-cols-[repeat(9,1fr)]">
               {/* SOCKET IO */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -629,12 +768,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Socket.io</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Socket.io
+                </div>
               </div>
 
               {/* SWAGGER */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -668,12 +814,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Swagger</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Swagger
+                </div>
               </div>
 
               {/* BOOTSTRAP */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={53}
@@ -756,12 +909,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Bootstrap</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Bootstrap
+                </div>
               </div>
 
               {/* SASS / SCSS */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -789,12 +949,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Sass/Scss</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Sass/Scss
+                </div>
               </div>
 
               {/* TAILWIND CSS */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -820,12 +987,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Tailwind Css</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Tailwind Css
+                </div>
               </div>
 
               {/* GIT */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -851,12 +1025,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Git</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Git
+                </div>
               </div>
 
               {/* STORY BOOK */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -882,12 +1063,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Storybook</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Storybook
+                </div>
               </div>
 
               {/* PHOTOSHOP */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={53}
@@ -917,12 +1105,19 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Photoshop</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Photoshop
+                </div>
               </div>
 
               {/* FIGMA */}
-              <div className="skills_item">
-                <div className="icon_skill">
+              <div className="flex justify-center flex-col items-center gap-2.5">
+                <div
+                  className=" w-20 h-20 shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[50%] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)] hover:scale-105 hover:shadow-md"
+                  style={{
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={56}
@@ -964,7 +1159,9 @@ export default function Skills() {
                     </defs>
                   </svg>
                 </div>
-                <div className="skills_item-title">Figma</div>
+                <div className="text-gray-600 text-xl not-italic font-normal leading-7">
+                  Figma
+                </div>
               </div>
             </div>
           </div>

@@ -2,16 +2,19 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <section id="Projects">
-      <div className="container">
-        <div className="projects_list">
+    <section
+      id="Projects"
+      className="flex flex-col justify-center items-center self-stretch px-20 py-24 bg-[#fff]"
+    >
+      <div className=" max-w-[75rem] mx-auto my-0">
+        <div className="flex flex-col justify-center items-center gap-[3.125rem] self-stretch px-8 py-0">
           {/* 01 SHOPPE */}
-          <div className="project_item">
+          <div className="flex items-start gap-[3.125rem] w-[68.75rem] px-0 py-12 rounded-xl bg-[#fff]">
             <div
               className="grid gap-[50px]"
               style={{ gridTemplateColumns: "5.5fr 4.5fr" }}
             >
-              <div className="project_item-bg">
+              <div className="flex justify-center items-center flex-[1_0_0] self-stretch">
                 <div className="">
                   <img
                     src="./assets/images/New_Macbook_Pro_Mockup_Front_View.png"
@@ -21,32 +24,63 @@ export default function Projects() {
                   />
                 </div>
               </div>
-              <div className="project_item-content">
-                <h3 className="item_content-heading">01. Shopee</h3>
-                <p className="item_content-description">
+              <div className="flex flex-col items-center gap-5 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem]">
+                <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
+                  01. Shopee
+                </h3>
+                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-lg not-italic font-normal leading-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
                   ipsum primis in faucibus orci luctus et ultrices posuere
                   cubilia curae.
                 </p>
-                <div className="item_content-tags">
-                  <span className="tag_item">React</span>
-                  <span className="tag_item">Typescript</span>
-                  <span className="tag_item">Taiwindcss</span>
-                  <span className="tag_item">Redux toolkit query</span>
-                  <span className="tag_item">Express.js</span>
-                  <span className="tag_item">Sequelize</span>
-                  <span className="tag_item">Mysql</span>
-                  <span className="tag_item">Rest full</span>
-                  <span className="tag_item">Swagger</span>
-                  <span className="tag_item">Socket.io</span>
-                  <span className="tag_item">Cloudinary</span>
-                  <span className="tag_item">Jsonwebtoken</span>
-                  <span className="tag_item">nodemailer</span>
+                <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
+                  <span className=" flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    React
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Typescript
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Taiwindcss
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Redux toolkit query
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Express.js
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Sequelize
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Mysql
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Rest full
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Swagger
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Socket.io
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Cloudinary
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Jsonwebtoken
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    nodemailer
+                  </span>
                 </div>
-                <div className="item_content-link">
-                  <div className="item_content-link-item">
-                    <a href="https://shopee-client.vercel.app/">
+                <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">
+                  <div className="flex items-center shrink-0 h-9">
+                    <a
+                      href="https://shopee-client.vercel.app/"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -69,11 +103,16 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span>Link demo web</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link demo web
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item justify-end">
-                    <a href="https://server-shopee3.onrender.com/api/client/docs">
+                  <div className="flex items-center shrink-0 h-9 justify-end">
+                    <a
+                      href="https://server-shopee3.onrender.com/api/client/docs"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -96,11 +135,16 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span>Link swagger api</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link swagger api
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item">
-                    <a href="https://github.com/chutoan99/shopee-client">
+                  <div className="flex items-center shrink-0 h-9">
+                    <a
+                      href="https://github.com/chutoan99/shopee-client"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -115,11 +159,16 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span>Link source code frontend</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link source code frontend
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item justify-end">
-                    <a href="https://github.com/chutoan99/shopee-server">
+                  <div className="flex items-center shrink-0 h-9 justify-end">
+                    <a
+                      href="https://github.com/chutoan99/shopee-server"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -134,7 +183,9 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span>Link source code backend</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link source code backend
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -143,33 +194,56 @@ export default function Projects() {
           </div>
 
           {/* 02 PHONG TRO */}
-          <div className="project_item">
+          <div className="flex items-start gap-[3.125rem] w-[68.75rem] px-0 py-12 rounded-xl bg-[#fff]">
             <div
               className="grid gap-[50px]"
               style={{ gridTemplateColumns: "4.5fr 5.5fr " }}
             >
-              <div className="project_item-content">
-                <h3 className="item_content-heading">02. PhongTro</h3>
-                <p className="item_content-description">
+              <div className="flex flex-col items-center gap-5 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem]">
+                <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
+                  02. PhongTro
+                </h3>
+                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-lg not-italic font-normal leading-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
                   ipsum primis in faucibus orci luctus et ultrices posuere
                   cubilia curae.
                 </p>
-                <div className="item_content-tags">
-                  <span className="tag_item">Next.js</span>
-                  <span className="tag_item">Typescript</span>
-                  <span className="tag_item">Graphql</span>
-                  <span className="tag_item">React query</span>
-                  <span className="tag_item">Css</span>
-                  <span className="tag_item">Nest.js</span>
-                  <span className="tag_item">Postgresql</span>
-                  <span className="tag_item">Cloudinary</span>
-                  <span className="tag_item">Typeorm</span>
+                <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Next.js
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Typescript
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Graphql
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    React query
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Css
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Nest.js
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Postgresql
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Cloudinary
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Typeorm
+                  </span>
                 </div>
-                <div className="item_content-link">
-                  <div className="item_content-link-item">
-                    <a href="https://phongtro-client.vercel.app">
+                <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">
+                  <div className="flex items-center shrink-0 h-9">
+                    <a
+                      href="https://phongtro-client.vercel.app"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -192,11 +266,16 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span>Link demo web</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link demo web
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item justify-end">
-                    <a href="https://server-phongtro.onrender.com/graphql">
+                  <div className="flex items-center shrink-0 h-9 justify-end">
+                    <a
+                      href="https://server-phongtro.onrender.com/graphql"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -219,11 +298,16 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span>Link graphql api</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link graphql api
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item">
-                    <a href="https://github.com/chutoan99/phongtro-client">
+                  <div className="flex items-center shrink-0 h-9">
+                    <a
+                      href="https://github.com/chutoan99/phongtro-client"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -238,11 +322,16 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span>Link source code frontend</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link source code frontend
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item justify-end">
-                    <a href="https://github.com/chutoan99/phongtro-server">
+                  <div className="flex items-center shrink-0 h-9 justify-end">
+                    <a
+                      href="https://github.com/chutoan99/phongtro-server"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -257,12 +346,14 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span>Link source code backend</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link source code backend
+                      </span>
                     </a>
                   </div>
                 </div>
               </div>
-              <div className="project_item-bg">
+              <div className="flex justify-center items-center flex-[1_0_0] self-stretch">
                 <div
                   className="flex justify-center center items-center w-full"
                   style={{ position: "relative" }}
@@ -295,12 +386,12 @@ export default function Projects() {
           </div>
 
           {/* 03 NESPRESSO */}
-          <div className="project_item">
+          <div className=" flex items-start gap-[3.125rem] w-[68.75rem] px-0 py-12 rounded-xl bg-[#fff]">
             <div
               className="grid gap-[50px]"
               style={{ gridTemplateColumns: "5.5fr 4.5fr " }}
             >
-              <div className="project_item-bg">
+              <div className="flex justify-center items-center flex-[1_0_0] self-stretch">
                 <div
                   className="flex justify-center center items-center "
                   style={{ position: "relative" }}
@@ -357,24 +448,39 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <div className="project_item-content">
-                <h3 className="item_content-heading">03. Nespresso Vietnam</h3>
-                <p className="item_content-description">
+              <div className="flex flex-col items-center gap-5 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem]">
+                <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
+                  03. Nespresso Vietnam
+                </h3>
+                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-lg not-italic font-normal leading-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
                   ipsum primis in faucibus orci luctus et ultrices posuere
                   cubilia curae.
                 </p>
-                <div className="item_content-tags">
-                  <span className="tag_item">Vue</span>
-                  <span className="tag_item">Typescript</span>
-                  <span className="tag_item">Sass</span>
-                  <span className="tag_item">Storybook</span>
-                  <span className="tag_item">Figma</span>
+                <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Vue
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Typescript
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Sass
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Storybook
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Figma
+                  </span>
                 </div>
-                <div className="item_content-link">
-                  <div className="item_content-link-item">
-                    <a href="https://nespresso-client.vercel.app">
+                <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">
+                  <div className="flex items-center shrink-0 h-9">
+                    <a
+                      href="https://nespresso-client.vercel.app"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -397,11 +503,16 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span>Link demo web</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link demo web
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item">
-                    <a href="https://github.com/chutoan99/Nespresso">
+                  <div className="flex items-center shrink-0 h-9">
+                    <a
+                      href="https://github.com/chutoan99/Nespresso"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -416,7 +527,9 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span>Link source code</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link source code
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -425,40 +538,77 @@ export default function Projects() {
           </div>
 
           {/* 04 SHOPEE ADMIN */}
-          <div className="project_item">
+          <div className="flex items-start gap-[3.125rem] w-[68.75rem] px-0 py-12 rounded-xl bg-[#fff]">
             <div
               className="grid gap-[50px]"
               style={{ gridTemplateColumns: "4.5fr 5.5fr " }}
             >
-              <div className="project_item-content">
-                <h3 className="item_content-heading">04. Shopee Admin</h3>
-                <p className="item_content-description">
+              <div className="flex flex-col items-center gap-5 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem]">
+                <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
+                  04. Shopee Admin
+                </h3>
+                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-lg not-italic font-normal leading-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
                   ipsum primis in faucibus orci luctus et ultrices posuere
                   cubilia curae.
                 </p>
-                <div className="item_content-tags">
-                  <span className="tag_item">Angular</span>
-                  <span className="tag_item">Typescript</span>
-                  <span className="tag_item">Ngrx</span>
-                  <span className="tag_item">Taiwindcss</span>
-                  <span className="tag_item">Ant Design</span>
-                  <span className="tag_item">Sass</span>
-                  <span className="tag_item">Nodejs</span>
-                  <span className="tag_item">Express.js</span>
-                  <span className="tag_item">Sequelize</span>
-                  <span className="tag_item">Mysql</span>
-                  <span className="tag_item">Rest full</span>
-                  <span className="tag_item">Swagger</span>
-                  <span className="tag_item">Socket.io</span>
-                  <span className="tag_item">Cloudinary</span>
-                  <span className="tag_item">Jsonwebtoken</span>
-                  <span className="tag_item">nodemailer</span>
+                <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Angular
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Typescript
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Ngrx
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Taiwindcss
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Ant Design
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Sass
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Nodejs
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Express.js
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Sequelize
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Mysql
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Rest full
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Swagger
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Socket.io
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Cloudinary
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Jsonwebtoken
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    nodemailer
+                  </span>
                 </div>
-                <div className="item_content-link">
-                  <div className="item_content-link-item">
-                    <a href="https://shopee-admin.vercel.app">
+                <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">
+                  <div className="flex items-center shrink-0 h-9">
+                    <a
+                      href="https://shopee-admin.vercel.app"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -481,11 +631,16 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span>Link demo web</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link demo web
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item justify-end">
-                    <a href="https://server-shopee3.onrender.com/api/admin/docs">
+                  <div className="flex items-center shrink-0 h-9 justify-end">
+                    <a
+                      href="https://server-shopee3.onrender.com/api/admin/docs"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -508,11 +663,16 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span>Link swagger api</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link swagger api
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item">
-                    <a href="https://github.com/chutoan99/shopee-admin">
+                  <div className="flex items-center shrink-0 h-9">
+                    <a
+                      href="https://github.com/chutoan99/shopee-admin"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -527,11 +687,16 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span>Link source code frontend</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link source code frontend
+                      </span>
                     </a>
                   </div>
-                  <div className="item_content-link-item justify-end">
-                    <a href="https://github.com/chutoan99/shopee-server">
+                  <div className="flex items-center shrink-0 h-9 justify-end">
+                    <a
+                      href="https://github.com/chutoan99/shopee-server"
+                      className=" gap-3 flex justify-center shrink-0 cursor-pointer"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -546,14 +711,14 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span>Link source code backend</span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
+                        Link source code backend
+                      </span>
                     </a>
                   </div>
                 </div>
               </div>
-              <div className="project_item-bg">
-                <div className="item-img01" />
-              </div>
+              <div className="flex justify-center items-center flex-[1_0_0] self-stretch"></div>
             </div>
           </div>
         </div>
