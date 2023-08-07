@@ -10,7 +10,7 @@ export default function Experience() {
             <h3 className="w-full text-[#37352f] text-base not-italic font-normal leading-6">
               ITD GROUP : (08/2022 - 07/2023)
             </h3>
-            <p className="text-[#37352f] text-lg not-italic font-normal leading-[1.625rem]">
+            <p className="text-[#37352f] text-[1.125rem] not-italic font-normal leading-[1.625rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
               in faucibus orci luctus et ultrices posuere cubilia curae.Lorem
@@ -19,7 +19,7 @@ export default function Experience() {
               faucibus orci luctus et ultrices posuere cubilia curae.
             </p>
 
-            <p className="text-[#37352f] text-lg not-italic font-normal leading-[1.625rem]">
+            <p className="text-[#37352f] text-[1.125rem] not-italic font-normal leading-[1.625rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
               in faucibus orci luctus et ultrices posuere cubilia curae.Lorem
@@ -36,7 +36,7 @@ export default function Experience() {
             <h3 className="w-full text-[#37352f] text-base not-italic font-normal leading-6">
               STECH VIET NAM : (05/2022 - 07/2022)
             </h3>
-            <p className="text-[#37352f] text-lg not-italic font-normal leading-[1.625rem]">
+            <p className="text-[#37352f] text-[1.125rem] not-italic font-normal leading-[1.625rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
               in faucibus orci luctus et ultrices posuere cubilia curae.Lorem
@@ -45,7 +45,7 @@ export default function Experience() {
               faucibus orci luctus et ultrices posuere cubilia curae.
             </p>
 
-            <p className="text-[#37352f] text-lg not-italic font-normal leading-[1.625rem]">
+            <p className="text-[#37352f] text-[1.125rem] not-italic font-normal leading-[1.625rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
               in faucibus orci luctus et ultrices posuere cubilia curae.Lorem

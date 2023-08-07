@@ -46,43 +46,51 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-center gap-5 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pl-[3.125rem]">
+              <div className="flex flex-col items-center gap-3 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pl-[3.125rem]">
                 <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
                   01. Shopee
                 </h3>
-                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-lg not-italic font-normal leading-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                  ipsum primis in faucibus orci luctus et ultrices posuere
-                  cubilia curae.
+                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-[1.125rem] not-italic font-normal leading-6">
+                  A meticulously cloned e-commerce platform inspired by Shopee.
+                  Packed with a comprehensive suite of functions, it hosts tens
+                  of thousands of categories, shops, and products, continuously
+                  updated to keep pace with market trends. We've harnessed the
+                  latest cutting-edge technologies to drive its development,
+                  resulting in a user-friendly interface that promises an
+                  intuitive and enjoyable shopping experience, currently
+                  optimized for laptop usage.
                 </p>
                 <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
                   <span className=" flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     React
                   </span>
+                  <span className=" flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Node
+                  </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Typescript
-                  </span>
-                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
-                    Taiwindcss
-                  </span>
-                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
-                    Redux toolkit query
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Express.js
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Mysql
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Taiwindcss
+                  </span>
+
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Sequelize
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
-                    Mysql
+                    Swagger
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Rest full
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
-                    Swagger
+                    Redux toolkit query
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Socket.io
@@ -94,10 +102,10 @@ export default function Projects() {
                     Jsonwebtoken
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
-                    nodemailer
+                    Nodemailer
                   </span>
                 </div>
-                <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">
+                <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[3px] justify-between items-center px-0 py-6">
                   <div className="flex items-center shrink-0 h-9">
                     <a
                       href="https://shopee-client.vercel.app/"
@@ -221,23 +229,33 @@ export default function Projects() {
               className="grid "
               style={{ gridTemplateColumns: "4.5fr 5.5fr " }}
             >
-              <div className="flex flex-col items-center gap-5 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pr-[50px]">
+              <div className="flex flex-col items-center gap-3 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pr-[50px]">
                 <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
                   04. Shopee Admin
                 </h3>
-                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-lg not-italic font-normal leading-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                  ipsum primis in faucibus orci luctus et ultrices posuere
-                  cubilia curae.
+                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-[1.125rem] not-italic font-normal leading-6">
+                  Presenting our Shopee-like project dashboard: a comprehensive
+                  toolkit for seamless process management. Powered by the latest
+                  technologies, it features a user-friendly interface inspired
+                  by the trending design style of glassmorphism. Currently
+                  tailored for laptops during its developmental phase, we're
+                  dedicated to introducing more features in the near future to
+                  enhance your experience.
                 </p>
                 <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Angular
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Node
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Express
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Typescript
                   </span>
+
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Ngrx
                   </span>
@@ -248,13 +266,10 @@ export default function Projects() {
                     Ant Design
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Leaflet
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Sass
-                  </span>
-                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
-                    Nodejs
-                  </span>
-                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
-                    Express.js
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Sequelize
@@ -496,15 +511,19 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-center gap-5 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pl-[3.125rem]">
+              <div className="flex flex-col items-center gap-3 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pl-[3.125rem]">
                 <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
                   03. Nespresso Vietnam
                 </h3>
-                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-lg not-italic font-normal leading-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                  ipsum primis in faucibus orci luctus et ultrices posuere
-                  cubilia curae.
+                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-[1.125rem] not-italic font-normal leading-6">
+                  My freelance project, crafted for a Vietnamese client,
+                  involving the transformation of a Figma design into a fully
+                  functional website. I have reimagined the Nespresso website
+                  exclusively for the Vietnamese market, incorporating the
+                  latest cutting-edge technologies to ensure its development.
+                  This creation is designed to seamlessly adapt across a wide
+                  range of contemporary devices, providing a modern and
+                  accessible experience for users.
                 </p>
                 <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
@@ -591,19 +610,26 @@ export default function Projects() {
               className="grid "
               style={{ gridTemplateColumns: "4.5fr 5.5fr " }}
             >
-              <div className="flex flex-col items-center gap-5 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pr-[3.125rem]">
+              <div className="flex flex-col items-center gap-3 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pr-[3.125rem]">
                 <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
                   02. PhongTro
                 </h3>
-                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-lg not-italic font-normal leading-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                  ipsum primis in faucibus orci luctus et ultrices posuere
-                  cubilia curae.
+                <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-[1.125rem] not-italic font-normal leading-6">
+                  A complete revamp of a room rental website. This undertaking
+                  encompasses a full range of functionalities, underpinned by a
+                  constant influx of listing data collected through the use of
+                  "puppeteer" technology, resulting in a continuously updated
+                  collection of thousands of listings. Fueled by the latest
+                  cutting-edge technologies, the development focuses on laptop
+                  compatibility. As we look ahead, you can expect a steady
+                  stream of innovative features to enhance user experience.
                 </p>
                 <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Next.js
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Nest.js
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Typescript
@@ -618,9 +644,6 @@ export default function Projects() {
                     Css
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
-                    Nest.js
-                  </span>
-                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Postgresql
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
@@ -628,6 +651,9 @@ export default function Projects() {
                   </span>
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Typeorm
+                  </span>
+                  <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
+                    Puppeteer
                   </span>
                 </div>
                 <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">

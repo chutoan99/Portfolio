@@ -14,20 +14,20 @@ export default function About() {
             <div className="shine bg-[#fff] hidden absolute w-full h-full pointer-events-none z-[3] opacity-0 skew-x-[30deg] animate-[shine_0.75s_linear_1] left-0 top-0"></div>
           </div>
           <div className="  w-[50rem] h-[30.5525rem]">
-            <span className="flex w-[6.26563rem] h-[1.625rem] flex-col justify-center shrink-0 text-[#8c89a2] text-lg not-italic font-semibold leading-9 tracking-[0.0625rem] uppercase">
+            <span className="flex w-[6.26563rem] h-[1.625rem] flex-col justify-center shrink-0 text-[#8c89a2] text-[1.125rem] not-italic font-semibold leading-9 tracking-[0.0625rem] uppercase">
               About Me
             </span>
             <h3 className=" flex w-[23.4375rem] flex-col justify-center shrink-0 text-[#3f3a64] text-[2.5rem] not-italic font-normal leading-[3rem] mt-2 ">
               Truong Van Chu Toan
             </h3>
-            <p className="flex w-[46.875rem] flex-col justify-center text-[#37352f] text-lg not-italic font-normal leading-[1.625rem] mt-[0.8rem]">
+            <p className="flex w-[46.875rem] flex-col justify-center text-[#37352f] text-[1.125rem] not-italic font-normal leading-[1.625rem] mt-[0.8rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis
               in faucibus orci luctus et ultrices posuere cubilia curae.Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec
               urna ac tellus volutpat viverra.
             </p>
-            <p className="flex w-[46.875rem] flex-col justify-center text-[#37352f] text-lg not-italic font-normal leading-[1.625rem] mt-[0.8rem]">
+            <p className="flex w-[46.875rem] flex-col justify-center text-[#37352f] text-[1.125rem] not-italic font-normal leading-[1.625rem] mt-[0.8rem]">
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
               posuere cubilia curae.. Maecenas nec urna ac tellus volutpat
               viverra. Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -69,7 +69,7 @@ export default function About() {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span className="text-white text-center text-lg not-italic font-bold leading-7 capitalize">
+                  <span className="text-white text-center text-[1.125rem] not-italic font-bold leading-7 capitalize">
                     Download My Resume
                   </span>
                 </a>

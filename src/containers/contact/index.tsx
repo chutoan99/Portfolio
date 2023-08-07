@@ -203,7 +203,7 @@ export default function Contact() {
                 type="submit"
                 className="inline-flex items-start border pl-9 pr-[2.2375rem] py-[0.8125rem] rounded-[0.625rem] border-solid border-[#7d11f9] hover:cursor-pointer hover:opacity-50 hover:transition-[0.3s] bg-[#7d11f9]"
               >
-                <span className="text-white text-center text-lg not-italic font-normal leading-7 capitalize">
+                <span className="text-white text-center text-[1.125rem] not-italic font-normal leading-7 capitalize">
                   Send Message
                 </span>
               </button>
