@@ -29,11 +29,7 @@ export default function Footer() {
                 projects
               </a>
             </li>
-            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
-              <a href="#Experience" className=" text-[black] capitalize no-underline">
-                experience
-              </a>
-            </li>
+
             <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
               <a href="#skills" className=" text-[black] capitalize no-underline">
                 skills

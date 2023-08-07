@@ -106,10 +106,7 @@ const Home: NextPage = () => {
                           name: 'About',
                           ref: 'About',
                         },
-                        {
-                          name: 'Experience',
-                          ref: 'Experience',
-                        },
+
                         {
                           name: 'Projects',
                           ref: 'Projects',
@@ -159,7 +156,6 @@ const Home: NextPage = () => {
         </section>
       </div>
       <About />
-      <Label id="label-experiences" content="Experiences"></Label>
       <Experience />
       <Label id="label-projects" content="Projects"></Label>
       <Projects></Projects>

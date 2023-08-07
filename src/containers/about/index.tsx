@@ -23,7 +23,7 @@ export default function About() {
               Seeking a full-time position in web development to quickly adapt and contribute effectively to a dynamic company. Committed to
               continuous learning and becoming a Fullstack Web Developer within the next two years
             </p>
-            <div className=" mt-[1rem]  h-[5.84938rem] shrink-0 border-t-[#DDD] border-t border-solid">
+            <div className=" mt-[1rem]   shrink-0 border-t-[#DDD] border-t border-solid">
               <div className="grid mt-[2rem]" style={{ gridTemplateColumns: '1fr 1fr' }}>
                 <div className="inline-flex h-[1.8rem] items-start gap-[0.905rem] shrink-0 pt-0 pb-[0.05rem]">
                   <div className="flex h-7 flex-col justify-center">
@@ -42,16 +42,26 @@ export default function About() {
                   </div>
                 </div>
               </div>
-
-              <div className="grid" style={{ gridTemplateColumns: '1fr 1fr' }}>
-                <div className="inline-flex h-[1.8rem] items-start gap-[0.94rem] shrink-0">
+              <div className="grid mt-[5px]" style={{ gridTemplateColumns: '1fr 1fr' }}>
+                <div className="inline-flex h-[1.8rem] items-start gap-[0.905rem] shrink-0 pt-0 pb-[0.05rem]">
+                  <div className="flex h-7 flex-col justify-center">
+                    <span className="y text-[#3F3A64] text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Phone:</span>
+                  </div>
+                  <div className="flex h-7 flex-col justify-center">
+                    <span className="text-[#696969] text-[1.2rem] not-italic font-normal">+84 972 712 621</span>
+                  </div>
+                </div>
+                <div className="inline-flex h-[1.8rem] items-start gap-[0.90625rem] shrink-0  pt-0 pb-[0.05rem]">
                   <div className="flex  h-7 flex-col justify-center">
                     <span className="y text-[#3F3A64] text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Location:</span>
                   </div>
-                  <div className="flex h-7 flex-col justify-center">
+                  <div className="flex  h-7 flex-col justify-center">
                     <span className="text-[#696969] text-[1.2rem] not-italic font-normal">Tp. Ho Chi Minh</span>
                   </div>
                 </div>
+              </div>
+
+              <div className="grid mt-[5px]" style={{ gridTemplateColumns: '1fr 1fr' }}>
                 <div className=" inline-flex h-[1.8rem] items-start gap-[0.8975rem] shrink-0">
                   <div className="flex h-7 flex-col justify-center">
                     <span className="y text-[#3F3A64] text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Email:</span>
