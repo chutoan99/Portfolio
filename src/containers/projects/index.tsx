@@ -108,7 +108,9 @@ export default function Projects() {
                 <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[3px] justify-between items-center px-0 py-6">
                   <div className="flex items-center shrink-0 h-9">
                     <a
-                      href="https://shopee-client.vercel.app/"
+                      href="https://shopee-client.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
                       <svg
@@ -140,6 +142,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://server-shopee3.onrender.com/api/client/docs"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -172,6 +176,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/chutoan99/shopee-client"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -196,6 +202,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/chutoan99/shopee-server"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -255,7 +263,6 @@ export default function Projects() {
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Typescript
                   </span>
-
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
                     Ngrx
                   </span>
@@ -299,6 +306,8 @@ export default function Projects() {
                 <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">
                   <div className="flex items-center shrink-0 h-9">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://shopee-admin.vercel.app"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -331,6 +340,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://server-shopee3.onrender.com/api/admin/docs"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -363,6 +374,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/chutoan99/shopee-admin"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -387,6 +400,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/chutoan99/shopee-server"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -545,6 +560,8 @@ export default function Projects() {
                 <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">
                   <div className="flex items-center shrink-0 h-9">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://nespresso-client.vercel.app"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -577,6 +594,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/chutoan99/Nespresso"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -659,6 +678,8 @@ export default function Projects() {
                 <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-[5px] justify-between items-center px-0 py-6">
                   <div className="flex items-center shrink-0 h-9">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://phongtro-client.vercel.app"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -691,6 +712,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://server-phongtro.onrender.com/graphql"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -723,6 +746,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/chutoan99/phongtro-client"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
@@ -747,6 +772,8 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/chutoan99/phongtro-server"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
