@@ -1,47 +1,26 @@
 export default function Projects() {
   return (
-    <section
-      id="Projects"
-      className="flex flex-col justify-center items-center self-stretch px-20 py-24 bg-[#fff]"
-    >
+    <section id="Projects" className="flex flex-col justify-center items-center self-stretch px-20 py-24 bg-[#fff]">
       <div className=" max-w-[75rem] mx-auto my-0">
         <div className="flex flex-col justify-center items-center gap-[3.125rem] self-stretch px-8 py-0">
           {/* 01 SHOPPE */}
           <div className="flex items-start gap-[3.125rem] w-[75rem] px-0 py-12 rounded-xl bg-[#fff]">
-            <div
-              className="grid "
-              style={{ gridTemplateColumns: "5.5fr 4.5fr" }}
-            >
+            <div className="grid " style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
               <div className="flex justify-center items-center flex-[1_0_0] self-stretch">
                 <div className="flex justify-center center items-center w-full relative">
                   <div className="z-20 left-0 absolute top-[15px]">
                     <div className=" h-[198px]">
-                      <img
-                        src="./assets/images/iPad_Pro_Mockup.png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/iPad_Pro_Mockup.png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className=" z-5 absolute">
                     <div className=" h-[401px]">
-                      <img
-                        src="./assets/images/iMac_27-inch Mockup.png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/iMac_27-inch Mockup.png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className="z-20 right-0 absolute top-[-35px]">
                     <div className=" h-[246.67px]">
-                      <img
-                        src="./assets/images/New_Macbook_Pro_Mockup_Front_View.png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/New_Macbook_Pro_Mockup_Front_View.png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                 </div>
@@ -51,14 +30,10 @@ export default function Projects() {
                   01. Shopee
                 </h3>
                 <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-[1.125rem] not-italic font-normal leading-6">
-                  A meticulously cloned e-commerce platform inspired by Shopee.
-                  Packed with a comprehensive suite of functions, it hosts tens
-                  of thousands of categories, shops, and products, continuously
-                  updated to keep pace with market trends. We've harnessed the
-                  latest cutting-edge technologies to drive its development,
-                  resulting in a user-friendly interface that promises an
-                  intuitive and enjoyable shopping experience, currently
-                  optimized for laptop usage.
+                  A meticulously cloned e-commerce platform inspired by Shopee. Packed with a comprehensive suite of functions, it hosts tens of
+                  thousands of categories, shops, and products, continuously updated to keep pace with market trends. We've harnessed the latest
+                  cutting-edge technologies to drive its development, resulting in a user-friendly interface that promises an intuitive and enjoyable
+                  shopping experience, currently optimized for laptop usage.
                 </p>
                 <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
                   <span className=" flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
@@ -113,13 +88,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           d="M11.2867 9.15352C10.6041 8.47121 9.67846 8.08792 8.71334 8.08792C7.74821 8.08792 6.82259 8.47121 6.14 9.15352L3.56584 11.7269C2.88324 12.4095 2.49976 13.3353 2.49976 14.3006C2.49976 15.2659 2.88324 16.1918 3.56584 16.8744C4.24844 17.557 5.17424 17.9404 6.13959 17.9404C7.10493 17.9404 8.03074 17.557 8.71334 16.8744L10 15.5877"
                           stroke="#7D11F9"
@@ -135,9 +104,7 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link demo web
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link demo web</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
@@ -147,13 +114,7 @@ export default function Projects() {
                       href="https://server-shopee3.onrender.com/api/client/docs"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           d="M11.2867 9.15352C10.6041 8.47121 9.67846 8.08792 8.71334 8.08792C7.74821 8.08792 6.82259 8.47121 6.14 9.15352L3.56584 11.7269C2.88324 12.4095 2.49976 13.3353 2.49976 14.3006C2.49976 15.2659 2.88324 16.1918 3.56584 16.8744C4.24844 17.557 5.17424 17.9404 6.13959 17.9404C7.10493 17.9404 8.03074 17.557 8.71334 16.8744L10 15.5877"
                           stroke="#7D11F9"
@@ -169,9 +130,7 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link swagger api
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link swagger api</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9">
@@ -181,13 +140,7 @@ export default function Projects() {
                       href="https://github.com/chutoan99/shopee-client"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -195,9 +148,7 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link source code frontend
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link source code frontend</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
@@ -207,13 +158,7 @@ export default function Projects() {
                       href="https://github.com/chutoan99/shopee-server"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -221,9 +166,7 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link source code backend
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link source code backend</span>
                     </a>
                   </div>
                 </div>
@@ -233,22 +176,15 @@ export default function Projects() {
 
           {/* 02 SHOPEE ADMIN */}
           <div className="flex items-start gap-[3.125rem] w-[75rem] px-0 py-12 rounded-xl bg-[#fff]">
-            <div
-              className="grid "
-              style={{ gridTemplateColumns: "4.5fr 5.5fr " }}
-            >
+            <div className="grid " style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
               <div className="flex flex-col items-center gap-3 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pr-[50px]">
                 <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
                   04. Shopee Admin
                 </h3>
                 <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-[1.125rem] not-italic font-normal leading-6">
-                  Presenting our Shopee-like project dashboard: a comprehensive
-                  toolkit for seamless process management. Powered by the latest
-                  technologies, it features a user-friendly interface inspired
-                  by the trending design style of glassmorphism. Currently
-                  tailored for laptops during its developmental phase, we're
-                  dedicated to introducing more features in the near future to
-                  enhance your experience.
+                  Presenting our Shopee-like project dashboard: a comprehensive toolkit for seamless process management. Powered by the latest
+                  technologies, it features a user-friendly interface inspired by the trending design style of glassmorphism. Currently tailored for
+                  laptops during its developmental phase, we're dedicated to introducing more features in the near future to enhance your experience.
                 </p>
                 <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
@@ -311,13 +247,7 @@ export default function Projects() {
                       href="https://shopee-admin.vercel.app"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           d="M11.2867 9.15352C10.6041 8.47121 9.67846 8.08792 8.71334 8.08792C7.74821 8.08792 6.82259 8.47121 6.14 9.15352L3.56584 11.7269C2.88324 12.4095 2.49976 13.3353 2.49976 14.3006C2.49976 15.2659 2.88324 16.1918 3.56584 16.8744C4.24844 17.557 5.17424 17.9404 6.13959 17.9404C7.10493 17.9404 8.03074 17.557 8.71334 16.8744L10 15.5877"
                           stroke="#7D11F9"
@@ -333,9 +263,7 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link demo web
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link demo web</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
@@ -345,13 +273,7 @@ export default function Projects() {
                       href="https://server-shopee3.onrender.com/api/admin/docs"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           d="M11.2867 9.15352C10.6041 8.47121 9.67846 8.08792 8.71334 8.08792C7.74821 8.08792 6.82259 8.47121 6.14 9.15352L3.56584 11.7269C2.88324 12.4095 2.49976 13.3353 2.49976 14.3006C2.49976 15.2659 2.88324 16.1918 3.56584 16.8744C4.24844 17.557 5.17424 17.9404 6.13959 17.9404C7.10493 17.9404 8.03074 17.557 8.71334 16.8744L10 15.5877"
                           stroke="#7D11F9"
@@ -367,9 +289,7 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link swagger api
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link swagger api</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9">
@@ -379,13 +299,7 @@ export default function Projects() {
                       href="https://github.com/chutoan99/shopee-admin"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -393,9 +307,7 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link source code frontend
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link source code frontend</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
@@ -405,13 +317,7 @@ export default function Projects() {
                       href="https://github.com/chutoan99/shopee-server"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -419,9 +325,7 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link source code backend
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link source code backend</span>
                     </a>
                   </div>
                 </div>
@@ -430,32 +334,17 @@ export default function Projects() {
                 <div className="flex justify-center center items-center w-full relative">
                   <div className="z-5  absolute  left-0">
                     <div className=" h-[206px]">
-                      <img
-                        src="./assets/images/New_Macbook_Pro_Mockup_Front_View_(3).png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/New_Macbook_Pro_Mockup_Front_View_(3).png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className="z-20 absolute ">
                     <div className=" h-[264px]">
-                      <img
-                        src="./assets/images/New_Macbook_Pro Mockup_Front_View_(1).png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/New_Macbook_Pro Mockup_Front_View_(1).png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className="z-5  absolute  right-0">
                     <div className=" h-[206px]">
-                      <img
-                        src="./assets/images/New_Macbook_Pro_Mockup_Front_View_(2).png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/New_Macbook_Pro_Mockup_Front_View_(2).png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                 </div>
@@ -465,63 +354,32 @@ export default function Projects() {
 
           {/* 03 NESPRESSO */}
           <div className=" flex items-start gap-[3.125rem]w-[75rem] px-0 py-12 rounded-xl bg-[#fff]">
-            <div
-              className="grid "
-              style={{ gridTemplateColumns: "5.5fr 4.5fr " }}
-            >
+            <div className="grid " style={{ gridTemplateColumns: '5.5fr 4.5fr ' }}>
               <div className="flex justify-center items-center flex-[1_0_0] self-stretch ">
-                <div
-                  className="flex justify-center center items-center "
-                  style={{ position: "relative" }}
-                >
+                <div className="flex justify-center center items-center " style={{ position: 'relative' }}>
                   <div className="z-5 translate-x-[50%]">
                     <div className="h-[258px] w-[116px]">
-                      <img
-                        src="./assets/images/iPhone_X_Side_View_Mockup_(2).png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/iPhone_X_Side_View_Mockup_(2).png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className="z-10 translate-x-[25%]">
                     <div className="h-[302px] w-[135px]">
-                      <img
-                        src="./assets/images/iPhone_X_Side_View_Mockup_(1).png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/iPhone_X_Side_View_Mockup_(1).png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className="z-20">
                     <div className="h-[351px] w-[176px]">
-                      <img
-                        src="./assets/images/iPhone_X_Mockup_Front_View.png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/iPhone_X_Mockup_Front_View.png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className="z-10 translate-x-[-25%]">
                     <div className="h-[302px] w-[135px]">
-                      <img
-                        src="./assets/images/iPhone_X_Side_View_Mockup_(4).png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/iPhone_X_Side_View_Mockup_(4).png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className="z-5 translate-x-[-50%]">
                     <div className="h-[258px] w-[116px]">
-                      <img
-                        src="./assets/images/iPhone_X_Side_View_Mockup_(3).png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/iPhone_X_Side_View_Mockup_(3).png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                 </div>
@@ -531,14 +389,10 @@ export default function Projects() {
                   03. Nespresso Vietnam
                 </h3>
                 <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-[1.125rem] not-italic font-normal leading-6">
-                  My freelance project, crafted for a Vietnamese client,
-                  involving the transformation of a Figma design into a fully
-                  functional website. I have reimagined the Nespresso website
-                  exclusively for the Vietnamese market, incorporating the
-                  latest cutting-edge technologies to ensure its development.
-                  This creation is designed to seamlessly adapt across a wide
-                  range of contemporary devices, providing a modern and
-                  accessible experience for users.
+                  My freelance project, crafted for a Vietnamese client, involving the transformation of a Figma design into a fully functional
+                  website. I have reimagined the Nespresso website exclusively for the Vietnamese market, incorporating the latest cutting-edge
+                  technologies to ensure its development. This creation is designed to seamlessly adapt across a wide range of contemporary devices,
+                  providing a modern and accessible experience for users.
                 </p>
                 <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
@@ -565,13 +419,7 @@ export default function Projects() {
                       href="https://nespresso-client.vercel.app"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           d="M11.2867 9.15352C10.6041 8.47121 9.67846 8.08792 8.71334 8.08792C7.74821 8.08792 6.82259 8.47121 6.14 9.15352L3.56584 11.7269C2.88324 12.4095 2.49976 13.3353 2.49976 14.3006C2.49976 15.2659 2.88324 16.1918 3.56584 16.8744C4.24844 17.557 5.17424 17.9404 6.13959 17.9404C7.10493 17.9404 8.03074 17.557 8.71334 16.8744L10 15.5877"
                           stroke="#7D11F9"
@@ -587,9 +435,7 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link demo web
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link demo web</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9">
@@ -599,13 +445,7 @@ export default function Projects() {
                       href="https://github.com/chutoan99/Nespresso"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -613,9 +453,7 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link source code
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link source code</span>
                     </a>
                   </div>
                 </div>
@@ -625,23 +463,16 @@ export default function Projects() {
 
           {/* 04 PHONG TRO */}
           <div className="flex items-start gap-[3.125rem] w-[75rem] px-0 py-12 rounded-xl bg-[#fff]">
-            <div
-              className="grid "
-              style={{ gridTemplateColumns: "4.5fr 5.5fr " }}
-            >
+            <div className="grid " style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
               <div className="flex flex-col items-center gap-3 flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] pr-[3.125rem]">
                 <h3 className="w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
                   02. PhongTro
                 </h3>
                 <p className="self-stretch text-[color:var(--gray-600,#4b5563)] text-[1.125rem] not-italic font-normal leading-6">
-                  A complete revamp of a room rental website. This undertaking
-                  encompasses a full range of functionalities, underpinned by a
-                  constant influx of listing data collected through the use of
-                  "puppeteer" technology, resulting in a continuously updated
-                  collection of thousands of listings. Fueled by the latest
-                  cutting-edge technologies, the development focuses on laptop
-                  compatibility. As we look ahead, you can expect a steady
-                  stream of innovative features to enhance user experience.
+                  A complete revamp of a room rental website. This undertaking encompasses a full range of functionalities, underpinned by a constant
+                  influx of listing data collected through the use of "puppeteer" technology, resulting in a continuously updated collection of
+                  thousands of listings. Fueled by the latest cutting-edge technologies, the development focuses on laptop compatibility. As we look
+                  ahead, you can expect a steady stream of innovative features to enhance user experience.
                 </p>
                 <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
                   <span className="flex justify-center items-center px-5 py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb]">
@@ -683,13 +514,7 @@ export default function Projects() {
                       href="https://phongtro-client.vercel.app"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           d="M11.2867 9.15352C10.6041 8.47121 9.67846 8.08792 8.71334 8.08792C7.74821 8.08792 6.82259 8.47121 6.14 9.15352L3.56584 11.7269C2.88324 12.4095 2.49976 13.3353 2.49976 14.3006C2.49976 15.2659 2.88324 16.1918 3.56584 16.8744C4.24844 17.557 5.17424 17.9404 6.13959 17.9404C7.10493 17.9404 8.03074 17.557 8.71334 16.8744L10 15.5877"
                           stroke="#7D11F9"
@@ -705,9 +530,7 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link demo web
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link demo web</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
@@ -717,13 +540,7 @@ export default function Projects() {
                       href="https://server-phongtro.onrender.com/graphql"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           d="M11.2867 9.15352C10.6041 8.47121 9.67846 8.08792 8.71334 8.08792C7.74821 8.08792 6.82259 8.47121 6.14 9.15352L3.56584 11.7269C2.88324 12.4095 2.49976 13.3353 2.49976 14.3006C2.49976 15.2659 2.88324 16.1918 3.56584 16.8744C4.24844 17.557 5.17424 17.9404 6.13959 17.9404C7.10493 17.9404 8.03074 17.557 8.71334 16.8744L10 15.5877"
                           stroke="#7D11F9"
@@ -739,9 +556,7 @@ export default function Projects() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link graphql api
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link graphql api</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9">
@@ -751,13 +566,7 @@ export default function Projects() {
                       href="https://github.com/chutoan99/phongtro-client"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -765,9 +574,7 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link source code frontend
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link source code frontend</span>
                     </a>
                   </div>
                   <div className="flex items-center shrink-0 h-9 justify-end">
@@ -777,13 +584,7 @@ export default function Projects() {
                       href="https://github.com/chutoan99/phongtro-server"
                       className=" gap-3 flex justify-center shrink-0 cursor-pointer"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={20}
-                        height={21}
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
@@ -791,9 +592,7 @@ export default function Projects() {
                           fill="#7D11F9"
                         />
                       </svg>
-                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">
-                        Link source code backend
-                      </span>
+                      <span className="cursor-pointer text-gray-600 text-base not-italic font-normal leading-6">Link source code backend</span>
                     </a>
                   </div>
                 </div>
@@ -802,22 +601,12 @@ export default function Projects() {
                 <div className="flex justify-center center items-center w-full relative">
                   <div className="left-0 absolute z-20 translate-x-[-4%] translate-y-[28%]">
                     <div className=" w-[393px] h-[232px]">
-                      <img
-                        src="./assets/images/15_ Macbook_Pro_Mockup_Left_View.png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/15_ Macbook_Pro_Mockup_Left_View.png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                   <div className="right-0 absolute z-5">
                     <div className=" w-[371px] h-[334px]">
-                      <img
-                        src="./assets/images/Macbook_Pro_Mockup.png"
-                        alt=""
-                        width="100%"
-                        height="100%"
-                      />
+                      <img src="./assets/images/Macbook_Pro_Mockup.png" alt="" width="100%" height="100%" />
                     </div>
                   </div>
                 </div>

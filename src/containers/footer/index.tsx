@@ -5,12 +5,12 @@ export default function Footer() {
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6022.901875674484!2d106.68264261990022!3d10.735216114031621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fa4d0ecc92f%3A0x8b8f57b85e977ed3!2zS2h1IGTDom4gY8awIFRydW5nIFPGoW4sIELDrG5oIEjGsG5nLCBCw6xuaCBDaMOhbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1689935738249!5m2!1svi!2s"
         height="650"
         loading="lazy"
-        style={{ width: "100%" }}
+        style={{ width: '100%' }}
       ></iframe>
       <footer
         id="footer"
         className="flex justify-center px-[5.33331rem] py-[6.66669rem] h-[15.25rem]"
-        style={{ background: "rgba(147, 107, 232, 0.05)" }}
+        style={{ background: 'rgba(147, 107, 232, 0.05)' }}
       >
         <div className="w-[75rem] flex justify-between ">
           <ul className="items-center flex gap-[2.66669rem] list-none">
@@ -20,47 +20,34 @@ export default function Footer() {
               </a>
             </li>
             <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
-              <a
-                href="#about"
-                className=" text-[black] capitalize no-underline"
-              >
+              <a href="#about" className=" text-[black] capitalize no-underline">
                 about
               </a>
             </li>
             <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
-              <a
-                href="#projects"
-                className=" text-[black] capitalize no-underline"
-              >
+              <a href="#Projects" className=" text-[black] capitalize no-underline">
                 projects
               </a>
             </li>
             <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
-              <a
-                href="#skills"
-                className=" text-[black] capitalize no-underline"
-              >
+              <a href="#Experience" className=" text-[black] capitalize no-underline">
+                experience
+              </a>
+            </li>
+            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
+              <a href="#skills" className=" text-[black] capitalize no-underline">
                 skills
               </a>
             </li>
             <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
-              <a
-                href="#contact"
-                className=" text-[black] capitalize no-underline"
-              >
+              <a href="#contact" className=" text-[black] capitalize no-underline">
                 contact
               </a>
             </li>
           </ul>
           <ul className="items-center flex justify-end gap-4 list-none">
             <li className=" w-8 h-8 shrink-0 hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={33}
-                height={33}
-                viewBox="0 0 33 33"
-                fill="none"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width={33} height={33} viewBox="0 0 33 33" fill="none">
                 <path
                   d="M22.6667 8.6665H18.6667C17.9303 8.6665 17.3333 9.26346 17.3333 9.99984V13.9998H22.6667C22.8183 13.9965 22.9621 14.067 23.0523 14.189C23.1424 14.311 23.1677 14.4692 23.12 14.6132L22.1333 17.5465C22.0424 17.8157 21.7908 17.9977 21.5067 17.9998H17.3333V27.9998C17.3333 28.368 17.0348 28.6665 16.6667 28.6665H13.3333C12.9651 28.6665 12.6667 28.368 12.6667 27.9998V17.9998H10.6667C10.2985 17.9998 10 17.7013 10 17.3332V14.6665C10 14.2984 10.2985 13.9998 10.6667 13.9998H12.6667V9.99984C12.6667 7.05432 15.0545 4.6665 18 4.6665H22.6667C23.0348 4.6665 23.3333 4.96498 23.3333 5.33317V7.99984C23.3333 8.36802 23.0348 8.6665 22.6667 8.6665Z"
                   fill="#7D11F9"
@@ -68,13 +55,7 @@ export default function Footer() {
               </svg>
             </li>
             <li className=" w-8 h-8 shrink-0 hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={33}
-                height={33}
-                viewBox="0 0 33 33"
-                fill="none"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width={33} height={33} viewBox="0 0 33 33" fill="none">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -84,13 +65,7 @@ export default function Footer() {
               </svg>
             </li>
             <li className=" w-8 h-8 shrink-0 hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={33}
-                height={33}
-                viewBox="0 0 33 33"
-                fill="none"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width={33} height={33} viewBox="0 0 33 33" fill="none">
                 <path
                   d="M28.6304 9.62304C28.0112 10.4491 27.2627 11.1696 26.4137 11.7569C26.4137 11.9726 26.4137 12.1884 26.4137 12.4162C26.4205 16.3346 24.8553 20.092 22.0691 22.8458C19.2827 25.5997 15.5083 27.1197 11.5921 27.065C9.32799 27.0726 7.0929 26.5557 5.0619 25.5546C4.95238 25.5068 4.88175 25.3985 4.88216 25.2789V25.147C4.88216 24.9749 5.02164 24.8354 5.1937 24.8354C7.41923 24.762 9.56536 23.9904 11.3285 22.6297C9.31404 22.589 7.50159 21.3957 6.66747 19.5608C6.62535 19.4606 6.63846 19.3456 6.7021 19.2574C6.76572 19.1693 6.87067 19.1208 6.979 19.1293C7.59123 19.1908 8.20958 19.1338 8.80027 18.9614C6.57652 18.4998 4.90562 16.6537 4.66648 14.3941C4.65799 14.2857 4.70656 14.1808 4.79467 14.117C4.88276 14.0534 4.99766 14.0402 5.09784 14.0825C5.69459 14.3458 6.33879 14.4845 6.99099 14.49C5.04246 13.2111 4.20082 10.7786 4.94207 8.56813C5.01859 8.35335 5.20242 8.19467 5.426 8.15043C5.64958 8.10617 5.87995 8.18288 6.03243 8.35236C8.66186 11.1508 12.2747 12.8185 16.1092 13.0036C16.0111 12.6116 15.9628 12.2089 15.9655 11.8048C16.0013 9.68613 17.3123 7.79879 19.2845 7.02633C21.2567 6.25389 23.4999 6.74921 24.964 8.28043C25.9619 8.09031 26.9267 7.75511 27.8276 7.28545C27.8936 7.24425 27.9773 7.24425 28.0433 7.28545C28.0845 7.35148 28.0845 7.4352 28.0433 7.50123C27.6069 8.50053 26.8697 9.33867 25.9345 9.89876C26.7535 9.80379 27.558 9.6106 28.3309 9.32336C28.396 9.27907 28.4815 9.27907 28.5465 9.32336C28.6011 9.34829 28.6419 9.39599 28.658 9.45373C28.6741 9.51148 28.664 9.57341 28.6304 9.62304Z"
                   fill="#7D11F9"
@@ -98,13 +73,7 @@ export default function Footer() {
               </svg>
             </li>
             <li className=" w-8 h-8 shrink-0 hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={33}
-                height={33}
-                viewBox="0 0 33 33"
-                fill="none"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width={33} height={33} viewBox="0 0 33 33" fill="none">
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"

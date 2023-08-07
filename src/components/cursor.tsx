@@ -1,5 +1,5 @@
-import { MutableRefObject, useEffect, useRef } from "react";
-import { gsap, Linear } from "gsap";
+import { MutableRefObject, useEffect, useRef } from 'react';
+import { gsap, Linear } from 'gsap';
 
 const Cursor = ({ isDesktop }: any) => {
   const cursor: any = useRef(null);
@@ -43,14 +43,14 @@ const Cursor = ({ isDesktop }: any) => {
   };
   const isSmallScreen = (): boolean => document.body.clientWidth < 767;
   const initCursorAnimation = () => {
-    follower.current.classList.remove("hidden");
-    cursor.current.classList.remove("hidden");
+    follower.current.classList.remove('hidden');
+    cursor.current.classList.remove('hidden');
 
-    document.addEventListener("mousemove", moveCircle);
+    document.addEventListener('mousemove', moveCircle);
 
-    document.querySelectorAll(".link").forEach((el) => {
-      el.addEventListener("mouseenter", onHover);
-      el.addEventListener("mouseleave", onUnhover);
+    document.querySelectorAll('.link').forEach((el) => {
+      el.addEventListener('mouseenter', onHover);
+      el.addEventListener('mouseleave', onUnhover);
     });
   };
 
@@ -65,17 +65,17 @@ const Cursor = ({ isDesktop }: any) => {
       <div
         ref={cursor}
         className="fixed hidden bg-white w-4 h-4 select-none pointer-events-none z-50"
-        style={{ borderRadius: "100%", mixBlendMode: "difference" }}
+        style={{ borderRadius: '100%', mixBlendMode: 'difference' }}
       ></div>
       <div
         ref={follower}
         className="fixed hidden h-8 w-8 select-none pointer-events-none z-50"
         style={{
-          borderRadius: "100%",
-          left: "-0.5rem",
-          top: "-0.5rem",
-          background: "rgba(255, 255, 255, 0.2)",
-          willChange: "transform",
+          borderRadius: '100%',
+          left: '-0.5rem',
+          top: '-0.5rem',
+          background: 'rgba(255, 255, 255, 0.2)',
+          willChange: 'transform',
         }}
       ></div>
     </>

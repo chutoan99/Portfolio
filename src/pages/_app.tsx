@@ -1,20 +1,16 @@
-import "../styles/index.css";
-import "locomotive-scroll/dist/locomotive-scroll.css";
+import '../styles/index.css';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 
-import { LazyMotion, domAnimation } from "framer-motion";
+import { LazyMotion, domAnimation } from 'framer-motion';
 
-import type { AppProps } from "next/app";
-import Head from "next/head";
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link
-          rel="shortcut icon"
-          href="/rounded-avatar.png"
-          type="image/x-icon"
-        />
+        <link rel="shortcut icon" href="/rounded-avatar.png" type="image/x-icon" />
 
         <title>{`Portfolio`}</title>
 
@@ -22,10 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="NAPTheDev's Portfolio" />
-        <meta
-          property="og:description"
-          content="Nguyen Anh Phong's Portfolio"
-        />
+        <meta property="og:description" content="Nguyen Anh Phong's Portfolio" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="NAPTheDev's Portfolio" />

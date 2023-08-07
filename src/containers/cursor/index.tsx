@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from "react";
+import { FC, useEffect, useRef } from 'react';
 
 const Cursor: FC = () => {
   const isFirstMove = useRef(true);
@@ -15,12 +15,12 @@ const Cursor: FC = () => {
   });
 
   useEffect(() => {
-    if (window.matchMedia("(pointer: coarse)").matches) return;
+    if (window.matchMedia('(pointer: coarse)').matches) return;
 
-    window.addEventListener("mousemove", (e) => {
+    window.addEventListener('mousemove', (e) => {
       if (cursorRef.current) {
         if (isFirstMove.current) {
-          cursorRef.current.style.display = "block";
+          cursorRef.current.style.display = 'block';
           displayedMouse.current.x = e.clientX;
           displayedMouse.current.y = e.clientY;
           isFirstMove.current = false;
@@ -34,10 +34,8 @@ const Cursor: FC = () => {
     const updateMouse = () => {
       requestAnimationFrame(updateMouse);
 
-      displayedMouse.current.x +=
-        (realMouse.current.x - displayedMouse.current.x) * 0.1;
-      displayedMouse.current.y +=
-        (realMouse.current.y - displayedMouse.current.y) * 0.1;
+      displayedMouse.current.x += (realMouse.current.x - displayedMouse.current.x) * 0.1;
+      displayedMouse.current.y += (realMouse.current.y - displayedMouse.current.y) * 0.1;
 
       if (cursorRef.current) {
         cursorRef.current.style.left = `${displayedMouse.current.x}px`;

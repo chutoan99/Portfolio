@@ -1,24 +1,23 @@
-import Typed from "typed.js";
-import type { NextPage } from "next";
-import { gsap, Linear } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import React, { useEffect, useState, MutableRefObject, useRef } from "react";
+import Typed from 'typed.js';
+import type { NextPage } from 'next';
+import { gsap, Linear } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import React, { useEffect, useState, MutableRefObject, useRef } from 'react';
 //? APP
-import Label from "../components/label";
-import About from "../containers/about";
-import Experience from "../containers/experience";
-import Projects from "../containers/projects";
-import Skills from "../containers/skills";
-import Contact from "../containers/contact";
-import Footer from "../containers/footer";
-import Cursor from "../components/cursor";
-import Background from "../containers/background";
+import Label from '../components/label';
+import About from '../containers/about';
+import Experience from '../containers/experience';
+import Projects from '../containers/projects';
+import Skills from '../containers/skills';
+import Contact from '../containers/contact';
+import Footer from '../containers/footer';
+import Cursor from '../components/cursor';
+import Background from '../containers/background';
 
-import { MENULINKS } from "../shared/contants";
+import { MENULINKS } from '../shared/contants';
 
 export const isSmallScreen = (): boolean => document.body.clientWidth < 767;
-export const NO_MOTION_PREFERENCE_QUERY =
-  "(prefers-reduced-motion: no-preference)";
+export const NO_MOTION_PREFERENCE_QUERY = '(prefers-reduced-motion: no-preference)';
 
 export interface IDesktop {
   isDesktop: boolean;
@@ -37,10 +36,8 @@ const Home: NextPage = () => {
   const debouncedDimensionCalculator = () => {
     clearTimeout(timer);
     timer = setTimeout(() => {
-      const isDesktopResult =
-        typeof window.orientation === "undefined" &&
-        navigator.userAgent.indexOf("IEMobile") === -1;
-      window.history.scrollRestoration = "manual";
+      const isDesktopResult = typeof window.orientation === 'undefined' && navigator.userAgent.indexOf('IEMobile') === -1;
+      window.history.scrollRestoration = 'manual';
       setisDesktop(isDesktopResult);
     }, 100);
   };
@@ -48,17 +45,14 @@ const Home: NextPage = () => {
   useEffect(() => {
     debouncedDimensionCalculator();
 
-    window.addEventListener("resize", debouncedDimensionCalculator);
-    return () =>
-      window.removeEventListener("resize", debouncedDimensionCalculator);
+    window.addEventListener('resize', debouncedDimensionCalculator);
+    return () => window.removeEventListener('resize', debouncedDimensionCalculator);
   }, [timer]);
 
   const typedSpanElement: any = useRef(null);
   const targetSection: any = useRef(null);
 
-  const initTypeAnimation = (
-    typedSpanElement: MutableRefObject<HTMLSpanElement>
-  ): Typed => {
+  const initTypeAnimation = (typedSpanElement: MutableRefObject<HTMLSpanElement>): Typed => {
     return new Typed(typedSpanElement.current, {
       strings: TYPED_STRINGS,
       typeSpeed: 50,
@@ -68,17 +62,11 @@ const Home: NextPage = () => {
     });
   };
 
-  const initRevealAnimation = (
-    targetSection: MutableRefObject<HTMLDivElement>
-  ): GSAPTimeline => {
+  const initRevealAnimation = (targetSection: MutableRefObject<HTMLDivElement>): GSAPTimeline => {
     const revealTl = gsap.timeline({ defaults: { ease: Linear.easeNone } });
     revealTl
       .to(targetSection.current, { opacity: 1, duration: 2 })
-      .from(
-        targetSection.current.querySelectorAll(".seq"),
-        { opacity: 0, duration: 0.5, stagger: 0.5 },
-        "<"
-      );
+      .from(targetSection.current.querySelectorAll('.seq'), { opacity: 0, duration: 0.5, stagger: 0.5 }, '<');
 
     return revealTl;
   };
@@ -98,54 +86,44 @@ const Home: NextPage = () => {
         <div className="fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-[1200px]">
           <div className="flex justify-between section-container">
             <a href="#home" className="link"></a>
-            <nav className={`outer-menu ${menuVisible ? "menu-visible" : ""}`}>
-              <button
-                className="hamburger w-6 h-6 flex items-center justify-center link relative"
-                onClick={setmenuVisible.bind(null, !menuVisible)}
-              >
+            <nav className={`outer-menu ${menuVisible ? 'menu-visible' : ''}`}>
+              <button className="hamburger w-6 h-6 flex items-center justify-center link relative" onClick={setmenuVisible.bind(null, !menuVisible)}>
                 <div className="relative flex-none w-full bg-black duration-300 flex items-center justify-center"></div>
               </button>
               <section
                 className="menu fixed top-0 left-0 w-full h-full overflow-hidden invisible pointer-events-none flex items-center justify-center"
-                style={{ visibility: "hidden" }}
+                style={{ visibility: 'hidden' }}
               >
                 <div className="flex-none overflow-hidden flex items-center justify-center">
                   <div className="text-center opacity-0 overflow-y-auto flex flex-none justify-center items-center max-h-screen">
-                    <ul
-                      className="list-none py-4 px-0 m-0 block max-h-screen"
-                      role="menu"
-                    >
+                    <ul className="list-none py-4 px-0 m-0 block max-h-screen" role="menu">
                       {[
                         {
-                          name: "Home",
-                          ref: "home",
+                          name: 'Home',
+                          ref: 'home',
                         },
                         {
-                          name: "About",
-                          ref: "About",
+                          name: 'About',
+                          ref: 'About',
                         },
                         {
-                          name: "Experience",
-                          ref: "Experience",
+                          name: 'Experience',
+                          ref: 'Experience',
                         },
                         {
-                          name: "Projects",
-                          ref: "Projects",
+                          name: 'Projects',
+                          ref: 'Projects',
                         },
                         {
-                          name: "Skills",
-                          ref: "skills",
+                          name: 'Skills',
+                          ref: 'skills',
                         },
                         {
-                          name: "Contact",
-                          ref: "contact",
+                          name: 'Contact',
+                          ref: 'contact',
                         },
                       ].map((el) => (
-                        <li
-                          className="p-0 m-6 text-2xl block"
-                          key={el.name}
-                          role="menuitem"
-                        >
+                        <li className="p-0 m-6 text-2xl block" key={el.name} role="menuitem">
                           <a
                             className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
                             href={`#${el.ref}`}
@@ -170,20 +148,12 @@ const Home: NextPage = () => {
       <div className="flex justify-center section-container">
         <section className="absolute top-0 flex md:items-center py-8  h-full justify-start  2xl:container mx-auto w-[1200px] md:px-12 px-4 min-h-screen ">
           <div className="font-medium flex flex-col pt-32 md:pt-0 select-none">
-            <div
-              className="md:mb-4 mb-2"
-              id={heroSectionRef}
-              ref={targetSection}
-              style={{ opacity: 0 }}
-            >
+            <div className="md:mb-4 mb-2" id={heroSectionRef} ref={targetSection} style={{ opacity: 0 }}>
               <h2 className="text-4xl seq text-[#000]">Hello 👋🏻</h2>
               <h1 className="text-4xl seq  text-[#000]">I am Chu Toan</h1>
             </div>
             <p className="mb-4 text-[#000]">
-              <span
-                className="text-xl sm:text-2xl md:text-5xl seq"
-                ref={typedSpanElement}
-              ></span>
+              <span className="text-xl sm:text-2xl md:text-5xl seq" ref={typedSpanElement}></span>
             </p>
           </div>
         </section>
