@@ -1,8 +1,9 @@
-import type { NextPage } from "next";
 import Typed from "typed.js";
+import type { NextPage } from "next";
 import { gsap, Linear } from "gsap";
-import { MENULINKS } from "../shared/contants";
-import { useRef } from "react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import React, { useEffect, useState, MutableRefObject, useRef } from "react";
+//? APP
 import Label from "../components/label";
 import About from "../containers/about";
 import Experience from "../containers/experience";
@@ -10,14 +11,10 @@ import Projects from "../containers/projects";
 import Skills from "../containers/skills";
 import Contact from "../containers/contact";
 import Footer from "../containers/footer";
+import Cursor from "../components/cursor";
 import Background from "../containers/background";
 
-import React, { useEffect, useState, MutableRefObject } from "react";
-
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Cursor from "../components/cursor";
-
-const DEBOUNCE_TIME = 100;
+import { MENULINKS } from "../shared/contants";
 
 export const isSmallScreen = (): boolean => document.body.clientWidth < 767;
 export const NO_MOTION_PREFERENCE_QUERY =
@@ -45,7 +42,7 @@ const Home: NextPage = () => {
         navigator.userAgent.indexOf("IEMobile") === -1;
       window.history.scrollRestoration = "manual";
       setisDesktop(isDesktopResult);
-    }, DEBOUNCE_TIME);
+    }, 100);
   };
 
   useEffect(() => {
