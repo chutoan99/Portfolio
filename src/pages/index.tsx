@@ -83,7 +83,7 @@ const Home: NextPage = () => {
   return (
     <>
       <header className="w-full flex justify-center">
-        <div className="fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-[1200px]">
+        <div className="fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[1rem] sm:pr-[.9375rem] md:pr-[1.25rem]">
           <div className="flex justify-between section-container">
             <a href="#home" className="link"></a>
             <nav className={`outer-menu ${menuVisible ? 'menu-visible' : ''}`}>
@@ -122,7 +122,7 @@ const Home: NextPage = () => {
                       ].map((el) => (
                         <li className="p-0 m-6 text-2xl block" key={el.name} role="menuitem">
                           <a
-                            className="link relative inline font-bold text-5xl duration-300 hover:no-underline"
+                            className="link relative inline font-bold text-5xl duration-300 hover:no-underline "
                             href={`#${el.ref}`}
                             onClick={setmenuVisible.bind(null, false)}
                           >
@@ -143,8 +143,8 @@ const Home: NextPage = () => {
 
       <Background />
       <div className="flex justify-center section-container">
-        <section className="absolute top-0 flex md:items-center py-8  h-full justify-start  2xl:container mx-auto w-[1200px] md:px-12 px-4 min-h-screen ">
-          <div className="font-medium flex flex-col pt-32 md:pt-0 select-none">
+        <section className="absolute top-0 flex md:items-center py-8  h-full justify-start  2xl:container mx-auto w-full max-w-[1200px] md:px-12 px-4 min-h-screen ">
+          <div className="font-medium flex flex-col justify-center  md:pt-0 select-none">
             <div className="md:mb-4 mb-2" id={heroSectionRef} ref={targetSection} style={{ opacity: 0 }}>
               <h2 className="text-4xl seq text-[#000]">Hello 👋🏻</h2>
               <h1 className="text-4xl seq  text-[#000]">I am Chu Toan</h1>
@@ -158,7 +158,7 @@ const Home: NextPage = () => {
       <About />
       <Experience />
       <Label id="label-projects" content="Projects"></Label>
-      <Projects></Projects>
+      <Projects />
       <Label id="label-skills" content="Skills"></Label>
       <Skills></Skills>
       <Label id="label-contact" content="Contact"></Label>

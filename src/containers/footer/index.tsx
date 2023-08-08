@@ -9,11 +9,11 @@ export default function Footer() {
       ></iframe>
       <footer
         id="footer"
-        className="flex justify-center px-[5.33331rem] py-[6.66669rem] h-[15.25rem]"
+        className="py-[3.125rem]  flex justify-center  px-[1rem] md:px-[1.25rem]  py-full md:py-[1.25rem] h-full sm:h-[15.25rem]"
         style={{ background: 'rgba(147, 107, 232, 0.05)' }}
       >
-        <div className="w-[75rem] flex justify-between ">
-          <ul className="items-center flex gap-[2.66669rem] list-none">
+        <div className="w-full max-w-[75rem] flex-col sm:flex-row justify-between gap-[1.25rem] flex sm:items-center">
+          <ul className="items-start lt:items-center flex-col sm:flex-row  gap-[.625rem] md:gap-[.9375rem] list-none  flex w-full justify-start">
             <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
               <a href="#home" className=" text-[black] capitalize no-underline">
                 home
@@ -41,7 +41,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <ul className="items-center flex justify-end gap-4 list-none">
+          <ul className="items-center flex justify-start md:justify-end gap-4 list-none">
             <li className=" w-8 h-8 shrink-0 hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-[0.5s] hover:ease-[ease-in-out]">
               <svg xmlns="http://www.w3.org/2000/svg" width={33} height={33} viewBox="0 0 33 33" fill="none">
                 <path
