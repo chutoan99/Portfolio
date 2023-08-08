@@ -83,7 +83,7 @@ const Home: NextPage = () => {
   return (
     <>
       <header className="w-full flex justify-center">
-        <div className="fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[1rem] sm:pr-[.9375rem] md:pr-[1.25rem]">
+        <div className="fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[1rem] sm:pr-[.9375rem] md:pr-[1.25rem] lt:pr-0">
           <div className="flex justify-between section-container">
             <a href="#home" className="link"></a>
             <nav className={`outer-menu ${menuVisible ? 'menu-visible' : ''}`}>
