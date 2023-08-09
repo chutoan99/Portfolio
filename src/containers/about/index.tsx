@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="About" className="bg-[white] px-0 py-[3.125rem] lt:py-[6.25rem]">
-      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500" className="max-w-[75rem] mx-auto my-0">
+      <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500" className="max-w-[75rem] mx-auto my-0">
         <div className="flex-col md:flex-row md:items-start lt:flex-row  flex justify-center lt:justify-between items-center gap-[1.875rem] px-[1.25rem] lt:px-0 py-[3.125rem] lt:py-[6.25rem]">
           <div className="w-full lt:w-[23.12375rem] h-full lt:h-[30.5525rem] cursor-pointer rounded-[0.625rem] shine-overlay">
             <div
@@ -12,22 +12,14 @@ export default function About() {
             ></div>
             <div className="shine bg-white hidden absolute w-full h-full pointer-events-none z-[3] opacity-0 skew-x-[30deg] animate-[shine_0.75s_linear_1] left-0 top-0"></div>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-offset="500"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="800"
-            className=" w-full lt:w-[50rem] h-full lt:h-[30.5525rem]"
-          >
+          <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className=" w-full lt:w-[50rem] h-full lt:h-[30.5525rem]">
             <span className="flex w-full lt:w-[6.26563rem] h-[1.625rem] flex-col justify-center shrink-0 text-[#8c89a2] text-[1.125rem] not-italic font-semibold leading-9 tracking-[0.0625rem] uppercase">
               About Me
             </span>
-            <h3 className=" flex w-full lt:w-[23.4375rem] flex-col justify-center shrink-0 text-label text-[2rem] lt:text-[2.5rem] not-italic font-normal leading-[3rem] mt-2 ">
-              Truong Van Chu Toan
-            </h3>
+            <h3 className=" flex w-full lt:w-[23.4375rem] flex-col justify-center shrink-0 text-label text-[2rem] lt:text-[2.5rem] not-italic font-normal leading-[3rem] mt-2 ">Truong Van Chu Toan</h3>
             <p className="flex w-full lt:w-[46.875rem] flex-col justify-center text-[#37352f] text-[1.125rem] not-italic font-normal leading-[1.625rem] mt-[0.8rem]">
-              Seeking a full-time position in web development to quickly adapt and contribute effectively to a dynamic company. Committed to
-              continuous learning and becoming a Fullstack Web Developer within the next two years
+              Seeking a full-time position in web development to quickly adapt and contribute effectively to a dynamic company. Committed to continuous learning and becoming a Fullstack Web Developer
+              within the next two years
             </p>
             <div className=" mt-[1rem]   shrink-0 border-t-[#DDD] border-t border-solid">
               <div className="grid mt-[2rem] lt:grid-cols-[repeat(2,1fr)]">
@@ -81,20 +73,8 @@ export default function About() {
 
             <div className="mt-9 sm:mt-6 lt:mt-12 flex flex-col lt:flex-row gap-[1.13rem] lt:gap-[3.13rem] items-center">
               <button className="order-1 w-full lt:w-[17.32438rem] h-[3.375rem] shrink-0 border rounded-[0.625rem] border-solid border-primary hover:opacity-50 hover:transition-[0.3s] hover:cursor-pointer bg-primary">
-                <a
-                  className="flex gap-[5px] justify-center items-center"
-                  href="./assets/files/CV_TruongVanChuToan_FrontEndDev.pdf"
-                  target="_blank"
-                  download
-                >
-                  <svg
-                    className="w-[1.20625rem] h-[1.125rem] shrink-0"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="18"
-                    viewBox="0 0 20 18"
-                    fill="none"
-                  >
+                <a className="flex gap-[5px] justify-center items-center" href="./assets/files/CV_TruongVanChuToan_FrontEndDev.pdf" target="_blank" download>
+                  <svg className="w-[1.20625rem] h-[1.125rem] shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
                     <g clipPath="url(#clip0_1_465)">
                       <path
                         d="M13.3542 9.32145C13.3542 9.2277 13.3241 9.15069 13.2638 9.09042C13.2035 9.03015 13.1265 9.00002 13.0328 9.00002H10.7828V5.4643C10.7828 5.37725 10.751 5.30192 10.6874 5.2383C10.6237 5.17468 10.5484 5.14287 10.4614 5.14287H8.53278C8.44573 5.14287 8.3704 5.17468 8.30678 5.2383C8.24316 5.30192 8.21136 5.37725 8.21136 5.4643V9.00002H5.96136C5.8743 9.00002 5.79897 9.03183 5.73535 9.09544C5.67174 9.15906 5.63993 9.23439 5.63993 9.32145C5.63993 9.4152 5.67006 9.49221 5.73033 9.55247L9.26604 13.0882C9.32631 13.1485 9.40332 13.1786 9.49707 13.1786C9.59082 13.1786 9.66783 13.1485 9.7281 13.0882L13.2538 9.56252C13.3207 9.48216 13.3542 9.4018 13.3542 9.32145ZM19.7828 11.5714C19.7828 12.6362 19.4061 13.5452 18.6528 14.2986C17.8994 15.0519 16.9904 15.4286 15.9256 15.4286H4.99707C3.75823 15.4286 2.69852 14.9883 1.81794 14.1077C0.937361 13.2271 0.49707 12.1674 0.49707 10.9286C0.49707 10.0581 0.731445 9.25448 1.2002 8.51787C1.66895 7.78127 2.29841 7.22881 3.08859 6.86051C3.0752 6.65962 3.0685 6.51564 3.0685 6.42859C3.0685 5.00895 3.57073 3.79689 4.5752 2.79243C5.57966 1.78796 6.79171 1.28573 8.21136 1.28573C9.256 1.28573 10.2119 1.57703 11.0791 2.15962C11.9463 2.7422 12.5774 3.51564 12.9725 4.47993C13.448 4.06475 14.0038 3.85716 14.6399 3.85716C15.3497 3.85716 15.9558 4.10828 16.458 4.61051C16.9602 5.11274 17.2114 5.71877 17.2114 6.42859C17.2114 6.93752 17.0741 7.39957 16.7995 7.81475C17.6701 8.02234 18.3849 8.47602 18.9441 9.1758C19.5032 9.87558 19.7828 10.6741 19.7828 11.5714Z"
