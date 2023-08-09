@@ -65,9 +65,7 @@ const Home: NextPage = () => {
 
   const initRevealAnimation = (targetSection: MutableRefObject<HTMLDivElement>): GSAPTimeline => {
     const revealTl = gsap.timeline({ defaults: { ease: Linear.easeNone } });
-    revealTl
-      .to(targetSection.current, { opacity: 1, duration: 2 })
-      .from(targetSection.current.querySelectorAll('.seq'), { opacity: 0, duration: 0.5, stagger: 0.5 }, '<');
+    revealTl.to(targetSection.current, { opacity: 1, duration: 2 }).from(targetSection.current.querySelectorAll('.seq'), { opacity: 0, duration: 0.5, stagger: 0.5 }, '<');
 
     return revealTl;
   };
@@ -85,7 +83,6 @@ const Home: NextPage = () => {
     AOS.init({
       easing: 'ease-out-cubic',
       once: true,
-      offset: 50,
       duration: 1200,
     });
   }, []);
@@ -99,10 +96,7 @@ const Home: NextPage = () => {
               <button className="hamburger w-6 h-6 flex items-center justify-center link relative" onClick={setmenuVisible.bind(null, !menuVisible)}>
                 <div className="relative flex-none w-full bg-black duration-300 flex items-center justify-center"></div>
               </button>
-              <section
-                className="menu fixed top-0 left-0 w-full h-full overflow-hidden invisible pointer-events-none flex items-center justify-center"
-                style={{ visibility: 'hidden' }}
-              >
+              <section className="menu fixed top-0 left-0 w-full h-full overflow-hidden invisible pointer-events-none flex items-center justify-center" style={{ visibility: 'hidden' }}>
                 <div className="flex-none overflow-hidden flex items-center justify-center">
                   <div className="text-center opacity-0 overflow-y-auto flex flex-none justify-center items-center max-h-screen">
                     <ul className="list-none py-4 px-0 m-0 block max-h-screen" role="menu">
@@ -130,11 +124,7 @@ const Home: NextPage = () => {
                         },
                       ].map((el) => (
                         <li className="p-0 m-6 text-2xl block" key={el.name} role="menuitem">
-                          <a
-                            className="link relative inline font-bold text-5xl duration-300 hover:no-underline "
-                            href={`#${el.ref}`}
-                            onClick={setmenuVisible.bind(null, false)}
-                          >
+                          <a className="link relative inline font-bold text-5xl duration-300 hover:no-underline " href={`#${el.ref}`} onClick={setmenuVisible.bind(null, false)}>
                             {el.name}
                           </a>
                         </li>
