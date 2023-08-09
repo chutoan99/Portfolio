@@ -21,6 +21,9 @@ module.exports = {
         white: '#ffffff',
         primary: '#7D11F9',
       },
+      width: {
+        fit: 'fit-content',
+      },
     },
     screens: {
       sm: '640px',

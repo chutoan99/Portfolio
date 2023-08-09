@@ -6,7 +6,6 @@ interface Device {
   x: string;
   image: string;
   end: string;
-  size: number[];
   zIndex: number;
   animation: ReturnType<typeof useAnimation>;
 }
@@ -15,7 +14,6 @@ interface DeviceCustom {
   y: string;
   image: string;
   change: string[];
-  size: number[];
   zIndex: number;
   animation: ReturnType<typeof useAnimation>;
 }
@@ -36,9 +34,9 @@ export default function Projects() {
 
 function Projects1() {
   const device_01: DeviceCustom[] = [
-    { x: '0%', y: '0%', change: ['0%', '0%'], image: './assets/images/iMac_27-inch Mockup.png', size: [401, 517], zIndex: 1, animation: useAnimation() },
-    { x: '25%', y: '0%', change: ['-73%', '55%'], image: './assets/images/iPad_Pro_Mockup.png', size: [198, 272], zIndex: 20, animation: useAnimation() },
-    { x: '-25%', y: '0%', change: ['47%', '37%'], image: './assets/images/New_Macbook_Pro_Mockup_Front_View.png', size: [246.67, 340.44], zIndex: 20, animation: useAnimation() },
+    { x: '0%', y: '0%', change: ['0%', '0%'], image: './assets/images/iMac_27-inch Mockup.png', zIndex: 1, animation: useAnimation() },
+    { x: '25%', y: '0%', change: ['-73%', '55%'], image: './assets/images/iPad_Pro_Mockup.png', zIndex: 20, animation: useAnimation() },
+    { x: '-25%', y: '0%', change: ['47%', '37%'], image: './assets/images/New_Macbook_Pro_Mockup_Front_View.png', zIndex: 20, animation: useAnimation() },
   ];
   const handleScroll = () => {
     if (scrollY > 2000) {
@@ -62,12 +60,18 @@ function Projects1() {
 
   return (
     <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white lt:w-[75rem]">
-      <div className="lt:grid grid-te" style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
-        <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500" className="flex justify-center items-center flex-[1_0_0] self-stretch">
-          <div className="flex justify-center center items-center w-full relative">
+      <div className="lt:grid flex flex-col gap-[20px]" style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="500"
+          className="h-[12.5rem] lt:h-full flex justify-center items-center flex-[1_0_0] self-stretch"
+        >
+          <div className="flex justify-center center items-center w-full relative h-[200px] lt:h-full scale-[0.5] lt:scale-[1]">
             {device_01.map((device: DeviceCustom, index: number) => (
               <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="absolute">
-                <div className={`h-[${device.size[0]}px] w-[${device.size[1]}px]`}>
+                <div className="w-full h-full">
                   <img src={device.image} alt="" width="100%" height="100%" />
                 </div>
               </motion.div>
@@ -84,9 +88,9 @@ function Projects1() {
 
 function Projects2() {
   const device_02: Device[] = [
-    { x: '0%', end: '-40%', image: './assets/images/New_Macbook_Pro_Mockup_Front_View_(3).png', size: [206, 336], zIndex: 1, animation: useAnimation() },
-    { x: '0%', end: '48%', image: './assets/images/New_Macbook_Pro_Mockup_Front_View_(2).png', size: [206, 336], zIndex: 1, animation: useAnimation() },
-    { x: '0%', end: '0%', image: './assets/images/New_Macbook_Pro Mockup_Front_View_(1).png', size: [264, 462], zIndex: 20, animation: useAnimation() },
+    { x: '0%', end: '-40%', image: './assets/images/New_Macbook_Pro_Mockup_Front_View_(3).png', zIndex: 1, animation: useAnimation() },
+    { x: '0%', end: '48%', image: './assets/images/New_Macbook_Pro_Mockup_Front_View_(2).png', zIndex: 1, animation: useAnimation() },
+    { x: '0%', end: '0%', image: './assets/images/New_Macbook_Pro Mockup_Front_View_(1).png', zIndex: 20, animation: useAnimation() },
   ];
   const handleScroll = () => {
     if (scrollY > 3000) {
@@ -110,15 +114,21 @@ function Projects2() {
 
   return (
     <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white lt:w-[75rem]">
-      <div className="lt:grid  " style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="lt:mr-[3.125rem]">
+      <div className="lt:grid flex flex-col gap-[20px]" style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="order-2 lt:order-1 lt:mr-[3.125rem]">
           <ProjectInfo project={PROJECTS[1]} />
         </div>
-        <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500" className="flex justify-center items-center flex-[1_0_0] self-stretch overflow-hidden">
-          <div className="flex justify-center center items-center w-full relative">
-            {device_02.map((device, index) => (
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="500"
+          className="order-1 lt:order-2 h-[12.5rem] lt:h-full flex justify-center items-center flex-[1_0_0] self-stretch"
+        >
+          <div className="flex justify-center center items-center w-full relative h-[200px] lt:h-full scale-[0.5] lt:scale-[1]">
+            {device_02.map((device: Device, index: number) => (
               <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="absolute">
-                <div className={`h-[${device.size[0]}px] w-[${device.size[1]}px]`}>
+                <div className="w-full h-full">
                   <img src={device.image} alt="" width="100%" height="100%" />
                 </div>
               </motion.div>
@@ -132,11 +142,11 @@ function Projects2() {
 
 function Projects3() {
   const device_03: Device[] = [
-    { x: '0%', end: '-190%', image: './assets/images/iPhone_X_Side_View_Mockup_(2).png', size: [258, 116], zIndex: 1, animation: useAnimation() },
-    { x: '0%', end: '-90%', image: './assets/images/iPhone_X_Side_View_Mockup_(1).png', size: [302, 135], zIndex: 10, animation: useAnimation() },
-    { x: '0%', end: '90%', image: './assets/images/iPhone_X_Side_View_Mockup_(4).png', size: [302, 135], zIndex: 10, animation: useAnimation() },
-    { x: '0%', end: '190%', image: './assets/images/iPhone_X_Side_View_Mockup_(3).png', size: [258, 116], zIndex: 1, animation: useAnimation() },
-    { x: '0%', end: '0%', image: './assets/images/iPhone_X_Mockup_Front_View.png', size: [351, 176], zIndex: 20, animation: useAnimation() },
+    { x: '0%', end: '-190%', image: './assets/images/iPhone_X_Side_View_Mockup_(2).png', zIndex: 1, animation: useAnimation() },
+    { x: '0%', end: '-90%', image: './assets/images/iPhone_X_Side_View_Mockup_(1).png', zIndex: 10, animation: useAnimation() },
+    { x: '0%', end: '90%', image: './assets/images/iPhone_X_Side_View_Mockup_(4).png', zIndex: 10, animation: useAnimation() },
+    { x: '0%', end: '190%', image: './assets/images/iPhone_X_Side_View_Mockup_(3).png', zIndex: 1, animation: useAnimation() },
+    { x: '0%', end: '0%', image: './assets/images/iPhone_X_Mockup_Front_View.png', zIndex: 20, animation: useAnimation() },
   ];
   const handleScroll = () => {
     if (scrollY > 3600) {
@@ -160,12 +170,18 @@ function Projects3() {
 
   return (
     <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white lt:w-[75rem]">
-      <div className="lt:grid " style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
-        <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500" className="flex justify-center items-center flex-[1_0_0] self-stretch overflow-hidden">
-          <div className="flex justify-center center items-center w-full relative">
+      <div className="lt:grid flex flex-col gap-[20px]" style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="500"
+          className="h-[12.5rem] lt:h-full flex justify-center items-center flex-[1_0_0] self-stretch"
+        >
+          <div className="flex justify-center center items-center w-full relative h-[200px] lt:h-full scale-[0.5] lt:scale-[1]">
             {device_03.map((device, index) => (
               <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="absolute">
-                <div className={`h-[${device.size[0]}px] w-[${device.size[1]}px]`}>
+                <div className="w-full h-full">
                   <img src={device.image} alt="" width="100%" height="100%" />
                 </div>
               </motion.div>
@@ -182,8 +198,8 @@ function Projects3() {
 
 function Projects4() {
   const device_04: DeviceCustom[] = [
-    { x: '0%', y: '0%', change: ['-38%', '29%'], image: './assets/images/15_ Macbook_Pro_Mockup_Left_View.png', size: [232, 393], zIndex: 20, animation: useAnimation() },
-    { x: '25%', y: '0%', change: ['39%', '0%'], image: './assets/images/Macbook_Pro_Mockup.png', size: [334, 371], zIndex: 1, animation: useAnimation() },
+    { x: '0%', y: '0%', change: ['-38%', '29%'], image: './assets/images/15_ Macbook_Pro_Mockup_Left_View.png', zIndex: 20, animation: useAnimation() },
+    { x: '25%', y: '0%', change: ['39%', '0%'], image: './assets/images/Macbook_Pro_Mockup.png', zIndex: 1, animation: useAnimation() },
   ];
   const handleScroll = () => {
     if (scrollY > 4150) {
@@ -207,15 +223,21 @@ function Projects4() {
 
   return (
     <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white lt:w-[75rem]">
-      <div className="lt:grid  " style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="lt:mr-[3.125rem]">
+      <div className="lt:grid flex flex-col gap-[20px]" style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="order-2 lt:order-1 lt:mr-[3.125rem]">
           <ProjectInfo project={PROJECTS[3]} />
         </div>
-        <div data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500" className="flex justify-center items-center flex-[1_0_0] self-stretch overflow-hidden">
-          <div className="flex justify-center center items-center w-full relative">
+        <div
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="500"
+          className="order-1 lt:order-2 h-[12.5rem] lt:h-full flex justify-center items-center flex-[1_0_0] self-stretch"
+        >
+          <div className="flex justify-center center items-center w-full relative h-[200px] lt:h-full scale-[0.5] lt:scale-[1]">
             {device_04.map((device: DeviceCustom, index: number) => (
-              <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="absolute">
-                <div className={`h-[${device.size[0]}px] w-[${device.size[1]}px]`}>
+              <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="initial lt:absolute">
+                <div className="w-full h-full">
                   <img src={device.image} alt="" width="100%" height="100%" />
                 </div>
               </motion.div>
