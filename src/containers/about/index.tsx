@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="About" className="bg-[white] px-0 py-[3.125rem] lt:py-[6.25rem]">
-      <div className="max-w-[75rem] mx-auto my-0">
+      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500" className="max-w-[75rem] mx-auto my-0">
         <div className="flex-col md:flex-row md:items-start lt:flex-row  flex justify-center lt:justify-between items-center gap-[1.875rem] px-[1.25rem] lt:px-0 py-[3.125rem] lt:py-[6.25rem]">
           <div className="w-full lt:w-[23.12375rem] h-full lt:h-[30.5525rem] cursor-pointer rounded-[0.625rem] shine-overlay">
             <div
@@ -10,13 +10,19 @@ export default function About() {
                 background: 'url(/assets/images/avatar.png) 50%/cover no-repeat',
               }}
             ></div>
-            <div className="shine bg-[#fff] hidden absolute w-full h-full pointer-events-none z-[3] opacity-0 skew-x-[30deg] animate-[shine_0.75s_linear_1] left-0 top-0"></div>
+            <div className="shine bg-white hidden absolute w-full h-full pointer-events-none z-[3] opacity-0 skew-x-[30deg] animate-[shine_0.75s_linear_1] left-0 top-0"></div>
           </div>
-          <div className=" w-full lt:w-[50rem] h-full lt:h-[30.5525rem]">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="800"
+            className=" w-full lt:w-[50rem] h-full lt:h-[30.5525rem]"
+          >
             <span className="flex w-full lt:w-[6.26563rem] h-[1.625rem] flex-col justify-center shrink-0 text-[#8c89a2] text-[1.125rem] not-italic font-semibold leading-9 tracking-[0.0625rem] uppercase">
               About Me
             </span>
-            <h3 className=" flex w-full lt:w-[23.4375rem] flex-col justify-center shrink-0 text-[#3f3a64] text-[2rem] lt:text-[2.5rem] not-italic font-normal leading-[3rem] mt-2 ">
+            <h3 className=" flex w-full lt:w-[23.4375rem] flex-col justify-center shrink-0 text-label text-[2rem] lt:text-[2.5rem] not-italic font-normal leading-[3rem] mt-2 ">
               Truong Van Chu Toan
             </h3>
             <p className="flex w-full lt:w-[46.875rem] flex-col justify-center text-[#37352f] text-[1.125rem] not-italic font-normal leading-[1.625rem] mt-[0.8rem]">
@@ -27,36 +33,36 @@ export default function About() {
               <div className="grid mt-[2rem] lt:grid-cols-[repeat(2,1fr)]">
                 <div className="inline-flex h-[1.8rem] items-start gap-[0.905rem] shrink-0 pt-0 pb-[0.05rem]">
                   <div className="flex h-7 flex-col justify-center">
-                    <span className="y text-[#3F3A64] text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Name:</span>
+                    <span className="y text-label text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Name:</span>
                   </div>
                   <div className="flex h-7 flex-col justify-center">
-                    <span className="text-[#696969] text-[1.2rem] not-italic font-normal">Truong Van Chu Toan</span>
+                    <span className="text-description text-[1.2rem] not-italic font-normal">Truong Van Chu Toan</span>
                   </div>
                 </div>
                 <div className="inline-flex h-[1.8rem] items-start gap-[0.90625rem] shrink-0  pt-0 pb-[0.05rem]">
                   <div className="flex  h-7 flex-col justify-center">
-                    <span className="y text-[#3F3A64] text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Age:</span>
+                    <span className="y text-label text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Age:</span>
                   </div>
                   <div className="flex  h-7 flex-col justify-center">
-                    <span className="text-[#696969] text-[1.2rem] not-italic font-normal">24 Years</span>
+                    <span className="text-description text-[1.2rem] not-italic font-normal">24 Years</span>
                   </div>
                 </div>
               </div>
               <div className="grid mt-[5px] lt:grid-cols-[repeat(2,1fr)]">
                 <div className="inline-flex h-[1.8rem] items-start gap-[0.905rem] shrink-0 pt-0 pb-[0.05rem]">
                   <div className="flex h-7 flex-col justify-center">
-                    <span className="y text-[#3F3A64] text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Phone:</span>
+                    <span className="y text-label text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Phone:</span>
                   </div>
                   <div className="flex h-7 flex-col justify-center">
-                    <span className="text-[#696969] text-[1.2rem] not-italic font-normal">+84 972 712 621</span>
+                    <span className="text-description text-[1.2rem] not-italic font-normal">+84 972 712 621</span>
                   </div>
                 </div>
                 <div className="inline-flex h-[1.8rem] items-start gap-[0.90625rem] shrink-0  pt-0 pb-[0.05rem]">
                   <div className="flex  h-7 flex-col justify-center">
-                    <span className="y text-[#3F3A64] text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Location:</span>
+                    <span className="y text-label text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Location:</span>
                   </div>
                   <div className="flex  h-7 flex-col justify-center">
-                    <span className="text-[#696969] text-[1.2rem] not-italic font-normal">Tp. Ho Chi Minh</span>
+                    <span className="text-description text-[1.2rem] not-italic font-normal">Tp. Ho Chi Minh</span>
                   </div>
                 </div>
               </div>
@@ -64,17 +70,17 @@ export default function About() {
               <div className="grid mt-[5px] lt:grid-cols-[repeat(2,1fr)]">
                 <div className=" inline-flex h-[1.8rem] items-start gap-[0.8975rem] shrink-0">
                   <div className="flex h-7 flex-col justify-center">
-                    <span className="y text-[#3F3A64] text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Email:</span>
+                    <span className="y text-label text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Email:</span>
                   </div>
                   <div className="flex h-7 flex-col justify-center">
-                    <span className="text-[#7D11F9] text-[1.2rem] not-italic font-normal">truongvanchutoan1999@gmail.com</span>
+                    <span className="text-primary text-[1.2rem] not-italic font-normal">truongvanchutoan1999@gmail.com</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="mt-9 sm:mt-6 lt:mt-12 flex flex-col lt:flex-row gap-[1.13rem] lt:gap-[3.13rem] items-center">
-              <button className="order-1 w-full lt:w-[17.32438rem] h-[3.375rem] shrink-0 border rounded-[0.625rem] border-solid border-[#7d11f9] hover:opacity-50 hover:transition-[0.3s] hover:cursor-pointer bg-[#7d11f9]">
+              <button className="order-1 w-full lt:w-[17.32438rem] h-[3.375rem] shrink-0 border rounded-[0.625rem] border-solid border-primary hover:opacity-50 hover:transition-[0.3s] hover:cursor-pointer bg-primary">
                 <a
                   className="flex gap-[5px] justify-center items-center"
                   href="./assets/files/CV_TruongVanChuToan_FrontEndDev.pdf"
@@ -105,7 +111,7 @@ export default function About() {
                 </a>
               </button>
               <div className="lt:order-1 flex h-[2rem] gap-[1.75rem] items-center justify-center lt:justify-start w-full">
-                <span className="w-[3.75rem] bg-[#7d11f9] h-[0.125rem]"></span>
+                <span className="w-[3.75rem] bg-primary h-[0.125rem]"></span>
                 <div className="flex gap-[1.6rem] items-center ">
                   <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width={20} height={23} viewBox="0 0 20 23" fill="none">

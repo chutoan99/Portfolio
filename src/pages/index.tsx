@@ -3,6 +3,7 @@ import type { NextPage } from 'next';
 import { gsap, Linear } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import React, { useEffect, useState, MutableRefObject, useRef } from 'react';
+import AOS from 'aos';
 //? APP
 import Label from '../components/label';
 import About from '../containers/about';
@@ -80,6 +81,14 @@ const Home: NextPage = () => {
 
   const { ref: heroSectionRef } = MENULINKS[0];
   const [menuVisible, setmenuVisible] = useState(false);
+  useEffect(() => {
+    AOS.init({
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 50,
+      duration: 1200,
+    });
+  }, []);
   return (
     <>
       <header className="w-full flex justify-center">
@@ -146,10 +155,10 @@ const Home: NextPage = () => {
         <section className="absolute top-0 flex md:items-center py-8  h-full justify-start  2xl:container mx-auto w-full max-w-[1200px] md:px-12 px-4 min-h-screen ">
           <div className="font-medium flex flex-col justify-center  md:pt-0 select-none">
             <div className="md:mb-4 mb-2" id={heroSectionRef} ref={targetSection} style={{ opacity: 0 }}>
-              <h2 className="text-4xl seq text-[#000]">Hello 👋🏻</h2>
-              <h1 className="text-4xl seq  text-[#000]">I am Chu Toan</h1>
+              <h2 className="text-4xl seq text-black">Hello 👋🏻</h2>
+              <h1 className="text-4xl seq  text-black">I am Chu Toan</h1>
             </div>
-            <p className="mb-4 text-[#000]">
+            <p className="mb-4 text-black">
               <span className="text-xl sm:text-2xl md:text-5xl seq" ref={typedSpanElement}></span>
             </p>
           </div>

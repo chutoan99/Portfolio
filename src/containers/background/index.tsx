@@ -146,7 +146,7 @@ const Background: FC = () => {
   }, []);
 
   return (
-    <div className="bg-[#fff] z-0 relative h-screen flex justify-center items-center flex-col gap-5">
+    <div className="bg-white z-0 relative h-screen flex justify-center items-center flex-col gap-5">
       <m.canvas
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6 }}

@@ -1,12 +1,15 @@
 export default function Footer() {
   return (
     <>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6022.901875674484!2d106.68264261990022!3d10.735216114031621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fa4d0ecc92f%3A0x8b8f57b85e977ed3!2zS2h1IGTDom4gY8awIFRydW5nIFPGoW4sIELDrG5oIEjGsG5nLCBCw6xuaCBDaMOhbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1689935738249!5m2!1svi!2s"
-        height="650"
-        loading="lazy"
-        style={{ width: '100%' }}
-      ></iframe>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6022.901875674484!2d106.68264261990022!3d10.735216114031621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fa4d0ecc92f%3A0x8b8f57b85e977ed3!2zS2h1IGTDom4gY8awIFRydW5nIFPGoW4sIELDrG5oIEjGsG5nLCBCw6xuaCBDaMOhbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1689935738249!5m2!1svi!2s"
+          height="650"
+          loading="lazy"
+          style={{ width: '100%' }}
+        ></iframe>
+      </div>
+
       <footer
         id="footer"
         className="py-[3.125rem]  flex justify-center  px-[1rem] md:px-[1.25rem]  py-full md:py-[1.25rem] h-full sm:h-[15.25rem]"
@@ -14,28 +17,28 @@ export default function Footer() {
       >
         <div className="w-full max-w-[75rem] flex-col sm:flex-row justify-between gap-[1.25rem] flex sm:items-center">
           <ul className="items-start lt:items-center flex-col sm:flex-row  gap-[.625rem] md:gap-[.9375rem] list-none  flex w-full justify-start">
-            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
+            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-primary hover:transition-[0.3s]">
               <a href="#home" className=" text-[black] capitalize no-underline">
                 home
               </a>
             </li>
-            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
+            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-primary hover:transition-[0.3s]">
               <a href="#about" className=" text-[black] capitalize no-underline">
                 about
               </a>
             </li>
-            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
+            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-primary hover:transition-[0.3s]">
               <a href="#Projects" className=" text-[black] capitalize no-underline">
                 projects
               </a>
             </li>
 
-            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
+            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-primary hover:transition-[0.3s]">
               <a href="#skills" className=" text-[black] capitalize no-underline">
                 skills
               </a>
             </li>
-            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-[#7d11f9] hover:transition-[0.3s]">
+            <li className="list-none text-[1.33331rem] not-italic font-normal leading-[150%] capitalize hover:cursor-pointer hover:text-primary hover:transition-[0.3s]">
               <a href="#contact" className=" text-[black] capitalize no-underline">
                 contact
               </a>

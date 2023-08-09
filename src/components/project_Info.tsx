@@ -1,7 +1,7 @@
 export default function ProjectInfo({ project }: { project: any }) {
   return (
     <div className="flex flex-col items-center gap-[1rem] lt:gap-3  flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] lt:ml-[3.125rem]">
-      <h3 className="w-full lt:w-[30rem] self-stretch overflow-hidden text-[#3f3a64] text-ellipsis text-xl not-italic font-semibold leading-7">
+      <h3 className="w-full lt:w-[30rem] self-stretch overflow-hidden text-label text-ellipsis text-xl not-italic font-semibold leading-7">
         {project.name}
       </h3>
       <p className="self-stretch text-[#4b5563] text-[1.125rem] not-italic font-normal leading-6">{project.description}</p>

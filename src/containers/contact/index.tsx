@@ -2,7 +2,11 @@ export default function Contact() {
   return (
     <section id="contact" className="bg-[white] px-[1rem] sm:px-0  py-[3.125rem] lt:py-[6.25rem]">
       <div className="justify-between gap-[1.5625rem] sm:gap-[1.875rem] flex flex-col  sm:flex-col md:flex-row max-w-[75rem] mx-auto my-0 h-full sm:px-[1.25rem]">
-        <div className="flex w-full md:w-[45%] sm:w-full lt:w-[30.9775rem] flex-col items-start  gap-[15px] sm:gap-[.9375rem] md:gap-[1.25rem] pb-0 ">
+        <div
+          data-aos="fade-right"
+          data-aos-anchor-placement="center-center"
+          className="flex w-full md:w-[45%] sm:w-full lt:w-[30.9775rem] flex-col items-start  gap-[15px] sm:gap-[.9375rem] md:gap-[1.25rem] pb-0 "
+        >
           {/* phone */}
           <div className="w-[30.9775rem] sm:w-full h-full sm:h-[3.4375rem] flex gap-6 sm:gap-4">
             <div className="w-[1.25rem] flex justify-center hover:opacity-50 hover:cursor-pointer hover:transition-[03s] ">
@@ -14,8 +18,8 @@ export default function Contact() {
               </svg>
             </div>
             <div className=" flex flex-col justify-center flex-1">
-              <span className="h-[1.8125rem] w-full inline-block text-[#3f3a64] text-xl not-italic font-semibold leading-6">Call Me</span>
-              <span className="w-full inline-block h-[1.6875rem] text-[#696969] text-[1.1875rem] not-italic font-normal leading-7">
+              <span className="h-[1.8125rem] w-full inline-block text-label text-xl not-italic font-semibold leading-6">Call Me</span>
+              <span className="w-full inline-block h-[1.6875rem] text-description text-[1.1875rem] not-italic font-normal leading-7">
                 +84 972 712 621
               </span>
             </div>
@@ -38,8 +42,8 @@ export default function Contact() {
               </svg>
             </div>
             <div className=" flex flex-col justify-center  flex-1">
-              <span className="h-[1.8125rem] w-full inline-block text-[#3f3a64] text-xl not-italic font-semibold leading-6">Email Me</span>
-              <span className="w-full inline-block h-[1.6875rem] text-[#696969] text-[1.1875rem] not-italic font-normal leading-7">
+              <span className="h-[1.8125rem] w-full inline-block text-label text-xl not-italic font-semibold leading-6">Email Me</span>
+              <span className="w-full inline-block h-[1.6875rem] text-description text-[1.1875rem] not-italic font-normal leading-7">
                 truongvanchutoan1999@gmail.com
               </span>
             </div>
@@ -65,10 +69,10 @@ export default function Contact() {
               </svg>
             </div>
             <div className=" flex flex-col justify-center flex-1">
-              <span className="h-[1.8125rem] w-full inline-block text-[#3f3a64] text-xl not-italic font-semibold leading-6">Github Me</span>
+              <span className="h-[1.8125rem] w-full inline-block text-label text-xl not-italic font-semibold leading-6">Github Me</span>
               <a
                 href="https://github.com/chutoan99"
-                className="w-full inline-block h-[1.6875rem] text-[#696969] text-[1.1875rem] not-italic font-normal leading-7"
+                className="w-full inline-block h-[1.6875rem] text-description text-[1.1875rem] not-italic font-normal leading-7"
               >
                 https://github.com/chutoan99
               </a>
@@ -85,24 +89,29 @@ export default function Contact() {
               </svg>
             </div>
             <div className=" flex flex-col justify-center flex-1">
-              <span className="h-[1.8125rem] w-full inline-block text-[#3f3a64] text-xl not-italic font-semibold leading-6">Location</span>
-              <span className="w-full inline-block h-[1.6875rem] text-[#696969] text-[1.1875rem] not-italic font-normal leading-7">
+              <span className="h-[1.8125rem] w-full inline-block text-label text-xl not-italic font-semibold leading-6">Location</span>
+              <span className="w-full inline-block h-[1.6875rem] text-description text-[1.1875rem] not-italic font-normal leading-7">
                 District 8, Ho Chi Minh City
               </span>
             </div>
           </div>
         </div>
-        <form id="form" className="w-full md:w-full sm:w-full flex-1 pb-0 h-full sm:px-[1.25rem] md:px-0 lt:px-0">
+        <form
+          data-aos="fade-left"
+          data-aos-anchor-placement="center-center"
+          id="form"
+          className="w-full md:w-full sm:w-full flex-1 pb-0 h-full sm:px-[1.25rem] md:px-0 lt:px-0"
+        >
           <div className="flex flex-col items-start gap-5">
             <div className="flex flex-col sm:flex-row md:flex-row lt:flex-row w-full md:gap-[.625rem] h-full md:h-full sm:h-[3.4375rem] justify-center items-start gap-5">
               {/* Name */}
               <div
-                className=" flex  w-full md:w-full lt:w-[50%]   h-full sm:h-[3.4375rem] items-center  px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9]"
+                className=" flex  w-full md:w-full lt:w-[50%]   h-full sm:h-[3.4375rem] items-center  px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-primary"
                 style={{ background: 'rgba(147, 107, 232, 0.05)' }}
               >
                 <label id="form-name" />
                 <input
-                  className=" focus:border-none bg-transparent border-none flex w-full h-7 flex-col justify-center  bg-[unset] text-[#6c757d] text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
+                  className=" focus:border-none bg-transparent border-none flex w-full h-7 flex-col justify-center  bg-[unset] text-input text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
                   placeholder="Name"
                   type="text"
                   id="form-name"
@@ -110,12 +119,12 @@ export default function Contact() {
               </div>
               {/* Email */}
               <div
-                className="flex w-full md:w-full lt:w-[50%] h-full sm:h-[3.4375rem] items-center  px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9]"
+                className="flex w-full md:w-full lt:w-[50%] h-full sm:h-[3.4375rem] items-center  px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-primary"
                 style={{ background: 'rgba(147, 107, 232, 0.05)' }}
               >
                 <label id="form-Email" />
                 <input
-                  className=" bg-transparent border-none flex w-full h-7 flex-col justify-center  bg-[unset] text-[#6c757d] text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
+                  className=" bg-transparent border-none flex w-full h-7 flex-col justify-center  bg-[unset] text-input text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
                   placeholder="Email"
                   type="text"
                   id="form-Email"
@@ -125,12 +134,12 @@ export default function Contact() {
             <div className="flex flex-col sm:flex-row md:flex-row lt:flex-row  w-full md:gap-[.625rem] h-full md:h-full sm:h-[3.4375rem] justify-center items-start gap-5">
               {/* Subject */}
               <div
-                className="flex w-full md:w-full lt:w-[50%]   h-full sm:h-[3.4375rem] items-center  px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9]"
+                className="flex w-full md:w-full lt:w-[50%]   h-full sm:h-[3.4375rem] items-center  px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-primary"
                 style={{ background: 'rgba(147, 107, 232, 0.05)' }}
               >
                 <label id="form-subject" />
                 <input
-                  className=" bg-transparent border-none flex w-full h-7 flex-col justify-center  bg-[unset] text-[#6c757d] text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
+                  className=" bg-transparent border-none flex w-full h-7 flex-col justify-center  bg-[unset] text-input text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
                   placeholder="Subject"
                   type="text"
                   id="form-subject"
@@ -138,12 +147,12 @@ export default function Contact() {
               </div>
               {/* phone */}
               <div
-                className="flex w-full md:w-full lt:w-[50%]  h-full sm:h-[3.4375rem] items-center  px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9]"
+                className="flex w-full md:w-full lt:w-[50%]  h-full sm:h-[3.4375rem] items-center  px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-primary"
                 style={{ background: 'rgba(147, 107, 232, 0.05)' }}
               >
                 <label id="form-phone" />
                 <input
-                  className="bg-transparent border-none flex w-full h-7 flex-col justify-center  bg-[unset] text-[#6c757d] text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
+                  className="bg-transparent border-none flex w-full h-7 flex-col justify-center  bg-[unset] text-input text-[1.2rem] not-italic font-normal leading-[normal] border-[unset] focus:outline-none"
                   placeholder="Phone"
                   type="phone"
                   id="form-phone"
@@ -153,12 +162,12 @@ export default function Contact() {
             <div className=" flex flex-col sm:flex-row w-full justify-center items-start gap-5 ">
               {/* Note */}
               <div
-                className=" box-border flex w-full items-center px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-[#7d11f9] "
+                className=" box-border flex w-full items-center px-4 py-[0.84375rem] rounded-[0.625rem] hover:border hover:transition-[0.3s] hover:rounded-[0.625rem] hover:border-solid hover:border-primary "
                 style={{ background: 'rgba(147, 107, 232, 0.05)' }}
               >
                 <label id="form-content"></label>
                 <textarea
-                  className="w-full bg-transparent border-none flex h-[8.75rem] flex-col justify-center text-[#6c757d] text-[1.2rem] bg-[unset] not-italic font-normal leading-[normal] rounded-[0.625rem] border-[unset] focus:outline-none"
+                  className="w-full bg-transparent border-none flex h-[8.75rem] flex-col justify-center text-input text-[1.2rem] bg-[unset] not-italic font-normal leading-[normal] rounded-[0.625rem] border-[unset] focus:outline-none"
                   placeholder="Content"
                   id="form-content"
                 />
@@ -167,9 +176,9 @@ export default function Contact() {
             <div className=" flex  flex-col sm:flex-row w-full justify-end">
               <button
                 type="submit"
-                className="justify-center sm:justify-start inline-flex items-start border pl-9 pr-[2.2375rem] py-[0.8125rem] rounded-[0.625rem] border-solid border-[#7d11f9] hover:cursor-pointer hover:opacity-50 hover:transition-[0.3s] bg-[#7d11f9]"
+                className="justify-center sm:justify-start inline-flex items-start border pl-9 pr-[2.2375rem] py-[0.8125rem] rounded-[0.625rem] border-solid border-primary hover:cursor-pointer hover:opacity-50 hover:transition-[0.3s] bg-primary"
               >
-                <span className="text-white text-center text-[1.125rem] not-italic font-normal leading-7 capitalize">Send Message</span>
+                <span className="text-white  text-center text-[1.125rem] not-italic font-normal leading-7 capitalize">Send Message</span>
               </button>
             </div>
           </div>

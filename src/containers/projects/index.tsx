@@ -2,13 +2,19 @@ import ProjectInfo from '../../components/project_Info';
 import { PROJECTS } from '../../shared/contants';
 export default function Projects() {
   return (
-    <section id="Projects" className="flex flex-col justify-center items-center self-stretch py-[3.125rem] lt:px-20 lt:py-24 bg-[#fff]">
+    <section id="Projects" className="flex flex-col justify-center items-center self-stretch py-[3.125rem] lt:px-20 lt:py-24 bg-white">
       <div className="w-full max-w-[75rem] mx-auto my-0">
         <div className="flex flex-col justify-center items-center gap-[3.125rem] self-stretch   lt:px-8 py-0">
           {/* 01 SHOPPECLIENT */}
-          <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-[#fff]">
+          <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white">
             <div className="lt:grid grid-te" style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
-              <div className="flex justify-center items-center flex-[1_0_0] self-stretch">
+              <div
+                data-aos="zoom-in"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+                className="flex justify-center items-center flex-[1_0_0] self-stretch"
+              >
                 <div className="flex justify-center center items-center w-full relative">
                   <div className="z-20 left-0 absolute top-[15px]">
                     <div className=" h-[198px]">
@@ -27,15 +33,25 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <ProjectInfo project={PROJECTS[0]} />
+              <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="800">
+                <ProjectInfo project={PROJECTS[0]} />
+              </div>
             </div>
           </div>
 
           {/* 02 SHOPEEADMIN */}
-          <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-[#fff]">
+          <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white">
             <div className="lt:grid  " style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
-              <ProjectInfo project={PROJECTS[1]} />
-              <div className="flex justify-center items-center flex-[1_0_0] self-stretch">
+              <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="800">
+                <ProjectInfo project={PROJECTS[1]} />
+              </div>
+              <div
+                data-aos="zoom-in"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+                className="flex justify-center items-center flex-[1_0_0] self-stretch"
+              >
                 <div className="flex justify-center center items-center w-full relative">
                   <div className="z-5  absolute  left-0">
                     <div className=" h-[206px]">
@@ -58,10 +74,17 @@ export default function Projects() {
           </div>
 
           {/* 03 NESPRESSO */}
-          <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-[#fff]">
-            <div className="lt:grid  " style={{ gridTemplateColumns: '5.5fr 4.5fr ' }}>
+          <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white">
+            <div className="lt:grid " style={{ gridTemplateColumns: '5.5fr 4.5fr ' }}>
               <div className="flex justify-center items-center flex-[1_0_0] self-stretch ">
-                <div className="flex justify-center center items-center " style={{ position: 'relative' }}>
+                <div
+                  data-aos="zoom-in"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="500"
+                  className="flex justify-center center items-center "
+                  style={{ position: 'relative' }}
+                >
                   <div className="z-5 translate-x-[50%]">
                     <div className="h-[258px] w-[116px]">
                       <img src="./assets/images/iPhone_X_Side_View_Mockup_(2).png" alt="" width="100%" height="100%" />
@@ -89,15 +112,25 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <ProjectInfo project={PROJECTS[2]} />
+              <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="800">
+                <ProjectInfo project={PROJECTS[2]} />
+              </div>
             </div>
           </div>
 
           {/* 04 PHONGTRO */}
-          <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-[#fff]">
+          <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white">
             <div className="lt:grid  " style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
-              <ProjectInfo project={PROJECTS[3]} />
-              <div className="flex justify-center items-center flex-[1_0_0] self-stretch">
+              <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="800">
+                <ProjectInfo project={PROJECTS[3]} />
+              </div>
+              <div
+                data-aos="zoom-in"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="500"
+                className="flex justify-center items-center flex-[1_0_0] self-stretch"
+              >
                 <div className="flex justify-center center items-center w-full relative">
                   <div className="left-0 absolute z-20 translate-x-[-4%] translate-y-[28%]">
                     <div className=" w-[393px] h-[232px]">
