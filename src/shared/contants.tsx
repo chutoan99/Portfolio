@@ -71,8 +71,8 @@ export const PROJECTS = [
     ref: 'https://shopee-client.vercel.app',
     link: [
       {
-        ref: 'https://github.com/chutoan99/shopee-web',
-        content: 'View in github',
+        ref: 'https://gitlab.com/chutoan99/shopee-web',
+        content: 'View in gitlab',
       },
       {
         ref: 'https://server-shopee3.onrender.com/api/client/docs',
@@ -107,8 +107,8 @@ export const PROJECTS = [
     ref: 'https://shopee-admin.vercel.app',
     link: [
       {
-        ref: 'https://github.com/chutoan99/shopee-dashboard',
-        content: 'View in github',
+        ref: 'https://gitlab.com/chutoan99/shopee-dashboard',
+        content: 'View in gitlab',
       },
       {
         ref: 'https://server-shopee3.onrender.com/api/admin/docs',
@@ -139,8 +139,8 @@ export const PROJECTS = [
     ref: 'https://phongtro-client.vercel.app',
     link: [
       {
-        ref: 'https://github.com/chutoan99/phongtro',
-        content: 'View in github',
+        ref: 'https://gitlab.com/chutoan99/phongtro',
+        content: 'View in gitlab',
       },
       {
         ref: 'https://server-phongtro.onrender.com/graphql',
