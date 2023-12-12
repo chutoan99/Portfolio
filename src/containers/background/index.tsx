@@ -38,6 +38,15 @@ const Background: FC = () => {
       'https://res.cloudinary.com/dxcershra/image/upload/v1691074700/porfolio/Frame_16_eit1vq.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_8_j93ohe.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1691074700/porfolio/Frame_15_uub5u1.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360963/Frame_1_hrceve.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360963/Frame_4_v3fscj.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360963/Frame_o0xjke.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360963/Frame_3_s9wilf.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360963/Frame_2_bxvnlz.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360963/Frame_5_xgre5g.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360963/Frame_6_rynxee.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360962/Frame_7_utcyar.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1702360963/Frame_8_kqjbaw.png',
     ].map((source) => {
       const image = document.createElement('img');
       image.src = source;
