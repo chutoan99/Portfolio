@@ -24,7 +24,7 @@ export default function Skills() {
       <div className=" max-w-[75rem] mx-auto my-0">
         <div className="flex h-full lt:h-[43rem] flex-col justify-center items-center shrink-0 px-0 py-[3.125rem] lt:py-[6.25rem] bg-[white]">
           <div className="gap-[.625rem] sm:gap-[0.9375rem]  justify-center flex items-center self-stretch flex-wrap w-full pt-10 pb-[3.125rem] sm:pb-[3.75rem]">
-            {['All', 'Front End', 'Back End', 'Others'].map((tag: string, index: number) => (
+            {['All', 'Front End', 'Back End', 'Mobile', 'Language', 'Others'].map((tag: string, index: number) => (
               <span
                 key={index}
                 onClick={() => onFilter(tag)}
