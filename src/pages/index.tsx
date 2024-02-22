@@ -25,7 +25,7 @@ export interface IDesktop {
 }
 
 const Home: NextPage = () => {
-  const TYPED_STRINGS = ["I'm a frontend developer"];
+  const TYPED_STRINGS = ["I'm a frontend developer", "I'm a backend developer"];
 
   gsap.registerPlugin(ScrollTrigger);
   gsap.config({ nullTargetWarn: false });

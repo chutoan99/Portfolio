@@ -1,5 +1,12 @@
 export const EXPERIENCES = [
   {
+    label: 'YTESO GIA AN',
+    time: 'September/2022 - now',
+    position: 'Fresher Frontend Developer',
+    contents: [
+    ],
+  },
+  {
     label: 'ITD GROUP',
     time: 'August/2022 - July/2023',
     position: 'Fresher Frontend Developer',

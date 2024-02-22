@@ -48,6 +48,11 @@ const Background: FC = () => {
       'https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/rxjqzh1jslkjlrhspe0a.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/ciedavnuncqpauopxqnc.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/mej3clgaftezvqaxgyqt.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1708580549/porfolio/l1wtsiau16fnj4axwylv.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1708580549/porfolio/djjglfktj0rtwn2maviy.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1708580550/porfolio/i2vc0wscknohjst98s73.png',
+      'https://res.cloudinary.com/dxcershra/image/upload/v1708581126/porfolio/bvcjq6dwrcrt3ow5ew4j.png',
+    'https://res.cloudinary.com/dxcershra/image/upload/v1708582094/porfolio/ls1jwxtocoh1xcgjo8nr.png',
     ].map((source) => {
       const image = document.createElement('img');
       image.src = source;
@@ -123,16 +128,7 @@ const Background: FC = () => {
       SIZE = expectedSize < 30 ? 30 : expectedSize > 50 ? 50 : expectedSize;
 
       particles = images.map(
-        (image) =>
-          new Particle(
-            SIZE + Math.random() * (innerWidth - SIZE * 2),
-            SIZE + Math.random() * (innerHeight - SIZE * 2),
-            (Math.random() - 0.5) * 1.5,
-            (Math.random() - 0.5) * 1.5,
-            0,
-            40,
-            image
-          )
+        (image) => new Particle(SIZE + Math.random() * (innerWidth - SIZE * 2), SIZE + Math.random() * (innerHeight - SIZE * 2), (Math.random() - 0.5) * 1.5, (Math.random() - 0.5) * 1.5, 0, 40, image)
       );
 
       canvas.width = innerWidth;
@@ -157,13 +153,7 @@ const Background: FC = () => {
 
   return (
     <div className="bg-white z-0 relative h-screen flex justify-center items-center flex-col gap-5">
-      <m.canvas
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.6 }}
-        transition={{ duration: 0.4, delay: 1.4 }}
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full"
-      />
+      <m.canvas initial={{ opacity: 0 }} animate={{ opacity: 0.6 }} transition={{ duration: 0.4, delay: 1.4 }} ref={canvasRef} className="absolute inset-0 w-full h-full" />
     </div>
   );
 };
