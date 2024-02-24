@@ -24,7 +24,7 @@ export default function Experience() {
                 ))}
               </ul>
             </div>
-            <div className="lt:w-[180px] absolute   right-[2.5rem] lt:sticky lt:flex lt:justify-end">
+            <div className="lt:w-[180px] absolute  right-[2.5rem] lt:sticky lt:flex lt:justify-end">
               <span className="text-primary text-right text-base not-italic font-normal">{item.time}</span>
             </div>
           </div>

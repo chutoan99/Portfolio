@@ -60,9 +60,11 @@ export const PROJECTS = [
       "A meticulously cloned e-commerce platform inspired by Shopee. Packed with a comprehensive suite of functions, it hosts tens of thousands of categories, shops, and products, continuously updated to keep pace with market trends. We've harnessed the latest cutting-edge technologies to drive its development, resulting in a user-friendly interface that promises an intuitive and enjoyable shopping experience, currently optimized for laptop usage.",
     technologies: [
       'React',
+      'Vite',
       'Node',
       'Typescript',
       'Express.js',
+      'mongodb',
       'Mysql',
       'Taiwindcss',
       'Sequelize',
@@ -70,6 +72,7 @@ export const PROJECTS = [
       'Rest full',
       'Redux toolkit query',
       'Socket.io',
+      'Passport',
       'Cloudinary',
       'Jsonwebtoken',
       'Nodemailer',
@@ -97,10 +100,12 @@ export const PROJECTS = [
       'Express',
       'Typescript',
       'Ngrx',
+      'Rxjs',
       'Taiwindcss',
       'Ant Design',
       'Leaflet',
       'Sass',
+      'chartjs',
       'Sequelize',
       'Mysql',
       'Rest full',
@@ -127,7 +132,7 @@ export const PROJECTS = [
     name: '03. Nespresso Vietnam',
     description:
       'My freelance project, crafted for a Vietnamese client, involving the transformation of a Figma design into a fully functional website. I have reimagined the Nespresso website exclusively for the Vietnamese market, incorporating the latest cutting-edge  technologies to ensure its development. This creation is designed to seamlessly adapt across a wide range of contemporary devices, providing a modern and accessible experience for users.',
-    technologies: ['Vue', 'Typescript', 'Sass', 'Storybook', 'Figma'],
+    technologies: ['Vue', 'Typescript',  'Sass', 'Storybook','Swiper', 'Figma'],
     demo: 'nespresso-client.vercel.app',
     ref: 'https://nespresso-client.vercel.app',
     link: [
@@ -141,7 +146,7 @@ export const PROJECTS = [
     name: '04. PhongTro',
     description:
       'A complete revamp of a room rental website. This undertaking encompasses a full range of functionalities, underpinned by a constant influx of listing data collected through the use of "puppeteer" technology, resulting in a continuously updated collection of thousands of listings. Fueled by the latest cutting-edge technologies, the development focuses on laptop compatibility. As we look  ahead, you can expect a steady stream of innovative features to enhance user experience.',
-    technologies: ['Next.js', 'Nest.js', 'Typescript', 'Graphql', 'React query', 'Css', 'Postgresql', 'Cloudinary', 'Typeorm', 'Puppeteer'],
+    technologies: ['Next.js', 'Nest.js', 'Typescript', 'Graphql', 'React query', 'Css',  'Styled Components', 'Material', 'Postgresql', 'Cloudinary', 'Typeorm', 'Puppeteer'],
     demo: 'phongtro-client.vercel.app',
     ref: 'https://phongtro-client.vercel.app',
     link: [
