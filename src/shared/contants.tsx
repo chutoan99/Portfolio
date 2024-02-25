@@ -1,14 +1,14 @@
 export const EXPERIENCES = [
   {
     label: 'YTESO GIA AN',
-    time: 'September/2022 - now',
+    time: 'Sep 2022 - Present',
     position: 'Fresher Frontend Developer',
     contents: [
     ],
   },
   {
     label: 'ITD GROUP',
-    time: 'August/2022 - July/2023',
+    time: 'Aug 2022 - Jul 2023',
     position: 'Fresher Frontend Developer',
     contents: [
       'Fresher Frontend Developer',
@@ -22,7 +22,7 @@ export const EXPERIENCES = [
   },
   {
     label: 'STECH VN',
-    time: 'May/2022 - July/2023',
+    time: 'May 2022 - Jul 2023',
     position: 'Intern Frontend Developer',
     contents: [
       'I participated in building the features and user interfaces for a web application “social network for blockchain" using next.js',
