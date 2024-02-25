@@ -5,7 +5,7 @@ export default function Contact() {
         <div
           data-aos="fade-right"
           data-aos-anchor-placement="center-center"
-          className="flex w-full md:w-[45%] sm:w-full lt:w-[30.9775rem] flex-col items-start  gap-[15px] sm:gap-[.9375rem] md:gap-[1.25rem] pb-0 "
+          className="flex w-full md:w-[45%] sm:w-full lt:w-[30.9775rem] flex-col items-start  gap-[0.938rem] sm:gap-[.9375rem] md:gap-[1.25rem] pb-0 "
         >
           {/* phone */}
           <div className="w-[30.9775rem] sm:w-full h-full sm:h-[3.4375rem] flex gap-6 sm:gap-4">
