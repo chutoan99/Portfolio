@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState, useCallback } from 'react';
-import { ListIcon, ListIconModel } from '../../shared/icons';
+import { ListIcon } from '../../shared/icons';
 import SkillItem from '../../components/skill_item';
 export default function Skills() {
   const [icons, setIcons] = useState(ListIcon);
@@ -21,10 +21,10 @@ export default function Skills() {
 
   return (
     <section id="skills" className="bg-[white]">
-      <div className=" max-w-[75rem] mx-auto my-0">
-        <div className="flex h-full lt:h-[43rem] flex-col justify-center items-center shrink-0 px-0 py-[3.125rem] lt:py-[6.25rem] bg-[white]">
+      <div className="max-w-[1165px] mx-auto my-0">
+        <div className="flex h-full flex-col justify-center items-center shrink-0 px-0 py-[3.125rem] lt:py-[6.25rem] bg-[white]">
           <div className="gap-[.625rem] sm:gap-[0.9375rem]  justify-center flex items-center self-stretch flex-wrap w-full pt-10 pb-[3.125rem] sm:pb-[3.75rem]">
-            {['All', 'Front End', 'Back End', 'Mobile', 'Language', 'Others'].map((tag: string, index: number) => (
+            {['All', 'Front End', 'Back End', 'Others'].map((tag: string, index: number) => (
               <span
                 key={index}
                 onClick={() => onFilter(tag)}
@@ -36,8 +36,8 @@ export default function Skills() {
               </span>
             ))}
           </div>
-          <div className="w-full text-center flex flex-col  flex-wrap">
-            <motion.div className="grid lt:grid-rows-3 grid-cols-4 sm:grid-cols-6 lt:grid-cols-10  gap-y-[10px]  sm:gap-y-[20px] md:gap-y-[40px] px-[1rem] md:px-[20px]  sm:mx-0 lt:min-h-[21.875rem]">
+          <div className="w-full text-center flex flex-col   flex-wrap">
+            <motion.div className="grid lt:grid-rows-3 gap-[15px] grid-cols-4 sm:grid-cols-6 lt:grid-cols-10  gap-y-[10px]  sm:gap-y-[20px] md:gap-y-[10px] px-[1rem] md:px-[20px]  sm:mx-0 lt:min-h-[21.875rem]">
               <AnimatePresence>
                 <SkillItem data={filteredIcons} />
               </AnimatePresence>

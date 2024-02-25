@@ -7,7 +7,7 @@ export default function SkillItem({ data }: { data: any[] }) {
         return (
           <motion.div
             key={index}
-            className="flex justify-center flex-col items-center sm:gap-2.5 lt:max-h-[5.625rem]"
+            className="flex justify-center flex-col items-center sm:gap-[5px] sm:w-[100px] sm:h-[117px] md:w-[100px] md:h-[117px] "
             layout
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
@@ -16,13 +16,11 @@ export default function SkillItem({ data }: { data: any[] }) {
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
           >
-            <div
-              className=" w-[65px] h-[65px] sm:w-[80px] sm:h-[80px] md:w-[90px] md:h-[90px]  shrink-0 bg-white flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[10px] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden hover:fill-[rgba(255,255,255,0.5)]  hover:shadow-md"
-              style={{
-                filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
-              }}
-            >
+            <div className="h-[72px] shrink-0  flex justify-center items-center fill-[rgba(255,255,255,0.1)] rounded-[10px] hover:cursor-pointer hover:transition-[0.2s] hover:overflow-hidden">
               <div className="scale-75 sm:scale-90 md:scale-1">{icon.value}</div>
+            </div>
+            <div className="flex justify-center items-start w-full h-[40px]">
+              <span className="not-italic font-medium leading-5 text-[#092C4C]">{icon.name}</span>
             </div>
           </motion.div>
         );
