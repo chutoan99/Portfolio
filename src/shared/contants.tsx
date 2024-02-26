@@ -2,22 +2,28 @@ export const EXPERIENCES = [
   {
     label: 'YTESO GIA AN',
     time: 'Sep 2022 - Present',
-    position: 'Fresher Frontend Developer',
+    position: 'Developer',
     contents: [
+      'Contributed to the development of the following projects:',
+          'HRM : Human resource management system.',
+          'EMR : Electronic medical record.',
+          'ERP : Enterprise resource planning.',
+          'Using angular, typescript, asp.net core, with 18 members.',
+          'Collaborated with Business Analysts and Quality Control to ensure.',
+          'alignment with business team objective and requirements.',
+          'Read and comprehend Business Analysts documents to align with project requirements.',
+          'Actively participate in project development meetings, contributing innovative solutions, and addressing potential risks.'
     ],
   },
   {
     label: 'ITD GROUP',
     time: 'Aug 2022 - Jul 2023',
-    position: 'Fresher Frontend Developer',
+    position: 'Fresher Developer',
     contents: [
-      'Fresher Frontend Developer',
-      'I am currently involved in building and developing websites using angular.',
-      "Maintain, develop new features, and manage source code versions of the company's previous projects built with angularjs.",
-      'Participate in meetings to discuss project development, contribute solutions, and address risks.',
-      'Convert design interfaces from figma into projects.',
-      "Read and understand BA's documents.",
-      'Support to student during their internship on various projects.',
+      'Develop web managing "Objectives and Key Results" , and web synthesizing security features for enhanced protection. Using Angular and TypeScript with a membership of about 20 people.',
+      'Develop route management and water bill payment history features.', 
+      `Responsible for maintaining, developing new features, and managing source code versions of the company's previous projects built with AngularJS.`,
+      'Proficiently convert design interfaces from Figma into fully functional projects',
     ],
   },
   {
@@ -25,8 +31,7 @@ export const EXPERIENCES = [
     time: 'May 2022 - Jul 2023',
     position: 'Intern Frontend Developer',
     contents: [
-      'I participated in building the features and user interfaces for a web application “social network for blockchain" using next.js',
-      'Explore and utilize the Next.js library, a framework for React.',
+      'Engage in crafting APIs for the "Social Network for Blockchain" web application, using Node.js',
     ],
   },
 ];

@@ -10,7 +10,7 @@ export default function Experience() {
     >
       {EXPERIENCES.map((item: any, index: number) => (
         <div className="rounded-xl bg-white" key={index} data-aos="zoom-in-up">
-          <div className="p-[25px] md:p-[2rem]  w-full items-start justify-start flex-col md:flex flex gap-[1.25rem] md:gap-10 relative lt:flex-row lt:w-[56rem]">
+          <div className="p-[25px] md:p-[2rem]  w-full items-start justify-start flex-col md:flex flex gap-[1rem] md:gap-10 relative lt:flex-row lt:w-[56rem]">
             <div className="flex w-[7.125rem] flex-col items-start gap-3 shrink-0">
               <p className=" text-primary text-base not-italic font-semibold leading-6 flex-col sm:flex">{item.label}</p>
             </div>
