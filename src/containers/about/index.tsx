@@ -40,7 +40,7 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="grid mt-[5px] lt:grid-cols-[repeat(2,1fr)]">
+              <div className="grid mt-[0.313rem] lt:grid-cols-[repeat(2,1fr)]">
                 <div className="inline-flex h-[1.8rem] items-start gap-[0.905rem] shrink-0 pt-0 pb-[0.05rem]">
                   <div className="flex h-7 flex-col justify-center">
                     <span className="y text-label text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Phone:</span>
@@ -59,7 +59,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="grid mt-[5px] lt:grid-cols-[repeat(2,1fr)]">
+              <div className="grid mt-[0.313rem] lt:grid-cols-[repeat(2,1fr)]">
                 <div className=" inline-flex h-[1.8rem] items-start gap-[0.8975rem] shrink-0">
                   <div className="flex h-7 flex-col justify-center">
                     <span className="y text-label text-[1.2rem] not-italic font-semibold leading-[1.8rem]">Email:</span>
@@ -73,7 +73,7 @@ export default function About() {
 
             <div className="mt-9 sm:mt-6 lt:mt-12 flex flex-col lt:flex-row gap-[1.13rem] lt:gap-[3.13rem] items-center">
               <button className="order-1 w-full lt:w-[17.32438rem] h-[3.375rem] shrink-0 border rounded-[0.625rem] border-solid border-primary hover:opacity-50 hover:transition-[0.3s] hover:cursor-pointer bg-primary">
-                <a className="flex gap-[5px] justify-center items-center" href="./assets/files/CV_TruongVanChuToan_FrontEndDev.pdf" target="_blank" download>
+                <a className="flex gap-[0.313rem] justify-center items-center" href="./assets/files/CV_TruongVanChuToan_FrontEndDev.pdf" target="_blank" download>
                   <svg className="w-[1.20625rem] h-[1.125rem] shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
                     <g clipPath="url(#clip0_1_465)">
                       <path

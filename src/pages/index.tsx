@@ -89,7 +89,7 @@ const Home: NextPage = () => {
   return (
     <>
       <header className="w-full flex justify-center">
-        <div className="fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[1rem] sm:pr-[.9375rem] md:pr-[1.25rem] lt:pr-0">
+        <div className="fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[75rem] pr-[1rem] sm:pr-[.9375rem] md:pr-[1.25rem] lt:pr-0">
           <div className="flex justify-between section-container">
             <a href="#home" className="link"></a>
             <nav className={`outer-menu ${menuVisible ? 'menu-visible' : ''}`}>
@@ -142,7 +142,7 @@ const Home: NextPage = () => {
 
       <Background />
       <div className="flex justify-center section-container">
-        <section className="absolute top-0 flex md:items-center py-8  h-full justify-start  2xl:container mx-auto w-full max-w-[1200px] md:px-12 px-4 min-h-screen ">
+        <section className="absolute top-0 flex md:items-center py-8  h-full justify-start  2xl:container mx-auto w-full max-w-[75rem] md:px-12 px-4 min-h-screen ">
           <div className="font-medium flex flex-col justify-center  md:pt-0 select-none">
             <div className="md:mb-4 mb-2" id={heroSectionRef} ref={targetSection} style={{ opacity: 0 }}>
               <h2 className="text-4xl seq text-black">Hello 👋🏻</h2>

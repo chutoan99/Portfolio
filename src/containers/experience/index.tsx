@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section
       id="Experience"
-      className="p-[20px] md:px-[7.5rem] flex w-full flex-col items-center gap-5 pt-[3.125rem]  pb-[3.125rem] sm:pb-[6.25rem]  md:gap-[1.5rem]"
+      className="p-[1.25rem] md:px-[7.5rem] flex w-full flex-col items-center gap-5 pt-[3.125rem]  pb-[3.125rem] sm:pb-[6.25rem]  md:gap-[1.5rem]"
       style={{ background: 'rgba(147, 107, 232, 0.05)' }}
     >
       {EXPERIENCES.map((item: any, index: number) => (
@@ -16,7 +16,7 @@ export default function Experience() {
             </div>
             <div className="flex-1">
               <h3 className="self-stretch text-primary text-xl not-italic font-semibold">{item.position}</h3>
-              <ul className="flex flex-col items-start gap-1 self-stretch list-disc ml-[15px] pl-[10px]">
+              <ul className="flex flex-col items-start gap-1 self-stretch list-disc ml-[0.938rem] pl-[0.625rem]">
                 {item.contents.map((content: string, index: number) => (
                   <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6" key={index}>
                     {content}
@@ -24,7 +24,7 @@ export default function Experience() {
                 ))}
               </ul>
             </div>
-            <div className="lt:w-[180px] absolute  right-[2.5rem] lt:sticky lt:flex lt:justify-end">
+            <div className="lt:w-[11.25rem] absolute  right-[2.5rem] lt:sticky lt:flex lt:justify-end">
               <span className="text-primary text-right text-base not-italic font-normal">{item.time}</span>
             </div>
           </div>

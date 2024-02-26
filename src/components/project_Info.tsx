@@ -21,7 +21,7 @@ export default function ProjectInfo({ project }: { project: any }) {
       <div className="flex w-full gap-[1.25rem] justify-start items-center px-0 lt:pt-[.9375rem]">
         {project.link.map((item: any, index: number) => (
           <span className="flex items-center shrink-0 h-9 w-fit" key={index}>
-            <a href={item.ref} target="_blank" rel="noopener noreferrer" className=" gap-3 flex justify-center shrink-0 cursor-pointer">
+            <a href={item.ref} target="_blank" rel="noopener noreferrer" className=" gap-3 flex items-center justify-center shrink-0 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width={20} height={21} viewBox="0 0 20 21" fill="none">
                 <path
                   d="M11.2867 9.15352C10.6041 8.47121 9.67846 8.08792 8.71334 8.08792C7.74821 8.08792 6.82259 8.47121 6.14 9.15352L3.56584 11.7269C2.88324 12.4095 2.49976 13.3353 2.49976 14.3006C2.49976 15.2659 2.88324 16.1918 3.56584 16.8744C4.24844 17.557 5.17424 17.9404 6.13959 17.9404C7.10493 17.9404 8.03074 17.557 8.71334 16.8744L10 15.5877"
