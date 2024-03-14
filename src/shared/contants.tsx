@@ -1,38 +1,36 @@
 export const EXPERIENCES = [
   {
     label: 'YTESO GIA AN',
-    time: 'Sep 2022 - Present',
+    time: 'Sep 2023 - Present',
     position: 'Developer',
     contents: [
       'Contributed to the development of the following projects:',
-          'HRM : Human resource management system.',
-          'EMR : Electronic medical record.',
-          'ERP : Enterprise resource planning.',
-          'Using angular, typescript, asp.net core, with 18 members.',
-          'Collaborated with Business Analysts and Quality Control to ensure.',
-          'alignment with business team objective and requirements.',
-          'Read and comprehend Business Analysts documents to align with project requirements.',
-          'Actively participate in project development meetings, contributing innovative solutions, and addressing potential risks.'
+      'HRM : Human resource management system.',
+      'EMR : Electronic medical record.',
+      'ERP : Enterprise resource planning.',
+      'Using angular, typescript, asp.net core, with 18 members.',
+      'Collaborated with Business Analysts and Quality Control to ensure.',
+      'alignment with business team objective and requirements.',
+      'Read and comprehend Business Analysts documents to align with project requirements.',
+      'Actively participate in project development meetings, contributing innovative solutions, and addressing potential risks.',
     ],
   },
   {
     label: 'ITD GROUP',
     time: 'Aug 2022 - Jul 2023',
-    position: 'Fresher Developer',
+    position: 'Developer',
     contents: [
       'Develop web managing "Objectives and Key Results" , and web synthesizing security features for enhanced protection. Using Angular and TypeScript with a membership of about 20 people.',
-      'Develop route management and water bill payment history features.', 
+      'Develop route management and water bill payment history features.',
       `Responsible for maintaining, developing new features, and managing source code versions of the company's previous projects built with AngularJS.`,
       'Proficiently convert design interfaces from Figma into fully functional projects',
     ],
   },
   {
     label: 'STECH VN',
-    time: 'May 2022 - Jul 2023',
-    position: 'Intern Frontend Developer',
-    contents: [
-      'Engage in crafting APIs for the "Social Network for Blockchain" web application, using Node.js',
-    ],
+    time: 'May 2022 - Jul 2022',
+    position: 'Intern Backend Developer',
+    contents: ['Engage in crafting APIs for the "Social Network for Blockchain" web application, using Node.js'],
   },
 ];
 export const MENULINKS = [
@@ -69,7 +67,7 @@ export const PROJECTS = [
       'Node',
       'Typescript',
       'Express.js',
-      'mongodb',
+      'Mongodb',
       'Mysql',
       'Taiwindcss',
       'Sequelize',
@@ -110,7 +108,7 @@ export const PROJECTS = [
       'Ant Design',
       'Leaflet',
       'Sass',
-      'chartjs',
+      'Chartjs',
       'Sequelize',
       'Mysql',
       'Rest full',
@@ -118,7 +116,7 @@ export const PROJECTS = [
       'Socket.io',
       'Cloudinary',
       'Jsonwebtoken',
-      'nodemailer',
+      'Nodemailer',
     ],
     demo: 'shopee-admin.vercel.app',
     ref: 'https://shopee-admin.vercel.app',
@@ -137,7 +135,7 @@ export const PROJECTS = [
     name: '03. Nespresso Vietnam',
     description:
       'My freelance project, crafted for a Vietnamese client, involving the transformation of a Figma design into a fully functional website. I have reimagined the Nespresso website exclusively for the Vietnamese market, incorporating the latest cutting-edge  technologies to ensure its development. This creation is designed to seamlessly adapt across a wide range of contemporary devices, providing a modern and accessible experience for users.',
-    technologies: ['Vue', 'Typescript',  'Sass', 'Storybook','Swiper', 'Figma'],
+    technologies: ['Vue', 'Typescript', 'Pug', 'Sass', 'Storybook', 'Swiper', 'Figma'],
     demo: 'nespresso-client.vercel.app',
     ref: 'https://nespresso-client.vercel.app',
     link: [
@@ -151,7 +149,7 @@ export const PROJECTS = [
     name: '04. PhongTro',
     description:
       'A complete revamp of a room rental website. This undertaking encompasses a full range of functionalities, underpinned by a constant influx of listing data collected through the use of "puppeteer" technology, resulting in a continuously updated collection of thousands of listings. Fueled by the latest cutting-edge technologies, the development focuses on laptop compatibility. As we look  ahead, you can expect a steady stream of innovative features to enhance user experience.',
-    technologies: ['Next.js', 'Nest.js', 'Typescript', 'Graphql', 'React query', 'Css',  'Styled Components', 'Material', 'Postgresql', 'Cloudinary', 'Typeorm', 'Puppeteer'],
+    technologies: ['Next.js', 'Nest.js', 'Typescript', 'Graphql', 'React query', 'Css', 'Styled Components', 'Material', 'Postgresql', 'Cloudinary', 'Typeorm', 'Puppeteer'],
     demo: 'phongtro-client.vercel.app',
     ref: 'https://phongtro-client.vercel.app',
     link: [
