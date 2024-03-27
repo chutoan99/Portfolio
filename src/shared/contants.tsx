@@ -75,6 +75,8 @@ export const PROJECTS = [
       'Rest full',
       'Redux toolkit query',
       'Socket.io',
+      'Winston',
+      'Redis',
       'Passport',
       'Cloudinary',
       'Jsonwebtoken',
