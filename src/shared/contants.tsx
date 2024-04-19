@@ -86,8 +86,8 @@ export const PROJECTS = [
     ref: 'https://shopee-client.vercel.app',
     link: [
       {
-        ref: 'https://gitlab.com/chutoan99/shopee-web',
-        content: 'View in gitlab',
+        ref: 'https://bitbucket.org/chutoan99/shopee-client',
+        content: 'View in bitbucket',
       },
       {
         ref: 'https://server-shopee3.onrender.com/api/client/docs',
