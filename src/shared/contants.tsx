@@ -124,8 +124,8 @@ export const PROJECTS = [
     ref: 'https://shopee-admin.vercel.app',
     link: [
       {
-        ref: 'https://gitlab.com/chutoan99/shopee-dashboard',
-        content: 'View in gitlab',
+        ref: 'https://bitbucket.org/chutoan99/shopee-admin',
+        content: 'View in bitbucket',
       },
       {
         ref: 'https://server-shopee3.onrender.com/api/admin/docs',
