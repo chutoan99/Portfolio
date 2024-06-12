@@ -73,7 +73,7 @@ export default function About() {
 
             <div className="mt-9 sm:mt-6 lt:mt-12 flex flex-col lt:flex-row gap-[1.13rem] lt:gap-[3.13rem] items-center">
               <button className="order-1 w-full lt:w-[17.32438rem] h-[3.375rem] shrink-0 border rounded-[0.625rem] border-solid border-primary hover:opacity-50 hover:transition-[0.3s] hover:cursor-pointer bg-primary">
-                <a className="flex gap-[0.313rem] justify-center items-center" href="./assets/files/CV_TruongVanChuToan_FrontEndDev.pdf" target="_blank" download>
+                <a className="flex gap-[0.313rem] justify-center items-center" href="./assets/files/CV_TruongVanChuToan_FrontEnd.pdf" target="_blank" download>
                   <svg className="w-[1.20625rem] h-[1.125rem] shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
                     <g clipPath="url(#clip0_1_465)">
                       <path
