@@ -1,6 +1,6 @@
 export const EXPERIENCES = [
   {
-    label: 'YTESO GIA AN',
+    label: 'Y TE SO GIA AN (A Company under HOA LÂM Group):',
     time: 'Aug 2022 – May 2024',
     position: 'Front End Developer',
     contents: [
@@ -15,6 +15,8 @@ export const EXPERIENCES = [
       '+ Create report templates use "report designer DevExpress"',
       '+ Participate in project development meets, contribute innovative solutions, and address potential risks.',
       '+ Work with the agile scrum methodology.',
+    ],
+    contents2: [
       '- Developed outsource projects:',
       'iOki: Objectives & Key Results. Manage and scor OKR of employees every quarter.',
       'Team size: 20 and the main tasks:',
@@ -32,7 +34,7 @@ export const EXPERIENCES = [
     ],
   },
   {
-    label: 'STECH VN',
+    label: 'STECH VIET NAM:',
     time: 'May 2022 - Jul 2022',
     position: 'Intern Backend Developer',
     contents: [
