@@ -54,7 +54,7 @@ export default function Experience() {
                         <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]">
                           + Collaborate with BA and QC to ensure alignment with business team objectives and requirements.
                         </li>
-                        <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]">+ Create report templates use 'report designer DevExpress'</li>
+                        <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]">+ Create report templates use "report designer DevExpress"</li>
                         <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]">
                           + Participate in project development meets, contribute innovative solutions, and address potential risks.
                         </li>
@@ -113,7 +113,7 @@ export default function Experience() {
                   <div className="ml-14 md:ml-[4rem] flex flex-col gap-[10px] w-full pr-[3rem]">
                     <div className="bg-white p-4 rounded-[6px] border border-slate-200 text-slate-500 shadow" data-aos="zoom-in-up">
                       <ul className="flex flex-col items-start gap-1 self-stretch">
-                        <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6">Develop web application 'Social Network for Blockchain':</li>
+                        <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6">Develop web application "Social Network for Blockchain":</li>
                         <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6">Team size: 20 and the main tasks:</li>
                         <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]">+ Work with Nodejs, Typescript, Sequelize, MySql, RESTfull api…</li>
                         <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]">+ Create Api (accord to restful standard) and integrate with Fe.</li>
