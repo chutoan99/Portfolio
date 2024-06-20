@@ -1,7 +1,13 @@
+export enum Types {
+  ALL = 'All',
+  FRONT_END = 'Front End',
+  BACK_END = 'Back End',
+  OTHERS = 'Others',
+}
 export interface ListIconModel {
   name: string;
   value: any;
-  type: string[];
+  type: any[];
 }
 export const ListIcon: ListIconModel[] = [
   {
@@ -20,7 +26,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Css/ Css Module',
@@ -34,7 +40,7 @@ export const ListIcon: ListIconModel[] = [
         <path fill="#ebebeb" d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743zM16 13.191v3.091h-3.399l-.062-.695l-.14-1.567l-.074-.829H16z" />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Javascript',
@@ -55,34 +61,27 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End', 'Back End', 'Language'],
+    type: [Types.FRONT_END, Types.BACK_END],
   },
   {
     name: 'Typescript',
     value: (
-      <svg
-      width={52}
-      height={52}
-      viewBox="0 0 52 52"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g clipPath="url(#clip0_468_3690)">
-        <path d="M9.20972 19.0938H49.7007V49.0222H9.20972V19.0938Z" fill="white" />
-        <path
-          d="M0.609375 25.9634V51.354H51.3906V0.572754H0.609375V25.9634ZM41.5309 23.9321C42.7472 24.2144 43.8526 24.8505 44.7078 25.7603C45.1786 26.2504 45.5879 26.7961 45.9266 27.3853C45.9266 27.4503 43.7328 28.9331 42.3963 29.7618C42.3475 29.7943 42.1525 29.5831 41.9372 29.2621C41.6932 28.8411 41.3465 28.4888 40.9295 28.238C40.5125 27.9872 40.0388 27.8462 39.5525 27.8281C38.0128 27.7224 37.0216 28.5309 37.0297 29.8593C37.017 30.1901 37.0927 30.5182 37.2491 30.8099C37.5863 31.5128 38.2159 31.9312 40.1903 32.7843C43.8262 34.3484 45.3822 35.3803 46.3491 36.8468C47.4297 38.4718 47.6694 41.0962 46.9381 43.0381C46.1256 45.1506 44.135 46.5846 41.3197 47.0599C40.0338 47.2072 38.7347 47.1936 37.4522 47.0193C35.4866 46.6953 33.676 45.7516 32.2847 44.3259C31.8175 43.8099 30.9075 42.4653 30.9644 42.3678C31.1127 42.2577 31.2688 42.1585 31.4316 42.0712L33.3125 41.0312L34.7709 40.1862L35.0756 40.6371C35.5898 41.3727 36.2442 41.9995 37.0013 42.4815C38.6263 43.3346 40.8444 43.2168 41.9412 42.2296C42.3095 41.8679 42.5393 41.3884 42.5905 40.8748C42.6417 40.3611 42.5112 39.8457 42.2216 39.4184C41.8153 38.8537 41.0028 38.3784 38.7319 37.3871C36.1116 36.2578 34.9822 35.559 33.9503 34.4459C33.3061 33.7113 32.8305 32.8447 32.5569 31.9068C32.3528 30.8353 32.3226 29.7379 32.4675 28.6568C33.0078 26.1259 34.905 24.3587 37.6756 23.8346C38.9587 23.6759 40.2584 23.7115 41.5309 23.9403V23.9321ZM29.6116 26.0609V28.1409H23.0181V46.9218H18.3422V28.1368H11.7325V26.1056C11.7119 25.4051 11.7282 24.704 11.7812 24.0053C11.8138 23.9687 15.8438 23.9687 20.7188 23.9687H29.5872L29.6116 26.0609Z"
-          fill="#007ACC"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_468_3690">
-          <rect width={52} height={52} fill="white" />
-        </clipPath>
-      </defs>
-    </svg>
-    
+      <svg width={52} height={52} viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clipPath="url(#clip0_468_3690)">
+          <path d="M9.20972 19.0938H49.7007V49.0222H9.20972V19.0938Z" fill="white" />
+          <path
+            d="M0.609375 25.9634V51.354H51.3906V0.572754H0.609375V25.9634ZM41.5309 23.9321C42.7472 24.2144 43.8526 24.8505 44.7078 25.7603C45.1786 26.2504 45.5879 26.7961 45.9266 27.3853C45.9266 27.4503 43.7328 28.9331 42.3963 29.7618C42.3475 29.7943 42.1525 29.5831 41.9372 29.2621C41.6932 28.8411 41.3465 28.4888 40.9295 28.238C40.5125 27.9872 40.0388 27.8462 39.5525 27.8281C38.0128 27.7224 37.0216 28.5309 37.0297 29.8593C37.017 30.1901 37.0927 30.5182 37.2491 30.8099C37.5863 31.5128 38.2159 31.9312 40.1903 32.7843C43.8262 34.3484 45.3822 35.3803 46.3491 36.8468C47.4297 38.4718 47.6694 41.0962 46.9381 43.0381C46.1256 45.1506 44.135 46.5846 41.3197 47.0599C40.0338 47.2072 38.7347 47.1936 37.4522 47.0193C35.4866 46.6953 33.676 45.7516 32.2847 44.3259C31.8175 43.8099 30.9075 42.4653 30.9644 42.3678C31.1127 42.2577 31.2688 42.1585 31.4316 42.0712L33.3125 41.0312L34.7709 40.1862L35.0756 40.6371C35.5898 41.3727 36.2442 41.9995 37.0013 42.4815C38.6263 43.3346 40.8444 43.2168 41.9412 42.2296C42.3095 41.8679 42.5393 41.3884 42.5905 40.8748C42.6417 40.3611 42.5112 39.8457 42.2216 39.4184C41.8153 38.8537 41.0028 38.3784 38.7319 37.3871C36.1116 36.2578 34.9822 35.559 33.9503 34.4459C33.3061 33.7113 32.8305 32.8447 32.5569 31.9068C32.3528 30.8353 32.3226 29.7379 32.4675 28.6568C33.0078 26.1259 34.905 24.3587 37.6756 23.8346C38.9587 23.6759 40.2584 23.7115 41.5309 23.9403V23.9321ZM29.6116 26.0609V28.1409H23.0181V46.9218H18.3422V28.1368H11.7325V26.1056C11.7119 25.4051 11.7282 24.704 11.7812 24.0053C11.8138 23.9687 15.8438 23.9687 20.7188 23.9687H29.5872L29.6116 26.0609Z"
+            fill="#007ACC"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_468_3690">
+            <rect width={52} height={52} fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
     ),
-    type: ['Front End', 'Back End', 'Language'],
+    type: [Types.FRONT_END, Types.BACK_END],
   },
   {
     name: 'C#',
@@ -109,7 +108,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Back End', 'Language'],
+    type: [Types.BACK_END],
   },
   // {
   //   name: 'Java',
@@ -144,7 +143,7 @@ export const ListIcon: ListIconModel[] = [
   //       </defs>
   //     </svg>
   //   ),
-  //   type: ['Back End', 'Language'],
+  //   type: [Types.BACK_END],
   // },
   {
     name: 'Node.js',
@@ -156,7 +155,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Nest.js',
@@ -175,7 +174,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Express.js',
@@ -188,7 +187,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Dot Net',
@@ -204,7 +203,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'React/React Native',
@@ -220,9 +219,8 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
-
   {
     name: 'Angular/ Angularjs',
     value: (
@@ -232,7 +230,7 @@ export const ListIcon: ListIconModel[] = [
         <path d="M28 9.49561L13.9956 40.8972H19.2172L22.0325 33.8709H33.9194L36.7347 40.8972H41.9562L28 9.49561ZM32.0906 29.5397H23.9094L28 19.6981L32.0906 29.5397Z" fill="white" />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Vue',
@@ -243,7 +241,7 @@ export const ListIcon: ListIconModel[] = [
         <path d="M13.4421 7.48633L28 32.5113L42.4374 7.48633H33.5343L28 17.1113L22.3453 7.48633H13.4421Z" fill="#35495E" />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Next',
@@ -262,7 +260,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Jquery',
@@ -274,7 +272,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'React Query',
@@ -305,7 +303,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Redux Toolkit',
@@ -324,7 +322,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Ngrx',
@@ -338,7 +336,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Vuex',
@@ -354,9 +352,8 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
-
   {
     name: 'Rxjs',
     value: (
@@ -397,9 +394,8 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
-
   {
     name: 'Tailwind Css',
     value: (
@@ -417,9 +413,8 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
-
   {
     name: 'Sass/Scss',
     value: (
@@ -439,7 +434,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Styled Components',
@@ -467,7 +462,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Emotion',
@@ -2928,7 +2923,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Ant Design',
@@ -2972,7 +2967,7 @@ export const ListIcon: ListIconModel[] = [
         </g>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Material UI',
@@ -2991,7 +2986,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'DevExtreme',
@@ -3031,7 +3026,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Bootstrap',
@@ -3073,7 +3068,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'MySql',
@@ -3093,7 +3088,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'PostgreSql',
@@ -3117,7 +3112,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Mongo DB',
@@ -3160,7 +3155,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Firebase',
@@ -3197,7 +3192,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Cloudinary',
@@ -3209,7 +3204,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Restfull Api',
@@ -3328,7 +3323,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Graphql',
@@ -3347,7 +3342,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   {
     name: 'Socket Io',
@@ -3372,7 +3367,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Back End'],
+    type: [Types.BACK_END],
   },
   // {
   //   name: 'Docker',
@@ -3391,7 +3386,7 @@ export const ListIcon: ListIconModel[] = [
   //       </defs>
   //     </svg>
   //   ),
-  //   type: ['Others'],
+  //   type: [Types.OTHERS],
   // },
   {
     name: 'Puppeteer',
@@ -3424,7 +3419,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Others'],
+    type: [Types.OTHERS],
   },
   {
     name: 'Git',
@@ -3443,7 +3438,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Others'],
+    type: [Types.OTHERS],
   },
   {
     name: 'Story book',
@@ -3462,7 +3457,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Front End'],
+    type: [Types.FRONT_END],
   },
   {
     name: 'Photoshop',
@@ -3485,7 +3480,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Others'],
+    type: [Types.OTHERS],
   },
   {
     name: 'Figma',
@@ -3511,6 +3506,6 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: ['Others'],
+    type: [Types.OTHERS],
   },
 ];

@@ -1,4 +1,4 @@
-import { MutableRefObject, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap, Linear } from 'gsap';
 
 const Cursor = ({ isDesktop }: any) => {
@@ -62,11 +62,7 @@ const Cursor = ({ isDesktop }: any) => {
 
   return (
     <>
-      <div
-        ref={cursor}
-        className="fixed hidden bg-white w-4 h-4 select-none pointer-events-none z-50"
-        style={{ borderRadius: '100%', mixBlendMode: 'difference' }}
-      ></div>
+      <div ref={cursor} className="fixed hidden bg-white w-4 h-4 select-none pointer-events-none z-50" style={{ borderRadius: '100%', mixBlendMode: 'difference' }}></div>
       <div
         ref={follower}
         className="fixed hidden h-8 w-8 select-none pointer-events-none z-50"
