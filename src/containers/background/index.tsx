@@ -1,6 +1,5 @@
 import { FC, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
-import styled from 'styled-components';
+import { Canvas, Container } from './styled';
 const Background: FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -156,22 +155,3 @@ const Background: FC = () => {
 };
 
 export default Background;
-
-const Container = styled.div`
-  background-color: white;
-  z-index: 0;
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1.25rem;
-`;
-
-const Canvas = styled(motion.canvas)`
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-`;

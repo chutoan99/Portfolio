@@ -1,5 +1,5 @@
 # Use a specific version of Node.js
-FROM node:14-alpine
+FROM node:18.17.0-alpine
 # Set working directory inside the container
 WORKDIR /app
 # Copy package.json and package-lock.json

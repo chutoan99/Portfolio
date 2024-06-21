@@ -1,17 +1,6 @@
 import styled from 'styled-components';
-interface LabelModel {
-  content: string;
-}
-export default function Label({ content }: LabelModel) {
-  return (
-    <section>
-      <ContentWrapper>
-        <Content>{content}</Content>
-      </ContentWrapper>
-    </section>
-  );
-}
-const ContentWrapper = styled.div`
+
+export const ContentWrapper = styled.div`
   background: rgba(147, 107, 232, 0.15);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -25,7 +14,7 @@ const ContentWrapper = styled.div`
     padding-bottom: 3rem;
   }
 `;
-const Content = styled.div`
+export const Content = styled.div`
   display: flex;
   color: #3f3a64;
   margin-bottom: 0;
@@ -42,7 +31,7 @@ const Content = styled.div`
   text-align: center;
   max-width: 75rem;
   height: 4.5625rem;
-  color: 1.7rem;
+  font-size: 1.7rem;
 
   @media (min-width: 640px) {
     font-size: 2.125rem;
