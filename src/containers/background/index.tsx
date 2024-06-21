@@ -46,7 +46,6 @@ const Background: FC = () => {
       'https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_7_jt8njm.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Group_khom9w.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1708862231/porfolio/u7guvorjdxms6pzenfwp.png',
-      'https://res.cloudinary.com/dxcershra/image/upload/v1708862407/porfolio/yqqydae5gxtdl0jf90qf.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1691074278/porfolio/Frame_11_kogoh4.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_12_xealla.png',
       'https://res.cloudinary.com/dxcershra/image/upload/v1691074278/porfolio/Frame_13_gmau1u.png',
