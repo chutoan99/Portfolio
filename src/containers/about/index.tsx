@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="About" className="bg-[white] px-0 py-[3.125rem] lt:py-[6.25rem]">
+    <section id="about" className="bg-[white] px-0 py-[3.125rem] lt:py-[6.25rem]">
       <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500" className="max-w-[75rem] mx-auto my-0">
         <div className="flex-col md:flex-row md:items-start lt:flex-row  flex justify-center lt:justify-between items-center gap-[1.875rem] px-[1.25rem] lt:px-0 py-[3.125rem] lt:py-[6.25rem]">
           <div className="w-full lt:w-[23.12375rem] h-full lt:h-[30.5525rem] cursor-pointer rounded-[0.625rem] shine-overlay">

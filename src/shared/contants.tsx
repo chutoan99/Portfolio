@@ -1,7 +1,6 @@
 export const MENULINKS = [
   {
     name: 'Home',
-    ref: 'home',
   },
   {
     name: 'Works',

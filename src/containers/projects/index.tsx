@@ -19,7 +19,7 @@ interface DeviceCustom {
 }
 export default function Projects() {
   return (
-    <section id="Projects" className="flex flex-col justify-center items-center self-stretch py-[3.125rem] lt:px-20 lt:py-24 bg-white">
+    <section id="projects" className="flex flex-col justify-center items-center self-stretch py-[3.125rem] lt:px-20 lt:py-24 bg-white">
       <div className="w-full max-w-[75rem] mx-auto my-0">
         <div className="flex flex-col justify-center items-center gap-[3.125rem] self-stretch   lt:px-8 py-0">
           <Projects1 />

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const SkillsSection = styled.section`
+export const SkillsSection = styled.section<{ id: string; children: any }>`
   background-color: white;
 `;
 
@@ -52,7 +52,7 @@ export const FilterButtonWrapper = styled.ul`
     gap: 0.9375rem;
     gap: 0.625rem;
     justify-content: center;
-    padding-bottom: 3.75rem;
+    padding-bottom: 1.75rem;
   }
 `;
 

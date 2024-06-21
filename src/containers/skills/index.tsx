@@ -23,7 +23,7 @@ export default function Skills() {
   };
 
   return (
-    <SkillsSection>
+    <SkillsSection id="skills">
       <SkillsContainer>
         <ContentWrapper>
           <FilterButtonWrapper>

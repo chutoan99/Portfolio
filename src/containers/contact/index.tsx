@@ -2,7 +2,7 @@ import { ButtonWrapper, Container, Content, FormContact, FormInner, IconWrapper,
 
 export default function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <Content>
         <ListInfo data-aos="fade-right" data-aos-anchor-placement="center-center">
           {/* phone */}

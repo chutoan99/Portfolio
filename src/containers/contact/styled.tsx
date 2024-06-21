@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.section<{ id: string; children: any }>`
   background: white;
   padding-left: 1rem;
   padding-right: 1rem;

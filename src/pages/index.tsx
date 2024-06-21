@@ -31,7 +31,7 @@ const Home: NextPage = () => {
   gsap.registerPlugin(ScrollTrigger);
   gsap.config({ nullTargetWarn: false });
 
-  const [isDesktop, setisDesktop] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   let timer: any = null;
 
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
     timer = setTimeout(() => {
       const isDesktopResult = typeof window.orientation === 'undefined' && navigator.userAgent.indexOf('IEMobile') === -1;
       window.history.scrollRestoration = 'manual';
-      setisDesktop(isDesktopResult);
+      setIsDesktop(isDesktopResult);
     }, 100);
   };
 
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
   }, [typedSpanElement, targetSection]);
 
   const { ref: heroSectionRef } = MENULINKS[0];
-  const [menuVisible, setmenuVisible] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
   useEffect(() => {
     AOS.init({
       easing: 'ease-out-cubic',
@@ -94,39 +94,17 @@ const Home: NextPage = () => {
           <div className="flex justify-between section-container">
             <a href="#home" className="link"></a>
             <nav className={`outer-menu ${menuVisible ? 'menu-visible' : ''}`}>
-              <button className="hamburger w-6 h-6 flex items-center justify-center link relative" onClick={setmenuVisible.bind(null, !menuVisible)}>
+              <button className="hamburger w-6 h-6 flex items-center justify-center link relative" onClick={setMenuVisible.bind(null, !menuVisible)}>
                 <div className="relative flex-none w-full bg-black duration-300 flex items-center justify-center"></div>
               </button>
               <section className="menu fixed top-0 left-0 w-full h-full overflow-hidden invisible pointer-events-none flex items-center justify-center" style={{ visibility: 'hidden' }}>
                 <div className="flex-none overflow-hidden flex items-center justify-center">
                   <div className="text-center opacity-0 overflow-y-auto flex flex-none justify-center items-center max-h-screen">
                     <ul className="list-none py-4 px-0 m-0 block max-h-screen" role="menu">
-                      {[
-                        {
-                          name: 'Home',
-                          ref: 'home',
-                        },
-                        {
-                          name: 'About',
-                          ref: 'About',
-                        },
-
-                        {
-                          name: 'Projects',
-                          ref: 'Projects',
-                        },
-                        {
-                          name: 'Skills',
-                          ref: 'skills',
-                        },
-                        {
-                          name: 'Contact',
-                          ref: 'contact',
-                        },
-                      ].map((el) => (
-                        <li className="p-0 m-6 text-2xl block" key={el.name} role="menuitem">
-                          <a className="link relative inline font-bold text-5xl duration-300 hover:no-underline " href={`#${el.ref}`} onClick={setmenuVisible.bind(null, false)}>
-                            {el.name}
+                      {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((el) => (
+                        <li className="p-0 m-6 text-2xl block" key={el} role="menuitem">
+                          <a className="link relative inline font-bold text-5xl duration-300 hover:no-underline " href={`#${el.toLowerCase()}`} onClick={setMenuVisible.bind(null, false)}>
+                            {el}
                           </a>
                         </li>
                       ))}
@@ -159,13 +137,12 @@ const Home: NextPage = () => {
       <Experience />
       <Label content="Projects"></Label>
       <Projects />
-      <Label  content="Skills"></Label>
-      <Skills /> 
-      <Label  content="Contact"></Label>
+      <Label content="Skills"></Label>
+      <Skills />
+      <Label content="Contact"></Label>
       <Contact />
       <Map />
-      <Footer /> 
-
+      <Footer />
     </>
   );
 };
