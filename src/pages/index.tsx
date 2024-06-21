@@ -16,6 +16,7 @@ import Cursor from '../components/cursor';
 import Background from '../containers/background';
 
 import { MENULINKS } from '../shared/contants';
+import Map from '../containers/map';
 
 export const isSmallScreen = (): boolean => document.body.clientWidth < 767;
 export const NO_MOTION_PREFERENCE_QUERY = '(prefers-reduced-motion: no-preference)';
@@ -156,13 +157,15 @@ const Home: NextPage = () => {
       </div>
       <About />
       <Experience />
-      <Label id="label-projects" content="Projects"></Label>
+      <Label content="Projects"></Label>
       <Projects />
-      <Label id="label-skills" content="Skills"></Label>
-      <Skills></Skills>
-      <Label id="label-contact" content="Contact"></Label>
+      <Label  content="Skills"></Label>
+      <Skills /> 
+      <Label  content="Contact"></Label>
       <Contact />
-      <Footer />
+      <Map />
+      <Footer /> 
+
     </>
   );
 };

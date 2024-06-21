@@ -1,6 +1,6 @@
 import { FC, useEffect, useRef } from 'react';
-import { m } from 'framer-motion';
-
+import { motion } from 'framer-motion';
+import styled from 'styled-components';
 const Background: FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -150,10 +150,29 @@ const Background: FC = () => {
   }, []);
 
   return (
-    <div className="bg-white z-0 relative h-screen flex justify-center items-center flex-col gap-5">
-      <m.canvas initial={{ opacity: 0 }} animate={{ opacity: 0.6 }} transition={{ duration: 0.4, delay: 1.4 }} ref={canvasRef} className="absolute inset-0 w-full h-full" />
-    </div>
+    <Container>
+      <Canvas initial={{ opacity: 0 }} animate={{ opacity: 0.6 }} transition={{ duration: 0.4, delay: 1.4 }} ref={canvasRef} />
+    </Container>
   );
 };
 
 export default Background;
+
+const Container = styled.div`
+  background-color: white;
+  z-index: 0;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+`;
+
+const Canvas = styled(motion.canvas)`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+`;

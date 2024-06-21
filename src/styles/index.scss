@@ -274,7 +274,11 @@ audio,
 video {
   @apply text-[100%] align-baseline m-0 p-0 border-0;
 }
-
+@media (min-width: 1024) {
+  html {
+    @apply text-lg;
+  }
+}
 @media (min-width: 1800px) {
   html {
     @apply text-xl;

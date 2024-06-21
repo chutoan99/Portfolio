@@ -2,6 +2,7 @@ export enum Types {
   ALL = 'All',
   FRONT_END = 'Front End',
   BACK_END = 'Back End',
+  DATABASE = 'Database',
   OTHERS = 'Others',
 }
 export interface ListIconModel {
@@ -3088,7 +3089,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: [Types.BACK_END],
+    type: [Types.DATABASE],
   },
   {
     name: 'PostgreSql',
@@ -3112,7 +3113,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: [Types.BACK_END],
+    type: [ Types.DATABASE],
   },
   {
     name: 'Mongo DB',
@@ -3155,7 +3156,7 @@ export const ListIcon: ListIconModel[] = [
         </defs>
       </svg>
     ),
-    type: [Types.BACK_END],
+    type: [Types.DATABASE],
   },
   {
     name: 'Firebase',
@@ -3192,7 +3193,7 @@ export const ListIcon: ListIconModel[] = [
         />
       </svg>
     ),
-    type: [Types.BACK_END],
+    type: [Types.DATABASE],
   },
   {
     name: 'Cloudinary',

@@ -21,6 +21,12 @@ const nextConfig = {
 
     return config;
   },
+  compiler: {
+    styledComponents: {
+      // Enabled by default.
+      cssProp: true,
+    },
+  },
 };
 
 module.exports = withAnalyzer(nextConfig);

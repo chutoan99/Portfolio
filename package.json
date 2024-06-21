@@ -12,6 +12,7 @@
   "dependencies": {
     "@next/bundle-analyzer": "^12.1.6",
     "aos": "^2.3.4",
+    "babel-plugin-styled-components": "^2.0.7",
     "framer-motion": "^6.3.10",
     "gsap": "^3.12.2",
     "locomotive-scroll": "^4.1.4",
@@ -22,7 +23,7 @@
     "react-dom": "18.0.0",
     "react-icons": "^4.4.0",
     "react-locomotive-scroll": "^0.2.2",
-    "styled-components": "^6.1.11",
+    "styled-components": "^5.3.6",
     "typed.js": "^2.0.16"
   },
   "devDependencies": {
@@ -30,6 +31,7 @@
     "@types/node": "17.0.24",
     "@types/react": "18.0.4",
     "@types/react-dom": "18.0.0",
+    "@types/styled-components": "^5.1.34",
     "autoprefixer": "^10.4.7",
     "babel-plugin-styled-components": "^2.1.4",
     "eslint": "8.13.0",

@@ -1,7 +1,7 @@
-import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
-import { ListIcon, ListIconModel, Types } from '../../shared/icons';
 import styled from 'styled-components';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ListIcon, ListIconModel, Types } from '../../shared/icons';
 
 export default function Skills() {
   const [filteredIcons, setFilteredIcons] = useState<ListIconModel[]>(ListIcon);
@@ -14,6 +14,7 @@ export default function Skills() {
         break;
       case Types.FRONT_END:
       case Types.BACK_END:
+      case Types.DATABASE:
       case Types.OTHERS:
         const filtered = ListIcon.filter((item) => item.type.includes(tag));
         setFilteredIcons(filtered);
@@ -22,19 +23,19 @@ export default function Skills() {
   };
 
   return (
-    <SkillsSection id="skills">
+    <SkillsSection>
       <SkillsContainer>
         <ContentWrapper>
           <FilterButtonWrapper>
             {Object.values(Types).map((item: Types, i: number) => (
               <FilterButton
                 key={i}
+                textContent={item}
+                isActive={item === currentTag}
                 onClick={() => {
                   onFilter(item);
                   setCurrentTag(item);
                 }}
-                textContent={item}
-                isActive={item === currentTag}
               ></FilterButton>
             ))}
           </FilterButtonWrapper>
@@ -56,7 +57,7 @@ export default function Skills() {
                       <IconWrapper>
                         <span>{icon.value}</span>
                       </IconWrapper>
-                      <TextWrapper textContent={icon.name}>{/* <span>{icon.name}</span> */}</TextWrapper>
+                      <TextWrapper textContent={icon.name}></TextWrapper>
                     </Skill>
                   );
                 })}
@@ -95,34 +96,44 @@ const ContentWrapper = styled.div`
   }
 `;
 
-const FilterButtonWrapper = styled.div`
+const FilterButtonWrapper = styled.ul`
   display: flex;
   align-self: stretch;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  list-style: none;
+  margin: unset;
+  padding-left: unset;
+
   width: 100%;
-  gap: 0.625rem;
-  padding-top: 10px;
-  padding-bottom: 3.125rem;
+  padding-top: 0.625rem;
+  padding-bottom: 2.125rem;
 
   @media (min-width: 640px) {
     gap: 0.9375rem;
+    gap: 0.625rem;
+    justify-content: center;
     padding-bottom: 3.75rem;
   }
 `;
 
-const FilterButton = styled.span<{ isActive: boolean; textContent: string }>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+const FilterButton = styled.li<{ isActive: boolean; textContent: string } & React.ButtonHTMLAttributes<HTMLButtonElement>>`
+  width: fit-content;
   padding: 0.25rem 1rem;
   margin: 0 0.25rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25rem;
   border: 1px solid;
-  border-radius: 0.75rem;
+  border-radius: 0.7rem;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s, border 0.2s;
 
@@ -140,6 +151,7 @@ const FilterButton = styled.span<{ isActive: boolean; textContent: string }>`
   &::after {
     content: '${(props) => props.textContent}';
     display: block;
+    white-space: nowrap;
   }
   &:hover {
     color: white;
@@ -150,37 +162,47 @@ const FilterButton = styled.span<{ isActive: boolean; textContent: string }>`
 
 const SkillsContainer = styled.div`
   max-width: 72.813rem;
+  padding: 0 0.625rem;
   margin: 0 auto;
+  @media (min-width: 640px) {
+    padding: 0 1.25rem;
+  }
+  @media (min-width: 768px) {
+    padding: 0 1.875rem;
+  }
 `;
 
 const ListSkills = styled(motion.div)`
   display: grid;
-  gap: 0.938rem;
   row-gap: 0.625rem;
-  padding: {
-    left: 1rem;
-    right: 1rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  @media (min-width: 600px) {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 0.938rem;
+    row-gap: 1.25rem;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  @media (min-width: 640px) {
+    margin-left: 0;
+    margin-right: 0;
+    row-gap: 1.25rem;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  @media (min-width: 912px) {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
 
   @media (min-width: 1024px) {
     min-height: 21.875rem;
     grid-template-columns: repeat(10, minmax(0, 1fr)) !important;
-    grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
-  }
-
-  @media (min-width: 768px) {
-    padding: {
-      left: 1.25rem;
-      right: 1.25rem;
-    }
-  }
-
-  @media (min-width: 640px) {
-    margin-left: 0px;
-    margin-right: 0px;
-    row-gap: 1.25rem;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 `;
 
@@ -209,9 +231,9 @@ const IconWrapper = styled.div`
   flex-shrink: 0;
   height: 4.5rem;
   fill: rgba(255, 255, 255, 0.1);
-  scale: 0.75;
-
   span {
+    scale: 0.7;
+
     :hover {
       overflow: hidden;
       transition-property: 0.2s;
@@ -219,28 +241,46 @@ const IconWrapper = styled.div`
       transition-duration: 150ms;
       cursor: pointer;
     }
+    @media (min-width: 600px) {
+      scale: 0.75;
+    }
 
     @media (min-width: 640px) {
-      scale: 1.1;
+      scale: 0.8;
+    }
+
+    @media (min-width: 768px) {
+      scale: 0.85;
+    }
+
+    @media (min-width: 912px) {
+      scale: 0.9;
+    }
+
+    @media (min-width: 1024px) {
+      scale: 0.95;
     }
   }
 `;
 
-const TextWrapper = styled.div<{ textContent: string }>`
+const TextWrapper = styled.div<{ textContent: any }>`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-
+  padding: 0 0.3125rem;
   height: 2.5rem;
   width: 100%;
+  font-size: 0.875rem;
+  @media (min-width: 640px) {
+    padding: 0;
+    font-size: 1rem;
+  }
   &::after {
     content: '${(props) => props.textContent}';
     display: block;
     color: #092c4c;
     font-style: normal;
-
     font-weight: 500;
     line-height: 1.25rem;
-
   }
 `;

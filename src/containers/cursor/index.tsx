@@ -1,5 +1,8 @@
-import { FC, useEffect, useRef } from 'react';
+import React, { FC, forwardRef, useEffect, useRef } from 'react';
+import styled from 'styled-components';
 
+const ForwardedDiv = forwardRef((props, ref: any) => <div ref={ref} {...props} />);
+ForwardedDiv.displayName = 'StyledCursor';
 const Cursor: FC = () => {
   const isFirstMove = useRef(true);
 
@@ -9,6 +12,7 @@ const Cursor: FC = () => {
     x: 0,
     y: 0,
   });
+
   const displayedMouse = useRef({
     x: 0,
     y: 0,
@@ -46,12 +50,21 @@ const Cursor: FC = () => {
     updateMouse();
   }, []);
 
-  return (
-    <div
-      ref={cursorRef}
-      className="w-7 h-7 bg-transparent border border-white rounded-full fixed z-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none hidden transition duration-75"
-    ></div>
-  );
+  return <StyledCursor ref={cursorRef}></StyledCursor>;
 };
 
 export default Cursor;
+
+const StyledCursor = styled(ForwardedDiv)`
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 50;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  display: none;
+  transition: all 75ms;
+`;
