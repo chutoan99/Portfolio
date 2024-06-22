@@ -1,25 +1,3 @@
-export const MENULINKS = [
-  {
-    name: 'Home',
-  },
-  {
-    name: 'Works',
-    ref: 'works',
-  },
-  {
-    name: 'Skills',
-    ref: 'skills',
-  },
-  {
-    name: 'Timeline',
-    ref: 'timeline',
-  },
-  {
-    name: 'Contact',
-    ref: 'contact',
-  },
-];
-
 export const PROJECTS = [
   {
     name: '01. Shopee',
