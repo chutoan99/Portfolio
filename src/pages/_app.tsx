@@ -17,11 +17,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Chu toan Portfolio" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="NAPTheDev's Portfolio" />
-        <meta property="og:description" content="Nguyen Anh Phong's Portfolio" />
+        <meta property="og:title" content="Chu Toan dev Portfolio" />
+        <meta property="og:description" content="Trương Văn Chu Toàn" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="NAPTheDev's Portfolio" />
+        <meta property="twitter:title" content="Chu Toan dev Portfolio" />
       </Head>
       <LazyMotion features={domAnimation}>
         <Component {...pageProps} />
