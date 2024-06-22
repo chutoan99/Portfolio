@@ -244,35 +244,3 @@ video {
     @apply text-[22px];
   }
 }
-@keyframes shine {
-  0% {
-    left: -50%;
-    opacity: 0;
-  }
-  50% {
-    left: 25%;
-    opacity: 0.5;
-  }
-  100% {
-    left: 100%;
-    opacity: 0;
-  }
-}
-.filter-container button {
-  margin-right: 2rem;
-  min-width: 5rem;
-  padding: 0.5rem 1rem;
-  background: whitesmoke;
-  border-radius: 0.5rem;
-  border: 2px solid #6415ff;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-button.active {
-  background: #6415ff;
-  color: white;
-}
