@@ -1,4 +1,4 @@
-import { Content, ContentWrapper } from './styled';
+import { Content, ContentWrapper } from './style';
 interface LabelModel {
   content: string;
 }

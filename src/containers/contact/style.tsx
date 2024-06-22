@@ -208,7 +208,11 @@ export const ButtonWrapper = styled.div`
     :hover {
       cursor: pointer;
       opacity: 0.5;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 0.5s;
     }
+
     @media (min-width: 640px) {
       justify-content: flex-start;
     }

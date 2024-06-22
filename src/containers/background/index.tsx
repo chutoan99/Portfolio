@@ -1,5 +1,5 @@
 import { FC, useEffect, useRef } from 'react';
-import { Canvas, Container } from './styled';
+import { Canvas, Container } from './style';
 const Background: FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 

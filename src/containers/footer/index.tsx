@@ -1,4 +1,4 @@
-import { Container, Content, ListIcon, ListNav } from './styled';
+import { Container, Content, ListIcon, ListNav } from './style';
 
 export default function Footer() {
   return (

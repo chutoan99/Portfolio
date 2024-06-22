@@ -39,16 +39,6 @@ a {
 [data-scroll-container] {
   perspective: 999999px !important;
 }
-.scale-105 {
-  scale: 1.15;
-}
-.shadow-md {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-}
-.typed-cursor {
-  @apply text-[2rem];
-}
-
 .outer-menu {
   &.menu-visible {
     .hamburger {
@@ -152,43 +142,8 @@ a {
   }
 }
 
-.text-gradient {
-  background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-strong {
-  background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #6dd5ed 51%, #2193b0 100%);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .project-wrapper::-webkit-scrollbar {
   display: none;
-}
-
-// * hover avatar
-.shine-overlay {
-  @apply relative overflow-hidden;
-  .shine {
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(rgba(255, 255, 255, 0)),
-      color-stop(50%, rgba(255, 255, 255, 0.8)),
-      to(rgba(255, 255, 255, 0))
-    );
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-  }
-
-  &:hover {
-    .shine {
-      @apply block;
-    }
-  }
 }
 
 html,

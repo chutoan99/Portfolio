@@ -1,4 +1,4 @@
-import { ButtonWrapper, Container, Content, FormContact, FormInner, IconWrapper, InputInner, InputWrapper, ItemInfo, ListInfo, TextWrapper, TextareaInner, TextareaWrapper } from './styled';
+import { ButtonWrapper, Container, Content, FormContact, FormInner, IconWrapper, InputInner, InputWrapper, ItemInfo, ListInfo, TextWrapper, TextareaInner, TextareaWrapper } from './style';
 
 export default function Contact() {
   return (

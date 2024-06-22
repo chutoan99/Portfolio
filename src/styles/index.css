@@ -35,24 +35,8 @@ a {
   @apply bg-[#7d11f9] rounded-[9px] border-[3px] border-solid border-white;
 }
 
-* {
-  @apply box-border m-0 p-0;
-}
-
 [data-scroll-container] {
   perspective: 999999px !important;
-}
-
-.scale-105 {
-  scale: 1.15;
-}
-
-.shadow-md {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-}
-
-.typed-cursor {
-  @apply text-[2rem];
 }
 
 .outer-menu.menu-visible .hamburger > div {
@@ -143,39 +127,8 @@ a {
   background-position: 100% 0;
 }
 
-.text-gradient {
-  background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-strong {
-  background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, #6dd5ed 51%, #2193b0 100%);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .project-wrapper::-webkit-scrollbar {
   display: none;
-}
-
-.shine-overlay {
-  @apply relative overflow-hidden;
-}
-.shine-overlay .shine {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(rgba(255, 255, 255, 0)),
-    color-stop(50%, rgba(255, 255, 255, 0.8)),
-    to(rgba(255, 255, 255, 0))
-  );
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
-}
-.shine-overlay:hover .shine {
-  @apply block;
 }
 
 html,
@@ -259,30 +212,21 @@ time,
 mark,
 audio,
 video {
-  @apply text-[100%] align-baseline m-0 p-0 border-0;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border-width: 0px;
+  font-size: 100%;
 }
 
 @media (min-width: 1800px) {
   html {
-    @apply text-xl;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 @media (min-width: 2000px) {
   html {
-    @apply text-[22px];
-  }
-}
-@keyframes shine {
-  0% {
-    left: -50%;
-    opacity: 0;
-  }
-  50% {
-    left: 25%;
-    opacity: 0.5;
-  }
-  100% {
-    left: 100%;
-    opacity: 0;
+    font-size: 22px;
   }
 }

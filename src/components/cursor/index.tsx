@@ -16,7 +16,7 @@ const Cursor = ({ isDesktop }: any) => {
     });
   };
 
-  const onUnhover = () => {
+  const onUnHover = () => {
     gsap.to(cursor.current, {
       scale: 1,
       duration: 0.3,
@@ -50,7 +50,7 @@ const Cursor = ({ isDesktop }: any) => {
 
     document.querySelectorAll('.link').forEach((el) => {
       el.addEventListener('mouseenter', onHover);
-      el.addEventListener('mouseleave', onUnhover);
+      el.addEventListener('mouseleave', onUnHover);
     });
   };
 

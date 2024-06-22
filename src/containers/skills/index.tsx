@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { ListIcon, ListIconModel, Types } from '../../shared/icons';
-import { ContentWrapper, FilterButton, FilterButtonWrapper, IconWrapper, ListSkills, Skill, SkillsContainer, SkillsSection, SkillsWrapper, TextWrapper } from './styled';
+import { ContentWrapper, FilterButton, FilterButtonWrapper, IconWrapper, ListSkills, Skill, SkillsContainer, SkillsSection, SkillsWrapper, TextWrapper } from './style';
 
 export default function Skills() {
   const [filteredIcons, setFilteredIcons] = useState<ListIconModel[]>(ListIcon);
@@ -57,7 +57,7 @@ export default function Skills() {
                       <IconWrapper>
                         <span>{icon.value}</span>
                       </IconWrapper>
-                      <TextWrapper textContent={icon.name}></TextWrapper>
+                      <TextWrapper textContent={icon.name.toString()}></TextWrapper>
                     </Skill>
                   );
                 })}

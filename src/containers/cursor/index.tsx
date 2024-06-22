@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef } from 'react';
-import { StyledCursor } from './styled';
+import { StyledCursor } from './style';
 
 
 const Cursor: FC = () => {
