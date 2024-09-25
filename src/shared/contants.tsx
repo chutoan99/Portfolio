@@ -28,7 +28,7 @@ export const PROJECTS = [
     ref: 'https://shopee-client.vercel.app',
     link: [
       {
-        ref: 'https://bitbucket.org/chutoan99/shopee-client',
+        ref: 'https://bitbucket.org/chutoan99/shop-client',
         content: 'View in bitbucket',
       },
       {
@@ -66,7 +66,7 @@ export const PROJECTS = [
     ref: 'https://shopee-admin.vercel.app',
     link: [
       {
-        ref: 'https://bitbucket.org/chutoan99/shopee-admin',
+        ref: 'https://bitbucket.org/chutoan99/shop-admin',
         content: 'View in bitbucket',
       },
       {
