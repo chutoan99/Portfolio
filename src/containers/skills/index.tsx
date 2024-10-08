@@ -1,22 +1,23 @@
-import { useState } from 'react';
+import { ICONS, ListIconModel, Types } from '@shared/icons';
 import { AnimatePresence } from 'framer-motion';
-import { ListIcon, ListIconModel, Types } from '../../shared/icons';
+import { useState } from 'react';
 import { ContentWrapper, FilterButton, FilterButtonWrapper, IconWrapper, ListSkills, Skill, SkillsContainer, SkillsSection, SkillsWrapper, TextWrapper } from './style';
 
 export default function Skills() {
-  const [filteredIcons, setFilteredIcons] = useState<ListIconModel[]>(ListIcon);
+  const [icons, setIcons] = useState<ListIconModel[]>(Array.from(ICONS.values()));
+  const [filteredIcons, setFilteredIcons] = useState<ListIconModel[]>(icons);
   const [currentTag, setCurrentTag] = useState<Types>(Types.ALL);
 
   const onFilter = (tag: Types) => {
     switch (tag) {
       case Types.ALL:
-        setFilteredIcons(ListIcon);
+        setFilteredIcons(icons);
         break;
       case Types.FRONT_END:
       case Types.BACK_END:
       case Types.DATABASE:
       case Types.OTHERS:
-        const filtered = ListIcon.filter((item) => item.type.includes(tag));
+        const filtered = icons.filter((item) => item.type.includes(tag));
         setFilteredIcons(filtered);
         break;
     }

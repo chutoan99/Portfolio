@@ -1,13 +1,11 @@
-version: '3.5'
-
 services:
-  app:
-    build:
-      context: .
-      dockerfile: dockerfile
+  # APP
+  portfolio:
+    image: node:latest
+    build: .
     container_name: portfolio
     ports:
-      - '4200:4200'
-    volumes:
-      - .:/app
-      - /app/node_modules
+        - '3000:3000'
+
+
+

@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import ProjectInfo from '@components/project_info';
+import { PROJECTS } from '@shared/contants';
 import { motion, useAnimation } from 'framer-motion';
-import ProjectInfo from '../../components/project_info';
-import { PROJECTS } from '../../shared/contants';
+import { useEffect } from 'react';
 interface Device {
   x: string;
   image: string;
