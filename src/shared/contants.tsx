@@ -66,7 +66,7 @@ export const PROJECTS = [
     ref: 'https://shop-admin-front-end.netlify.app',
     link: [
       {
-        ref: 'https://bitbucket.org/chutoan99/shop-frontend',
+        ref: 'https://bitbucket.org/chutoan99/shop-admin-frontend',
         content: 'View in bitbucket',
       },
       // {
