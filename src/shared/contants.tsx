@@ -24,15 +24,15 @@ export const PROJECTS = [
       'Jsonwebtoken',
       'Nodemailer',
     ],
-    demo: 'shopee-client.vercel.app',
-    ref: 'https://shopee-client.vercel.app',
+    demo: 'shop-front-end.netlify.app',
+    ref: 'https://shop-front-end.netlify.app',
     link: [
       {
-        ref: 'https://bitbucket.org/chutoan99/shop-client',
+        ref: 'https://bitbucket.org/chutoan99/shop-frontend',
         content: 'View in bitbucket',
       },
       {
-        ref: 'https://server-shopee3.onrender.com/api/client/docs',
+        ref: 'https://shop-backend-an8r.onrender.com/api/client/docs',
         content: 'View swagger api',
       },
     ],
@@ -62,17 +62,17 @@ export const PROJECTS = [
       'Jsonwebtoken',
       'Nodemailer',
     ],
-    demo: 'shopee-admin.vercel.app',
-    ref: 'https://shopee-admin.vercel.app',
+    demo: 'shop-admin-front-end.netlify.app',
+    ref: 'https://shop-admin-front-end.netlify.app',
     link: [
       {
-        ref: 'https://bitbucket.org/chutoan99/shop-admin',
+        ref: 'https://bitbucket.org/chutoan99/shop-frontend',
         content: 'View in bitbucket',
       },
-      {
-        ref: 'https://server-shopee3.onrender.com/api/admin/docs',
-        content: 'View swagger api',
-      },
+      // {
+      //   ref: 'https://server-shopee3.onrender.com/api/admin/docs',
+      //   content: 'View swagger api',
+      // },
     ],
   },
   {
