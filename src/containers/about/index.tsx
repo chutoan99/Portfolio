@@ -1,4 +1,4 @@
-import { Avatar, Button, Column, Container, Content, Description, DownLoad, Info, InfoWrapper, Inner, Line, ListIcon, Name, Overplay, Row, Text, Title, Wrapper } from './style';
+import { Line, ListIcon, Wrapper, Text, Column, Row, Info, InfoWrapper, Description, Name, Title, Avatar, Overplay, Container, Content, Inner, Button, DownLoad } from './style';
 
 export default function About() {
   return (

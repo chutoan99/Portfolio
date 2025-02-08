@@ -162,10 +162,6 @@ export const IconWrapper = styled.div`
   flex-shrink: 0;
   height: 4.5rem;
   fill: rgba(255, 255, 255, 0.1);
-  img {
-    width: 55px;
-    height: 55px;
-  }
   span {
     scale: 0.7;
 

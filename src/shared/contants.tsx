@@ -24,7 +24,7 @@ export const PROJECTS = [
       'Jsonwebtoken',
       'Nodemailer',
     ],
-    demo: 'shop-front-end.netlify.app',
+    demo: 'shop-frontend.vercel.app',
     ref: 'https://shop-front-end.netlify.app',
     link: [
       {
@@ -32,7 +32,7 @@ export const PROJECTS = [
         content: 'View in bitbucket',
       },
       {
-        ref: 'https://shop-backend-an8r.onrender.com/api/client/docs',
+        ref: 'https://server-shopee3.onrender.com/api/client/docs',
         content: 'View swagger api',
       },
     ],
@@ -62,17 +62,17 @@ export const PROJECTS = [
       'Jsonwebtoken',
       'Nodemailer',
     ],
-    demo: 'shop-admin-front-end.netlify.app',
+    demo: 'shop-admin-frontend.vercel.app',
     ref: 'https://shop-admin-front-end.netlify.app',
     link: [
       {
         ref: 'https://bitbucket.org/chutoan99/shop-admin-frontend',
         content: 'View in bitbucket',
       },
-      // {
-      //   ref: 'https://server-shopee3.onrender.com/api/admin/docs',
-      //   content: 'View swagger api',
-      // },
+      {
+        ref: 'https://server-shopee3.onrender.com/api/admin/docs',
+        content: 'View swagger api',
+      },
     ],
   },
   {
@@ -90,19 +90,19 @@ export const PROJECTS = [
     ],
   },
   {
-    name: '04. PhongTro',
+    name: '04. rental',
     description:
       'A complete revamp of a room rental website. This undertaking encompasses a full range of functionalities, underpinned by a constant influx of listing data collected through the use of "puppeteer" technology, resulting in a continuously updated collection of thousands of listings. Fueled by the latest cutting-edge technologies, the development focuses on laptop compatibility. As we look  ahead, you can expect a steady stream of innovative features to enhance user experience.',
     technologies: ['Next.js', 'Nest.js', 'Typescript', 'Graphql', 'React query', 'Css', 'Styled Components', 'Material', 'Postgresql', 'Cloudinary', 'Typeorm', 'Puppeteer'],
-    demo: 'phongtro-client.vercel.app',
-    ref: 'https://phongtro-client.vercel.app',
+    demo: 'rental-frontend.vercel.app',
+    ref: 'https://rental-front-end.vercel.app',
     link: [
       {
-        ref: 'https://gitlab.com/chutoan99/phongtro',
+        ref: 'https://gitlab.com/chutoan99/test',
         content: 'View in gitlab',
       },
       {
-        ref: 'https://server-phongtro.onrender.com/graphql',
+        ref: 'https://test-2mng.onrender.com/graphql',
         content: 'View in graphql',
       },
     ],

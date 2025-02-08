@@ -1,22 +1,23 @@
-import Cursor from '@components/cursor';
-import Label from '@components/label';
-import About from '@containers/about';
-import Background from '@containers/background';
-import Contact from '@containers/contact';
-import Experience from '@containers/experience';
-import Footer from '@containers/footer';
-import Header from '@containers/header';
-import Map from '@containers/map';
-import Projects from '@containers/projects';
-import Skills from '@containers/skills';
-
-import AOS from 'aos';
+import Typed from 'typed.js';
+import type { NextPage } from 'next';
 import { gsap, Linear } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import type { NextPage } from 'next';
-import { MutableRefObject, useEffect, useRef, useState } from 'react';
-import Typed from 'typed.js';
+import React, { useEffect, useState, MutableRefObject, useRef } from 'react';
+import AOS from 'aos';
 //? APP
+import Label from '../components/label';
+import About from '../containers/about';
+import Experience from '../containers/experience';
+import Projects from '../containers/projects';
+import Skills from '../containers/skills';
+import Contact from '../containers/contact';
+import Footer from '../containers/footer';
+import Cursor from '../components/cursor';
+import Background from '../containers/background';
+
+import Map from '../containers/map';
+import Header from '../containers/header';
+
 
 export const isSmallScreen = (): boolean => document.body.clientWidth < 767;
 export const NO_MOTION_PREFERENCE_QUERY = '(prefers-reduced-motion: no-preference)';
