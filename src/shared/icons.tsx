@@ -9,6 +9,7 @@ export interface ListIconModel {
   name: string;
   value: any;
   type: any[];
+  link?: string;
 }
 export const ListIcon: ListIconModel[] = [
   {
