@@ -19,9 +19,24 @@ interface DeviceCustom {
 }
 export default function Projects() {
   return (
-    <section id="projects" className="flex flex-col justify-center items-center self-stretch py-[3.125rem] lt:px-20 lt:py-24 bg-white">
-      <div className="w-full max-w-[75rem] mx-auto my-0">
-        <div className="flex flex-col justify-center items-center gap-[3.125rem] self-stretch   lt:px-8 py-0">
+    <section
+      id="projects"
+      className="
+        flex flex-col justify-center items-center self-stretch py-[3.125rem] bg-white
+        lt:px-20 lt:py-24 
+      "
+    >
+      <div
+        className="
+          w-full max-w-[75rem] mx-auto my-0
+        "
+      >
+        <div
+          className="
+            flex flex-col justify-center items-center gap-[3.125rem] self-stretch   
+            lt:px-8 py-0
+          "
+        >
           <Projects1 />
           <Projects2 />
           <Projects3 />
@@ -59,16 +74,35 @@ function Projects1() {
   }, []);
 
   return (
-    <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white lt:w-[75rem]">
-      <div className="lt:grid flex flex-col gap-[1.25rem]" style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
+    <div
+      className="
+        flex items-start gap-[3.125rem] w-full  rounded-xl bg-white
+        lt:max-w-[75rem] px-[1rem] lt:px-0 py-12  lt:w-[75rem]
+      "
+    >
+      <div
+        className=" 
+          flex flex-col gap-[1.25rem] 
+          lt:grid
+        "
+        style={{ gridTemplateColumns: '5.5fr 4.5fr' }}
+      >
         <div
           data-aos="zoom-in"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="500"
-          className="h-[12.5rem] lt:h-full flex justify-center items-center flex-[1_0_0] self-stretch"
+          className="
+            h-[12.5rem] flex justify-center items-center flex-[1_0_0] self-stretch
+            lt:h-full 
+          "
         >
-          <div className="flex justify-center center items-center w-full relative h-[12.5rem] lt:h-full scale-[0.5] lt:scale-[1]">
+          <div
+            className="
+              flex justify-center center items-center w-full relative h-[12.5rem] scale-[0.5] 
+              lt:h-full lt:scale-[1]
+            "
+          >
             {device_01.map((device: DeviceCustom, index: number) => (
               <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="absolute">
                 <div className="w-full h-full">
@@ -78,7 +112,15 @@ function Projects1() {
             ))}
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="lt:ml-[3.125rem]">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+          className="
+            lt:ml-[3.125rem]
+          "
+        >
           <ProjectInfo project={PROJECTS[0]} />
         </div>
       </div>
@@ -113,9 +155,29 @@ function Projects2() {
   }, []);
 
   return (
-    <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white lt:w-[75rem]">
-      <div className="lt:grid flex flex-col gap-[1.25rem]" style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="order-2 lt:order-1 lt:mr-[3.125rem]">
+    <div
+      className="
+        flex items-start gap-[3.125rem] w-full  px-[1rem]  rounded-xl bg-white 
+        lt:max-w-[75rem] lt:px-0 py-12 lt:w-[75rem]
+      "
+    >
+      <div
+        className=" 
+          flex flex-col gap-[1.25rem] 
+          lt:grid
+        "
+        style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+          className="
+            order-2 
+            lt:order-1 lt:mr-[3.125rem]
+          "
+        >
           <ProjectInfo project={PROJECTS[1]} />
         </div>
         <div
@@ -123,9 +185,17 @@ function Projects2() {
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="500"
-          className="order-1 lt:order-2 h-[12.5rem] lt:h-full flex justify-center items-center flex-[1_0_0] self-stretch"
+          className="
+            order-1  h-[12.5rem]  flex justify-center items-center flex-[1_0_0] self-stretch 
+            lt:order-2 lt:h-full
+          "
         >
-          <div className="flex justify-center center items-center w-full relative h-[12.5rem] lt:h-full scale-[0.5] lt:scale-[1]">
+          <div
+            className="
+              flex justify-center center items-center w-full relative h-[12.5rem] scale-[0.5] 
+              lt:h-full  lt:scale-[1]
+            "
+          >
             {device_02.map((device: Device, index: number) => (
               <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="absolute">
                 <div className="w-full h-full">
@@ -169,16 +239,35 @@ function Projects3() {
   }, []);
 
   return (
-    <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white lt:w-[75rem]">
-      <div className="lt:grid flex flex-col gap-[1.25rem]" style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
+    <div
+      className="
+        flex items-start gap-[3.125rem] w-full  px-[1rem] rounded-xl bg-white  
+        lt:max-w-[75rem] lt:px-0 py-12  lt:w-[75rem]
+      "
+    >
+      <div
+        className="
+          flex flex-col gap-[1.25rem] 
+          lt:grid
+        "
+        style={{ gridTemplateColumns: '5.5fr 4.5fr' }}
+      >
         <div
           data-aos="zoom-in"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="500"
-          className="h-[12.5rem] lt:h-full flex justify-center items-center flex-[1_0_0] self-stretch"
+          className="
+            h-[12.5rem] flex justify-center items-center flex-[1_0_0] self-stretch 
+            lt:h-full
+          "
         >
-          <div className="flex justify-center center items-center w-full relative h-[12.5rem] lt:h-full scale-[0.5] lt:scale-[1]">
+          <div
+            className="
+              flex justify-center center items-center w-full relative h-[12.5rem] scale-[0.5] 
+              lt:h-full  lt:scale-[1]
+            "
+          >
             {device_03.map((device, index) => (
               <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="absolute">
                 <div className="w-full h-full">
@@ -188,7 +277,15 @@ function Projects3() {
             ))}
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="lt:ml-[3.125rem]">
+        <div
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+          className="
+            lt:ml-[3.125rem]
+          "
+        >
           <ProjectInfo project={PROJECTS[2]} />
         </div>
       </div>
@@ -222,9 +319,29 @@ function Projects4() {
   }, []);
 
   return (
-    <div className="flex items-start gap-[3.125rem] w-full lt:max-w-[75rem] px-[1rem] lt:px-0 py-12 rounded-xl bg-white lt:w-[75rem]">
-      <div className="lt:grid flex flex-col gap-[1.25rem]" style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800" className="order-2 lt:order-1 lt:mr-[3.125rem]">
+    <div
+      className="
+        flex items-start gap-[3.125rem] w-full  px-[1rem] rounded-xl bg-white 
+        lt:px-0 py-12  lt:w-[75rem] lt:max-w-[75rem]
+      "
+    >
+      <div
+        className=" 
+          flex flex-col gap-[1.25rem] 
+          lt:grid
+        "
+        style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+          className="
+            order-2 
+            lt:order-1 lt:mr-[3.125rem]
+          "
+        >
           <ProjectInfo project={PROJECTS[3]} />
         </div>
         <div
@@ -232,11 +349,27 @@ function Projects4() {
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"
           data-aos-duration="500"
-          className="order-1 lt:order-2 h-[12.5rem] lt:h-full flex justify-center items-center flex-[1_0_0] self-stretch"
+          className="
+            order-1 h-[12.5rem]  flex justify-center items-center flex-[1_0_0] self-stretch  
+            lt:order-2 lt:h-full
+          "
         >
-          <div className="flex justify-center center items-center w-full relative h-[12.5rem] lt:h-full scale-[0.5] lt:scale-[1]">
+          <div
+            className="
+              flex justify-center center items-center w-full relative h-[12.5rem]  scale-[0.5] 
+              lt:h-full lt:scale-[1]
+            "
+          >
             {device_04.map((device: DeviceCustom, index: number) => (
-              <motion.div key={index} initial={{ x: device.x }} animate={device.animation} className="initial lt:absolute">
+              <motion.div
+                key={index}
+                initial={{ x: device.x }}
+                animate={device.animation}
+                className="
+                  initial 
+                  lt:absolute
+                "
+              >
                 <div className="w-full h-full">
                   <img src={device.image} alt="" width="100%" height="100%" />
                 </div>

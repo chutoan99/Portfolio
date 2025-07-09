@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 // export const SkillsSection = styled.section<{ id: string; children: any }>`
 //   background-color: rgba(147, 107, 232, 0.5);

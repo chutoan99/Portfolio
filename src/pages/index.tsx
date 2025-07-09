@@ -18,12 +18,10 @@ import Background from '../containers/background';
 import Map from '../containers/map';
 import Header from '../containers/header';
 
-
 export const isSmallScreen = (): boolean => document.body.clientWidth < 767;
 export const NO_MOTION_PREFERENCE_QUERY = '(prefers-reduced-motion: no-preference)';
 
 const Home: NextPage = () => {
-
   gsap.registerPlugin(ScrollTrigger);
   gsap.config({ nullTargetWarn: false });
 
@@ -83,18 +81,44 @@ const Home: NextPage = () => {
   }, []);
   return (
     <>
-    <Header></Header>
+      <Header></Header>
       <Cursor isDesktop={isDesktop} />
       <Background />
       <div className="flex justify-center section-container">
-        <section className="absolute top-0 flex md:items-center py-8  h-full justify-start  2xl:container mx-auto w-full max-w-[75rem] md:px-12 px-4 min-h-screen ">
-          <div className="font-medium flex flex-col justify-center  md:pt-0 select-none">
-            <div className="md:mb-4 mb-2"  ref={targetSection} style={{ opacity: 0 }}>
+        <section
+          className="
+        absolute top-0 flex py-8  h-full justify-start px-4 min-h-screen  mx-auto w-full max-w-[75rem]  
+        md:items-center md:px-12  
+        2xl:container 
+
+        "
+        >
+          <div
+            className="
+              font-medium flex flex-col justify-center select-none
+              md:pt-0 
+            "
+          >
+            <div
+              className="
+                mb-2 
+                md:mb-4
+              "
+              ref={targetSection}
+              style={{ opacity: 0 }}
+            >
               <h2 className="text-4xl seq text-black">Hello 👋🏻</h2>
               <h1 className="text-4xl seq  text-black">I am Chu Toan</h1>
             </div>
             <p className="mb-4 text-black">
-              <span className="text-xl sm:text-2xl md:text-5xl seq" ref={typedSpanElement}></span>
+              <span
+                className="
+                  text-xl seq
+                  sm:text-2xl 
+                  md:text-5xl
+                "
+                ref={typedSpanElement}
+              ></span>
             </p>
           </div>
         </section>

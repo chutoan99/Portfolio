@@ -4,19 +4,52 @@ export default function Experience() {
   return (
     <section
       id="Experience"
-      className="p-[1.25rem] md:px-[7.5rem] flex w-full flex-col items-center gap-5 pt-[3.125rem]  pb-[3.125rem] sm:pb-[6.25rem]  md:gap-[1.5rem]"
+      className="
+        p-[1.25rem] flex w-full flex-col items-center gap-5 pt-[3.125rem]  pb-[3.125rem]  
+        sm:pb-[6.25rem] 
+        md:gap-[1.5rem]  md:px-[7.5rem]
+        "
       style={{ background: 'rgba(147, 107, 232, 0.05)' }}
     >
       <div className="rounded-xl bg-white">
-        <div className="px-[1.563rem] pb-[1.563rem] md:px-[1.75rem] md:pt-[1.75rem] md:pb-[1rem] w-full relative min-h-screen flex flex-col justify-center overflow-hidden antialiased">
+        <div
+          className="
+            px-[1.563rem] pb-[1.563rem] w-full relative min-h-screen flex flex-col justify-center overflow-hidden antialiased
+            md:px-[1.75rem] md:pt-[1.75rem] md:pb-[1rem]
+          "
+        >
           <div className="flex flex-col justify-center divide-y">
-            <div className="px-[1.563rem] pb-[1.563rem] md:px-[2rem] md:pb-[2rem] w-full">
-              <div className="space-y-8 relative before:absolute before:inset-0 before:ml-1 before:-translate-x-px md:before:ml-[1.2rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+            <div
+              className="
+                px-[1.563rem] pb-[1.563rem] w-full
+                md:px-[2rem] md:pb-[2rem]
+             "
+            >
+              <div
+                className="
+                space-y-8 relative before:absolute before:inset-0 before:ml-1 before:-translate-x-px  before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent
+                md:before:ml-[1.2rem] md:before:translate-x-0
+              "
+              >
                 <div className="relative">
-                  <div className="md:flex items-center md:space-x-4 mb-3">
-                    <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
-                      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
-                        <svg className="fill-emerald-500"  width={16} height={16}>
+                  <div
+                    className="
+                    items-center mb-3
+                    md:flex  md:space-x-4
+                  "
+                  >
+                    <div
+                      className="
+                      flex items-center space-x-4 
+                      md:space-x-2 md:space-x-reverse
+                    "
+                    >
+                      <div
+                        className="
+                        flex items-center justify-center w-10 h-10 rounded-full bg-white shadow 
+                        md:order-1"
+                      >
+                        <svg className="fill-emerald-500" width={16} height={16}>
                           <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                         </svg>
                       </div>
@@ -25,10 +58,21 @@ export default function Experience() {
                       <div className="text-slate-500">
                         <span className="text-description font-bold">Y TE SO GIA AN (A Company under HOA LÂM Group):</span> Junior Front End Developer
                       </div>
-                      <time className="text-primary text-left text-base not-italic font-normal md:w-21">Aug 2022 – May 2024</time>
+                      <time
+                        className="
+                        text-primary text-left text-base not-italic font-normal 
+                        md:w-21"
+                      >
+                        Aug 2022 – May 2024
+                      </time>
                     </div>
                   </div>
-                  <div className="ml-14 md:ml-[4rem] flex flex-col gap-[10px] w-full pr-[3rem]">
+                  <div
+                    className="
+                    ml-14 flex flex-col gap-[10px] w-full pr-[3rem] 
+                    md:ml-[4rem]
+                  "
+                  >
                     <div className="bg-white p-4 rounded-[6px] border border-slate-200 text-slate-500 shadow" data-aos="zoom-in-up">
                       <ul className="flex flex-col items-start gap-[5px] self-stretch">
                         <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6">Develop & implement projects for CIH International Hospital and Gia An 155 Hospital:</li>
@@ -95,10 +139,24 @@ export default function Experience() {
                   </div>
                 </div>
                 <div className="relative">
-                  <div className="md:flex items-center md:space-x-4 mb-3">
-                    <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
-                      <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
-                        <svg className="fill-red-500"  width={16} height={16}>
+                  <div
+                    className=" 
+                    items-center 
+                    md:flex md:space-x-4 mb-3
+                  "
+                  >
+                    <div
+                      className="
+                      flex items-center space-x-4 
+                      md:space-x-2 md:space-x-reverse
+                    "
+                    >
+                      <div
+                        className="
+                      flex items-center justify-center w-10 h-10 rounded-full bg-white shadow 
+                      md:order-1"
+                      >
+                        <svg className="fill-red-500" width={16} height={16}>
                           <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                         </svg>
                       </div>
@@ -107,10 +165,21 @@ export default function Experience() {
                       <div className="text-slate-500">
                         <span className="text-description font-bold">STECH VIET NAM: </span>Intern Back End Developer
                       </div>
-                      <time className="text-primary text-left text-base not-italic font-normal md:w-21"> May 2022 - Jul 2022</time>
+                      <time
+                        className="
+                        text-primary text-left text-base not-italic font-normal 
+                        md:w-21"
+                      >
+                        {' '}
+                        May 2022 - Jul 2022
+                      </time>
                     </div>
                   </div>
-                  <div className="ml-14 md:ml-[4rem] flex flex-col gap-[10px] w-full pr-[3rem]">
+                  <div
+                    className="
+                    ml-14 flex flex-col gap-[10px] w-full pr-[3rem]  
+                    md:ml-[4rem]"
+                  >
                     <div className="bg-white p-4 rounded-[6px] border border-slate-200 text-slate-500 shadow" data-aos="zoom-in-up">
                       <ul className="flex flex-col items-start gap-1 self-stretch">
                         <li className="self-stretch text-gray-600 text-lg not-italic font-normal leading-6">Develop web application &quot;Social Network for Blockchain&quot;:</li>

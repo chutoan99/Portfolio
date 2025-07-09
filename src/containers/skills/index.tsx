@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { ListIcon, ListIconModel, Types } from '../../shared/icons';
-import { ContentWrapper, FilterButton, FilterButtonWrapper, IconWrapper, ListSkills, Skill, SkillEmpty, SkillsContainer, SkillsSection, SkillsWrapper, TextWrapper } from './style';
+import { ContentWrapper, FilterButton, FilterButtonWrapper, IconWrapper, ListSkills, Skill, SkillEmpty, SkillsContainer, SkillsSection, SkillsWrapper } from './style';
 
 export default function Skills() {
   const [filteredIcons, setFilteredIcons] = useState<ListIconModel[]>(ListIcon);
@@ -42,25 +42,31 @@ export default function Skills() {
           <SkillsWrapper>
             <ListSkills>
               <AnimatePresence>
-                {filteredIcons.map((icon, index) => (
-                  <React.Fragment key={index}>
-                    <Skill layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }}>
-                      <IconWrapper>
-                        <span>{icon.value}</span>
-                      </IconWrapper>
-                      {/* <TextWrapper textContent={icon.name.toString()} /> */}
-                    </Skill>
-
-                    {/* Chèn SkillEmpty giữa các phần tử, không chèn sau phần tử cuối */}
-                    {index < filteredIcons.length - 1 && (
-                      <SkillEmpty>
+                {filteredIcons
+                  .filter((item) => item.active)
+                  .map((icon, index) => (
+                    <React.Fragment key={index}>
+                      <Skill layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }}>
                         <IconWrapper>
-                          <div className="w-0 h-0" />
+                          <div className="w-full h-full" role="tooltip">
+                            {/* <a href="https://codepen.io/joshua_ward/pens/public/" target="_blank" data-tooltip="Codepen" data-position="top" class="top" /> */}
+                            <img src={icon.path} alt={icon.name} width="100%" height="100%" />
+                            {/* <img src={icon.path} alt={icon.name} width="100%" height="100%" /> */}
+                          </div>
                         </IconWrapper>
-                      </SkillEmpty>
-                    )}
-                  </React.Fragment>
-                ))}
+                        {/* <TextWrapper textContent={icon.name.toString()} /> */}
+                      </Skill>
+
+                      {/* Chèn SkillEmpty giữa các phần tử, không chèn sau phần tử cuối */}
+                      {index < filteredIcons.length - 1 && (
+                        <SkillEmpty>
+                          <IconWrapper>
+                            <div className="w-0 h-0" />
+                          </IconWrapper>
+                        </SkillEmpty>
+                      )}
+                    </React.Fragment>
+                  ))}
               </AnimatePresence>
             </ListSkills>
           </SkillsWrapper>
