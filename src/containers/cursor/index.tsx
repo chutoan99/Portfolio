@@ -1,17 +1,12 @@
 import React, { FC, useEffect, useRef } from 'react';
-import { StyledCursor } from './style';
-
 
 const Cursor: FC = () => {
   const isFirstMove = useRef(true);
-
   const cursorRef = useRef<HTMLDivElement>(null);
-
   const realMouse = useRef({
     x: 0,
     y: 0,
   });
-
   const displayedMouse = useRef({
     x: 0,
     y: 0,
@@ -49,7 +44,23 @@ const Cursor: FC = () => {
     updateMouse();
   }, []);
 
-  return <StyledCursor ref={cursorRef}></StyledCursor>;
+  return (
+    <div
+      ref={cursorRef}
+      className="
+        w-[1.75rem] h-[1.75rem]
+        bg-transparent
+        border border-white
+        rounded-full
+        fixed
+        z-50
+        pointer-events-none
+        transition-all duration-[75ms]
+        hidden
+        -translate-x-1/2 -translate-y-1/2
+      "
+    ></div>
+  );
 };
 
 export default Cursor;

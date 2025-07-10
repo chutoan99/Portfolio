@@ -1,16 +1,17 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export default function Header() {
-    const [menuVisible, setMenuVisible] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
   return (
     <header className="w-full flex justify-center">
-      <div 
+      <div
         className="
           fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[75rem] pr-[1rem] 
           sm:pr-[.9375rem] 
           md:pr-[1.25rem] 
           lt:pr-0
-        ">
+        "
+      >
         <div className="flex justify-between section-container">
           <a href="#home" className="link"></a>
           <nav className={`outer-menu ${menuVisible ? 'menu-visible' : ''}`}>
@@ -23,7 +24,14 @@ export default function Header() {
                   <ul className="list-none py-4 px-0 m-0 block max-h-screen" role="menu">
                     {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((el) => (
                       <li className="p-0 m-6 text-2xl block" key={el} role="menuitem">
-                        <a className="link relative inline font-bold text-5xl duration-300 hover:no-underline " href={`#${el.toLowerCase()}`} onClick={setMenuVisible.bind(null, false)}>
+                        <a
+                          className="
+                            link relative inline font-bold text-5xl 
+                            duration-300 hover:no-underline
+                          "
+                          href={`#${el.toLowerCase()}`}
+                          onClick={setMenuVisible.bind(null, false)}
+                        >
                           {el}
                         </a>
                       </li>

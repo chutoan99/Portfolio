@@ -1,28 +1,69 @@
-import { ButtonWrapper, Container, Content, FormContact, FormInner, IconWrapper, InputInner, InputWrapper, ItemInfo, ListInfo, TextWrapper, TextareaInner, TextareaWrapper } from './style';
+import { ButtonWrapper, InputWrapper, TextWrapper, TextareaWrapper } from './style';
 
 export default function Contact() {
   return (
-    <Container id="contact">
-      <Content>
-        <ListInfo data-aos="fade-right" data-aos-anchor-placement="center-center">
+    <section
+      id="contact"
+      className="
+      bg-white px-[1rem] py-[3.125rem] 
+        lg:py-[6.25rem]"
+    >
+      <div
+        className="
+          flex flex-col justify-between h-full max-w-[75rem] mx-auto gap-[1.5625rem] 
+          sm:gap-[1.875rem] sm:mt-[1.25rem] sm:py-5 
+          md:flex-row
+        "
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-anchor-placement="center-center"
+          className="
+            w-full flex flex-col items-start pb-0 gap-[0.938rem] 
+            sm:gap-[0.9375rem] 
+            md:gap-[1.25rem] md:w-[45%]  
+            lg:w-[30.9775rem]
+          "
+        >
           {/* phone */}
-          <ItemInfo>
-            <IconWrapper>
+          <div
+            className="
+              flex h-full gap-[1.5rem] w-[30.9775rem] 
+              sm:w-full sm:gap-[1rem] sm:h-[3.4375rem]
+            "
+          >
+            <div
+              className="
+                flex justify-center w-[1.25rem] 
+                hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
+              "
+            >
               <svg width={17} height={22} viewBox="0 0 17 22" fill="none">
                 <path
                   d="M16.9943 15.2232C16.9943 15.4442 16.9541 15.7327 16.8736 16.0888C16.7932 16.4448 16.7087 16.7251 16.6202 16.9297C16.4513 17.3389 15.9607 17.7727 15.1482 18.2311C14.3921 18.6485 13.6441 18.8572 12.904 18.8572C12.6868 18.8572 12.4737 18.8429 12.2645 18.8142C12.0554 18.7856 11.8242 18.7344 11.5708 18.6607C11.3174 18.5871 11.1284 18.5278 11.0037 18.4827C10.879 18.4377 10.6558 18.3538 10.334 18.2311C10.0123 18.1083 9.81522 18.0346 9.74283 18.0101C8.95454 17.7236 8.25071 17.384 7.63134 16.9911C6.60979 16.3445 5.54801 15.4606 4.44601 14.3393C3.34402 13.218 2.47529 12.1377 1.83984 11.0982C1.45374 10.468 1.11992 9.75189 0.838388 8.94981C0.814257 8.87615 0.741863 8.67563 0.621207 8.34825C0.500551 8.02087 0.418102 7.79375 0.373861 7.66689C0.329621 7.54003 0.271303 7.34769 0.19891 7.08988C0.126516 6.83207 0.0762423 6.59676 0.0480891 6.38396C0.019936 6.17117 0.00585938 5.95428 0.00585938 5.73329C0.00585938 4.98032 0.210975 4.21916 0.621207 3.44981C1.07166 2.62317 1.49798 2.12392 1.90016 1.95204C2.10126 1.86201 2.37676 1.77608 2.72666 1.69423C3.07656 1.61238 3.36011 1.57146 3.57729 1.57146C3.6899 1.57146 3.77436 1.58374 3.83067 1.60829C3.97545 1.6574 4.18861 1.96841 4.47015 2.54133C4.55863 2.69683 4.67928 2.91782 4.83211 3.20428C4.98495 3.49073 5.12571 3.75059 5.25441 3.98385C5.38311 4.21711 5.50779 4.43605 5.62845 4.64066C5.65258 4.6734 5.72296 4.7757 5.8396 4.94758C5.95623 5.11945 6.0427 5.26473 6.09901 5.3834C6.15531 5.50208 6.18347 5.61871 6.18347 5.73329C6.18347 5.89698 6.06884 6.1016 5.8396 6.34713C5.61035 6.59267 5.36099 6.81774 5.09153 7.02236C4.82206 7.22697 4.5727 7.44386 4.34346 7.67303C4.11421 7.90219 3.99959 8.09044 3.99959 8.23776C3.99959 8.31142 4.01969 8.40349 4.05991 8.51399C4.10013 8.62448 4.13432 8.70837 4.16247 8.76566C4.19062 8.82295 4.24693 8.92117 4.33139 9.0603C4.41585 9.19944 4.4621 9.27719 4.47015 9.29356C5.08147 10.4148 5.78128 11.3765 6.56957 12.1786C7.35785 12.9807 8.303 13.6927 9.40499 14.3148C9.42108 14.323 9.49749 14.37 9.63424 14.4559C9.77098 14.5419 9.86751 14.5992 9.92381 14.6278C9.98012 14.6565 10.0626 14.6913 10.1712 14.7322C10.2797 14.7731 10.3702 14.7936 10.4426 14.7936C10.5874 14.7936 10.7724 14.6769 10.9977 14.4437C11.2229 14.2104 11.436 13.9567 11.6371 13.6825C11.8382 13.4083 12.0594 13.1546 12.3007 12.9214C12.5421 12.6881 12.7432 12.5715 12.904 12.5715C13.0166 12.5715 13.1313 12.6001 13.2479 12.6574C13.3645 12.7147 13.5073 12.8027 13.6762 12.9214C13.8451 13.04 13.9457 13.1116 13.9779 13.1362C14.179 13.259 14.3941 13.3858 14.6234 13.5168C14.8526 13.6477 15.108 13.791 15.3895 13.9465C15.6711 14.102 15.8883 14.2247 16.0411 14.3148C16.6042 14.6012 16.9098 14.8181 16.9581 14.9654C16.9822 15.0227 16.9943 15.1087 16.9943 15.2232Z"
                   fill="#7D11F9"
                 />
               </svg>
-            </IconWrapper>
+            </div>
             <TextWrapper>
               <span>Call Me</span>
               <a href="#">+84 972 712 621</a>
             </TextWrapper>
-          </ItemInfo>
+          </div>
+
           {/* email */}
-          <ItemInfo>
-            <IconWrapper>
+          <div
+            className="
+              flex h-full gap-[1.5rem] w-[30.9775rem] 
+              sm:w-full sm:gap-[1rem] sm:h-[3.4375rem]
+            "
+          >
+            <div
+              className="
+                flex justify-center w-[1.25rem] 
+                hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
+              "
+            >
               <svg width={18} height={18} viewBox="0 0 18 18" fill="none">
                 <g clipPath="url(#clip0_1_40)">
                   <path
@@ -36,15 +77,25 @@ export default function Contact() {
                   </clipPath>
                 </defs>
               </svg>
-            </IconWrapper>
+            </div>
             <TextWrapper>
               <span>Email Me</span>
               <a href="#">truongvanchutoan1999@gmail.com</a>
             </TextWrapper>
-          </ItemInfo>
+          </div>
           {/* github */}
-          <ItemInfo>
-            <IconWrapper>
+          <div
+            className="
+              flex h-full gap-[1.5rem] w-[30.9775rem] 
+              sm:w-full sm:gap-[1rem] sm:h-[3.4375rem]
+            "
+          >
+            <div
+              className="
+                flex justify-center w-[1.25rem] 
+                hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
+              "
+            >
               <svg width={25} height={25} viewBox="0 0 25 25" fill="none">
                 <path
                   d="M15.5 22.2402V18.2402C15.6392 16.9875 15.28 15.7304 14.5 14.7402C17.5 14.7402 20.5 12.7402 20.5 9.24023C20.58 7.99023 20.23 6.76023 19.5 5.74023C19.78 4.59023 19.78 3.39023 19.5 2.24023C19.5 2.24023 18.5 2.24023 16.5 3.74023C13.86 3.24023 11.14 3.24023 8.50004 3.74023C6.50004 2.24023 5.50004 2.24023 5.50004 2.24023C5.20004 3.39023 5.20004 4.59023 5.50004 5.74023C4.77191 6.75612 4.41851 7.99302 4.50004 9.24023C4.50004 12.7402 7.50004 14.7402 10.5 14.7402C10.11 15.2302 9.82004 15.7902 9.65004 16.3902C9.48004 16.9902 9.43004 17.6202 9.50004 18.2402V22.2402"
@@ -55,62 +106,121 @@ export default function Contact() {
                 />
                 <path d="M9.5 18.2402C4.99 20.2402 4.5 16.2402 2.5 16.2402" stroke="#7D11F9" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-            </IconWrapper>
+            </div>
             <TextWrapper>
               <span>Github Me</span>
               <a href="https://github.com/chutoan99">https://github.com/chutoan99</a>
             </TextWrapper>
-          </ItemInfo>
+          </div>
           {/* location  */}
-          <ItemInfo>
-            <IconWrapper>
+          <div
+            className="
+              flex h-full gap-[1.5rem] w-[30.9775rem] 
+              sm:w-full sm:gap-[1rem] sm:h-[3.4375rem]
+            "
+          >
+            <div
+              className="
+                flex justify-center w-[1.25rem] 
+                hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
+              "
+            >
               <svg width={12} height={20} viewBox="0 0 12 20" fill="none">
                 <path
                   d="M8.11713 9.16305C8.11713 9.16305 8.26334 9.02354 8.55576 8.74452C8.84818 8.46551 8.99439 7.93165 8.99439 7.14296C8.99439 6.35427 8.70197 5.68091 8.11713 5.12287C7.53229 4.56484 6.82658 4.28582 6 4.28582C5.17343 4.28582 4.46772 4.56484 3.88288 5.12287C3.29804 5.68091 3.00562 6.35427 3.00562 7.14296C3.00562 7.93165 3.29804 8.60501 3.88288 9.16305C4.46772 9.72109 5.17343 10.0001 6 10.0001C6.82658 10.0001 7.53229 9.72109 8.11713 9.16305ZM11.9888 7.14296C11.9888 7.95397 11.8601 8.61989 11.6028 9.14073L7.34514 17.7791C7.22037 18.0247 7.03517 18.2181 6.78954 18.3595C6.5439 18.5008 6.28073 18.5715 6 18.5715C5.71928 18.5715 5.4561 18.5008 5.21047 18.3595C4.96483 18.2181 4.78353 18.0247 4.66656 17.7791L0.397225 9.14073C0.139895 8.61989 0.0112305 7.95397 0.0112305 7.14296C0.0112305 5.56558 0.596071 4.21885 1.76575 3.10278C2.93544 1.98671 4.34685 1.42867 6 1.42867C7.65315 1.42867 9.06457 1.98671 10.2343 3.10278C11.4039 4.21885 11.9888 5.56558 11.9888 7.14296Z"
                   fill="#7D11F9"
                 />
               </svg>
-            </IconWrapper>
+            </div>
             <TextWrapper>
               <span>Location</span>
               <a href="#">District 8, Ho Chi Minh City</a>
             </TextWrapper>
-          </ItemInfo>
-        </ListInfo>
-        <FormContact data-aos="fade-left" data-aos-anchor-placement="center-center" id="form">
-          <FormInner>
+          </div>
+        </div>
+        <form data-aos="fade-left" data-aos-anchor-placement="center-center" id="form" className="pb-0 flex-1 w-full h-full sm:px-[ 1.25rem] md:px-0">
+          <div className="flex flex-col items-start gap-[1.25rem]">
             <InputWrapper>
               {/* Name */}
-              <InputInner>
+              <div className="flex items-center w-full h-full px-[1rem] py-[0.84375rem] bg-[rgba(147,107,232,0.05)] rounded-[0.625rem] hover:border hover:border-[#7d11f9] transition-all sm:h-[3.4375rem] lg:w-1/2">
                 <label id="form-name" />
-                <input placeholder="Name" type="text" id="form-name" />
-              </InputInner>
+                <input
+                  placeholder="Name"
+                  type="text"
+                  id="form-name"
+                  className="
+                    flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[1.2rem] border-none rounded-[0.625rem] 
+                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+                  "
+                />
+              </div>
               {/* Email */}
-              <InputInner>
+              <div className="flex items-center w-full h-full px-[1rem] py-[0.84375rem] bg-[rgba(147,107,232,0.05)] rounded-[0.625rem] hover:border hover:border-[#7d11f9] transition-all sm:h-[3.4375rem] lg:w-1/2">
                 <label id="form-Email" />
-                <input placeholder="Email" type="text" id="form-Email" />
-              </InputInner>
+                <input
+                  placeholder="Email"
+                  type="text"
+                  id="form-Email"
+                  className="
+                    flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[1.2rem] border-none rounded-[0.625rem] 
+                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+                  "
+                />
+              </div>
             </InputWrapper>
 
             <InputWrapper>
               {/* Subject */}
-              <InputInner>
+              <div className="flex items-center w-full h-full px-[1rem] py-[0.84375rem] bg-[rgba(147,107,232,0.05)] rounded-[0.625rem] hover:border hover:border-[#7d11f9] transition-all sm:h-[3.4375rem] lg:w-1/2">
                 <label id="form-subject" />
-                <input placeholder="Subject" type="text" id="form-subject" />
-              </InputInner>
+                <input
+                  placeholder="Subject"
+                  type="text"
+                  id="form-subject"
+                  className="
+                    flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[1.2rem] border-none rounded-[0.625rem] 
+                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+                  "
+                />
+              </div>
               {/* phone */}
-              <InputInner>
+              <div
+                className="
+                  flex items-center w-full h-full px-[1rem] py-[0.84375rem] bg-[rgba(147,107,232,0.05)] rounded-[0.625rem] 
+                  hover:border hover:border-[#7d11f9] transition-all sm:h-[3.4375rem] lg:w-1/2
+                "
+              >
                 <label id="form-phone" />
-                <input placeholder="Phone" type="phone" id="form-phone" />
-              </InputInner>
+                <input
+                  placeholder="Phone"
+                  type="phone"
+                  id="form-phone"
+                  className="
+                    flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[1.2rem] border-none rounded-[0.625rem] 
+                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+                  "
+                />
+              </div>
             </InputWrapper>
 
             <TextareaWrapper>
               {/* Note */}
-              <TextareaInner>
+              <div
+                className="
+                  flex items-center w-full px-[1rem] py-[0.84375rem] rounded-[0.625rem] bg-[rgba(147,107,232,0.05)] 
+                  hover:border hover:border-[#7d11f9] transition-all duration-150 ease-in-out
+                "
+              >
                 <label id="form-content"></label>
-                <textarea placeholder="Content" id="form-content" />
-              </TextareaInner>
+                <textarea
+                  placeholder="Content"
+                  id="form-content"
+                  className="
+                    flex w-full h-[8.75rem] bg-transparent text-[#6c757d] text-[1.2rem] font-normal border-none rounded-[0.625rem] resize-none 
+                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+                  "
+                ></textarea>
+              </div>
             </TextareaWrapper>
 
             <ButtonWrapper>
@@ -118,9 +228,9 @@ export default function Contact() {
                 <span>Send Message</span>
               </button>
             </ButtonWrapper>
-          </FormInner>
-        </FormContact>
-      </Content>
-    </Container>
+          </div>
+        </form>
+      </div>
+    </section>
   );
 }

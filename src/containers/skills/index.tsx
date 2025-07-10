@@ -49,12 +49,9 @@ export default function Skills() {
                       <Skill layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} whileHover={{ scale: 1.15 }} whileTap={{ scale: 0.9 }}>
                         <IconWrapper>
                           <div className="w-full h-full" role="tooltip">
-                            {/* <a href="https://codepen.io/joshua_ward/pens/public/" target="_blank" data-tooltip="Codepen" data-position="top" class="top" /> */}
                             <img src={icon.path} alt={icon.name} width="100%" height="100%" />
-                            {/* <img src={icon.path} alt={icon.name} width="100%" height="100%" /> */}
                           </div>
                         </IconWrapper>
-                        {/* <TextWrapper textContent={icon.name.toString()} /> */}
                       </Skill>
 
                       {/* Chèn SkillEmpty giữa các phần tử, không chèn sau phần tử cuối */}
