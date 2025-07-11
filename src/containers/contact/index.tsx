@@ -1,4 +1,4 @@
-import { ButtonWrapper, InputWrapper, TextWrapper, TextareaWrapper } from './style';
+import FormContact from './form-contact';
 
 export default function Contact() {
   return (
@@ -45,11 +45,28 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <TextWrapper>
-              <span>Call Me</span>
-              <a href="#">+84 972 712 621</a>
-            </TextWrapper>
+
+            <div className="flex flex-col justify-center flex-1">
+              <span
+                className="
+                h-[1.8125rem] w-full inline-block 
+                text-[#3f3a64] text-[1.25rem] font-semibold leading-[1.75rem]
+              "
+              >
+                Call Me
+              </span>
+              <a
+                href="#"
+                className="
+                  h-[1.6875rem] w-full inline-block 
+                text-[#696969] text-[1.1875rem] font-normal leading-[1.75rem]
+                "
+              >
+                +84 972 712 621
+              </a>
+            </div>
           </div>
+          {/* phone */}
 
           {/* email */}
           <div
@@ -78,11 +95,29 @@ export default function Contact() {
                 </defs>
               </svg>
             </div>
-            <TextWrapper>
-              <span>Email Me</span>
-              <a href="#">truongvanchutoan1999@gmail.com</a>
-            </TextWrapper>
+
+            <div className="flex flex-col justify-center flex-1">
+              <span
+                className="
+                  h-[1.8125rem] w-full inline-block 
+                  text-[#3f3a64] text-[1.25rem] font-semibold leading-[1.75rem]
+              "
+              >
+                Email Me
+              </span>
+              <a
+                href="#"
+                className="
+                  h-[1.6875rem] w-full inline-block 
+                text-[#696969] text-[1.1875rem] font-normal leading-[1.75rem]
+                "
+              >
+                truongvanchutoan1999@gmail.com
+              </a>
+            </div>
           </div>
+          {/* email */}
+
           {/* github */}
           <div
             className="
@@ -107,12 +142,30 @@ export default function Contact() {
                 <path d="M9.5 18.2402C4.99 20.2402 4.5 16.2402 2.5 16.2402" stroke="#7D11F9" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
-            <TextWrapper>
-              <span>Github Me</span>
-              <a href="https://github.com/chutoan99">https://github.com/chutoan99</a>
-            </TextWrapper>
+
+            <div className="flex flex-col justify-center flex-1">
+              <span
+                className="
+                  h-[1.8125rem] w-full inline-block 
+                  text-[#3f3a64] text-[1.25rem] font-semibold leading-[1.75rem]
+              "
+              >
+                Github Me
+              </span>
+              <a
+                href="https://github.com/chutoan99"
+                className="
+                  h-[1.6875rem] w-full inline-block 
+                text-[#696969] text-[1.1875rem] font-normal leading-[1.75rem]
+                "
+              >
+                https://github.com/chutoan99
+              </a>
+            </div>
           </div>
-          {/* location  */}
+          {/* github */}
+
+          {/* location */}
           <div
             className="
               flex h-full gap-[1.5rem] w-[30.9775rem] 
@@ -132,104 +185,30 @@ export default function Contact() {
                 />
               </svg>
             </div>
-            <TextWrapper>
-              <span>Location</span>
-              <a href="#">District 8, Ho Chi Minh City</a>
-            </TextWrapper>
+
+            <div className="flex flex-col justify-center flex-1">
+              <span
+                className="
+                h-[1.8125rem] w-full inline-block 
+                text-[#3f3a64] text-[1.25rem] font-semibold leading-[1.75rem]
+              "
+              >
+                Location
+              </span>
+              <a
+                href="#"
+                className="
+                  h-[1.6875rem] w-full inline-block 
+                text-[#696969] text-[1.1875rem] font-normal leading-[1.75rem]
+                "
+              >
+                District 8, Ho Chi Minh City
+              </a>
+            </div>
           </div>
+          {/* location */}
         </div>
-        <form data-aos="fade-left" data-aos-anchor-placement="center-center" id="form" className="pb-0 flex-1 w-full h-full sm:px-[ 1.25rem] md:px-0">
-          <div className="flex flex-col items-start gap-[1.25rem]">
-            <InputWrapper>
-              {/* Name */}
-              <div className="flex items-center w-full h-full px-[1rem] py-[0.84375rem] bg-[rgba(147,107,232,0.05)] rounded-[0.625rem] hover:border hover:border-[#7d11f9] transition-all sm:h-[3.4375rem] lg:w-1/2">
-                <label id="form-name" />
-                <input
-                  placeholder="Name"
-                  type="text"
-                  id="form-name"
-                  className="
-                    flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[1.2rem] border-none rounded-[0.625rem] 
-                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
-                  "
-                />
-              </div>
-              {/* Email */}
-              <div className="flex items-center w-full h-full px-[1rem] py-[0.84375rem] bg-[rgba(147,107,232,0.05)] rounded-[0.625rem] hover:border hover:border-[#7d11f9] transition-all sm:h-[3.4375rem] lg:w-1/2">
-                <label id="form-Email" />
-                <input
-                  placeholder="Email"
-                  type="text"
-                  id="form-Email"
-                  className="
-                    flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[1.2rem] border-none rounded-[0.625rem] 
-                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
-                  "
-                />
-              </div>
-            </InputWrapper>
-
-            <InputWrapper>
-              {/* Subject */}
-              <div className="flex items-center w-full h-full px-[1rem] py-[0.84375rem] bg-[rgba(147,107,232,0.05)] rounded-[0.625rem] hover:border hover:border-[#7d11f9] transition-all sm:h-[3.4375rem] lg:w-1/2">
-                <label id="form-subject" />
-                <input
-                  placeholder="Subject"
-                  type="text"
-                  id="form-subject"
-                  className="
-                    flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[1.2rem] border-none rounded-[0.625rem] 
-                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
-                  "
-                />
-              </div>
-              {/* phone */}
-              <div
-                className="
-                  flex items-center w-full h-full px-[1rem] py-[0.84375rem] bg-[rgba(147,107,232,0.05)] rounded-[0.625rem] 
-                  hover:border hover:border-[#7d11f9] transition-all sm:h-[3.4375rem] lg:w-1/2
-                "
-              >
-                <label id="form-phone" />
-                <input
-                  placeholder="Phone"
-                  type="phone"
-                  id="form-phone"
-                  className="
-                    flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[1.2rem] border-none rounded-[0.625rem] 
-                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
-                  "
-                />
-              </div>
-            </InputWrapper>
-
-            <TextareaWrapper>
-              {/* Note */}
-              <div
-                className="
-                  flex items-center w-full px-[1rem] py-[0.84375rem] rounded-[0.625rem] bg-[rgba(147,107,232,0.05)] 
-                  hover:border hover:border-[#7d11f9] transition-all duration-150 ease-in-out
-                "
-              >
-                <label id="form-content"></label>
-                <textarea
-                  placeholder="Content"
-                  id="form-content"
-                  className="
-                    flex w-full h-[8.75rem] bg-transparent text-[#6c757d] text-[1.2rem] font-normal border-none rounded-[0.625rem] resize-none 
-                    focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
-                  "
-                ></textarea>
-              </div>
-            </TextareaWrapper>
-
-            <ButtonWrapper>
-              <button type="submit">
-                <span>Send Message</span>
-              </button>
-            </ButtonWrapper>
-          </div>
-        </form>
+        <FormContact />
       </div>
     </section>
   );
