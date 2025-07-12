@@ -1,5 +1,5 @@
 import { FC, useEffect, useRef } from 'react';
-import { Canvas, Container } from './style';
+import { motion } from 'framer-motion';
 const Background: FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -148,9 +148,10 @@ const Background: FC = () => {
   }, []);
 
   return (
-    <Container>
-      <Canvas initial={{ opacity: 0 }} animate={{ opacity: 0.6 }} transition={{ duration: 0.4, delay: 1.4 }} ref={canvasRef} />
-    </Container>
+    <div className="bg-white z-0 relative h-[100vh] flex justify-center items-center flex-col gap-[1.25rem">
+      <motion.canvas className="absolute inset-0 w-full h-full initial={{ opacity: 0 }}" animate={{ opacity: 0.6 }} transition={{ duration: 0.4, delay: 1.4 }} ref={canvasRef} >
+      </motion.canvas>
+    </div>
   );
 };
 
