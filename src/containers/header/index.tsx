@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styled from 'styled-components';
 
 export default function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -46,3 +47,110 @@ export default function Header() {
     </header>
   );
 }
+export const StyledOuterMenu = styled.nav<{ $visible: boolean }>`
+  .hamburger {
+    z-index: 1;
+    backface-visibility: hidden;
+
+    > div {
+      height: 0.125rem;
+      transition: all 0.4s ease;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0.125rem;
+        background: inherit;
+        transition: all 0.4s ease;
+      }
+
+      &::before {
+        top: -0.5rem;
+      }
+
+      &::after {
+        top: 0.5rem;
+      }
+    }
+  }
+
+  .menu {
+    pointer-events: ${({ $visible }) => ($visible ? 'auto' : 'none')};
+    visibility: ${({ $visible }) => ($visible ? 'visible' : 'hidden')};
+    backdrop-filter: ${({ $visible }) => ($visible ? 'blur(0.625rem)' : 'none')};
+    -webkit-backdrop-filter: ${({ $visible }) =>
+      $visible ? 'blur(0.625rem)' : 'none'};
+
+    > div {
+      width: 250vw;
+      height: 250vw;
+      transform: ${({ $visible }) => ($visible ? 'scale(1)' : 'scale(0)')};
+      will-change: transform;
+      border-radius: 50%;
+      transition: all 0.4s ease;
+      backface-visibility: hidden;
+      background: rgba(0, 0, 0, 0.5);
+
+      @supports not (backdrop-filter: blur(1px)) {
+        background: rgba(0, 0, 0, 0.8);
+      }
+
+      > div {
+        max-width: 90vw;
+        opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+        transition: opacity 0.4s ease ${({ $visible }) => ($visible ? '0.4s' : '0s')};
+      }
+
+      ul li a {
+        background: linear-gradient(
+          90deg,
+          #ffffff 0%,
+          #ffffff 50%,
+          #8e4bda 51%,
+          #7d11f9 100%
+        );
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover,
+        &:focus {
+          background-position: 100% 0;
+        }
+      }
+    }
+  }
+
+  ${({ $visible }) =>
+    $visible &&
+    `
+    .hamburger > div {
+      transform: rotate(135deg);
+      background-color: white;
+
+      &::before {
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(90deg);
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      .hamburger > div {
+        transform: rotate(225deg);
+      }
+    }
+  `}
+`;
