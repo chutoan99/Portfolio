@@ -1,10 +1,10 @@
 version: '3.5'
 
 services:
-  app:
-    build:
-      context: .
-      dockerfile: dockerfile
-    container_name: web
-    ports:
-      - '3000:3000'
+    app:
+        build:
+            context: .
+            dockerfile: dockerfile
+        container_name: web
+        ports:
+            - '3000:3000'
