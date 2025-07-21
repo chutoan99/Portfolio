@@ -65,14 +65,14 @@ export default function Projects3() {
 	return (
 		<div
 			className='
-        flex items-start gap-[50px] w-full  px-[16px] rounded-xl bg-white  
-        lt:max-w-[1200px] lt:px-0 py-[16px]2  lt:w-[1200px]
-      '>
+				flex items-start gap-[50px] w-full  px-[16px] rounded-xl bg-white  
+				lt:max-w-[1200px] lt:px-0 py-[16px]2  lt:w-[1200px]
+			'>
 			<div
 				className='
-          flex flex-col gap-[20px] 
-          lt:grid
-        '
+					flex flex-col gap-[20px] 
+					lt:grid
+				'
 				style={{ gridTemplateColumns: '5.5fr 4.5fr' }}>
 				<div
 					data-aos='zoom-in'
@@ -80,14 +80,14 @@ export default function Projects3() {
 					data-aos-easing='ease-in-sine'
 					data-aos-duration='500'
 					className='
-            h-[200px] flex justify-center items-center flex-[1_0_0] self-stretch 
-            lt:h-full
-          '>
+						h-[200px] flex justify-center items-center flex-[1_0_0] self-stretch 
+						lt:h-full
+					'>
 					<div
 						className='
-              flex justify-center center items-center w-full relative h-[200px] scale-[0.5] 
-              lt:h-full  lt:scale-[1]
-            '>
+							flex justify-center center items-center w-full relative h-[200px] scale-[0.5] 
+							lt:h-full  lt:scale-[1]
+						'>
 						{device_03.map((device, index) => (
 							<motion.div
 								key={index}
@@ -112,8 +112,8 @@ export default function Projects3() {
 					data-aos-easing='ease-in-sine'
 					data-aos-duration='800'
 					className='
-            lt:ml-[50px]
-          '>
+						lt:ml-[50px]
+					'>
 					<ProjectInfo project={PROJECTS[2]} />
 				</div>
 			</div>

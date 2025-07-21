@@ -7,11 +7,11 @@ export default function Header() {
 		<header className='w-full flex justify-center'>
 			<div
 				className='
-          fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[16px] 
-          sm:pr-[15px] 
-          md:pr-[20px] 
-          lt:pr-0
-        '>
+					fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[16px] 
+					sm:pr-[15px] 
+					md:pr-[20px] 
+					lt:pr-0
+				'>
 				<div className='flex justify-between section-container'>
 					<a href='#home' className='link'></a>
 					<nav
@@ -42,9 +42,9 @@ export default function Header() {
 												role='menuitem'>
 												<a
 													className='
-                            link relative inline font-bold text-5xl 
-                            duration-300 hover:no-underline
-                          '
+														link relative inline font-bold text-5xl 
+														duration-300 hover:no-underline
+													'
 													href={`#${el.toLowerCase()}`}
 													onClick={setMenuVisible.bind(
 														null,

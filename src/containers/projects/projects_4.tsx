@@ -46,14 +46,14 @@ export default function Projects4() {
 	return (
 		<div
 			className='
-        flex items-start gap-[50px] w-full  px-[16px] rounded-xl bg-white 
-        lt:px-0 py-[16px]2  lt:w-[1200px] lt:max-w-[1200px]
-      '>
+				flex items-start gap-[50px] w-full  px-[16px] rounded-xl bg-white 
+				lt:px-0 py-[16px]2  lt:w-[1200px] lt:max-w-[1200px]
+			'>
 			<div
 				className=' 
-          flex flex-col gap-[20px] 
-          lt:grid
-        '
+					flex flex-col gap-[20px] 
+					lt:grid
+				'
 				style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
 				<div
 					data-aos='fade-right'
@@ -61,9 +61,9 @@ export default function Projects4() {
 					data-aos-easing='ease-in-sine'
 					data-aos-duration='800'
 					className='
-            order-2 
-            lt:order-1 lt:mr-[50px]
-          '>
+						order-2 
+						lt:order-1 lt:mr-[50px]
+					'>
 					<ProjectInfo project={PROJECTS[3]} />
 				</div>
 				<div
@@ -72,14 +72,14 @@ export default function Projects4() {
 					data-aos-easing='ease-in-sine'
 					data-aos-duration='500'
 					className='
-            order-1 h-[200px]  flex justify-center items-center flex-[1_0_0] self-stretch  
-            lt:order-2 lt:h-full
-          '>
+						order-1 h-[200px]  flex justify-center items-center flex-[1_0_0] self-stretch  
+						lt:order-2 lt:h-full
+					'>
 					<div
 						className='
-              flex justify-center center items-center w-full relative h-[200px]  scale-[0.5] 
-              lt:h-full lt:scale-[1]
-            '>
+							flex justify-center center items-center w-full relative h-[200px]  scale-[0.5] 
+							lt:h-full lt:scale-[1]
+						'>
 						{device_04.map(
 							(device: DeviceCustom, index: number) => (
 								<motion.div
@@ -87,9 +87,9 @@ export default function Projects4() {
 									initial={{ x: device.x }}
 									animate={device.animation}
 									className='
-                  initial 
-                  lt:absolute
-                '>
+										initial 
+										lt:absolute
+									'>
 									<div className='w-full h-full'>
 										<img
 											src={device.image}

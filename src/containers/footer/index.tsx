@@ -2,29 +2,29 @@ export default function Footer() {
 	return (
 		<footer
 			className='
-        bg-[rgba(147,107,232,0.05)] flex justify-center h-full 
-        pt-[50px] pb-[50px] px-[16px]
-        sm:h-[244px] sm:p-[20px]
-      '>
+				bg-[rgba(147,107,232,0.05)] flex justify-center h-full 
+				pt-[50px] pb-[50px] px-[16px]
+				sm:h-[244px] sm:p-[20px]
+			'>
 			<div
 				className='
-          flex flex-col justify-between gap-[20px] w-full max-w-[1200px]
-          sm:flex-row sm:items-center
-        '>
+					flex flex-col justify-between gap-[20px] w-full max-w-[1200px]
+					sm:flex-row sm:items-center
+				'>
 				<ul
 					className='
-            flex flex-col justify-start items-start gap-[10px] w-full list-none
-            sm:flex-row 
-            md:gap-[15px] 
-            lg:items-center
-          '>
+						flex flex-col justify-start items-start gap-[10px] w-full list-none
+						sm:flex-row 
+						md:gap-[15px] 
+						lg:items-center
+					'>
 					<li>
 						<a
 							href='#home'
 							className='
-                text-[21px] font-normal leading-[150%] capitalize text-black 
-               hover:text-[#7D11F9] transition duration-150
-              '>
+								text-[21px] font-normal leading-[150%] capitalize text-black 
+								hover:text-[#7D11F9] transition duration-150
+							'>
 							home
 						</a>
 					</li>
@@ -32,9 +32,9 @@ export default function Footer() {
 						<a
 							href='#about'
 							className='
-                text-[21px] font-normal leading-[150%] capitalize text-black 
-                hover:text-[#7D11F9] transition duration-150
-              '>
+								text-[21px] font-normal leading-[150%] capitalize text-black 
+								hover:text-[#7D11F9] transition duration-150
+							'>
 							about
 						</a>
 					</li>
@@ -42,9 +42,9 @@ export default function Footer() {
 						<a
 							href='#projects'
 							className='
-                text-[21px] font-normal leading-[150%] capitalize text-black 
-                hover:text-[#7D11F9] transition duration-150
-              '>
+								text-[21px] font-normal leading-[150%] capitalize text-black 
+								hover:text-[#7D11F9] transition duration-150
+							'>
 							projects
 						</a>
 					</li>
@@ -52,9 +52,9 @@ export default function Footer() {
 						<a
 							href='#skills'
 							className='
-                text-[21px] font-normal leading-[150%] capitalize text-black 
-                hover:text-[#7D11F9] transition duration-150
-              '>
+								text-[21px] font-normal leading-[150%] capitalize text-black 
+								hover:text-[#7D11F9] transition duration-150
+							'>
 							skills
 						</a>
 					</li>
@@ -62,23 +62,23 @@ export default function Footer() {
 						<a
 							href='#contact'
 							className='
-                text-[21px] font-normal leading-[150%] capitalize text-black 
-                hover:text-[#7D11F9] transition duration-150
-              '>
+								text-[21px] font-normal leading-[150%] capitalize text-black 
+								hover:text-[#7D11F9] transition duration-150
+							'>
 							contact
 						</a>
 					</li>
 				</ul>
 				<ul
 					className='
-            flex gap-[16px] justify-start items-center list-none
-            md:justify-end
-          '>
+						flex gap-[16px] justify-start items-center list-none
+						md:justify-end
+					'>
 					<li
 						className='
-              w-[32px] h-[32px] shrink-0 
-              hover:opacity-50 transition duration-500 cursor-pointer
-            '>
+							w-[32px] h-[32px] shrink-0 
+							hover:opacity-50 transition duration-500 cursor-pointer
+						'>
 						<svg
 							width={33}
 							height={33}
@@ -92,9 +92,9 @@ export default function Footer() {
 					</li>
 					<li
 						className='
-              w-[32px] h-[32px] shrink-0 
-              hover:opacity-50 transition duration-500 cursor-pointer
-            '>
+							w-[32px] h-[32px] shrink-0 
+							hover:opacity-50 transition duration-500 cursor-pointer
+						'>
 						<svg
 							width={33}
 							height={33}
@@ -110,9 +110,9 @@ export default function Footer() {
 					</li>
 					<li
 						className='
-              w-[32px] h-[32px] shrink-0 
-              hover:opacity-50 transition duration-500 cursor-pointer
-            '>
+							w-[32px] h-[32px] shrink-0 
+							hover:opacity-50 transition duration-500 cursor-pointer
+						'>
 						<svg
 							width={33}
 							height={33}
@@ -126,9 +126,9 @@ export default function Footer() {
 					</li>
 					<li
 						className='
-              w-[32px] h-[32px] shrink-0 
-              hover:opacity-50 transition duration-500 cursor-pointer
-            '>
+							w-[32px] h-[32px] shrink-0 
+							hover:opacity-50 transition duration-500 cursor-pointer
+						'>
 						<svg
 							width={33}
 							height={33}

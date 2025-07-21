@@ -5,9 +5,9 @@ export default function About() {
 		<section
 			id='about'
 			className='
-      bg-white px-0 py-[50px] 
-        lt:py-[100px]
-      '>
+				bg-white px-0 py-[50px] 
+				lt:py-[100px]
+			'>
 			<div
 				data-aos='fade-right'
 				data-aos-offset='200'
@@ -16,10 +16,10 @@ export default function About() {
 				className='max-w-[1200px] mx-auto'>
 				<div
 					className='
-            flex flex-col justify-center items-center gap-[30px] px-[20px] py-[50px] 
-            md:flex-row md:items-start 
-            lt:flex-row lt:justify-between lt:px-0 lt:py-[100px]
-          '>
+						flex flex-col justify-center items-center gap-[30px] px-[20px] py-[50px] 
+						md:flex-row md:items-start 
+						lt:flex-row lt:justify-between lt:px-0 lt:py-[100px]
+					'>
 					<AvatarCard />
 					<div
 						data-aos='fade-left'
@@ -111,9 +111,11 @@ export default function About() {
 
 						<div className='mt-[36px] flex items-center flex-col gap-[18px] sm:mt-[24px] lt:gap-[50px] lt:mt-[48px]  lt:flex-row'>
 							<button
-								className='order-1 w-full h-[54px] shrink-0 rounded-[10px] bg-[#7d11f9] border border-[#7d11f9]
-             hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-500 hover:ease-[cubic-bezier(0.4,0,0.2,1)]
-             lt:w-[277px]'>
+								className='
+									order-1 w-full h-[54px] shrink-0 rounded-[10px] bg-[#7d11f9] border border-[#7d11f9]
+									hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-500 hover:ease-[cubic-bezier(0.4,0,0.2,1)]
+									lt:w-[277px]
+								'>
 								<a
 									href='./assets/files/CV_TruongVanChuToan_FrontEnd.pdf'
 									target='_blank'

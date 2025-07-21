@@ -6,34 +6,34 @@ export default function Contact() {
 			id='contact'
 			className='
 			bg-[#f1f5f9] px-[16px] py-[50px] 
-				lg:py-[100px]
+			lg:py-[100px]
 			'>
 			<div
 				className='
-          flex flex-col justify-between h-full max-w-[1200px] mx-auto gap-[25px] 
-          sm:gap-[30px] sm:mt-[20px] sm:py-5 
-          md:flex-row
-        '>
+					flex flex-col justify-between h-full max-w-[1200px] mx-auto gap-[25px] 
+					sm:gap-[30px] sm:mt-[20px] sm:py-5 
+					md:flex-row
+				'>
 				<div
 					data-aos='fade-right'
 					data-aos-anchor-placement='center-center'
 					className='
-            w-full flex flex-col items-start pb-0 gap-[15px] 
-            sm:gap-[15px] 
-            md:gap-[20px] md:w-[45%]  
-            lg:w-[495px]
-          '>
+						w-full flex flex-col items-start pb-0 gap-[15px] 
+						sm:gap-[15px] 
+						md:gap-[20px] md:w-[45%]  
+						lg:w-[495px]
+          			'>
 					{/* phone */}
 					<div
 						className='
-              flex h-full gap-[24px] w-[495px] 
-              sm:w-full sm:gap-[16px] sm:h-[55px]
-            '>
+							flex h-full gap-[24px] w-[495px] 
+							sm:w-full sm:gap-[16px] sm:h-[55px]
+						'>
 						<div
 							className='
-                flex justify-center w-[20px] 
-                hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
-              '>
+								flex justify-center w-[20px] 
+								hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
+							'>
 							<svg
 								width={17}
 								height={22}
@@ -49,17 +49,17 @@ export default function Contact() {
 						<div className='flex flex-col justify-center flex-1'>
 							<span
 								className='
-                h-[29px] w-full inline-block 
-                text-[#3f3a64] text-[20px] font-semibold leading-[28px]
-              '>
+									h-[29px] w-full inline-block 
+									text-[#3f3a64] text-[20px] font-semibold leading-[28px]
+								'>
 								Call Me
 							</span>
 							<a
 								href='#'
 								className='
-                  h-[27px] w-full inline-block 
-                text-[#696969] text-[19px] font-normal leading-[28px]
-                '>
+									h-[27px] w-full inline-block 
+									text-[#696969] text-[19px] font-normal leading-[28px]
+								'>
 								+84 972 712 621
 							</a>
 						</div>
@@ -69,14 +69,14 @@ export default function Contact() {
 					{/* email */}
 					<div
 						className='
-              flex h-full gap-[24px] w-[495px] 
-              sm:w-full sm:gap-[16px] sm:h-[55px]
-            '>
+							flex h-full gap-[24px] w-[495px] 
+							sm:w-full sm:gap-[16px] sm:h-[55px]
+						'>
 						<div
 							className='
-                flex justify-center w-[20px] 
-                hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
-              '>
+								flex justify-center w-[20px] 
+								hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
+							'>
 							<svg
 								width={18}
 								height={18}
@@ -104,17 +104,17 @@ export default function Contact() {
 						<div className='flex flex-col justify-center flex-1'>
 							<span
 								className='
-                  h-[29px] w-full inline-block 
-                  text-[#3f3a64] text-[20px] font-semibold leading-[28px]
-              '>
+									h-[29px] w-full inline-block 
+									text-[#3f3a64] text-[20px] font-semibold leading-[28px]
+								'>
 								Email Me
 							</span>
 							<a
 								href='#'
 								className='
-                  h-[27px] w-full inline-block 
-                text-[#696969] text-[19px] font-normal leading-[28px]
-                '>
+									h-[27px] w-full inline-block 
+									text-[#696969] text-[19px] font-normal leading-[28px]
+								'>
 								truongvanchutoan1999@gmail.com
 							</a>
 						</div>
@@ -124,14 +124,14 @@ export default function Contact() {
 					{/* github */}
 					<div
 						className='
-              flex h-full gap-[24px] w-[495px] 
-              sm:w-full sm:gap-[16px] sm:h-[55px]
-            '>
+							flex h-full gap-[24px] w-[495px] 
+							sm:w-full sm:gap-[16px] sm:h-[55px]
+						'>
 						<div
 							className='
-                flex justify-center w-[20px] 
-                hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
-              '>
+								flex justify-center w-[20px] 
+								hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
+							'>
 							<svg
 								width={25}
 								height={25}
@@ -157,17 +157,17 @@ export default function Contact() {
 						<div className='flex flex-col justify-center flex-1'>
 							<span
 								className='
-                  h-[29px] w-full inline-block 
-                  text-[#3f3a64] text-[20px] font-semibold leading-[28px]
-              '>
+									h-[29px] w-full inline-block 
+									text-[#3f3a64] text-[20px] font-semibold leading-[28px]
+								'>
 								Github Me
 							</span>
 							<a
 								href='https://github.com/chutoan99'
 								className='
-                  h-[27px] w-full inline-block 
-                text-[#696969] text-[19px] font-normal leading-[28px]
-                '>
+									h-[27px] w-full inline-block 
+									text-[#696969] text-[19px] font-normal leading-[28px]
+								'>
 								https://github.com/chutoan99
 							</a>
 						</div>
@@ -177,14 +177,14 @@ export default function Contact() {
 					{/* location */}
 					<div
 						className='
-              flex h-full gap-[24px] w-[495px] 
-              sm:w-full sm:gap-[16px] sm:h-[55px]
-            '>
+							flex h-full gap-[24px] w-[495px] 
+							sm:w-full sm:gap-[16px] sm:h-[55px]
+						'>
 						<div
 							className='
-                flex justify-center w-[20px] 
-                hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
-              '>
+								flex justify-center w-[20px] 
+								hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
+							'>
 							<svg
 								width={12}
 								height={20}
@@ -200,17 +200,17 @@ export default function Contact() {
 						<div className='flex flex-col justify-center flex-1'>
 							<span
 								className='
-                h-[29px] w-full inline-block 
-                text-[#3f3a64] text-[20px] font-semibold leading-[28px]
-              '>
+									h-[29px] w-full inline-block 
+									text-[#3f3a64] text-[20px] font-semibold leading-[28px]
+								'>
 								Location
 							</span>
 							<a
 								href='#'
 								className='
-                  h-[27px] w-full inline-block 
-                text-[#696969] text-[19px] font-normal leading-[28px]
-                '>
+									h-[27px] w-full inline-block 
+									text-[#696969] text-[19px] font-normal leading-[28px]
+								'>
 								District 8, Ho Chi Minh City
 							</a>
 						</div>

@@ -63,8 +63,9 @@ export default function Skills() {
 			<div className='max-w-[1165px] px-2.5 mx-auto sm:px-[20px] md:px-7.5'>
 				<div className='h-full shrink-0 flex flex-col items-center justify-center py-[50px] lg:py-[100px]'>
 					<ul
-						className='flex w-full flex-row items-center justify-start gap-2 overflow-x-scroll overflow-y-hidden scroll-snap-x snap-mandatory scrollbar-none pt-2 pb-8 list-none select-none  
-          sm:justify-center sm:overflow-x-hidden sm:gap-[10px] sm:pb-[32px]'>
+						className='
+							flex w-full flex-row items-center justify-start gap-2 overflow-x-scroll overflow-y-hidden scroll-snap-x snap-mandatory scrollbar-none pt-2 pb-8 list-none select-none  
+          					sm:justify-center sm:overflow-x-hidden sm:gap-[10px] sm:pb-[32px]'>
 						{Object.values(Types).map((item: Types, i: number) => (
 							<li
 								key={i}

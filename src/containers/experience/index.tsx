@@ -5,43 +5,44 @@ export default function Experience() {
 		<section
 			id='Experience'
 			className='
-        p-[20px] flex w-full flex-col items-center gap-5 pt-[50px]  pb-[50px]  
-        sm:pb-[100px] 
-        md:gap-[24px]  md:px-[120px]
-        '
+				p-[20px] flex w-full flex-col items-center gap-5 pt-[50px]  pb-[50px]  
+				sm:pb-[100px] 
+				md:gap-[24px]  md:px-[120px]
+			'
 			style={{ background: 'rgba(147, 107, 232, 0.05)' }}>
 			<div className='rounded-xl bg-white'>
 				<div
 					className='
-            px-[25px] pb-[25px] w-full relative min-h-screen flex flex-col justify-center overflow-hidden antialiased
-            md:px-[28px] md:pt-[28px] md:pb-[16px]
-          '>
+						px-[25px] pb-[25px] w-full relative min-h-screen flex flex-col justify-center overflow-hidden antialiased
+						md:px-[28px] md:pt-[28px] md:pb-[16px]
+					'>
 					<div className='flex flex-col justify-center divide-y'>
 						<div
 							className='
-                px-[25px] pb-[25px] w-full
-                md:px-[32px] md:pb-[32px]
-             '>
+								px-[25px] pb-[25px] w-full
+								md:px-[32px] md:pb-[32px]
+							'>
 							<div
 								className='
-                space-y-8 relative before:absolute before:inset-0 before:ml-1 before:-translate-x-px  before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent
-                md:before:ml-[19px] md:before:translate-x-0
-              '>
+									space-y-8 relative before:absolute before:inset-0 before:ml-1 before:-translate-x-px  before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent
+									md:before:ml-[19px] md:before:translate-x-0
+								'>
 								<div className='relative'>
 									<div
 										className='
-                    items-center mb-3
-                    md:flex  md:space-x-4
-                  '>
+											items-center mb-3
+											md:flex  md:space-x-4
+										'>
 										<div
 											className='
-                      flex items-center space-x-4 
-                      md:space-x-2 md:space-x-reverse
-                    '>
+												flex items-center space-x-4 
+												md:space-x-2 md:space-x-reverse
+											'>
 											<div
 												className='
-                        flex items-center justify-center w-10 h-10 rounded-full bg-white shadow 
-                        md:order-1'>
+													flex items-center justify-center w-10 h-10 rounded-full bg-white shadow 
+													md:order-1
+												'>
 												<svg
 													className='fill-emerald-500'
 													width={16}
@@ -60,17 +61,18 @@ export default function Experience() {
 											</div>
 											<time
 												className='
-                        text-primary text-left text-base not-italic font-normal 
-                        md:w-21'>
+													text-primary text-left text-base not-italic font-normal 
+													md:w-21
+												'>
 												Aug 2022 – May 2024
 											</time>
 										</div>
 									</div>
 									<div
 										className='
-                    ml-14 flex flex-col gap-[10px] w-full pr-[48px] 
-                    md:ml-[64px]
-                  '>
+											ml-14 flex flex-col gap-[10px] w-full pr-[48px] 
+											md:ml-[64px]
+										'>
 										<div
 											className='bg-white p-4 rounded-[6px] border border-slate-200 text-slate-500 shadow'
 											data-aos='zoom-in-up'>
@@ -251,18 +253,19 @@ export default function Experience() {
 								<div className='relative'>
 									<div
 										className=' 
-                    items-center 
-                    md:flex md:space-x-4 mb-3
-                  '>
+											items-center 
+											md:flex md:space-x-4 mb-3
+										'>
 										<div
 											className='
-                      flex items-center space-x-4 
-                      md:space-x-2 md:space-x-reverse
-                    '>
+												flex items-center space-x-4 
+												md:space-x-2 md:space-x-reverse
+											'>
 											<div
 												className='
-                      flex items-center justify-center w-10 h-10 rounded-full bg-white shadow 
-                      md:order-1'>
+													flex items-center justify-center w-10 h-10 rounded-full bg-white shadow 
+													md:order-1
+												'>
 												<svg
 													className='fill-red-500'
 													width={16}
@@ -280,8 +283,9 @@ export default function Experience() {
 											</div>
 											<time
 												className='
-                        text-primary text-left text-base not-italic font-normal 
-                        md:w-21'>
+													text-primary text-left text-base not-italic font-normal 
+													md:w-21
+												'>
 												{' '}
 												May 2022 - Jul 2022
 											</time>
@@ -289,8 +293,9 @@ export default function Experience() {
 									</div>
 									<div
 										className='
-                    ml-14 flex flex-col gap-[10px] w-full pr-[48px]  
-                    md:ml-[64px]'>
+											ml-14 flex flex-col gap-[10px] w-full pr-[48px]  
+											md:ml-[64px]
+										'>
 										<div
 											className='bg-white p-4 rounded-[6px] border border-slate-200 text-slate-500 shadow'
 											data-aos='zoom-in-up'>
