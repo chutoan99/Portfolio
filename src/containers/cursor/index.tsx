@@ -50,7 +50,7 @@ const Cursor: FC = () => {
 		<div
 			ref={cursorRef}
 			className='
-        w-[1.75rem] h-[1.75rem]
+        w-[28px] h-[28px]
         bg-transparent
         border border-white
         rounded-full

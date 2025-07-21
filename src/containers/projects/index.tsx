@@ -23,16 +23,16 @@ export default function Projects() {
 		<section
 			id='projects'
 			className='
-        flex flex-col justify-center items-center self-stretch py-[3.125rem] bg-white
+        flex flex-col justify-center items-center self-stretch py-[50px] bg-[#f1f5f9]
         lt:px-20 lt:py-24 
       '>
 			<div
 				className='
-          w-full max-w-[75rem] mx-auto my-0
+          w-full max-w-[1200px] mx-auto my-0
         '>
 				<div
 					className='
-            flex flex-col justify-center items-center gap-[3.125rem] self-stretch   
+            flex flex-col justify-center items-center gap-[50px] self-stretch   
             lt:px-8 py-0
           '>
 					<Projects1 />

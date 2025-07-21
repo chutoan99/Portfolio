@@ -5,27 +5,27 @@ export default function Experience() {
 		<section
 			id='Experience'
 			className='
-        p-[1.25rem] flex w-full flex-col items-center gap-5 pt-[3.125rem]  pb-[3.125rem]  
-        sm:pb-[6.25rem] 
-        md:gap-[1.5rem]  md:px-[7.5rem]
+        p-[20px] flex w-full flex-col items-center gap-5 pt-[50px]  pb-[50px]  
+        sm:pb-[100px] 
+        md:gap-[24px]  md:px-[120px]
         '
 			style={{ background: 'rgba(147, 107, 232, 0.05)' }}>
 			<div className='rounded-xl bg-white'>
 				<div
 					className='
-            px-[1.563rem] pb-[1.563rem] w-full relative min-h-screen flex flex-col justify-center overflow-hidden antialiased
-            md:px-[1.75rem] md:pt-[1.75rem] md:pb-[1rem]
+            px-[25px] pb-[25px] w-full relative min-h-screen flex flex-col justify-center overflow-hidden antialiased
+            md:px-[28px] md:pt-[28px] md:pb-[16px]
           '>
 					<div className='flex flex-col justify-center divide-y'>
 						<div
 							className='
-                px-[1.563rem] pb-[1.563rem] w-full
-                md:px-[2rem] md:pb-[2rem]
+                px-[25px] pb-[25px] w-full
+                md:px-[32px] md:pb-[32px]
              '>
 							<div
 								className='
                 space-y-8 relative before:absolute before:inset-0 before:ml-1 before:-translate-x-px  before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent
-                md:before:ml-[1.2rem] md:before:translate-x-0
+                md:before:ml-[19px] md:before:translate-x-0
               '>
 								<div className='relative'>
 									<div
@@ -68,8 +68,8 @@ export default function Experience() {
 									</div>
 									<div
 										className='
-                    ml-14 flex flex-col gap-[10px] w-full pr-[3rem] 
-                    md:ml-[4rem]
+                    ml-14 flex flex-col gap-[10px] w-full pr-[48px] 
+                    md:ml-[64px]
                   '>
 										<div
 											className='bg-white p-4 rounded-[6px] border border-slate-200 text-slate-500 shadow'
@@ -289,8 +289,8 @@ export default function Experience() {
 									</div>
 									<div
 										className='
-                    ml-14 flex flex-col gap-[10px] w-full pr-[3rem]  
-                    md:ml-[4rem]'>
+                    ml-14 flex flex-col gap-[10px] w-full pr-[48px]  
+                    md:ml-[64px]'>
 										<div
 											className='bg-white p-4 rounded-[6px] border border-slate-200 text-slate-500 shadow'
 											data-aos='zoom-in-up'>

@@ -5,20 +5,20 @@ export default function About() {
 		<section
 			id='about'
 			className='
-      bg-white px-0 py-[3.125rem] 
-        lt:py-[6.25rem]
+      bg-white px-0 py-[50px] 
+        lt:py-[100px]
       '>
 			<div
 				data-aos='fade-right'
 				data-aos-offset='200'
 				data-aos-easing='ease-in-sine'
 				data-aos-duration='500'
-				className='max-w-[75rem] mx-auto'>
+				className='max-w-[1200px] mx-auto'>
 				<div
 					className='
-            flex flex-col justify-center items-center gap-[1.875rem] px-[1.25rem] py-[3.125rem] 
+            flex flex-col justify-center items-center gap-[30px] px-[20px] py-[50px] 
             md:flex-row md:items-start 
-            lt:flex-row lt:justify-between lt:px-0 lt:py-[6.25rem]
+            lt:flex-row lt:justify-between lt:px-0 lt:py-[100px]
           '>
 					<AvatarCard />
 					<div
@@ -26,81 +26,81 @@ export default function About() {
 						data-aos-offset='300'
 						data-aos-easing='ease-in-sine'
 						data-aos-duration='800'
-						className='w-full h-full lt:w-[50rem] lt:h-[30.5525rem]'>
-						<span className='flex flex-col justify-center text-[#8c89a2] font-semibold text-[1.125rem] uppercase leading-[2.25rem] tracking-[0.0625rem] h-[1.625rem] lt:h-[6.26563rem]'>
+						className='w-full h-full lt:w-[800px] lt:h-[489px]'>
+						<span className='flex flex-col justify-center text-[#8c89a2] font-semibold text-[18px] uppercase leading-[36px] tracking-[1px] h-[26px] lt:h-[100px]'>
 							About Me
 						</span>
-						<h3 className='flex flex-col justify-center shrink-0 text-[2rem] leading-[3rem] text-[#3f3a64] font-normal w-full mt-[0.5rem] lt:w-[23.4375rem] lt:text-[2.5rem]'>
+						<h3 className='flex flex-col justify-center shrink-0 text-[32px] leading-[48px] text-[#3f3a64] font-normal w-full mt-[8px] lt:w-[375px] lt:text-[40px]'>
 							Truong Van Chu Toan
 						</h3>
-						<span className='flex flex-col justify-center  w-full text-[1.125rem] leading-[1.625rem] text-[#37352f] font-normal mt-[0.8rem] lt:w-[46.875rem]'>
+						<span className='flex flex-col justify-center  w-full text-[18px] leading-[26px] text-[#37352f] font-normal mt-[12.8px] lt:w-[750px]'>
 							Seeking a full-time position in web development to
 							quickly adapt and contribute effectively to a
 							dynamic company. Committed to continuous learning
 							and becoming a Fullstack Web Developer within the
 							next two years
 						</span>
-						<div className='shrink-0 border-t border-[#ddd] mt-[1rem] pt-[1.5rem] sm:pt-[1rem]'>
-							<div className='grid mt-[0.313rem] lt:grid-cols-2'>
-								<div className='inline-flex pt-0 items-start h-[1.8rem] pb-[0.05rem] gap-[0.905rem] shrink-0'>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
-										<label className='font-semibold leading-[1.8rem] text-[#3f3a64]'>
+						<div className='shrink-0 border-t border-[#ddd] mt-[16px] pt-[24px] sm:pt-[16px]'>
+							<div className='grid mt-[5px] lt:grid-cols-2'>
+								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
 											Name:
 										</label>
 									</div>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<span className='font-normal text-[#696969]'>
 											Truong Van Chu Toan
 										</span>
 									</div>
 								</div>
-								<div className='inline-flex pt-0 items-start h-[1.8rem] pb-[0.05rem] gap-[0.905rem] shrink-0'>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
-										<label className='font-semibold leading-[1.8rem] text-[#3f3a64]'>
+								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
 											Age:
 										</label>
 									</div>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<span className='font-normal text-[#696969]'>
 											24 Years
 										</span>
 									</div>
 								</div>
 							</div>
-							<div className='grid mt-[0.313rem] lt:grid-cols-2'>
-								<div className='inline-flex pt-0 items-start h-[1.8rem] pb-[0.05rem] gap-[0.905rem] shrink-0'>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
-										<label className='font-semibold leading-[1.8rem] text-[#3f3a64]'>
+							<div className='grid mt-[5px] lt:grid-cols-2'>
+								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
 											Phone:
 										</label>
 									</div>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<span className='font-normal text-[#696969]'>
 											+84 972 712 621
 										</span>
 									</div>
 								</div>
-								<div className='inline-flex pt-0 items-start h-[1.8rem] pb-[0.05rem] gap-[0.905rem] shrink-0'>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
-										<label className='font-semibold leading-[1.8rem] text-[#3f3a64]'>
+								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
 											Location:
 										</label>
 									</div>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<span className='font-normal text-[#696969]'>
 											Tp. Ho Chi Minh
 										</span>
 									</div>
 								</div>
 							</div>
-							<div className='grid mt-[0.313rem] lt:grid-cols-2'>
-								<div className='inline-flex pt-0 items-start h-[1.8rem] pb-[0.05rem] gap-[0.905rem] shrink-0'>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
-										<label className='font-semibold leading-[1.8rem] text-[#3f3a64]'>
+							<div className='grid mt-[5px] lt:grid-cols-2'>
+								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
 											Email:
 										</label>
 									</div>
-									<div className='h-[1.75rem] flex flex-col justify-center text-[1.2rem] not-italic'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<a href='#' className='text-[#7d11f9]'>
 											Truongvanchutoan1999@gmail.com
 										</a>
@@ -109,22 +109,22 @@ export default function About() {
 							</div>
 						</div>
 
-						<div className='mt-[2.25rem] flex items-center flex-col gap-[1.13rem] sm:mt-[1.5rem] lt:gap-[3.13rem] lt:mt-[3rem]  lt:flex-row'>
+						<div className='mt-[36px] flex items-center flex-col gap-[18px] sm:mt-[24px] lt:gap-[50px] lt:mt-[48px]  lt:flex-row'>
 							<button
-								className='order-1 w-full h-[3.375rem] shrink-0 rounded-[0.625rem] bg-[#7d11f9] border border-[#7d11f9]
+								className='order-1 w-full h-[54px] shrink-0 rounded-[10px] bg-[#7d11f9] border border-[#7d11f9]
              hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-500 hover:ease-[cubic-bezier(0.4,0,0.2,1)]
-             lt:w-[17.32438rem]'>
+             lt:w-[277px]'>
 								<a
 									href='./assets/files/CV_TruongVanChuToan_FrontEnd.pdf'
 									target='_blank'
 									download
-									className='flex justify-center items-center gap-[0.313rem]'>
+									className='flex justify-center items-center gap-[5px]'>
 									<svg
 										width='20'
 										height='18'
 										viewBox='0 0 20 18'
 										fill='none'
-										className='w-[1.20625rem] h-[1.125rem] shrink-0'>
+										className='w-[19px] h-[18px] shrink-0'>
 										<g clipPath='url(#clip0_1_465)'>
 											<path
 												d='M13.3542 9.32145C13.3542 9.2277 13.3241 9.15069 13.2638 9.09042C13.2035 9.03015 13.1265 9.00002 13.0328 9.00002H10.7828V5.4643C10.7828 5.37725 10.751 5.30192 10.6874 5.2383C10.6237 5.17468 10.5484 5.14287 10.4614 5.14287H8.53278C8.44573 5.14287 8.3704 5.17468 8.30678 5.2383C8.24316 5.30192 8.21136 5.37725 8.21136 5.4643V9.00002H5.96136C5.8743 9.00002 5.79897 9.03183 5.73535 9.09544C5.67174 9.15906 5.63993 9.23439 5.63993 9.32145C5.63993 9.4152 5.67006 9.49221 5.73033 9.55247L9.26604 13.0882C9.32631 13.1485 9.40332 13.1786 9.49707 13.1786C9.59082 13.1786 9.66783 13.1485 9.7281 13.0882L13.2538 9.56252C13.3207 9.48216 13.3542 9.4018 13.3542 9.32145ZM19.7828 11.5714C19.7828 12.6362 19.4061 13.5452 18.6528 14.2986C17.8994 15.0519 16.9904 15.4286 15.9256 15.4286H4.99707C3.75823 15.4286 2.69852 14.9883 1.81794 14.1077C0.937361 13.2271 0.49707 12.1674 0.49707 10.9286C0.49707 10.0581 0.731445 9.25448 1.2002 8.51787C1.66895 7.78127 2.29841 7.22881 3.08859 6.86051C3.0752 6.65962 3.0685 6.51564 3.0685 6.42859C3.0685 5.00895 3.57073 3.79689 4.5752 2.79243C5.57966 1.78796 6.79171 1.28573 8.21136 1.28573C9.256 1.28573 10.2119 1.57703 11.0791 2.15962C11.9463 2.7422 12.5774 3.51564 12.9725 4.47993C13.448 4.06475 14.0038 3.85716 14.6399 3.85716C15.3497 3.85716 15.9558 4.10828 16.458 4.61051C16.9602 5.11274 17.2114 5.71877 17.2114 6.42859C17.2114 6.93752 17.0741 7.39957 16.7995 7.81475C17.6701 8.02234 18.3849 8.47602 18.9441 9.1758C19.5032 9.87558 19.7828 10.6741 19.7828 11.5714Z'
@@ -142,15 +142,15 @@ export default function About() {
 											</clipPath>
 										</defs>
 									</svg>
-									<span className='capitalize text-[1.125rem] text-center text-white not-italic font-bold leading-[1.75rem]'>
+									<span className='capitalize text-[18px] text-center text-white not-italic font-bold leading-[28px]'>
 										Download My Resume
 									</span>
 								</a>
 							</button>
 
-							<div className='flex justify-start items-center w-full h-[2rem] gap-[1.75rem] lt:justify-start lt:order-1 '>
-								<span className='w-[3.75rem] h-[0.125rem] bg-[#7d11f9]'></span>
-								<div className='flex items-center gap-[1.6rem]'>
+							<div className='flex justify-start items-center w-full h-[32px] gap-[28px] lt:justify-start lt:order-1 '>
+								<span className='w-[60px] h-[2px] bg-[#7d11f9]'></span>
+								<div className='flex items-center gap-[25.5px]'>
 									<a
 										href='#'
 										className='hover:opacity-50 hover:transition-all hover:duration-500 hover:ease-in-out cursor-pointer'>

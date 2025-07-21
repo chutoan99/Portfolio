@@ -3,17 +3,17 @@ export const Card = styled.div`
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
-	border-radius: 0.625rem;
+	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
 
 	@media (min-width: 1024px) {
-		width: 23.12375rem;
+		width: 370px;
 	}
 
 	@media (min-width: 1024px) {
-		width: 23.12375rem;
-		height: 30.5525rem;
+		width: 370px;
+		height: 489px;
 	}
 
 	.shine {
@@ -60,7 +60,7 @@ export default function AvatarCard() {
 	return (
 		<Card>
 			<div
-				className='w-full h-[30.5525rem]'
+				className='w-full h-[489px]'
 				style={{
 					background:
 						"url('/assets/images/avatar.png') center / cover no-repeat",

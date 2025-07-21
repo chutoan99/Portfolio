@@ -55,8 +55,8 @@ a {
 .outer-menu.menu-visible .menu {
 	pointer-events: auto;
 	visibility: visible !important;
-	backdrop-filter: blur(0.625rem);
-	-webkit-backdrop-filter: blur(0.625rem);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 .outer-menu.menu-visible .menu > div {
 	transform: scale(1);
@@ -74,7 +74,7 @@ a {
 	backface-visibility: hidden;
 }
 .outer-menu .hamburger > div {
-	height: 0.125rem;
+	height: 2px;
 	transition: all 0.4s ease;
 	-webkit-box-pack: center;
 }
@@ -86,7 +86,7 @@ a {
 	left: 0;
 	width: 100%;
 	top: -0.5rem;
-	height: 0.125rem;
+	height: 2px;
 	background: inherit;
 	transition: all 0.4s ease;
 }
@@ -227,7 +227,7 @@ video {
 
 @media (min-width: 1800px) {
 	html {
-		font-size: 1.25rem;
+		font-size: 20px;
 		line-height: 1.75rem;
 	}
 }

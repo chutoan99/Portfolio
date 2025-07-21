@@ -173,7 +173,7 @@ const Background: FC = () => {
 	}, [])
 
 	return (
-		<div className='bg-white z-0 relative h-[100vh] flex justify-center items-center flex-col gap-[1.25rem'>
+		<div className='bg-white z-0 relative h-[100vh] flex justify-center items-center flex-col gap-[20px'>
 			<motion.canvas
 				className='absolute inset-0 w-full h-full initial={{ opacity: 0 }}'
 				animate={{ opacity: 0.6 }}

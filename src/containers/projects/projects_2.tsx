@@ -51,12 +51,12 @@ export default function Projects2() {
 	return (
 		<div
 			className='
-        flex items-start gap-[3.125rem] w-full  px-[1rem]  rounded-xl bg-white 
-        lt:max-w-[75rem] lt:px-0 py-12 lt:w-[75rem]
+        flex items-start gap-[50px] w-full  px-[16px]  rounded-xl bg-white 
+        lt:max-w-[1200px] lt:px-0 py-[16px]2 lt:w-[1200px]
       '>
 			<div
 				className=' 
-          flex flex-col gap-[1.25rem] 
+          flex flex-col gap-[20px] 
           lt:grid
         '
 				style={{ gridTemplateColumns: '4.5fr 5.5fr ' }}>
@@ -67,7 +67,7 @@ export default function Projects2() {
 					data-aos-duration='800'
 					className='
             order-2 
-            lt:order-1 lt:mr-[3.125rem]
+            lt:order-1 lt:mr-[50px]
           '>
 					<ProjectInfo project={PROJECTS[1]} />
 				</div>
@@ -77,12 +77,12 @@ export default function Projects2() {
 					data-aos-easing='ease-in-sine'
 					data-aos-duration='500'
 					className='
-            order-1  h-[12.5rem]  flex justify-center items-center flex-[1_0_0] self-stretch 
+            order-1  h-[200px]  flex justify-center items-center flex-[1_0_0] self-stretch 
             lt:order-2 lt:h-full
           '>
 					<div
 						className='
-              flex justify-center center items-center w-full relative h-[12.5rem] scale-[0.5] 
+              flex justify-center center items-center w-full relative h-[200px] scale-[0.5] 
               lt:h-full  lt:scale-[1]
             '>
 						{device_02.map((device: Device, index: number) => (

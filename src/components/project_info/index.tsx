@@ -2,13 +2,13 @@ export default function ProjectInfo({ project }: { project: any }) {
 	return (
 		<div
 			className='
-        flex flex-col items-center gap-[1rem] flex-[1_0_0] self-stretch rounded-[0.75rem_0rem_0rem_0.75rem] 
-        lt:gap-[1.125rem]
+        flex flex-col items-center gap-[16px] flex-[1_0_0] self-stretch rounded-[12px_0px_0px_12px] 
+        lt:gap-[18px]
       '>
 			<div
 				className='
           flex gap-[10px] items-center w-full 
-          lt:w-[30rem] flex-col lt:flex-row
+          lt:w-[480px] flex-col lt:flex-row
         '>
 				<h3 className='self-stretch overflow-hidden text-label text-ellipsis text-xl not-italic font-semibold leading-7'>
 					{project.name}:
@@ -22,13 +22,13 @@ export default function ProjectInfo({ project }: { project: any }) {
 						target='_blank'
 						rel='noopener noreferrer'
 						href={project.ref}
-						className='text-[#4B5563] text-[1rem] border-b-black border-b border-solid h-[1.3rem]'>
+						className='text-[#4B5563] text-[16px] border-b-black border-b border-solid h-[20px]'>
 						{project.demo}
 					</a>
 				</div>
 			</div>
 
-			<p className='self-stretch text-[#4b5563] text-[1.125rem] not-italic font-normal leading-6'>
+			<p className='self-stretch text-[#4b5563] text-[18px] not-italic font-normal leading-6'>
 				{project.description}
 			</p>
 			<div className='flex items-center content-center gap-2 self-stretch flex-wrap'>
@@ -36,8 +36,8 @@ export default function ProjectInfo({ project }: { project: any }) {
 					<span
 						key={index}
 						className='
-              flex justify-center items-center px-3  py-1 rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb] 
-              lt:px-5
+              flex justify-center items-center px-[12px]  py-[16px] rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb] 
+              lt:px-[20px]
             '>
 						{item}
 					</span>
@@ -45,8 +45,8 @@ export default function ProjectInfo({ project }: { project: any }) {
 			</div>
 			<div
 				className='
-          flex w-full gap-[1.25rem] justify-start items-center px-0
-          lt:pt-[.9375rem]
+          flex w-full gap-[20px] justify-start items-center px-0
+          lt:pt-[15px]
         '>
 				{project.link.map((item: any, index: number) => (
 					<span

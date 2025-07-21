@@ -104,8 +104,8 @@ const Home: NextPage = () => {
 			<div className='flex justify-center section-container'>
 				<section
 					className='
-            absolute top-0 flex py-8  h-full justify-start px-4 min-h-screen  mx-auto w-full max-w-[75rem]  
-            md:items-center md:px-12  
+            absolute top-0 flex py-8  h-full justify-start px-4 min-h-screen  mx-auto w-full max-w-[1200px]  
+            md:items-center md:px-[48px]  
             2xl:container 
           '>
 					<div

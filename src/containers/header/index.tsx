@@ -7,9 +7,9 @@ export default function Header() {
 		<header className='w-full flex justify-center'>
 			<div
 				className='
-          fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[75rem] pr-[1rem] 
-          sm:pr-[.9375rem] 
-          md:pr-[1.25rem] 
+          fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[16px] 
+          sm:pr-[15px] 
+          md:pr-[20px] 
           lt:pr-0
         '>
 				<div className='flex justify-between section-container'>
@@ -70,7 +70,7 @@ export const StyledOuterMenu = styled.nav<{ $visible: boolean }>`
 		backface-visibility: hidden;
 
 		> div {
-			height: 0.125rem;
+			height: 2px;
 			transition: all 0.4s ease;
 			display: flex;
 			justify-content: center;
@@ -83,7 +83,7 @@ export const StyledOuterMenu = styled.nav<{ $visible: boolean }>`
 				position: absolute;
 				left: 0;
 				width: 100%;
-				height: 0.125rem;
+				height: 2px;
 				background: inherit;
 				transition: all 0.4s ease;
 			}
@@ -102,9 +102,9 @@ export const StyledOuterMenu = styled.nav<{ $visible: boolean }>`
 		pointer-events: ${({ $visible }) => ($visible ? 'auto' : 'none')};
 		visibility: ${({ $visible }) => ($visible ? 'visible' : 'hidden')};
 		backdrop-filter: ${({ $visible }) =>
-			$visible ? 'blur(0.625rem)' : 'none'};
+			$visible ? 'blur(10px)' : 'none'};
 		-webkit-backdrop-filter: ${({ $visible }) =>
-			$visible ? 'blur(0.625rem)' : 'none'};
+			$visible ? 'blur(10px)' : 'none'};
 
 		> div {
 			width: 250vw;

@@ -5,32 +5,33 @@ export default function Contact() {
 		<section
 			id='contact'
 			className='
-      bg-white px-[1rem] py-[3.125rem] 
-        lg:py-[6.25rem]'>
+			bg-[#f1f5f9] px-[16px] py-[50px] 
+				lg:py-[100px]
+			'>
 			<div
 				className='
-          flex flex-col justify-between h-full max-w-[75rem] mx-auto gap-[1.5625rem] 
-          sm:gap-[1.875rem] sm:mt-[1.25rem] sm:py-5 
+          flex flex-col justify-between h-full max-w-[1200px] mx-auto gap-[25px] 
+          sm:gap-[30px] sm:mt-[20px] sm:py-5 
           md:flex-row
         '>
 				<div
 					data-aos='fade-right'
 					data-aos-anchor-placement='center-center'
 					className='
-            w-full flex flex-col items-start pb-0 gap-[0.938rem] 
-            sm:gap-[0.9375rem] 
-            md:gap-[1.25rem] md:w-[45%]  
-            lg:w-[30.9775rem]
+            w-full flex flex-col items-start pb-0 gap-[15px] 
+            sm:gap-[15px] 
+            md:gap-[20px] md:w-[45%]  
+            lg:w-[495px]
           '>
 					{/* phone */}
 					<div
 						className='
-              flex h-full gap-[1.5rem] w-[30.9775rem] 
-              sm:w-full sm:gap-[1rem] sm:h-[3.4375rem]
+              flex h-full gap-[24px] w-[495px] 
+              sm:w-full sm:gap-[16px] sm:h-[55px]
             '>
 						<div
 							className='
-                flex justify-center w-[1.25rem] 
+                flex justify-center w-[20px] 
                 hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
               '>
 							<svg
@@ -48,16 +49,16 @@ export default function Contact() {
 						<div className='flex flex-col justify-center flex-1'>
 							<span
 								className='
-                h-[1.8125rem] w-full inline-block 
-                text-[#3f3a64] text-[1.25rem] font-semibold leading-[1.75rem]
+                h-[29px] w-full inline-block 
+                text-[#3f3a64] text-[20px] font-semibold leading-[28px]
               '>
 								Call Me
 							</span>
 							<a
 								href='#'
 								className='
-                  h-[1.6875rem] w-full inline-block 
-                text-[#696969] text-[1.1875rem] font-normal leading-[1.75rem]
+                  h-[27px] w-full inline-block 
+                text-[#696969] text-[19px] font-normal leading-[28px]
                 '>
 								+84 972 712 621
 							</a>
@@ -68,12 +69,12 @@ export default function Contact() {
 					{/* email */}
 					<div
 						className='
-              flex h-full gap-[1.5rem] w-[30.9775rem] 
-              sm:w-full sm:gap-[1rem] sm:h-[3.4375rem]
+              flex h-full gap-[24px] w-[495px] 
+              sm:w-full sm:gap-[16px] sm:h-[55px]
             '>
 						<div
 							className='
-                flex justify-center w-[1.25rem] 
+                flex justify-center w-[20px] 
                 hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
               '>
 							<svg
@@ -103,16 +104,16 @@ export default function Contact() {
 						<div className='flex flex-col justify-center flex-1'>
 							<span
 								className='
-                  h-[1.8125rem] w-full inline-block 
-                  text-[#3f3a64] text-[1.25rem] font-semibold leading-[1.75rem]
+                  h-[29px] w-full inline-block 
+                  text-[#3f3a64] text-[20px] font-semibold leading-[28px]
               '>
 								Email Me
 							</span>
 							<a
 								href='#'
 								className='
-                  h-[1.6875rem] w-full inline-block 
-                text-[#696969] text-[1.1875rem] font-normal leading-[1.75rem]
+                  h-[27px] w-full inline-block 
+                text-[#696969] text-[19px] font-normal leading-[28px]
                 '>
 								truongvanchutoan1999@gmail.com
 							</a>
@@ -123,12 +124,12 @@ export default function Contact() {
 					{/* github */}
 					<div
 						className='
-              flex h-full gap-[1.5rem] w-[30.9775rem] 
-              sm:w-full sm:gap-[1rem] sm:h-[3.4375rem]
+              flex h-full gap-[24px] w-[495px] 
+              sm:w-full sm:gap-[16px] sm:h-[55px]
             '>
 						<div
 							className='
-                flex justify-center w-[1.25rem] 
+                flex justify-center w-[20px] 
                 hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
               '>
 							<svg
@@ -156,16 +157,16 @@ export default function Contact() {
 						<div className='flex flex-col justify-center flex-1'>
 							<span
 								className='
-                  h-[1.8125rem] w-full inline-block 
-                  text-[#3f3a64] text-[1.25rem] font-semibold leading-[1.75rem]
+                  h-[29px] w-full inline-block 
+                  text-[#3f3a64] text-[20px] font-semibold leading-[28px]
               '>
 								Github Me
 							</span>
 							<a
 								href='https://github.com/chutoan99'
 								className='
-                  h-[1.6875rem] w-full inline-block 
-                text-[#696969] text-[1.1875rem] font-normal leading-[1.75rem]
+                  h-[27px] w-full inline-block 
+                text-[#696969] text-[19px] font-normal leading-[28px]
                 '>
 								https://github.com/chutoan99
 							</a>
@@ -176,12 +177,12 @@ export default function Contact() {
 					{/* location */}
 					<div
 						className='
-              flex h-full gap-[1.5rem] w-[30.9775rem] 
-              sm:w-full sm:gap-[1rem] sm:h-[3.4375rem]
+              flex h-full gap-[24px] w-[495px] 
+              sm:w-full sm:gap-[16px] sm:h-[55px]
             '>
 						<div
 							className='
-                flex justify-center w-[1.25rem] 
+                flex justify-center w-[20px] 
                 hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out
               '>
 							<svg
@@ -199,16 +200,16 @@ export default function Contact() {
 						<div className='flex flex-col justify-center flex-1'>
 							<span
 								className='
-                h-[1.8125rem] w-full inline-block 
-                text-[#3f3a64] text-[1.25rem] font-semibold leading-[1.75rem]
+                h-[29px] w-full inline-block 
+                text-[#3f3a64] text-[20px] font-semibold leading-[28px]
               '>
 								Location
 							</span>
 							<a
 								href='#'
 								className='
-                  h-[1.6875rem] w-full inline-block 
-                text-[#696969] text-[1.1875rem] font-normal leading-[1.75rem]
+                  h-[27px] w-full inline-block 
+                text-[#696969] text-[19px] font-normal leading-[28px]
                 '>
 								District 8, Ho Chi Minh City
 							</a>

@@ -59,8 +59,8 @@ a {
 		.menu {
 			pointer-events: auto;
 			visibility: visible !important;
-			backdrop-filter: blur(0.625rem);
-			-webkit-backdrop-filter: blur(0.625rem);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
 			> div {
 				transform: scale(1);
 				transition-duration: 0.75s;
@@ -83,7 +83,7 @@ a {
 		backface-visibility: hidden;
 
 		> div {
-			height: 0.125rem;
+			height: 2px;
 			transition: all 0.4s ease;
 			-webkit-box-pack: center;
 			&:before,
@@ -94,7 +94,7 @@ a {
 				left: 0;
 				width: 100%;
 				top: -0.5rem;
-				height: 0.125rem;
+				height: 2px;
 				background: inherit;
 				transition: all 0.4s ease;
 			}
