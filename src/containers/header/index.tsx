@@ -32,6 +32,7 @@ export default function Header() {
 										{[
 											'Home',
 											'About',
+											'Experience',
 											'Projects',
 											'Skills',
 											'Contact'
