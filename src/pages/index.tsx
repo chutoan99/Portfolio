@@ -120,30 +120,40 @@ const Home: NextPage = () => {
               '
 							ref={targetSection}
 							style={{ opacity: 0 }}>
-							<h2 className='text-4xl seq text-black'>
+							<h2
+								className='
+									text-2xl seq
+									sm:text-3xl 
+									text-black
+								'>
 								Hello 👋🏻
 							</h2>
-							<h1 className='text-4xl seq text-black'>
+							<h1
+								className='
+									text-2xl seq
+									sm:text-3xl 
+									text-black
+								'>
 								I am Chu Toan
 							</h1>
 						</div>
 						<p className='mb-4 text-black'>
 							<span
 								className='
-                  text-xl seq
-                  sm:text-2xl 
-                  md:text-5xl
-                '
+									text-3xl seq
+									sm:text-4xl 
+									md:text-5xl
+								'
 								ref={typedSpanElement}></span>
 						</p>
 					</div>
 				</section>
 			</div>
-			<About />
+			{/* <About /> */}
 			{/* <Experience /> */}
-			<Label content='Projects'></Label>
+			{/* <Label content='Projects'></Label> */}
 			{/* <Projects /> */}
-			<Label content='Skills'></Label>
+			{/* <Label content='Skills'></Label> */}
 			{/* <Skills /> */}
 			<Label content='Contact'></Label>
 			<Contact />

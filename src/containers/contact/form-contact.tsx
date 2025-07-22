@@ -5,9 +5,9 @@ export default function FormContact() {
 			data-aos='fade-left'
 			data-aos-anchor-placement='center-center'
 			className='
-				flex-1 w-full h-full p-[16px]
-				sm:p-[20px] 
-				md:px-[30px] md:py-[20px] rounded-2xl bg-white shadow-[0px_49px_49px_0px_rgba(31,13,64,0.10),_0px_0px_2px_0px_rgba(31,13,64,0.08)]
+				flex-1 w-full h-full p-[16px] rounded-[10px] bg-white shadow-[0px_49px_49px_0px_rgba(31,13,64,0.10),_0px_0px_2px_0px_rgba(31,13,64,0.08)]
+				sm:p-[20px]  sm:rounded-2xl
+				md:px-[30px] md:py-[20px] 
 			'>
 			<div className='flex flex-col items-start gap-[20px]'>
 				<div
@@ -135,7 +135,7 @@ export default function FormContact() {
 						className='
 							inline-flex items-start justify-center  
 							bg-[#7d11f9] border border-[#7d11f9] rounded-[10px] px-[36px] py-[13px] 
-							hover:opacity-50 transition-all duration-500 ease-in-out 
+							hover:bg-[#5d29bb] hover:border-[#7d11f9] transition-all duration-500 ease-in-out 
 							sm:justify-start
 						'>
 						<span className='text-[#ffffff] text-[18px] leading-[28px] font-normal capitalize text-center'>
