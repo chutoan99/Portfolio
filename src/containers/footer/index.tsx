@@ -8,7 +8,7 @@ export default function Footer() {
 			'>
 			<div
 				className='
-					flex flex-col justify-between gap-[20px] w-full max-w-[1200px]
+					flex flex-col justify-between gap-[25px] w-full max-w-[1200px]
 					sm:flex-row sm:items-center
 				'>
 				<ul
@@ -71,19 +71,19 @@ export default function Footer() {
 				</ul>
 				<ul
 					className='
-						flex gap-[16px] justify-start items-center list-none
+						flex gap-[15px] justify-start items-center list-none
 						md:justify-end
 					'>
 					{/* facebook */}
 					<li
 						className='
-							w-[32px] h-[32px] shrink-0 
+							w-[24px] h-[24px] shrink-0 
 							hover:opacity-70 transition duration-500 cursor-pointer
 						'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							width={30}
-							height={30}
+							width={24}
+							height={24}
 							viewBox='0 0 20 20'>
 							<path
 								fill='#7D11F9'
@@ -94,13 +94,13 @@ export default function Footer() {
 					{/* linkedin */}
 					<li
 						className='
-							w-[32px] h-[32px] shrink-0 
+							w-[24px] h-[24px] shrink-0 
 							hover:opacity-70 transition duration-500 cursor-pointer
 						'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							width={30}
-							height={30}
+							width={24}
+							height={24}
 							viewBox='0 0 16 16'>
 							<rect width={16} height={16} fill='none' />
 							<path
@@ -112,13 +112,13 @@ export default function Footer() {
 					{/* github */}
 					<li
 						className='
-							w-[32px] h-[32px] shrink-0 
+							w-[24px] h-[24px] shrink-0 
 							hover:opacity-70 transition duration-500 cursor-pointer
 						'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							width={30}
-							height={30}
+							width={24}
+							height={24}
 							viewBox='0 0 1536 1536'>
 							<path
 								fill='#7D11F9'
@@ -128,13 +128,13 @@ export default function Footer() {
 					{/* gitlab */}
 					<li
 						className='
-							w-[32px] h-[32px] shrink-0 
+							w-[24px] h-[24px] shrink-0 
 							hover:opacity-70 transition duration-500 cursor-pointer
 						'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							width={31}
-							height={31}
+							width={24}
+							height={24}
 							viewBox='0 0 448 512'>
 							<path
 								fill='#7D11F9'
@@ -144,13 +144,13 @@ export default function Footer() {
 					{/* bitbucket */}
 					<li
 						className='
-							w-[32px] h-[32px] shrink-0 
+							w-[24px] h-[24px] shrink-0 
 							hover:opacity-70 transition duration-500 cursor-pointer
 						'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
-							width={31}
-							height={31}
+							width={24}
+							height={24}
 							viewBox='0 0 24 24'>
 							<path
 								fill='#7D11F9'
