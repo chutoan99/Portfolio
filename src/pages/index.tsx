@@ -104,20 +104,20 @@ const Home: NextPage = () => {
 			<div className='flex justify-center section-container'>
 				<section
 					className='
-            absolute top-0 flex py-8  h-full justify-start px-4 min-h-screen  mx-auto w-full max-w-[1200px]  
-            md:items-center md:px-[48px]  
-            2xl:container 
-          '>
+						absolute top-0 flex py-8  h-full justify-start px-4 min-h-screen  mx-auto w-full max-w-[1200px]  
+						md:items-center md:px-[48px]  
+						2xl:container 
+					'>
 					<div
 						className='
-              font-medium flex flex-col justify-center select-none
-              md:pt-0 
-            '>
+						font-medium flex flex-col justify-center select-none
+						md:pt-0 
+						'>
 						<div
 							className='
-                mb-2 
-                md:mb-4
-              '
+								mb-2 
+								md:mb-4
+							'
 							ref={targetSection}
 							style={{ opacity: 0 }}>
 							<h2
@@ -149,12 +149,12 @@ const Home: NextPage = () => {
 					</div>
 				</section>
 			</div>
-			{/* <About /> */}
+			<About />
 			{/* <Experience /> */}
-			{/* <Label content='Projects'></Label> */}
-			{/* <Projects /> */}
-			{/* <Label content='Skills'></Label> */}
-			{/* <Skills /> */}
+			<Label content='Projects'></Label>
+			<Projects />
+			<Label content='Skills'></Label>
+			<Skills />
 			<Label content='Contact'></Label>
 			<Contact />
 			<Map />

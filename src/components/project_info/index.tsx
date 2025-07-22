@@ -2,22 +2,22 @@ export default function ProjectInfo({ project }: { project: any }) {
 	return (
 		<div
 			className='
-        flex flex-col items-center gap-[16px] flex-[1_0_0] self-stretch rounded-[12px_0px_0px_12px] 
-        lt:gap-[18px]
-      '>
+				flex flex-col items-center gap-[16px] flex-[1_0_0] self-stretch rounded-[12px_0px_0px_12px] 
+				lt:gap-[18px]
+			'>
 			<div
 				className='
-          flex gap-[10px] items-center w-full 
-          lt:w-[480px] flex-col lt:flex-row
-        '>
+					flex gap-[10px] items-center w-full 
+					lt:w-[500px] flex-col lt:flex-row
+				'>
 				<h3 className='self-stretch overflow-hidden text-label text-ellipsis text-xl not-italic font-semibold leading-7'>
 					{project.name}:
 				</h3>
 				<div
 					className='
-            flex justify-start w-full 
-            lt:flex-1
-          '>
+						flex justify-start w-full 
+						lt:flex-1
+					'>
 					<a
 						target='_blank'
 						rel='noopener noreferrer'
@@ -28,33 +28,34 @@ export default function ProjectInfo({ project }: { project: any }) {
 				</div>
 			</div>
 
-			<p className='self-stretch text-[#4b5563] text-[18px] not-italic font-normal leading-6'>
+			<p className='self-stretch text-[#4b5563] text-[18px] not-italic font-normal leading-[24px]'>
 				{project.description}
 			</p>
-			<div className='flex items-center content-center gap-2 self-stretch flex-wrap'>
+			<div className='flex items-center content-center gap-[6px] self-stretch flex-wrap'>
 				{project.technologies.map((item: string, index: number) => (
 					<span
 						key={index}
 						className='
-              flex justify-center items-center px-[12px]  py-[16px] rounded-xl hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s] bg-[#e5e7eb] 
-              lt:px-[20px]
-            '>
+							flex justify-center items-center px-[12px] py-[5px] rounded-[10px] bg-[#e5e7eb] 
+							self-stretch text-[#4b5563] text-[15px] not-italic font-normal leading-[24px]
+							hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s]
+						'>
 						{item}
 					</span>
 				))}
 			</div>
 			<div
 				className='
-          flex w-full gap-[20px] justify-start items-center px-0
-          lt:pt-[15px]
-        '>
+					flex w-full gap-[20px] justify-start items-center px-0
+					lt:pt-[15px]
+				'>
 				{project.link.map((item: any, index: number) => (
 					<span
 						key={index}
 						className='
-              flex items-center shrink-0 
-              h-9 w-fit
-            '>
+							flex items-center shrink-0 
+							h-9 w-fit
+						'>
 						<a
 							href={item.ref}
 							target='_blank'
@@ -82,9 +83,9 @@ export default function ProjectInfo({ project }: { project: any }) {
 							</svg>
 							<span
 								className='
-                  cursor-pointer 
-                text-gray-600 text-base not-italic font-normal leading-6
-                '>
+									cursor-pointer 
+									text-gray-600 text-base not-italic font-normal leading-6
+								'>
 								{item.content}
 							</span>
 						</a>

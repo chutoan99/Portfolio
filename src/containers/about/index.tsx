@@ -113,7 +113,7 @@ export default function About() {
 							<button
 								className='
 									order-1 w-full h-[54px] shrink-0 rounded-[10px] bg-[#7d11f9] border border-[#7d11f9]
-									hover:cursor-pointer hover:opacity-50 hover:transition-all hover:duration-500 hover:ease-[cubic-bezier(0.4,0,0.2,1)]
+									hover:bg-[#5d29bb] hover:border-[#7d11f9] hover:cursor-pointer  hover:transition-all hover:duration-500 hover:ease-[cubic-bezier(0.4,0,0.2,1)]
 									lt:w-[277px]
 								'>
 								<a

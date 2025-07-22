@@ -6,7 +6,7 @@ export default function Contact() {
 		<section
 			id='contact'
 			className='
-				bg-[#f1f5f9] px-[16px] py-[50px] 
+				bg-[#f1f5f9] px-[16px] py-[70px] 
 				lg:py-[100px]
 			'>
 			<div

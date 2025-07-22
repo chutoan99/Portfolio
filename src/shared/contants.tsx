@@ -1,6 +1,6 @@
 export const PROJECTS = [
 	{
-		name: '01. Shopee',
+		name: '01. Shop',
 		description:
 			"A meticulously cloned e-commerce platform inspired by Shopee. Packed with a comprehensive suite of functions, it hosts tens of thousands of categories, shops, and products, continuously updated to keep pace with market trends. We've harnessed the latest cutting-edge technologies to drive its development, resulting in a user-friendly interface that promises an intuitive and enjoyable shopping experience, currently optimized for laptop usage.",
 		technologies: [
@@ -38,7 +38,7 @@ export const PROJECTS = [
 		]
 	},
 	{
-		name: '02. Shopee Admin',
+		name: '02. Shop Admin',
 		description:
 			"Presenting our Shopee-like project dashboard: a comprehensive toolkit for seamless process management. Powered by the latest technologies, it features a user-friendly interface inspired by the trending design style of glassmorphism. Currently tailored for laptops during its developmental phase, we're dedicated to introducing more features in the near future to enhance your experience.",
 		technologies: [
@@ -98,7 +98,7 @@ export const PROJECTS = [
 		]
 	},
 	{
-		name: '04. rental',
+		name: '04. Rental',
 		description:
 			'A complete revamp of a room rental website. This undertaking encompasses a full range of functionalities, underpinned by a constant influx of listing data collected through the use of "puppeteer" technology, resulting in a continuously updated collection of thousands of listings. Fueled by the latest cutting-edge technologies, the development focuses on laptop compatibility. As we look  ahead, you can expect a steady stream of innovative features to enhance user experience.',
 		technologies: [

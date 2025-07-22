@@ -51,8 +51,8 @@ export default function Projects2() {
 	return (
 		<div
 			className='
-				flex items-start gap-[50px] w-full  px-[16px]  rounded-xl bg-white 
-				lt:max-w-[1200px] lt:px-0 py-[16px]2 lt:w-[1200px]
+				flex items-start gap-[50px] w-full p-[16px] rounded-xl
+				lt:max-w-[1200px] lt:px-0  lt:w-[1200px]
 			'>
 			<div
 				className=' 
@@ -77,7 +77,7 @@ export default function Projects2() {
 					data-aos-easing='ease-in-sine'
 					data-aos-duration='500'
 					className='
-						order-1  h-[200px]  flex justify-center items-center flex-[1_0_0] self-stretch 
+						order-1 h-[200px] flex justify-center items-center flex-[1_0_0] self-stretch 
 						lt:order-2 lt:h-full
 					'>
 					<div

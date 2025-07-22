@@ -65,8 +65,8 @@ export default function Projects3() {
 	return (
 		<div
 			className='
-				flex items-start gap-[50px] w-full  px-[16px] rounded-xl bg-white  
-				lt:max-w-[1200px] lt:px-0 py-[16px]2  lt:w-[1200px]
+				flex items-start gap-[50px] w-full p-[16px] rounded-xl
+				lt:max-w-[1200px] lt:px-0  lt:w-[1200px]
 			'>
 			<div
 				className='
