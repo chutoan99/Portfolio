@@ -1,10 +1,22 @@
-export enum Types {
-	ALL = 'All',
-	FRONT_END = 'Front End',
-	BACK_END = 'Back End',
-	DATABASE = 'Database',
-	OTHERS = 'Others'
-}
+// export enum Types {
+// 	ALL = 'All',
+// 	FRONT_END = 'Front End',
+// 	BACK_END = 'Back End',
+// 	DATABASE = 'Database',
+// 	OTHERS = 'Others'
+// }
+
+
+export const Types = {
+  ALL: 'All',
+  FRONT_END: 'Front end',
+  BACK_END: 'Back end',
+  DATABASE: 'Database',
+  OTHERS: 'Others',
+} as const
+
+export type Types = typeof Types[keyof typeof Types]
+
 export interface ListIconModel {
 	name: string
 	type: Types[]

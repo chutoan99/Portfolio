@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ListIcon, ListIconModel, Types } from '../../shared/icons'
 
 export default function Skills() {
 	const [currentTag, setCurrentTag] = useState<Types>(Types.ALL)
-
+	const typeList = useMemo(() => Object.values(Types), [])
 	const [filteredIcons, setFilteredIcons] =
 		useState<ListIconModel[]>(ListIcon)
 
@@ -29,38 +29,48 @@ export default function Skills() {
 		<section id='skills' className='bg-[#f1f5f9]'>
 			<div
 				className='
-					max-w-[1165px] px-2.5 mx-auto 
+					max-w-[1165px] px-[10px] mx-auto 
 					sm:px-[20px] 
 					md:px-7.5
 				'>
 				<div
 					className='
-					h-full shrink-0 flex flex-col items-center justify-center py-[50px] 
+					h-full shrink-0 flex flex-col items-center justify-center pb-[50px] pt-[90px]
 					lg:py-[100px]
 					'>
 					<ul
 						className='
-							flex w-full flex-row items-center justify-start gap-2 overflow-x-scroll overflow-y-hidden scroll-snap-x snap-mandatory scrollbar-none pt-2 pb-8 list-none select-none  
+							flex w-full flex-row items-center justify-start gap-[8px] overflow-x-scroll overflow-y-hidden scroll-snap-x snap-mandatory scrollbar-none pt-[15px] pb-[32px] list-none select-none  
           					sm:justify-center sm:overflow-x-hidden sm:gap-[10px] sm:pb-[32px]'>
-						{Object.values(Types).map((item: Types, i: number) => (
+						{[
+							'All',
+							'Front end',
+							'Back end',
+							'Database',
+							'Others'
+						].map((item: string, i: number) => (
 							<li
 								key={i}
 								onClick={() => {
-									onFilter(item)
-									setCurrentTag(item)
+									onFilter(item as Types)
+									setCurrentTag(item as Types)
 								}}
-								data-text={item}
 								className={`
-									px-[20px] py-[4px] mx-1 text-base font-medium leading-5 border rounded-[11px] 
-									transition-colors duration-200 relative cursor-pointer 
-									after:content-[attr(data-text)] after:block after:whitespace-nowrap 
-								${
-									item === currentTag
-										? 'text-white bg-primary border-white'
-										: 'text-gray-600 border-gray-600 hover:text-white hover:bg-primary hover:border-white'
-								}`}></li>
+										px-[20px] py-[4px] mx-[4px] relative overflow-hidden bg-white shadow-2xl transition-all rounded-[11px] text-base font-medium leading-5
+										border border-[#7D11F9]  
+										before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#7D11F9] before:transition-all before:duration-500 
+										hover:text-white hover:before:bg-[#7D11F9]  hover:shadow-[#7D11F9] hover:before:left-0 hover:before:w-full
+										${item === currentTag ? 'text-white before:bg-[#7D11F9] shadow-[#7D11F9] before:left-0 before:w-full' : 'text-[#7D11F9]'}
+									`}>
+								<span
+									className='relative z-10'
+									style={{ backfaceVisibility: 'hidden' }}>
+									{item}
+								</span>
+							</li>
 						))}
 					</ul>
+
 					<div className='w-full flex flex-col flex-wrap text-center min-h-[350px]'>
 						<motion.div
 							className='

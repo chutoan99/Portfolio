@@ -20,7 +20,7 @@ export default function FormContact() {
 					{/* Name */}
 					<div
 						className='
-							flex items-center w-full h-full px-[16px] py-[13.5px] bg-[rgba(147,107,232,0.05)] rounded-[10px] 
+							flex items-center w-full h-full px-[16px] py-[13.5px] rounded-[10px] bg-[rgba(147,107,232,0.05)] border-[transparent] border
 							hover:border hover:border-[#7d11f9] transition-all 
 							sm:h-[55px] 
 							lg:w-1/2
@@ -32,14 +32,14 @@ export default function FormContact() {
 							id='form-name'
 							className='
 								flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[19px] border-none rounded-[10px] 
-								focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+								focus:outline-2 focus:outline-transparent focus:text-[#3f3a64] focus:outline-offset-2 focus:outline-none
 							'
 						/>
 					</div>
 					{/* Email */}
 					<div
 						className='
-							flex items-center w-full h-full px-[16px] py-[13.5px] bg-[rgba(147,107,232,0.05)] rounded-[10px] 
+							flex items-center w-full h-full px-[16px] py-[13.5px] rounded-[10px] bg-[rgba(147,107,232,0.05)] border-[transparent] border
 							hover:border hover:border-[#7d11f9] transition-all 
 							sm:h-[55px] 
 							lg:w-1/2
@@ -51,7 +51,7 @@ export default function FormContact() {
 							id='form-Email'
 							className='
 								flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[19px] border-none rounded-[10px] 
-								focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+								focus:outline-2 focus:outline-transparent focus:text-[#3f3a64] focus:outline-offset-2 focus:outline-none
 							'
 						/>
 					</div>
@@ -67,7 +67,7 @@ export default function FormContact() {
 					{/* Subject */}
 					<div
 						className='
-							flex items-center w-full h-full px-[16px] py-[13.5px] bg-[rgba(147,107,232,0.05)] rounded-[10px] 
+							flex items-center w-full h-full px-[16px] py-[13.5px] rounded-[10px] bg-[rgba(147,107,232,0.05)] border-[transparent] border
 							hover:border hover:border-[#7d11f9] transition-all 
 							sm:h-[55px] 
 							lg:w-1/2
@@ -79,14 +79,14 @@ export default function FormContact() {
 							id='form-subject'
 							className='
 								flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[19px] border-none rounded-[10px] 
-								focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+								focus:outline-2 focus:outline-transparent focus:text-[#3f3a64] focus:outline-offset-2 focus:outline-none
                   			'
 						/>
 					</div>
 					{/* phone */}
 					<div
 						className='
-							flex items-center w-full h-full px-[16px] py-[13.5px] bg-[rgba(147,107,232,0.05)] rounded-[10px] 
+							flex items-center w-full h-full px-[16px] py-[13.5px] rounded-[10px] bg-[rgba(147,107,232,0.05)] border-[transparent] border
 							hover:border hover:border-[#7d11f9] transition-all sm:h-[55px] lg:w-1/2
 						'>
 						<label id='form-phone' />
@@ -96,7 +96,7 @@ export default function FormContact() {
 							id='form-phone'
 							className='
 								flex flex-col justify-center w-full bg-transparent text-[#6c757d] bg-[unset] text-[19px] border-none rounded-[10px] 
-								focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+								focus:outline-2 focus:outline-transparent focus:text-[#3f3a64] focus:outline-offset-2 focus:outline-none
 							'
 						/>
 					</div>
@@ -110,7 +110,7 @@ export default function FormContact() {
 					{/* Note */}
 					<div
 						className='
-							flex items-center w-full px-[16px] py-[13.5px] rounded-[10px] bg-[rgba(147,107,232,0.05)] 
+							flex items-center w-full px-[16px] py-[13.5px] rounded-[10px] bg-[rgba(147,107,232,0.05)] border-[transparent] border
 							hover:border hover:border-[#7d11f9] transition-all duration-150 ease-in-out
 						'>
 						<label id='form-content'></label>
@@ -119,7 +119,7 @@ export default function FormContact() {
 							id='form-content'
 							className='
 								flex w-full h-[140px] bg-transparent text-[#6c757d] text-[19px] font-normal border-none rounded-[10px] resize-none 
-								focus:outline-2 focus:outline-transparent focus:outline-offset-2 focus:outline-none
+								focus:outline-2 focus:outline-transparent focus:text-[#3f3a64] focus:outline-offset-2 focus:outline-none
 							'></textarea>
 					</div>
 				</div>
