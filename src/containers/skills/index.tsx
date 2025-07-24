@@ -56,11 +56,11 @@ export default function Skills() {
 									setCurrentTag(item as Types)
 								}}
 								className={`
-										px-[20px] py-[4px] mx-[4px] relative overflow-hidden bg-white shadow-2xl transition-all rounded-[11px] text-base font-medium leading-5
+										px-[20px] py-[4px] mx-[4px] relative overflow-hidden bg-white  transition-all rounded-[11px] text-base font-medium leading-5
 										border border-[#7D11F9]  
 										before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#7D11F9] before:transition-all before:duration-500 
-										hover:text-white hover:before:bg-[#7D11F9]  hover:shadow-[#7D11F9] hover:before:left-0 hover:before:w-full
-										${item === currentTag ? 'text-white before:bg-[#7D11F9] shadow-[#7D11F9] before:left-0 before:w-full' : 'text-[#7D11F9]'}
+										hover:text-white hover:before:bg-[#7D11F9]  hover:shadow-[#7D11F9] hover:before:left-0 hover:before:w-full hover:shadow-2xl
+										${item === currentTag ? 'text-white before:bg-[#7D11F9] shadow-[#7D11F9] before:left-0 before:w-full shadow-2xl' : 'text-[#7D11F9]'}
 									`}>
 								<span
 									className='relative z-10'
