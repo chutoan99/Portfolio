@@ -22,7 +22,10 @@ export default function ProjectInfo({ project }: { project: any }) {
 						target='_blank'
 						rel='noopener noreferrer'
 						href={project.ref}
-						className='text-[#4B5563] text-[16px] border-b-black border-b border-solid h-[20px]'>
+						className='
+							text-[#4B5563] text-[16px] border-b-black border-b border-solid h-[20px] 
+							hover:text-[#7D11F9] transition duration-150
+						'>
 						{project.demo}
 					</a>
 				</div>
@@ -54,13 +57,13 @@ export default function ProjectInfo({ project }: { project: any }) {
 						key={index}
 						className='
 							flex items-center shrink-0 
-							h-9 w-fit
+							h-[36px] w-fit
 						'>
 						<a
 							href={item.ref}
 							target='_blank'
 							rel='noopener noreferrer'
-							className='gap-3 flex items-center justify-center shrink-0 cursor-pointer'>
+							className='gap-[8px] flex items-center justify-center shrink-0 cursor-pointer'>
 							<svg
 								width={20}
 								height={21}
@@ -84,7 +87,7 @@ export default function ProjectInfo({ project }: { project: any }) {
 							<span
 								className='
 									cursor-pointer 
-									text-gray-600 text-base not-italic font-normal leading-6
+									text-gray-600 text-[18px] not-italic font-normal leading-[24px]
 								'>
 								{item.content}
 							</span>
