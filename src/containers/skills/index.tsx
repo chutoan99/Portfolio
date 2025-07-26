@@ -4,7 +4,6 @@ import { ListIcon, ListIconModel, Types } from '../../shared/icons'
 
 export default function Skills() {
 	const [currentTag, setCurrentTag] = useState<Types>(Types.ALL)
-	const typeList = useMemo(() => Object.values(Types), [])
 	const [filteredIcons, setFilteredIcons] =
 		useState<ListIconModel[]>(ListIcon)
 
@@ -106,17 +105,31 @@ export default function Skills() {
 												transition={{ duration: 0.5 }}
 												whileHover={{ scale: 1.15 }}
 												whileTap={{ scale: 0.9 }}
-												className='flex flex-col items-center justify-center bg-white rounded-[12px] w-[80px] h-[80px] gap-[5px]rounded-[16px] shadow-[0px_49px_49px_0px_rgba(31,13,64,0.10),_0px_0px_2px_0px_rgba(31,13,64,0.08)]'>
+												className='flex flex-col items-center justify-center bg-white rounded-[12px] group w-[80px] h-[80px] gap-[5px]rounded-[16px] shadow-[0px_49px_49px_0px_rgba(31,13,64,0.10),_0px_0px_2px_0px_rgba(31,13,64,0.08)]'>
 												<div className='flex items-center justify-center shrink-0 fill-[rgba(255, 255, 255, 0.1)]'>
-													<div
-														className='w-full h-full'
-														role='tooltip'>
-														<img
-															src={icon.path}
-															alt={icon.name}
-															width='100%'
-															height='100%'
-														/>
+													<div className='relative w-[55px] h-[55px] cursor-pointer '>
+														<div className='absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-300'>
+															<img
+																src={
+																	icon.grey ||
+																	icon.default
+																}
+																alt={icon.name}
+																width='100%'
+																height='100%'
+															/>
+														</div>
+
+														<div className='absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+															<img
+																src={
+																	icon.default
+																}
+																alt={icon.name}
+																width='100%'
+																height='100%'
+															/>
+														</div>
 													</div>
 												</div>
 											</motion.div>

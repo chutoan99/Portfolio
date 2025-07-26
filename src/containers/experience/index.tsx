@@ -334,7 +334,9 @@ export default function Experience() {
 			id='Experience'
 			className='p-[1.25rem] md:px-[7.5rem] flex w-full flex-col items-center gap-5 pt-[3.125rem]  pb-[3.125rem] sm:pb-[6.25rem]  md:gap-[1.5rem]'
 			style={{ background: 'rgba(147, 107, 232, 0.05)' }}>
-			<div className='rounded-xl bg-white flex flex-col justify-center w-full gap-[1rem] md:gap-[1.563rem] lt:w-[60rem] px-[15px] sm:px-[1.563rem] md:px-[1.75rem] pt-[1rem] md:pt-[1.75rem] pb-[1rem] md:pb-[2rem]' data-aos='zoom-in-up'>
+			<div
+				className='rounded-xl bg-white flex flex-col justify-center w-full gap-[1rem] md:gap-[1.563rem] lt:w-[60rem] px-[15px] sm:px-[1.563rem] md:px-[1.75rem] pt-[1rem] md:pt-[1.75rem] pb-[1rem] md:pb-[2rem]'
+				data-aos='zoom-in-up'>
 				<div className='w-full items-start justify-start flex-col md:flex flex gap-[1rem] md:gap-[40px] relative lt:flex-row'>
 					<div className='flex w-[7.125rem] flex-col items-start gap-3 shrink-0'>
 						<p className=' text-primary text-base not-italic font-semibold leading-6 flex-col sm:flex'>
@@ -412,7 +414,9 @@ export default function Experience() {
 					</ul>
 				</div>
 			</div>
-			<div className='rounded-xl bg-white flex flex-col justify-center w-full gap-[1rem] md:gap-[1.563rem] lt:w-[60rem] px-[15px] sm:px-[1.563rem] md:px-[1.75rem] pt-[1rem] md:pt-[1.75rem] pb-[1rem] md:pb-[2rem]' data-aos='zoom-in-up'>
+			<div
+				className='rounded-xl bg-white flex flex-col justify-center w-full gap-[1rem] md:gap-[1.563rem] lt:w-[60rem] px-[15px] sm:px-[1.563rem] md:px-[1.75rem] pt-[1rem] md:pt-[1.75rem] pb-[1rem] md:pb-[2rem]'
+				data-aos='zoom-in-up'>
 				<div className='w-full items-start justify-start flex-col md:flex flex gap-[1rem] md:gap-[40px] relative lt:flex-row'>
 					<div className='flex w-[7.125rem] flex-col items-start gap-3 shrink-0'>
 						<p className=' text-primary text-base not-italic font-semibold leading-6 flex-col sm:flex'>

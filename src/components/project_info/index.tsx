@@ -36,9 +36,9 @@ export default function ProjectInfo({ project }: { project: any }) {
 					<span
 						key={index}
 						className='
-							flex justify-center items-center px-[12px] py-[5px] rounded-[10px] bg-[#e5e7eb] 
+							flex justify-center items-center px-[13px] py-[5px] rounded-[10px]   bg-[#f6f8fa]
 							self-stretch text-[#4b5563] text-[15px] not-italic font-normal leading-[24px]
-							hover:opacity-50 hover:cursor-pointer hover:transition-[0.3s]
+							hover:bg-[#e5e7eb] hover:cursor-pointer hover:transition-[0.3s]
 						'>
 						{item}
 					</span>
