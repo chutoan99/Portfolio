@@ -117,7 +117,8 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Next',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/next_js/default.svg'
+		default: './assets/svgs/next_js/default.svg',
+		grey: './assets/svgs/next_js/grey.svg'
 	},
 	{
 		active: false,
@@ -129,7 +130,8 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Jquery',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/jquery/default.svg'
+		default: './assets/svgs/jquery/default.svg',
+		grey: './assets/svgs/jquery/grey.svg'
 	},
 	{
 		active: true,
@@ -142,31 +144,36 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Redux Toolkit',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/redux_toolkit/default.svg'
+		default: './assets/svgs/redux_toolkit/default.svg',
+		grey: './assets/svgs/redux_toolkit/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Ngrx',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/ngrx/default.svg'
+		default: './assets/svgs/ngrx/default.svg',
+		grey: './assets/svgs/ngrx/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Vuex',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/vuex/default.svg'
+		default: './assets/svgs/vuex/default.svg',
+		grey: './assets/svgs/vuex/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Rxjs',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/rxjs/default.svg'
+		default: './assets/svgs/rxjs/default.svg',
+		grey: './assets/svgs/rxjs/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Pug',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/pug/default.svg'
+		default: './assets/svgs/pug/default.svg',
+		grey: './assets/svgs/pug/grey.svg'
 	},
 	{
 		active: true,
@@ -186,37 +193,43 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Styled Components',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/styled_component/default.svg'
+		default: './assets/svgs/styled_component/default.svg',
+		grey: './assets/svgs/styled_component/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Emotion',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/emotion/default.svg'
+		default: './assets/svgs/emotion/default.svg',
+		grey: './assets/svgs/emotion/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Ant Design',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/ant_design/default.svg'
+		default: './assets/svgs/ant_design/default.svg',
+		grey: './assets/svgs/ant_design/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Material UI',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/material_ui/default.svg'
+		default: './assets/svgs/material_ui/default.svg',
+		grey: './assets/svgs/material_ui/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Primeng',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/primeng/default.svg'
+		default: './assets/svgs/primeng/default.svg',
+		grey: './assets/svgs/primeng/grey.svg',
 	},
 	{
 		active: true,
 		name: 'DevExtreme',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/dev_extreme/default.svg'
+		default: './assets/svgs/dev_extreme/default.svg',
+		grey: './assets/svgs/dev_extreme/grey.svg',
 	},
 	{
 		active: true,
@@ -229,7 +242,8 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Sql Server',
 		type: [Types.DATABASE],
-		default: './assets/svgs/sql_server/default.svg'
+		default: './assets/svgs/sql_server/default.svg',
+		grey: './assets/svgs/sql_server/grey.svg',
 	},
 	{
 		active: true,
@@ -242,7 +256,8 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'PostgreSql',
 		type: [Types.DATABASE],
-		default: './assets/svgs/postgre_sql/default.svg'
+		default: './assets/svgs/postgre_sql/default.svg',
+		grey: './assets/svgs/postgre_sql/grey.svg'
 	},
 	{
 		active: true,
@@ -255,13 +270,15 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'redis',
 		type: [Types.DATABASE],
-		default: './assets/svgs/redis/default.svg'
+		default: './assets/svgs/redis/default.svg',
+		grey: './assets/svgs/redis/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Firebase',
 		type: [Types.DATABASE],
-		default: './assets/svgs/firebase/default.svg'
+		default: './assets/svgs/firebase/default.svg',
+		grey: './assets/svgs/firebase/grey.svg',
 	},
 	{
 		active: true,
@@ -274,13 +291,15 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Restfull Api',
 		type: [Types.BACK_END],
-		default: './assets/svgs/restfull_api/default.svg'
+		default: './assets/svgs/restfull_api/default.svg',
+		grey: './assets/svgs/restfull_api/grey.svg',
 	},
 	{
 		active: true,
 		name: 'Socket Io',
 		type: [Types.BACK_END],
-		default: './assets/svgs/socket_io/default.svg'
+		default: './assets/svgs/socket_io/default.svg',
+		grey: './assets/svgs/socket_io/grey.svg',
 	},
 	{
 		active: true,
@@ -293,19 +312,22 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Apollo Client',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/apollo_client/default.svg'
+		default: './assets/svgs/apollo_client/default.svg',
+		grey: './assets/svgs/apollo_client/grey.svg'
 	},
 	{
 		active: true,
 		name: 'Type Orm',
 		type: [Types.BACK_END],
-		default: './assets/svgs/type_orm/default.svg'
+		default: './assets/svgs/type_orm/default.svg',
+		grey: './assets/svgs/type_orm/grey.svg',
 	},
 	{
 		active: true,
 		name: 'Sequelize',
 		type: [Types.BACK_END],
-		default: './assets/svgs/sequelize/default.svg'
+		default: './assets/svgs/sequelize/default.svg',
+		grey: './assets/svgs/sequelize/grey.svg',
 	},
 	{
 		active: false,
@@ -336,13 +358,15 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Puppeteer',
 		type: [Types.OTHERS],
-		default: './assets/svgs/puppeteer/default.svg'
+		default: './assets/svgs/puppeteer/default.svg',
+		grey: './assets/svgs/puppeteer/grey.svg',
 	},
 	{
 		active: true,
 		name: 'Git',
 		type: [Types.OTHERS],
-		default: './assets/svgs/git/default.svg'
+		default: './assets/svgs/git/default.svg',
+		grey: './assets/svgs/git/grey.svg',
 	},
 	{
 		active: false,
