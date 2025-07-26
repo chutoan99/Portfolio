@@ -90,7 +90,8 @@ export const ListIcon: ListIconModel[] = [
 		active: false,
 		name: 'Spring',
 		type: [Types.BACK_END],
-		default: './assets/svgs/spring/default.svg'
+		default: './assets/svgs/spring/default.svg',
+		grey: './assets/svgs/spring/grey.svg'
 	},
 
 	{
@@ -125,7 +126,8 @@ export const ListIcon: ListIconModel[] = [
 		active: false,
 		name: 'Nuxt',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/nuxt_js/default.svg'
+		default: './assets/svgs/nuxt_js/default.svg',
+		grey: './assets/svgs/nuxt_js/grey.svg'
 	},
 	{
 		active: true,
