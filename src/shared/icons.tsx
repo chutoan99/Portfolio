@@ -334,19 +334,22 @@ export const ListIcon: ListIconModel[] = [
 		active: false,
 		name: 'Elastic',
 		type: [Types.BACK_END],
-		default: './assets/svgs/elastic/default.svg'
+		default: './assets/svgs/elastic/default.svg',
+		grey: './assets/svgs/elastic/grey.svg',
 	},
 	{
 		active: false,
 		name: 'Logstash',
 		type: [Types.BACK_END],
-		default: './assets/svgs/logstash/default.svg'
+		default: './assets/svgs/logstash/default.svg',
+		grey: './assets/svgs/logstash/grey.svg',
 	},
 	{
 		active: false,
 		name: 'Kibana',
 		type: [Types.BACK_END],
-		default: './assets/svgs/kibana/default.svg'
+		default: './assets/svgs/kibana/default.svg',
+		grey: './assets/svgs/kibana/grey.svg',
 	},
 	{
 		active: true,
@@ -373,25 +376,29 @@ export const ListIcon: ListIconModel[] = [
 		active: false,
 		name: 'Github',
 		type: [Types.OTHERS],
-		default: './assets/svgs/github/default.svg'
+		default: './assets/svgs/github/default.svg',
+		grey: './assets/svgs/github/grey.svg'
 	},
 	{
 		active: false,
 		name: 'Gitlab',
 		type: [Types.OTHERS],
-		default: './assets/svgs/gitlab/default.svg'
+		default: './assets/svgs/gitlab/default.svg',
+		grey: './assets/svgs/gitlab/grey.svg'
 	},
 	{
 		active: false,
 		name: 'Bitbucket',
 		type: [Types.OTHERS],
-		default: './assets/svgs/bitbucket/default.svg'
+		default: './assets/svgs/bitbucket/default.svg',
+		grey: './assets/svgs/bitbucket/grey.svg',
 	},
 	{
 		active: false,
 		name: 'Npm',
 		type: [Types.OTHERS],
-		default: './assets/svgs/npm/default.svg'
+		default: './assets/svgs/npm/default.svg',
+		grey: './assets/svgs/npm/grey.svg',
 	},
 	{
 		active: false,
@@ -409,7 +416,8 @@ export const ListIcon: ListIconModel[] = [
 		active: false,
 		name: 'Bun',
 		type: [Types.OTHERS],
-		default: './assets/svgs/bun/default.svg'
+		default: './assets/svgs/bun/default.svg',
+		grey: './assets/svgs/bun/grey.svg',
 	},
 	{
 		active: false,
@@ -421,20 +429,23 @@ export const ListIcon: ListIconModel[] = [
 		active: false,
 		name: 'Gradle',
 		type: [Types.OTHERS],
-		default: './assets/svgs/gradle/default.svg'
+		default: './assets/svgs/gradle/default.svg',
+		grey: './assets/svgs/gradle/grey.svg'
 	},
 
 	{
 		active: false,
 		name: 'Webpack',
 		type: [Types.OTHERS],
-		default: './assets/svgs/webpack/default.svg'
+		default: './assets/svgs/webpack/default.svg',
+		grey: './assets/svgs/webpack/grey.svg'
 	},
 	{
 		active: false,
 		name: 'Vite',
 		type: [Types.OTHERS],
-		default: './assets/svgs/vite/default.svg'
+		default: './assets/svgs/vite/default.svg',
+		grey: './assets/svgs/vite/grey.svg'
 	},
 	{
 		active: false,
