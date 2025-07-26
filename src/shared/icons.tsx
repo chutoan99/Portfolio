@@ -76,7 +76,8 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Express.js',
 		type: [Types.BACK_END],
-		default: './assets/svgs/express_js/default.svg'
+		default: './assets/svgs/express_js/default.svg',
+		grey: './assets/svgs/express_js/grey.svg',
 	},
 	{
 		active: true,
