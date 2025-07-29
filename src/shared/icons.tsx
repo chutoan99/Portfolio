@@ -11,7 +11,8 @@ export type Types = (typeof Types)[keyof typeof Types]
 export interface ListIconModel {
 	name: string
 	type: Types[]
-	default: string
+	default?: string
+	path?: string
 	grey?: string
 	active?: boolean
 }
@@ -20,478 +21,416 @@ export const ListIcon: ListIconModel[] = [
 		active: true,
 		name: 'Html',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/html/default.svg',
-		grey: './assets/svgs/html/grey.svg'
+		path: './assets/svgs/html'
 	},
 	{
 		active: true,
 		name: 'Css/ Css Module',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/css/default.svg',
-		grey: './assets/svgs/css/grey.svg'
+		path: './assets/svgs/css'
 	},
 	{
 		active: true,
 		name: 'Javascript',
 		type: [Types.FRONT_END, Types.BACK_END],
-		default: './assets/svgs/javascript/default.svg',
-		grey: './assets/svgs/javascript/grey.svg'
+		path: './assets/svgs/javascript'
 	},
 	{
 		active: true,
 		name: 'Typescript',
 		type: [Types.FRONT_END, Types.BACK_END],
-		default: './assets/svgs/typescript/default.svg',
-		grey: './assets/svgs/typescript/grey.svg'
+		path: './assets/svgs/typescript'
 	},
 	{
 		active: true,
 		name: 'C#',
 		type: [Types.BACK_END],
-		default: './assets/svgs/c_sharp/default.svg',
-		grey: './assets/svgs/c_sharp/grey.svg'
+		path: './assets/svgs/c_sharp'
 	},
 	{
 		active: true,
 		name: 'Java',
-		default: './assets/svgs/java/default.svg',
-		grey: './assets/svgs/java/grey.svg',
-		type: [Types.BACK_END]
+		type: [Types.BACK_END],
+		path: './assets/svgs/java'
 	},
 	{
 		active: true,
 		name: 'Node.js',
 		type: [Types.BACK_END],
-		default: './assets/svgs/node_js/default.svg',
-		grey: './assets/svgs/node_js/grey.svg'
+		path: './assets/svgs/node_js'
 	},
 	{
 		active: true,
 		name: 'Nest.js',
 		type: [Types.BACK_END],
-		default: './assets/svgs/nest_js/default.svg',
-		grey: './assets/svgs/nest_js/grey.svg'
+		path: './assets/svgs/nest_js'
 	},
 	{
 		active: true,
 		name: 'Express.js',
 		type: [Types.BACK_END],
-		default: './assets/svgs/express_js/default.svg',
-		grey: './assets/svgs/express_js/grey.svg',
+		path: './assets/svgs/express_js'
 	},
 	{
 		active: true,
 		name: 'Dot Net',
 		type: [Types.BACK_END],
-		default: './assets/svgs/dot_net/default.svg',
-		grey: './assets/svgs/dot_net/grey.svg'
+		path: './assets/svgs/dot_net'
 	},
 	{
 		active: false,
 		name: 'Spring',
 		type: [Types.BACK_END],
-		default: './assets/svgs/spring/default.svg',
-		grey: './assets/svgs/spring/grey.svg'
+		path: './assets/svgs/spring'
 	},
 
 	{
 		active: true,
 		name: 'React/React Native',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/react_js/default.svg',
-		grey: './assets/svgs/react_js/grey.svg'
+		path: './assets/svgs/react_js'
 	},
 	{
 		active: true,
 		name: 'Angular/ Angularjs',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/angular_js/default.svg',
-		grey: './assets/svgs/angular_js/grey.svg'
+		path: './assets/svgs/angular_js'
 	},
 	{
 		active: true,
 		name: 'Vue',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/vue/default.svg',
-		grey: './assets/svgs/vue/grey.svg'
+		path: './assets/svgs/vue'
 	},
 	{
 		active: true,
 		name: 'Next',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/next_js/default.svg',
-		grey: './assets/svgs/next_js/grey.svg'
+		path: './assets/svgs/next_js'
 	},
 	{
 		active: false,
 		name: 'Nuxt',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/nuxt_js/default.svg',
-		grey: './assets/svgs/nuxt_js/grey.svg'
+		path: './assets/svgs/nuxt_js'
 	},
 	{
 		active: true,
 		name: 'Jquery',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/jquery/default.svg',
-		grey: './assets/svgs/jquery/grey.svg'
+		path: './assets/svgs/jquery'
 	},
 	{
 		active: true,
 		name: 'React Query',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/react_query/default.svg',
-		grey: './assets/svgs/react_query/grey.svg'
+		path: './assets/svgs/react_query'
 	},
 	{
 		active: true,
 		name: 'Redux Toolkit',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/redux_toolkit/default.svg',
-		grey: './assets/svgs/redux_toolkit/grey.svg'
+		path: './assets/svgs/redux_toolkit'
 	},
 	{
 		active: true,
 		name: 'Ngrx',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/ngrx/default.svg',
-		grey: './assets/svgs/ngrx/grey.svg'
+		path: './assets/svgs/ngrx'
 	},
 	{
 		active: true,
 		name: 'Vuex',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/vuex/default.svg',
-		grey: './assets/svgs/vuex/grey.svg'
+		path: './assets/svgs/vuex'
 	},
 	{
 		active: true,
 		name: 'Rxjs',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/rxjs/default.svg',
-		grey: './assets/svgs/rxjs/grey.svg'
+		path: './assets/svgs/rxjs'
 	},
 	{
 		active: true,
 		name: 'Pug',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/pug/default.svg',
-		grey: './assets/svgs/pug/grey.svg'
+		path: './assets/svgs/pug'
 	},
 	{
 		active: true,
 		name: 'Tailwind Css',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/tailwind_css/default.svg',
-		grey: './assets/svgs/tailwind_css/grey.svg'
+		path: './assets/svgs/tailwind_css'
 	},
 	{
 		active: true,
 		name: 'Sass/Scss',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/sass/default.svg',
-		grey: './assets/svgs/sass/grey.svg'
+		path: './assets/svgs/sass'
 	},
 	{
 		active: true,
 		name: 'Styled Components',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/styled_component/default.svg',
-		grey: './assets/svgs/styled_component/grey.svg'
+		path: './assets/svgs/styled_component'
 	},
 	{
 		active: true,
 		name: 'Emotion',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/emotion/default.svg',
-		grey: './assets/svgs/emotion/grey.svg'
+		path: './assets/svgs/emotion'
 	},
 	{
 		active: true,
 		name: 'Ant Design',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/ant_design/default.svg',
-		grey: './assets/svgs/ant_design/grey.svg'
+		path: './assets/svgs/ant_design'
 	},
 	{
 		active: true,
 		name: 'Material UI',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/material_ui/default.svg',
-		grey: './assets/svgs/material_ui/grey.svg'
+		path: './assets/svgs/material_ui'
 	},
 	{
 		active: true,
 		name: 'Primeng',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/primeng/default.svg',
-		grey: './assets/svgs/primeng/grey.svg',
+		path: './assets/svgs/primeng'
 	},
 	{
 		active: true,
 		name: 'DevExtreme',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/dev_extreme/default.svg',
-		grey: './assets/svgs/dev_extreme/grey.svg',
+		path: './assets/svgs/dev_extreme'
 	},
 	{
 		active: true,
 		name: 'Bootstrap',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/bootstrap/default.svg',
-		grey: './assets/svgs/bootstrap/grey.svg'
+		path: './assets/svgs/bootstrap'
 	},
 	{
 		active: true,
 		name: 'Sql Server',
 		type: [Types.DATABASE],
-		default: './assets/svgs/sql_server/default.svg',
-		grey: './assets/svgs/sql_server/grey.svg',
+		path: './assets/svgs/sql_server'
 	},
 	{
 		active: true,
 		name: 'My Sql',
 		type: [Types.DATABASE],
-		default: './assets/svgs/my_sql/default.svg',
-		grey: './assets/svgs/my_sql/grey.svg'
+		path: './assets/svgs/my_sql'
 	},
 	{
 		active: true,
 		name: 'PostgreSql',
 		type: [Types.DATABASE],
-		default: './assets/svgs/postgre_sql/default.svg',
-		grey: './assets/svgs/postgre_sql/grey.svg'
+		path: './assets/svgs/postgre_sql'
 	},
 	{
 		active: true,
 		name: 'Mongo DB',
 		type: [Types.DATABASE],
-		default: './assets/svgs/mongo_db/default.svg',
-		grey: './assets/svgs/mongo_db/grey.svg'
+		path: './assets/svgs/mongo_db'
 	},
 	{
 		active: true,
 		name: 'redis',
 		type: [Types.DATABASE],
-		default: './assets/svgs/redis/default.svg',
-		grey: './assets/svgs/redis/grey.svg'
+		path: './assets/svgs/redis'
 	},
 	{
 		active: true,
 		name: 'Firebase',
 		type: [Types.DATABASE],
-		default: './assets/svgs/firebase/default.svg',
-		grey: './assets/svgs/firebase/grey.svg',
+		path: './assets/svgs/firebase'
 	},
 	{
 		active: true,
 		name: 'Cloudinary',
 		type: [Types.BACK_END],
-		default: './assets/svgs/cloudinary/default.svg',
-		grey: './assets/svgs/cloudinary/grey.svg'
+		path: './assets/svgs/cloudinary'
 	},
 	{
 		active: true,
 		name: 'Restfull Api',
 		type: [Types.BACK_END],
-		default: './assets/svgs/restfull_api/default.svg',
-		grey: './assets/svgs/restfull_api/grey.svg',
+		path: './assets/svgs/restfull_api'
 	},
 	{
 		active: true,
 		name: 'Socket Io',
 		type: [Types.BACK_END],
-		default: './assets/svgs/socket_io/default.svg',
-		grey: './assets/svgs/socket_io/grey.svg',
+		path: './assets/svgs/socket_io'
 	},
 	{
 		active: true,
 		name: 'Graphql',
 		type: [Types.BACK_END],
-		default: './assets/svgs/graphql/default.svg',
-		grey: './assets/svgs/graphql/grey.svg'
+		path: './assets/svgs/graphql'
 	},
 	{
 		active: true,
 		name: 'Apollo Client',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/apollo_client/default.svg',
-		grey: './assets/svgs/apollo_client/grey.svg'
+		path: './assets/svgs/apollo_client'
 	},
 	{
 		active: true,
 		name: 'Type Orm',
 		type: [Types.BACK_END],
-		default: './assets/svgs/type_orm/default.svg',
-		grey: './assets/svgs/type_orm/grey.svg',
+		path: './assets/svgs/type_orm'
 	},
 	{
 		active: true,
 		name: 'Sequelize',
 		type: [Types.BACK_END],
-		default: './assets/svgs/sequelize/default.svg',
-		grey: './assets/svgs/sequelize/grey.svg',
+		path: './assets/svgs/sequelize'
 	},
 	{
 		active: false,
 		name: 'Elastic',
 		type: [Types.BACK_END],
-		default: './assets/svgs/elastic/default.svg',
-		grey: './assets/svgs/elastic/grey.svg',
+		path: './assets/svgs/elastic'
 	},
 	{
 		active: false,
 		name: 'Logstash',
 		type: [Types.BACK_END],
-		default: './assets/svgs/logstash/default.svg',
-		grey: './assets/svgs/logstash/grey.svg',
+		path: './assets/svgs/logstash'
 	},
 	{
 		active: false,
 		name: 'Kibana',
 		type: [Types.BACK_END],
-		default: './assets/svgs/kibana/default.svg',
-		grey: './assets/svgs/kibana/grey.svg',
+		path: './assets/svgs/kibana'
 	},
 	{
 		active: true,
 		name: 'Docker',
-		default: './assets/svgs/docker/default.svg',
-		grey: './assets/svgs/docker/grey.svg',
-		type: [Types.OTHERS, Types.BACK_END]
+		type: [Types.OTHERS, Types.BACK_END],
+		path: './assets/svgs/docker'
 	},
 	{
 		active: true,
 		name: 'Puppeteer',
 		type: [Types.OTHERS],
-		default: './assets/svgs/puppeteer/default.svg',
-		grey: './assets/svgs/puppeteer/grey.svg',
+		path: './assets/svgs/puppeteer'
 	},
 	{
 		active: true,
 		name: 'Git',
 		type: [Types.OTHERS],
-		default: './assets/svgs/git/default.svg',
-		grey: './assets/svgs/git/grey.svg',
+		path: './assets/svgs/git'
 	},
 	{
 		active: false,
 		name: 'Github',
 		type: [Types.OTHERS],
-		default: './assets/svgs/github/default.svg',
-		grey: './assets/svgs/github/grey.svg'
+		path: './assets/svgs/github'
 	},
 	{
 		active: false,
 		name: 'Gitlab',
 		type: [Types.OTHERS],
-		default: './assets/svgs/gitlab/default.svg',
-		grey: './assets/svgs/gitlab/grey.svg'
+		path: './assets/svgs/gitlab'
 	},
 	{
 		active: false,
 		name: 'Bitbucket',
 		type: [Types.OTHERS],
-		default: './assets/svgs/bitbucket/default.svg',
-		grey: './assets/svgs/bitbucket/grey.svg',
+		path: './assets/svgs/bitbucket'
 	},
 	{
 		active: false,
 		name: 'Npm',
 		type: [Types.OTHERS],
-		default: './assets/svgs/npm/default.svg',
-		grey: './assets/svgs/npm/grey.svg',
+		path: './assets/svgs/npm'
 	},
 	{
 		active: false,
 		name: 'Yarn',
 		type: [Types.OTHERS],
-		default: './assets/svgs/yarn/default.svg'
+		path: './assets/svgs/yarn'
 	},
 	{
 		active: false,
 		name: 'Pmpm',
 		type: [Types.OTHERS],
-		default: './assets/svgs/pmpm/default.svg'
+		path: './assets/svgs/pmpm'
 	},
 	{
 		active: false,
 		name: 'Bun',
 		type: [Types.OTHERS],
-		default: './assets/svgs/bun/default.svg',
-		grey: './assets/svgs/bun/grey.svg',
+		path: './assets/svgs/bun'
 	},
 	{
 		active: false,
 		name: 'Maven',
 		type: [Types.OTHERS],
-		default: './assets/svgs/maven/default.svg'
+		path: './assets/svgs/maven'
 	},
 	{
 		active: false,
 		name: 'Gradle',
 		type: [Types.OTHERS],
-		default: './assets/svgs/gradle/default.svg',
-		grey: './assets/svgs/gradle/grey.svg'
+		path: './assets/svgs/gradle'
 	},
 
 	{
 		active: false,
 		name: 'Webpack',
 		type: [Types.OTHERS],
-		default: './assets/svgs/webpack/default.svg',
-		grey: './assets/svgs/webpack/grey.svg'
+		path: './assets/svgs/webpack'
 	},
 	{
 		active: false,
 		name: 'Vite',
 		type: [Types.OTHERS],
-		default: './assets/svgs/vite/default.svg',
-		grey: './assets/svgs/vite/grey.svg'
+		path: './assets/svgs/vite'
 	},
 	{
 		active: false,
 		name: 'Turbo',
 		type: [Types.OTHERS],
-		default: './assets/svgs/turbo/default.svg'
+		path: './assets/svgs/turbo'
 	},
 	{
 		active: false,
 		name: 'Nx',
 		type: [Types.OTHERS],
-		default: './assets/svgs/nx/default.svg'
+		path: './assets/svgs/nx'
 	},
 	{
 		active: true,
 		name: 'Story book',
 		type: [Types.FRONT_END],
-		default: './assets/svgs/story_book/default.svg',
-		grey: './assets/svgs/story_book/grey.svg'
+		path: './assets/svgs/story_book'
 	},
 	{
 		active: true,
 		name: 'Photoshop',
 		type: [Types.OTHERS],
-		default: './assets/svgs/photoshop/default.svg',
-		grey: './assets/svgs/photoshop/grey.svg'
+		path: './assets/svgs/photoshop'
 	},
 	{
 		active: true,
 		name: 'Figma',
 		type: [Types.OTHERS],
-		default: './assets/svgs/figma/default.svg',
-		grey: './assets/svgs/figma/grey.svg'
+		path: './assets/svgs/figma'
 	},
 	{
 		active: false,
 		name: 'Linux',
 		type: [Types.OTHERS],
-		default: './assets/svgs/linux/default.svg'
+		path: './assets/svgs/linux'
 	},
 	{
 		active: false,
 		name: 'Ubutu',
 		type: [Types.OTHERS],
-		default: './assets/svgs/ubutu/default.svg'
+		path: './assets/svgs/ubutu'
 	}
 ]
