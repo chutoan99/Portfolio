@@ -34,7 +34,7 @@ export default function Skills() {
 				'>
 				<div
 					className='
-					h-full shrink-0 flex flex-col items-center justify-center pb-[50px] pt-[90px]
+					h-full shrink-0 flex flex-col items-center justify-center py-[50px]
 					lg:py-[100px]
 					'>
 					<ul
