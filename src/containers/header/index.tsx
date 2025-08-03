@@ -7,7 +7,7 @@ export default function Header() {
 		<header className='w-full flex justify-center'>
 			<div
 				className='
-					fixed top-0 py-8 select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[16px] 
+					fixed top-0 pt-[32px] select-none z-50 bg-gradient-to-b  to-transparent w-full max-w-[1200px] pr-[16px] 
 					sm:pr-[15px] 
 					md:pr-[20px] 
 					lt:pr-0
@@ -27,7 +27,7 @@ export default function Header() {
 							<div className='flex-none overflow-hidden flex items-center justify-center'>
 								<div className='text-center opacity-0 overflow-y-auto flex flex-none justify-center items-center max-h-screen'>
 									<ul
-										className='list-none py-4 px-0 m-0 block max-h-screen'
+										className='list-none py-[16px] px-0 m-0 block max-h-screen'
 										role='menu'>
 										{[
 											'Home',
@@ -38,7 +38,7 @@ export default function Header() {
 											'Contact'
 										].map((el) => (
 											<li
-												className='p-0 m-6 text-2xl block'
+												className='p-0 m-[24px] text-2xl block'
 												key={el}
 												role='menuitem'>
 												<a

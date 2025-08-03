@@ -1,4 +1,4 @@
-import '../styles/index.css'
+import '../styles/index.scss'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 
 import { LazyMotion, domAnimation } from 'framer-motion'

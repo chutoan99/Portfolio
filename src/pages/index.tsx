@@ -17,7 +17,8 @@ import Background from '../containers/background'
 
 import Map from '../containers/map'
 import Header from '../containers/header'
-
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 export const isSmallScreen = (): boolean => document.body.clientWidth < 767
 export const NO_MOTION_PREFERENCE_QUERY =
 	'(prefers-reduced-motion: no-preference)'
@@ -104,7 +105,7 @@ const Home: NextPage = () => {
 			<div className='flex justify-center section-container'>
 				<section
 					className='
-						absolute top-0 flex py-8  h-full justify-start px-4 min-h-screen  mx-auto w-full max-w-[1200px]  
+						absolute top-0 flex py-[32px]  h-full justify-start px-[16px] min-h-screen  mx-auto w-full max-w-[1200px]  
 						md:items-center md:px-[48px]  
 						2xl:container 
 					'>
@@ -116,7 +117,7 @@ const Home: NextPage = () => {
 						<div
 							className='
 								mb-2 
-								md:mb-4
+								md:mb-[16px]
 							'
 							ref={targetSection}
 							style={{ opacity: 0 }}>
@@ -137,7 +138,7 @@ const Home: NextPage = () => {
 								I am Chu Toan
 							</h1>
 						</div>
-						<p className='mb-4 text-black'>
+						<p className='mb-[16px] text-black'>
 							<span
 								className='
 									text-3xl seq

@@ -30,7 +30,7 @@ export default function Skills() {
 				className='
 					max-w-[1165px] px-[10px] mx-auto 
 					sm:px-[20px] 
-					md:px-7.5
+					md:px-[30px]
 				'>
 				<div
 					className='

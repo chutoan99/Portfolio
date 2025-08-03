@@ -12,7 +12,7 @@ export default function Contact() {
 			<div
 				className='
 					flex flex-col justify-between h-full max-w-[1200px] mx-auto gap-[25px] 
-					sm:gap-[30px] sm:mt-[20px] sm:py-5 
+					sm:gap-[30px] sm:mt-[20px] sm:py-[20px]
 					md:flex-row
 				'>
 				<FormInfo />

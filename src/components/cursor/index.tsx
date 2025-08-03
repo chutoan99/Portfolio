@@ -64,14 +64,14 @@ const Cursor = ({ isDesktop }: any) => {
 		<>
 			<div
 				ref={cursor}
-				className='fixed hidden bg-white w-4 h-4 select-none pointer-events-none z-50'
+				className='fixed hidden bg-white w-[16px] h-[16px] select-none pointer-events-none z-50'
 				style={{
 					borderRadius: '100%',
 					mixBlendMode: 'difference'
 				}}></div>
 			<div
 				ref={follower}
-				className='fixed hidden h-8 w-8 select-none pointer-events-none z-50'
+				className='fixed hidden h-[32px] w-[32px] select-none pointer-events-none z-50'
 				style={{
 					borderRadius: '100%',
 					left: '-0.5rem',
