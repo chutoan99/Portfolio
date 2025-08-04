@@ -151,7 +151,7 @@ const Home: NextPage = () => {
 				</section>
 			</div>
 			<About />
-			<Experience />
+			{/* <Experience /> */}
 			<Label content='Projects'></Label>
 			<Projects />
 			<Label content='Skills'></Label>
