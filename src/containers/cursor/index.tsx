@@ -1,55 +1,67 @@
-import React, { FC, useEffect, useRef } from 'react';
-import { StyledCursor } from './style';
-
+import React, { FC, useEffect, useRef } from 'react'
 
 const Cursor: FC = () => {
-  const isFirstMove = useRef(true);
+	const isFirstMove = useRef(true)
+	const cursorRef = useRef<HTMLDivElement>(null)
+	const realMouse = useRef({
+		x: 0,
+		y: 0
+	})
+	const displayedMouse = useRef({
+		x: 0,
+		y: 0
+	})
 
-  const cursorRef = useRef<HTMLDivElement>(null);
+	useEffect(() => {
+		if (window.matchMedia('(pointer: coarse)').matches) return
 
-  const realMouse = useRef({
-    x: 0,
-    y: 0,
-  });
+		window.addEventListener('mousemove', (e) => {
+			if (cursorRef.current) {
+				if (isFirstMove.current) {
+					cursorRef.current.style.display = 'block'
+					displayedMouse.current.x = e.clientX
+					displayedMouse.current.y = e.clientY
+					isFirstMove.current = false
+				}
 
-  const displayedMouse = useRef({
-    x: 0,
-    y: 0,
-  });
+				realMouse.current.x = e.clientX
+				realMouse.current.y = e.clientY
+			}
+		})
 
-  useEffect(() => {
-    if (window.matchMedia('(pointer: coarse)').matches) return;
+		const updateMouse = () => {
+			requestAnimationFrame(updateMouse)
 
-    window.addEventListener('mousemove', (e) => {
-      if (cursorRef.current) {
-        if (isFirstMove.current) {
-          cursorRef.current.style.display = 'block';
-          displayedMouse.current.x = e.clientX;
-          displayedMouse.current.y = e.clientY;
-          isFirstMove.current = false;
-        }
+			displayedMouse.current.x +=
+				(realMouse.current.x - displayedMouse.current.x) * 0.1
+			displayedMouse.current.y +=
+				(realMouse.current.y - displayedMouse.current.y) * 0.1
 
-        realMouse.current.x = e.clientX;
-        realMouse.current.y = e.clientY;
-      }
-    });
+			if (cursorRef.current) {
+				cursorRef.current.style.left = `${displayedMouse.current.x}px`
+				cursorRef.current.style.top = `${displayedMouse.current.y}px`
+			}
+		}
 
-    const updateMouse = () => {
-      requestAnimationFrame(updateMouse);
+		updateMouse()
+	}, [])
 
-      displayedMouse.current.x += (realMouse.current.x - displayedMouse.current.x) * 0.1;
-      displayedMouse.current.y += (realMouse.current.y - displayedMouse.current.y) * 0.1;
+	return (
+		<div
+			ref={cursorRef}
+			className='
+        w-[28px] h-[28px]
+        bg-transparent
+        border border-white
+        rounded-full
+        fixed
+        z-50
+        pointer-events-none
+        transition-all duration-[75ms]
+        hidden
+        -translate-x-1/2 -translate-y-1/2
+      '></div>
+	)
+}
 
-      if (cursorRef.current) {
-        cursorRef.current.style.left = `${displayedMouse.current.x}px`;
-        cursorRef.current.style.top = `${displayedMouse.current.y}px`;
-      }
-    };
-
-    updateMouse();
-  }, []);
-
-  return <StyledCursor ref={cursorRef}></StyledCursor>;
-};
-
-export default Cursor;
+export default Cursor
