@@ -24,7 +24,7 @@ export default function Projects() {
 			id='projects'
 			className='
 				flex flex-col justify-center items-center self-stretch py-[50px] bg-white
-				lt:px-20 lt:py-24 
+				lt:px-[80px] lt:py-[96px] 
 			'>
 			<div
 				className='
@@ -33,7 +33,7 @@ export default function Projects() {
 				<div
 					className='
 						flex flex-col justify-center items-center gap-[50px] self-stretch
-						lt:px-8 py-0
+						lt:px-[32px] py-0
 					'>
 					<Projects1 />
 					<Projects2 />

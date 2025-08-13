@@ -117,7 +117,6 @@ export default function About() {
 									lt:w-[277px]
 								'>
 								<a
-									href='./assets/files/CV_TruongVanChuToan_FrontEnd.pdf'
 									target='_blank'
 									download
 									className='flex justify-center items-center gap-[5px]'>

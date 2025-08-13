@@ -30,11 +30,11 @@ export default function Skills() {
 				className='
 					max-w-[1165px] px-[10px] mx-auto 
 					sm:px-[20px] 
-					md:px-7.5
+					md:px-[30px]
 				'>
 				<div
 					className='
-					h-full shrink-0 flex flex-col items-center justify-center pb-[50px] pt-[90px]
+					h-full shrink-0 flex flex-col items-center justify-center py-[50px]
 					lg:py-[100px]
 					'>
 					<ul
