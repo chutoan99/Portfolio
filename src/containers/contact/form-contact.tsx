@@ -1,4 +1,8 @@
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+
 export default function FormContact() {
+	const { t } = useTranslation()
 	return (
 		<form
 			id='form'
@@ -27,7 +31,7 @@ export default function FormContact() {
 						'>
 						<label id='form-name' />
 						<input
-							placeholder='Name'
+							placeholder={t('form.placeholder_name')}
 							type='text'
 							id='form-name'
 							className='
@@ -46,7 +50,7 @@ export default function FormContact() {
 						'>
 						<label id='form-Email' />
 						<input
-							placeholder='Email'
+							placeholder={t('form.placeholder_email')}
 							type='text'
 							id='form-Email'
 							className='
@@ -74,7 +78,7 @@ export default function FormContact() {
 						'>
 						<label id='form-subject' />
 						<input
-							placeholder='Subject'
+							placeholder={t('form.placeholder_subject')}
 							type='text'
 							id='form-subject'
 							className='
@@ -91,7 +95,7 @@ export default function FormContact() {
 						'>
 						<label id='form-phone' />
 						<input
-							placeholder='Phone'
+							placeholder={t('form.placeholder_phone')}
 							type='phone'
 							id='form-phone'
 							className='
@@ -115,7 +119,7 @@ export default function FormContact() {
 						'>
 						<label id='form-content'></label>
 						<textarea
-							placeholder='Content'
+							placeholder={t('form.placeholder_content')}
 							id='form-content'
 							className='
 								flex w-full h-[140px] bg-transparent text-[#6c757d] text-[19px] font-normal border-none rounded-[10px] resize-none 
@@ -139,7 +143,7 @@ export default function FormContact() {
 							sm:justify-start
 						'>
 						<span className='text-[#ffffff] text-[18px] leading-[28px] font-normal capitalize text-center'>
-							Send Message
+							{t('form.btn_send_message')}
 						</span>
 					</button>
 				</div>

@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 
 export default function Header() {
+	const { t } = useTranslation()
 	const [menuVisible, setMenuVisible] = useState(false)
 	return (
 		<header className='w-full flex justify-center'>
@@ -30,28 +32,28 @@ export default function Header() {
 										className='list-none py-[16px] px-0 m-0 block max-h-screen'
 										role='menu'>
 										{[
-											'Home',
-											'About',
-											'Experience',
-											'Projects',
-											'Skills',
-											'Contact'
-										].map((el) => (
+											{ key: 'home', href: '#home', label: 'header.label_home' },
+											{ key: 'about', href: '#about', label: 'header.label_about' },
+											{ key: 'experience', href: '#experience', label: 'header.label_experience' },
+											{ key: 'projects', href: '#projects', label: 'header.label_projects' },
+											{ key: 'skills', href: '#skills', label: 'header.label_skills' },
+											{ key: 'contact', href: '#contact', label: 'header.label_contact' }
+										].map((item) => (
 											<li
 												className='p-0 m-[24px] text-2xl block'
-												key={el}
+												key={item.key}
 												role='menuitem'>
 												<a
 													className='
 														link relative inline font-bold text-5xl 
 														duration-300 hover:no-underline
 													'
-													href={`#${el.toLowerCase()}`}
+													href={item.href}
 													onClick={setMenuVisible.bind(
 														null,
 														false
 													)}>
-													{el}
+													{t(item.label)}
 												</a>
 											</li>
 										))}

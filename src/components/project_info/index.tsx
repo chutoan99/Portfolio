@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next'
+
 export default function ProjectInfo({ project }: { project: any }) {
+	const { t } = useTranslation()
 	return (
 		<div
 			className='
@@ -11,7 +14,7 @@ export default function ProjectInfo({ project }: { project: any }) {
 					lt:w-[500px] flex-col lt:flex-row
 				'>
 				<h3 className='self-stretch overflow-hidden text-label text-ellipsis text-xl not-italic font-semibold leading-7'>
-					{project.name}:
+					{t(project.nameKey)}:
 				</h3>
 				<div
 					className='
@@ -26,13 +29,13 @@ export default function ProjectInfo({ project }: { project: any }) {
 							text-[#4B5563] text-[16px] border-b-black border-b border-solid h-[20px] 
 							hover:text-[#7D11F9] transition duration-150
 						'>
-						{project.demo}
+						{t(project.demoKey)}
 					</a>
 				</div>
 			</div>
 
 			<p className='self-stretch text-[#4b5563] text-[18px] not-italic font-normal leading-[24px]'>
-				{project.description}
+				{t(project.descriptionKey)}
 			</p>
 			<div className='flex items-center content-center gap-[6px] self-stretch flex-wrap'>
 				{project.technologies.map((item: string, index: number) => (
@@ -90,7 +93,7 @@ export default function ProjectInfo({ project }: { project: any }) {
 									cursor-pointer 
 									text-gray-600 text-[18px] not-italic font-normal leading-[24px]
 								'>
-								{item.content}
+								{t(item.contentKey)}
 							</span>
 						</a>
 					</span>

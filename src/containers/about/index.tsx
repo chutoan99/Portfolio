@@ -1,6 +1,8 @@
 import AvatarCard from './avatar-card'
+import { useTranslation } from 'react-i18next'
 
 export default function About() {
+	const { t } = useTranslation()
 	return (
 		<section
 			id='about'
@@ -28,67 +30,37 @@ export default function About() {
 						data-aos-duration='800'
 						className='w-full h-full lt:w-[800px] lt:h-[489px]'>
 						<span className='flex flex-col justify-center text-[#8c89a2] font-semibold text-[18px] uppercase leading-[36px] tracking-[1px] h-[26px] lt:h-[100px]'>
-							About Me
+							{t('common.title_about_me')}
 						</span>
 						<h3 className='flex flex-col justify-center shrink-0 text-[32px] leading-[48px] text-[#3f3a64] font-normal w-full mt-[8px] lt:w-[375px] lt:text-[40px]'>
-							Truong Van Chu Toan
+							{t('common.value_name')}
 						</h3>
 						<span className='flex flex-col justify-center  w-full text-[18px] leading-[26px] text-[#37352f] font-normal mt-[12.8px] lt:w-[750px]'>
-							Seeking a full-time position in web development to
-							quickly adapt and contribute effectively to a
-							dynamic company. Committed to continuous learning
-							and becoming a Fullstack Web Developer within the
-							next two years
+							{t('common.msg_about_description')}
 						</span>
 						<div className='shrink-0 border-t border-[#ddd] mt-[16px] pt-[24px] sm:pt-[16px]'>
 							<div className='grid mt-[5px] lt:grid-cols-2'>
 								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
 									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
-											Name:
+											{t('common.label_name')}:
 										</label>
 									</div>
 									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<span className='font-normal text-[#696969]'>
-											Truong Van Chu Toan
+											{t('common.value_name')}
 										</span>
 									</div>
 								</div>
 								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
 									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
-											Age:
+											{t('common.label_age')}:
 										</label>
 									</div>
 									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<span className='font-normal text-[#696969]'>
-											24 Years
-										</span>
-									</div>
-								</div>
-							</div>
-							<div className='grid mt-[5px] lt:grid-cols-2'>
-								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
-									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
-										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
-											Phone:
-										</label>
-									</div>
-									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
-										<span className='font-normal text-[#696969]'>
-											+84 972 712 621
-										</span>
-									</div>
-								</div>
-								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
-									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
-										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
-											Location:
-										</label>
-									</div>
-									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
-										<span className='font-normal text-[#696969]'>
-											Tp. Ho Chi Minh
+											{t('common.value_age')}
 										</span>
 									</div>
 								</div>
@@ -97,12 +69,38 @@ export default function About() {
 								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
 									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
-											Email:
+											{t('common.label_phone')}:
+										</label>
+									</div>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<span className='font-normal text-[#696969]'>
+											{t('common.value_phone')}
+										</span>
+									</div>
+								</div>
+								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
+											{t('common.label_location')}:
+										</label>
+									</div>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<span className='font-normal text-[#696969]'>
+											{t('common.value_location')}
+										</span>
+									</div>
+								</div>
+							</div>
+							<div className='grid mt-[5px] lt:grid-cols-2'>
+								<div className='inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0'>
+									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
+										<label className='font-semibold leading-[29px] text-[#3f3a64]'>
+											{t('common.label_email')}:
 										</label>
 									</div>
 									<div className='h-[28px] flex flex-col justify-center text-[19px] not-italic'>
 										<a href='#' className='text-[#7d11f9]'>
-											Truongvanchutoan1999@gmail.com
+											{t('common.value_email')}
 										</a>
 									</div>
 								</div>
@@ -144,7 +142,7 @@ export default function About() {
 										</defs>
 									</svg>
 									<span className='capitalize text-[18px] text-center text-white not-italic font-bold leading-[28px]'>
-										Download My Resume
+										{t('common.btn_download_resume')}
 									</span>
 								</a>
 							</button>

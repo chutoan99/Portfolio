@@ -1,7 +1,10 @@
 import 'aos/dist/aos.css'
 import Slider from 'react-slick'
 import { CarouselConfig } from '../../shared/carousel.config'
+import { useTranslation } from 'react-i18next'
+
 export default function Experience() {
+	const { t } = useTranslation()
 	return (
 		<section
 			className='w-full h-full p-[20px] md:px-[120px] pt-[60px]  pb-[50px] sm:pb-[100px]  md:gap-[24px] bg-[#f1f5f9]'
@@ -15,12 +18,12 @@ export default function Experience() {
 					<div className='w-full items-start justify-start flex-col md:flex flex gap-[16px] md:gap-[40px] relative lt:flex-row'>
 						<div className='flex w-[115px] flex-col items-start gap-[12px] shrink-0'>
 							<p className=' text-primary text-base not-italic font-semibold leading-6 flex-col sm:flex'>
-								YTESO GIAAN
+								{t('common.title_experience_company_yteso')}
 							</p>
 						</div>
 						<div className='flex-1'>
 							<h3 className='self-stretch text-primary text-xl not-italic font-semibold'>
-								Frontend Developer
+								{t('common.label_position_frontend_developer')}
 							</h3>
 						</div>
 						{/* <div className='lt:w-[180px] absolute  right-[40px] lt:sticky lt:flex lt:justify-end'>
@@ -32,62 +35,46 @@ export default function Experience() {
 					<div className='w-full items-start justify-start flex-col md:flex flex gap-[16px] md:gap-[40px] relative lt:flex-row'>
 						<ul className='flex flex-col items-start gap-1 self-stretch'>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6'>
-								Develop & implement projects for CIH
-								International Hospital and Gia An 155 Hospital:
+								{t('common.msg_experience_yteso_intro')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
 								<span className='text-description font-bold'>
-									HRM: Human resource management.
+									{t('common.label_experience_hrm')}
 								</span>{' '}
-								Handle Electronic Medical Records, storing
-								comprehensive medical data for each patient,
-								including medical history, diagnosis, and
-								treatment.
+								{t('common.msg_experience_hrm_description')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
 								<span className='text-description font-bold'>
-									ERP: Enterprise resource planning.
+									{t('common.label_experience_erp')}
 								</span>{' '}
-								Manage all employee information with multiple
-								modules, including personnel, leave, insurance,
-								salary & personal income tax, and labor
-								equipment.
+								{t('common.msg_experience_erp_description')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
 								<span className='text-description font-bold'>
-									EMR: Electronic medical record.
+									{t('common.label_experience_emr')}
 								</span>{' '}
-								Handle Electronic Medical Records, storing
-								comprehensive medical data for each patient,
-								including medical history, diagnosis, and
-								treatment.
+								{t('common.msg_experience_emr_description')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6'>
-								Team size: 18 and the main tasks:
+								{t('common.msg_experience_yteso_team')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Work with TypeScript, Angular, Rxjs,
-								TailwindCss and DevExpress, SQL Server…
+								{t('common.msg_experience_yteso_task_1')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Create an API using ASP.NET in C#(C Sharp),
-								and Document with Swagger for the FE.
+								{t('common.msg_experience_yteso_task_2')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Collaborate with BA and QC to ensure alignment
-								with business team objectives and requirements.
+								{t('common.msg_experience_yteso_task_3')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Create report templates use &quot;report
-								designer DevExpress&quot;
+								{t('common.msg_experience_yteso_task_4')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Participate in project development meets,
-								contribute innovative solutions, and address
-								potential risks.
+								{t('common.msg_experience_yteso_task_5')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Work with the agile scrum methodology.
+								{t('common.msg_experience_yteso_task_6')}
 							</li>
 						</ul>
 					</div>
@@ -101,12 +88,12 @@ export default function Experience() {
 					<div className='w-full items-start justify-start flex-col md:flex flex gap-[16px] md:gap-[40px] relative lt:flex-row'>
 						<div className='flex w-[115px] flex-col items-start gap-[12px] shrink-0'>
 							<p className=' text-primary text-base not-italic font-semibold leading-6 flex-col sm:flex'>
-								ITD GROUP
+								{t('common.title_experience_company_itd')}
 							</p>
 						</div>
 						<div className='flex-1'>
 							<h3 className='self-stretch text-primary text-xl not-italic font-semibold'>
-								Frontend Developer
+								{t('common.label_position_frontend_developer')}
 							</h3>
 						</div>			
 						{/* <div className='lt:w-[180px] absolute  right-[40px] lt:sticky lt:flex lt:justify-end'>
@@ -120,65 +107,51 @@ export default function Experience() {
 						<ul className='flex flex-col items-start gap-[5px] self-stretch'>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6'>
 								<span className='text-description font-bold'>
-									iSecurity:{' '}
-								</span>
-								The system consolidates all security features
-								within an area, integrates facial recognition,
-								records, camera management, identification of
-								passenger vehicles upon entry and exit, suggests
-								intrusive behavior, object track on maps…
+									{t('common.label_experience_isecurity')}
+								</span>{' '}
+								{t('common.msg_experience_isecurity_description')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								Team size: 10 and the main tasks:
+								{t('common.msg_experience_isecurity_team')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Work with AngularJs, Javascript, Fabricjs,
-								Bootstrap…
+								{t('common.msg_experience_isecurity_task_1')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Responsible for maintain, develop new
-								features, and manage source code versions of the
-								company previously.
+								{t('common.msg_experience_isecurity_task_2')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Support and guidance to students during their
-								internship on various projects.
+								{t('common.msg_experience_isecurity_task_3')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 '>
 								<span className='text-description font-bold'>
-									iWater:{' '}
-								</span>
-								Main features include management water usage
-								history, payment records, employee…
+									{t('common.label_experience_iwater')}
+								</span>{' '}
+								{t('common.msg_experience_iwater_description')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								Team size: 8 and the main tasks:
+								{t('common.msg_experience_iwater_team')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Work with TypeScript, React, Redux, Material
-								UI…
+								{t('common.msg_experience_iwater_task_1')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Read and comprehend BA documents to align with
-								project requirements.
+								{t('common.msg_experience_iwater_task_2')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 '>
 								<span className='text-description font-bold'>
-									iOki: Objectives & Key Results.
-								</span>
-								Manage and scor OKR of employees every quarter.
+									{t('common.label_experience_ioki')}
+								</span>{' '}
+								{t('common.msg_experience_ioki_description')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								Team size: 20 and the main tasks:
+								{t('common.msg_experience_ioki_team')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Work with TypeScript, Angular, Jquery, Rxjs,
-								Ngrx, Scss, Bootstrap…
+								{t('common.msg_experience_ioki_task_1')}
 							</li>
 							<li className='self-stretch text-gray-600 text-lg not-italic font-normal leading-6 pl-[10px]'>
-								+ Ensure precise conversion of Figma designs to
-								web format with pixel-perfect accuracy and
-								responsiveness.
+								{t('common.msg_experience_ioki_task_2')}
 							</li>
 						</ul>
 					</div>

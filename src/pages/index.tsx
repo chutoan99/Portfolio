@@ -4,6 +4,7 @@ import { gsap, Linear } from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import React, { useEffect, useState, MutableRefObject, useRef } from 'react'
 import AOS from 'aos'
+import { useTranslation } from 'react-i18next'
 //? APP
 import Label from '../components/label'
 import About from '../containers/about'
@@ -24,6 +25,7 @@ export const NO_MOTION_PREFERENCE_QUERY =
 	'(prefers-reduced-motion: no-preference)'
 
 const Home: NextPage = () => {
+	const { t } = useTranslation()
 	gsap.registerPlugin(ScrollTrigger)
 	gsap.config({ nullTargetWarn: false })
 
@@ -57,7 +59,7 @@ const Home: NextPage = () => {
 		typedSpanElement: MutableRefObject<HTMLSpanElement>
 	): Typed => {
 		return new Typed(typedSpanElement.current, {
-			strings: ["I'm a frontend developer", "I'm a backend developer"],
+			strings: [t('common.msg_typed_frontend'), t('common.msg_typed_backend')],
 			typeSpeed: 50,
 			backSpeed: 50,
 			backDelay: 8000,
@@ -127,7 +129,7 @@ const Home: NextPage = () => {
 									sm:text-3xl 
 									text-black
 								'>
-								Hello 👋🏻
+								{t('common.msg_greeting')}
 							</h2>
 							<h1
 								className='
@@ -135,7 +137,7 @@ const Home: NextPage = () => {
 									sm:text-3xl 
 									text-black
 								'>
-								I am Chu Toan
+								{t('common.msg_intro_name')}
 							</h1>
 						</div>
 						<p className='mb-[16px] text-black'>
@@ -152,11 +154,11 @@ const Home: NextPage = () => {
 			</div>
 			<About />
 			{/* <Experience /> */}
-			<Label content='Projects'></Label>
+			<Label content={t('common.title_projects')}></Label>
 			<Projects />
-			<Label content='Skills'></Label>
+			<Label content={t('common.title_skills')}></Label>
 			<Skills />
-			<Label content='Contact'></Label>
+			<Label content={t('common.title_contact')}></Label>
 			<Contact />
 			<Map />
 			<Footer />

@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next'
+
 export default function Footer() {
+	const { t } = useTranslation()
 	return (
 		<footer
 			className='
@@ -25,7 +28,7 @@ export default function Footer() {
 								text-[21px] font-normal leading-[150%] capitalize text-black 
 								hover:text-[#7D11F9] transition duration-150
 							'>
-							home
+							{t('footer.label_home')}
 						</a>
 					</li>
 					<li>
@@ -35,7 +38,7 @@ export default function Footer() {
 								text-[21px] font-normal leading-[150%] capitalize text-black 
 								hover:text-[#7D11F9] transition duration-150
 							'>
-							about
+							{t('footer.label_about')}
 						</a>
 					</li>
 					<li>
@@ -45,7 +48,7 @@ export default function Footer() {
 								text-[21px] font-normal leading-[150%] capitalize text-black 
 								hover:text-[#7D11F9] transition duration-150
 							'>
-							projects
+							{t('footer.label_projects')}
 						</a>
 					</li>
 					<li>
@@ -55,7 +58,7 @@ export default function Footer() {
 								text-[21px] font-normal leading-[150%] capitalize text-black 
 								hover:text-[#7D11F9] transition duration-150
 							'>
-							skills
+							{t('footer.label_skills')}
 						</a>
 					</li>
 					<li>
@@ -65,7 +68,7 @@ export default function Footer() {
 								text-[21px] font-normal leading-[150%] capitalize text-black 
 								hover:text-[#7D11F9] transition duration-150
 							'>
-							contact
+							{t('footer.label_contact')}
 						</a>
 					</li>
 				</ul>
