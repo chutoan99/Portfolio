@@ -1,8 +1,8 @@
 export const PROJECTS = [
 	{
-		name: '01. Shop',
-		description:
-			"A meticulously cloned e-commerce platform inspired by Shopee. Packed with a comprehensive suite of functions, it hosts tens of thousands of categories, shops, and products, continuously updated to keep pace with market trends. We've harnessed the latest cutting-edge technologies to drive its development, resulting in a user-friendly interface that promises an intuitive and enjoyable shopping experience, currently optimized for laptop usage.",
+		nameKey: 'common.title_project_shop',
+		descriptionKey: 'common.msg_project_shop_description',
+		demoKey: 'common.value_project_shop_demo',
 		technologies: [
 			'React',
 			'Vite',
@@ -24,23 +24,22 @@ export const PROJECTS = [
 			'Jsonwebtoken',
 			'Nodemailer'
 		],
-		demo: 'shop-frontend.vercel.app',
 		ref: 'https://shop-front-end.netlify.app',
 		link: [
 			{
 				ref: 'https://bitbucket.org/chutoan99/shop-frontend',
-				content: 'View in bitbucket'
+				contentKey: 'common.btn_view_bitbucket'
 			},
 			{
 				ref: 'https://server-shopee3.onrender.com/api/client/docs',
-				content: 'View swagger api'
+				contentKey: 'common.btn_view_swagger'
 			}
 		]
 	},
 	{
-		name: '02. Shop Admin',
-		description:
-			"Presenting our Shopee-like project dashboard: a comprehensive toolkit for seamless process management. Powered by the latest technologies, it features a user-friendly interface inspired by the trending design style of glassmorphism. Currently tailored for laptops during its developmental phase, we're dedicated to introducing more features in the near future to enhance your experience.",
+		nameKey: 'common.title_project_shop_admin',
+		descriptionKey: 'common.msg_project_shop_admin_description',
+		demoKey: 'common.value_project_shop_admin_demo',
 		technologies: [
 			'Angular',
 			'Node',
@@ -62,23 +61,22 @@ export const PROJECTS = [
 			'Jsonwebtoken',
 			'Nodemailer'
 		],
-		demo: 'shop-admin-frontend.vercel.app',
 		ref: 'https://shop-admin-front-end.netlify.app',
 		link: [
 			{
 				ref: 'https://bitbucket.org/chutoan99/shop-admin-frontend',
-				content: 'View in bitbucket'
+				contentKey: 'common.btn_view_bitbucket'
 			},
 			{
 				ref: 'https://server-shopee3.onrender.com/api/admin/docs',
-				content: 'View swagger api'
+				contentKey: 'common.btn_view_swagger'
 			}
 		]
 	},
 	{
-		name: '03. Nespresso Vietnam',
-		description:
-			'My freelance project, crafted for a Vietnamese client, involving the transformation of a Figma design into a fully functional website. I have reimagined the Nespresso website exclusively for the Vietnamese market, incorporating the latest cutting-edge  technologies to ensure its development. This creation is designed to seamlessly adapt across a wide range of contemporary devices, providing a modern and accessible experience for users.',
+		nameKey: 'common.title_project_nespresso',
+		descriptionKey: 'common.msg_project_nespresso_description',
+		demoKey: 'common.value_project_nespresso_demo',
 		technologies: [
 			'Vue',
 			'Typescript',
@@ -88,19 +86,18 @@ export const PROJECTS = [
 			'Swiper',
 			'Figma'
 		],
-		demo: 'nespresso-client.vercel.app',
 		ref: 'https://nespresso-client.vercel.app',
 		link: [
 			{
 				ref: 'https://github.com/chutoan99/Nespresso',
-				content: 'View in github'
+				contentKey: 'common.btn_view_github'
 			}
 		]
 	},
 	{
-		name: '04. Rental',
-		description:
-			'A complete revamp of a room rental website. This undertaking encompasses a full range of functionalities, underpinned by a constant influx of listing data collected through the use of "puppeteer" technology, resulting in a continuously updated collection of thousands of listings. Fueled by the latest cutting-edge technologies, the development focuses on laptop compatibility. As we look  ahead, you can expect a steady stream of innovative features to enhance user experience.',
+		nameKey: 'common.title_project_rental',
+		descriptionKey: 'common.msg_project_rental_description',
+		demoKey: 'common.value_project_rental_demo',
 		technologies: [
 			'Next.js',
 			'Nest.js',
@@ -115,16 +112,15 @@ export const PROJECTS = [
 			'Typeorm',
 			'Puppeteer'
 		],
-		demo: 'rental-frontend.vercel.app',
 		ref: 'https://rental-front-end.vercel.app',
 		link: [
 			{
 				ref: 'https://gitlab.com/chutoan99/test',
-				content: 'View in gitlab'
+				contentKey: 'common.btn_view_gitlab'
 			},
 			{
 				ref: 'https://test-2mng.onrender.com/graphql',
-				content: 'View in graphql'
+				contentKey: 'common.btn_view_graphql'
 			}
 		]
 	}

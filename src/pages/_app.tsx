@@ -1,16 +1,20 @@
 import '../styles/index.scss'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
+import '../i18n/config'
 
 import { LazyMotion, domAnimation } from 'framer-motion'
 
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { useTranslation } from 'react-i18next'
 
 function MyApp({ Component, pageProps }: AppProps) {
+	const { t } = useTranslation()
+
 	return (
 		<>
 			<Head>
-				<title>Chu Toan | Frontend Developer Portfolio</title>
+				<title>{t('common.title_page')}</title>
 				<link
 					rel='shortcut icon'
 					href='/rounded-avatar.png'
@@ -20,15 +24,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 				{/* Primary Meta Tags */}
 				<meta
 					name='title'
-					content='Chu Toan | Frontend Developer Portfolio'
+					content={t('common.title_page')}
 				/>
 				<meta
 					name='description'
-					content='Portfolio Trương Văn Chu Toàn - Frontend Developer - BackEnd Developer'
+					content={t('common.meta_description')}
 				/>
 				<meta
 					name='keywords'
-					content='Portfolio Trương Văn Chu Toàn - Frontend Developer - BackEnd Developer'
+					content={t('common.meta_keywords')}
 				/>
 				<meta
 					name='keywords'
@@ -63,11 +67,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta
 					property='og:title'
-					content='Chu Toan | Frontend Developer Portfolio'
+					content={t('common.title_page')}
 				/>
 				<meta
 					property='og:description'
-					content='Portfolio Trương Văn Chu Toàn - Frontend Developer - BackEnd Developer'
+					content={t('common.meta_description')}
 				/>
 				<meta
 					property='og:image'
@@ -82,11 +86,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta
 					property='twitter:title'
-					content='Chu Toan | Frontend Developer Portfolio'
+					content={t('common.title_page')}
 				/>
 				<meta
 					property='twitter:description'
-					content='Portfolio Trương Văn Chu Toàn - Frontend Developer - BackEnd Developer'
+					content={t('common.meta_description')}
 				/>
 				<meta
 					property='twitter:image'

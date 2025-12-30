@@ -1,8 +1,10 @@
 import React, { useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ListIcon, ListIconModel, Types } from '../../shared/icons'
+import { useTranslation } from 'react-i18next'
 
 export default function Skills() {
+	const { t } = useTranslation()
 	const [currentTag, setCurrentTag] = useState<Types>(Types.ALL)
 	const [filteredIcons, setFilteredIcons] =
 		useState<ListIconModel[]>(ListIcon)
@@ -42,29 +44,29 @@ export default function Skills() {
 							flex w-full flex-row items-center justify-start gap-[8px] overflow-x-scroll overflow-y-hidden scroll-snap-x snap-mandatory scrollbar-none pt-[15px] pb-[32px] list-none select-none  
           					sm:justify-center sm:overflow-x-hidden sm:gap-[10px] sm:pb-[32px]'>
 						{[
-							'All',
-							'Front end',
-							'Back end',
-							'Database',
-							'Others'
-						].map((item: string, i: number) => (
+							{ type: Types.ALL, label: t('common.label_filter_all') },
+							{ type: Types.FRONT_END, label: t('common.label_filter_frontend') },
+							{ type: Types.BACK_END, label: t('common.label_filter_backend') },
+							{ type: Types.DATABASE, label: t('common.label_filter_database') },
+							{ type: Types.OTHERS, label: t('common.label_filter_others') }
+						].map((item, i: number) => (
 							<li
 								key={i}
 								onClick={() => {
-									onFilter(item as Types)
-									setCurrentTag(item as Types)
+									onFilter(item.type)
+									setCurrentTag(item.type)
 								}}
 								className={`
 										px-[20px] py-[4px] mx-[4px] relative overflow-hidden bg-white  transition-all rounded-[11px] text-base font-medium leading-5
 										border border-[#7D11F9]  
 										before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#7D11F9] before:transition-all before:duration-500 
 										hover:text-white hover:before:bg-[#7D11F9]  hover:shadow-[#7D11F9] hover:before:left-0 hover:before:w-full hover:shadow-2xl
-										${item === currentTag ? 'text-white before:bg-[#7D11F9] shadow-[#7D11F9] before:left-0 before:w-full shadow-2xl' : 'text-[#7D11F9]'}
+										${item.type === currentTag ? 'text-white before:bg-[#7D11F9] shadow-[#7D11F9] before:left-0 before:w-full shadow-2xl' : 'text-[#7D11F9]'}
 									`}>
 								<span
 									className='relative z-10'
 									style={{ backfaceVisibility: 'hidden' }}>
-									{item}
+									{item.label}
 								</span>
 							</li>
 						))}
