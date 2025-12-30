@@ -153,7 +153,7 @@ const Home: NextPage = () => {
 				</section>
 			</div>
 			<About />
-			{/* <Experience /> */}
+			<Experience />
 			<Label content={t('common.title_projects')}></Label>
 			<Projects />
 			<Label content={t('common.title_skills')}></Label>

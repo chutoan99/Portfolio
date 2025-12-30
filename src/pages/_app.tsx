@@ -1,4 +1,5 @@
 import '../styles/index.scss'
+import '../styles/grid.scss'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import '../i18n/config'
 
@@ -37,18 +38,18 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta
 					name='keywords'
 					content='
-            Trương Văn Chu Toàn,
-            Chu Toan,
-            Frontend Developer,
-            Backend Developer,
-            Fullstack Developer,
-            Web Developer Portfolio,
-            Software Engineer Vietnam,
-            Full Stack Web Developer,
-            Personal Website Design,
-            Developer Portfolio,
-            Best Portfolio Websites,
-            Beautiful Portfolio,
+						Trương Văn Chu Toàn,
+						Chu Toan,
+						Frontend Developer,
+						Backend Developer,
+						Fullstack Developer,
+						Web Developer Portfolio,
+						Software Engineer Vietnam,
+						Full Stack Web Developer,
+						Personal Website Design,
+						Developer Portfolio,
+						Best Portfolio Websites,
+						Beautiful Portfolio,
           '
 				/>
 
