@@ -72,8 +72,9 @@ export default function Skills() {
 
 					<div className='w-full flex flex-col flex-wrap text-center min-h-[350px]'>
 						<motion.div
+							style={{ display: 'grid' }}
 							className='
-								grid grid-cols-4 gap-[10px]
+								grid-cols-4 gap-[10px]
 
 								[@media(min-width:600px)]:ml-0 
 								[@media(min-width:600px)]:mr-0 

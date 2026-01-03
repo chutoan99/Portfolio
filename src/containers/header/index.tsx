@@ -27,7 +27,7 @@ export default function Header() {
 							<div className='flex-none overflow-hidden flex items-center justify-center'>
 								<div className='text-center opacity-0 overflow-y-auto flex flex-none justify-center items-center max-h-screen'>
 									<ul
-										className='list-none py-[16px] px-0 m-0 block max-h-screen'
+										className='list-none py-[16px] px-[0px] m-[0px] block max-h-screen'
 										role='menu'>
 										{[
 											'Home',

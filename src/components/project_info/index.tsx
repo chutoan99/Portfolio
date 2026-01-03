@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next'
+
 export default function ProjectInfo({ project }: { project: any }) {
+	const { t } = useTranslation()
 	return (
 		<div
 			className='
@@ -11,7 +14,7 @@ export default function ProjectInfo({ project }: { project: any }) {
 					lt:w-[500px] flex-col lt:flex-row
 				'>
 				<h3 className='self-stretch overflow-hidden text-label text-ellipsis text-xl not-italic font-semibold leading-7'>
-					{project.name}:
+					{t(project.nameKey)}:
 				</h3>
 				<div
 					className='
@@ -26,32 +29,46 @@ export default function ProjectInfo({ project }: { project: any }) {
 							text-[#4B5563] text-[16px] border-b-black border-b border-solid h-[20px] 
 							hover:text-[#7D11F9] transition duration-150
 						'>
-						{project.demo}
+						{t(project.demoKey)}
 					</a>
 				</div>
 			</div>
 
 			<p className='self-stretch text-[#4b5563] text-[18px] not-italic font-normal leading-[24px]'>
-				{project.description}
+				{t(project.descriptionKey)}
 			</p>
+
 			<div className='flex items-center content-center gap-[6px] self-stretch flex-wrap'>
-				{project.technologies.map((item: string, index: number) => (
-					<span
-						key={index}
-						className='
-							flex justify-center items-center px-[16px] py-[5px] rounded-[10px] bg-[#faf9f8] 
-							border border-[#C5C5C5] border-solid
-							self-stretch text-[#4b5563] text-[15px] not-italic font-normal leading-[24px]
-							hover:bg-[#C5C5C5] hover:cursor-pointer hover:transition-[0.3s]
-						'>
-						{item}
-					</span>
-				))}
+				{project.technologies.map(
+					(item: { lable: string; image: string }, index: number) => (
+						<a
+							key={index}
+							className='
+							flex cursor-pointer items-center gap-[5px] rounded-[5px]
+							border border-black/10 
+							px-[8px] py-[4px] 
+							font-medium text-neutral-500 text-[16px]
+							duration-200 hover:bg-black/5 motion-reduce:transition-none dark:border-neutral-800 dark:text-white/50 dark:hover:border-neutral-700 dark:hover:bg-white/5'
+							href='https://reactjs.org/'>
+							<img
+								alt={`${item.lable} Logo`}
+								loading='lazy'
+								width={20}
+								height={20}
+								decoding='async'
+								data-nimg={1}
+								className='size-5 rounded'
+								src={item.image}
+								style={{ color: 'transparent' }}
+							/>{' '}
+							{item.lable}
+						</a>
+					)
+				)}
 			</div>
 			<div
 				className='
 					flex w-full gap-[20px] justify-start items-center px-0
-					lt:pt-[15px]
 				'>
 				{project.link.map((item: any, index: number) => (
 					<span
@@ -90,7 +107,7 @@ export default function ProjectInfo({ project }: { project: any }) {
 									cursor-pointer 
 									text-gray-600 text-[18px] not-italic font-normal leading-[24px]
 								'>
-								{item.content}
+								{t(item.contentKey)}
 							</span>
 						</a>
 					</span>

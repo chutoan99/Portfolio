@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next'
+
 export default function FormInfo() {
+	const { t } = useTranslation()
 	return (
 		<div
 			data-aos='fade-right'
@@ -42,7 +45,7 @@ export default function FormInfo() {
                                 h-[29px] w-full inline-block 
                                 text-[#3f3a64] text-[20px] font-semibold leading-[28px]
                             '>
-							Call Me
+							{t('form.label_call_me')}
 						</span>
 					</div>
 				</div>
@@ -63,7 +66,7 @@ export default function FormInfo() {
                                 h-[27px] w-full inline-block 
                                 text-[#696969] text-[19px] font-normal leading-[28px]
                             '>
-							+84 972 712 621
+							{t('form.value_contact_phone')}
 						</a>
 					</div>
 				</div>
@@ -115,7 +118,7 @@ export default function FormInfo() {
                                 h-[29px] w-full inline-block 
                                 text-[#3f3a64] text-[20px] font-semibold leading-[28px]
                             '>
-							Email Me
+							{t('form.label_email_me')}
 						</span>
 					</div>
 				</div>
@@ -136,7 +139,7 @@ export default function FormInfo() {
                                 h-[27px] w-full inline-block 
                                 text-[#696969] text-[19px] font-normal leading-[28px]
                             '>
-							truongvanchutoan1999@gmail.com
+							{t('form.value_contact_email')}
 						</a>
 					</div>
 				</div>
@@ -186,7 +189,7 @@ export default function FormInfo() {
                                 h-[29px] w-full inline-block 
                                 text-[#3f3a64] text-[20px] font-semibold leading-[28px]
                             '>
-							Github Me
+							{t('form.label_github_me')}
 						</span>
 					</div>
 				</div>
@@ -207,7 +210,7 @@ export default function FormInfo() {
                                 h-[27px] w-full inline-block 
                                 text-[#696969] text-[19px] font-normal leading-[28px]
                             '>
-							https://github.com/chutoan99
+							{t('form.value_contact_github')}
 						</a>
 					</div>
 				</div>
@@ -247,7 +250,7 @@ export default function FormInfo() {
                                 h-[29px] w-full inline-block 
                                 text-[#3f3a64] text-[20px] font-semibold leading-[28px]
                             '>
-							Location
+							{t('common.label_location')}
 						</span>
 					</div>
 				</div>
@@ -268,7 +271,7 @@ export default function FormInfo() {
                                 h-[27px] w-full inline-block 
                                 text-[#696969] text-[19px] font-normal leading-[28px]
                             '>
-							District 8, Ho Chi Minh City
+							{t('form.value_contact_location')}
 						</a>
 					</div>
 				</div>

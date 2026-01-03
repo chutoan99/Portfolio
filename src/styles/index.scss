@@ -33,7 +33,7 @@ a {
 }
 
 * {
-	@apply box-border m-0 p-0;
+	@apply box-border m-[0px] p-[0px];
 }
 
 [data-scroll-container] {
@@ -233,7 +233,7 @@ time,
 mark,
 audio,
 video {
-	@apply text-[100%] align-baseline m-0 p-0 border-0;
+	@apply text-[100%] align-baseline m-[0px] p-[0px] border-0;
 }
 @media (min-width: 1024) {
 	html {
