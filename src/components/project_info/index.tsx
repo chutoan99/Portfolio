@@ -44,10 +44,10 @@ export default function ProjectInfo({ project }: { project: any }) {
 						<a
 							key={index}
 							className='
-							flex cursor-pointer items-center gap-[8px] rounded-[5px]
+							flex cursor-pointer items-center gap-[5px] rounded-[5px]
 							border border-black/10 
 							px-[8px] py-[4px] 
-							font-mono font-medium text-neutral-500 text-[18px]
+							font-medium text-neutral-500 text-[16px]
 							duration-200 hover:bg-black/5 motion-reduce:transition-none dark:border-neutral-800 dark:text-white/50 dark:hover:border-neutral-700 dark:hover:bg-white/5'
 							href='https://reactjs.org/'>
 							<img
