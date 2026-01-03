@@ -44,14 +44,14 @@ export default function ProjectInfo({ project }: { project: any }) {
 						<a
 							key={index}
 							className='
-							flex cursor-pointer items-center gap-2 rounded-md 
+							flex cursor-pointer items-center gap-[8px] rounded-[5px]
 							border border-black/10 
-							px-2 py-1 
-							font-mono font-medium text-neutral-500 
+							px-[8px] py-[4px] 
+							font-mono font-medium text-neutral-500 text-[18px]
 							duration-200 hover:bg-black/5 motion-reduce:transition-none dark:border-neutral-800 dark:text-white/50 dark:hover:border-neutral-700 dark:hover:bg-white/5'
 							href='https://reactjs.org/'>
 							<img
-								alt='React logo'
+								alt={`${item.lable} Logo`}
 								loading='lazy'
 								width={20}
 								height={20}
@@ -69,7 +69,6 @@ export default function ProjectInfo({ project }: { project: any }) {
 			<div
 				className='
 					flex w-full gap-[20px] justify-start items-center px-0
-					lt:pt-[15px]
 				'>
 				{project.link.map((item: any, index: number) => (
 					<span

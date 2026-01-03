@@ -77,8 +77,8 @@ export default function Projects2() {
 					data-aos-easing='ease-in-sine'
 					data-aos-duration='500'
 					className='
-						order-1 h-[200px] flex justify-center items-center flex-[1_0_0] self-stretch 
-						lt:order-2 lt:h-full
+						order-1 hidden h-[200px] justify-center items-center flex-[1_0_0] self-stretch
+						lt:h-full lt:flex
 					'>
 					<div
 						className='

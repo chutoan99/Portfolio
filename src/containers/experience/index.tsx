@@ -26,7 +26,7 @@ export default function Experience() {
 											)}
 										</h3>
 										<div className='flex items-center gap-4 self-stretch'>
-											<div className='flex items-center gap-2'>
+											<div className='flex items-center gap-[8px]'>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
 													width={24}
@@ -52,7 +52,7 @@ export default function Experience() {
 													)}
 												</span>
 											</div>
-											<div className='flex items-center gap-2'>
+											<div className='flex items-center gap-[8px]'>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
 													width={24}
@@ -77,8 +77,8 @@ export default function Experience() {
 											</div>
 										</div>
 									</div>
-									<div className='flex flex-col lt:items-end gap-2'>
-										<div className='flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-[8px]'>
+									<div className='flex flex-col lt:items-end gap-[8px]'>
+										<div className='flex items-center gap-[8px] px-[12px] py-[4px] bg-primary/10 text-primary rounded-[8px] w-fit'>
 											<svg
 												xmlns='http://www.w3.org/2000/svg'
 												width={24}
@@ -101,11 +101,11 @@ export default function Experience() {
 												/>
 												<path d='M3 10h18' />
 											</svg>
-											<span className='text-[18px] font-medium'>
+											<span className='text-[18px] font-medium '>
 												Sep 2022 - Present
 											</span>
 										</div>
-										<span className='text-xs text-muted-foreground px-2 py-1 bg-[#f3f4f6] rounded-[8px]'>
+										<span className='text-[13px] text-muted-foreground px-[8px] py-[4px] bg-[#f3f4f6] rounded-[5px] lt:rounded-[8px] w-fit'>
 											Full-time
 										</span>
 									</div>
@@ -388,7 +388,7 @@ export default function Experience() {
 											)}
 										</h3>
 										<div className='flex items-center gap-4 self-stretch'>
-											<div className='flex items-center gap-2'>
+											<div className='flex items-center gap-[8px]'>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
 													width={24}
@@ -414,7 +414,7 @@ export default function Experience() {
 													)}
 												</span>
 											</div>
-											<div className='flex items-center gap-2'>
+											<div className='flex items-center gap-[8px]'>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
 													width={24}
@@ -439,8 +439,8 @@ export default function Experience() {
 											</div>
 										</div>
 									</div>
-									<div className='flex flex-col lt:items-end gap-2'>
-										<div className='flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-[8px] '>
+									<div className='flex flex-col lt:items-end gap-[8px]'>
+										<div className='flex items-center gap-[8px] px-[12px] py-[4px] bg-primary/10 text-primary rounded-[8px] w-fit'>
 											<svg
 												xmlns='http://www.w3.org/2000/svg'
 												width={24}
@@ -464,11 +464,11 @@ export default function Experience() {
 												<path d='M3 10h18' />
 											</svg>
 
-											<span className='text-[18px] font-medium'>
+											<span className='text-[18px] font-medium '>
 												May 2022 - Jul 2022
 											</span>
 										</div>
-										<span className='text-xs text-muted-foreground px-2 py-1 bg-[#f3f4f6] rounded-[8px]'>
+										<span className='text-[13px] text-muted-foreground px-[8px] py-[4px] bg-[#f3f4f6] rounded-[5px] lt:rounded-[8px] w-fit'>
 											Full-time
 										</span>
 									</div>
