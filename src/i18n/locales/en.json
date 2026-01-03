@@ -3,18 +3,18 @@
 		"title_page": "Chu Toan | Frontend Developer Portfolio",
 		"meta_description": "Portfolio Trương Văn Chu Toàn - Frontend Developer - BackEnd Developer",
 		"meta_keywords": "Portfolio Trương Văn Chu Toàn - Frontend Developer - BackEnd Developer",
-		
+
 		"title_about_me": "About Me",
 		"title_projects": "Projects",
 		"title_skills": "Skills",
 		"title_contact": "Contact",
-		
+
 		"msg_greeting": "Hello 👋🏻",
 		"msg_intro_name": "I am Chu Toan",
 		"msg_typed_frontend": "I'm a frontend developer",
 		"msg_typed_backend": "I'm a backend developer",
 		"msg_about_description": "Seeking a full-time position in web development to quickly adapt and contribute effectively to a dynamic company. Committed to continuous learning and becoming a Fullstack Web Developer within the next two years",
-		
+
 		"label_name": "Name",
 		"label_age": "Age",
 		"label_phone": "Phone",
@@ -22,46 +22,46 @@
 		"label_location": "Location",
 		"label_subject": "Subject",
 		"label_content": "Content",
-		
+
 		"value_name": "Truong Van Chu Toan",
 		"value_age": "24 Years",
 		"value_phone": "+84 972 712 621",
 		"value_email": "Truongvanchutoan1999@gmail.com",
 		"value_location": "Tp. Ho Chi Minh",
-		
+
 		"btn_download_resume": "Download My Resume",
 		"btn_view_bitbucket": "View in Bitbucket",
 		"btn_view_github": "View in GitHub",
 		"btn_view_gitlab": "View in GitLab",
 		"btn_view_swagger": "View Swagger API",
 		"btn_view_graphql": "View GraphQL API",
-		
+
 		"label_filter_all": "All",
 		"label_filter_frontend": "Front End",
 		"label_filter_backend": "Back End",
 		"label_filter_database": "Database",
 		"label_filter_others": "Others",
-		
+
 		"title_project_shop": "01. Shop",
 		"msg_project_shop_description": "A meticulously cloned e-commerce platform inspired by Shopee. Packed with a comprehensive suite of functions, it hosts tens of thousands of categories, shops, and products, continuously updated to keep pace with market trends. We've harnessed the latest cutting-edge technologies to drive its development, resulting in a user-friendly interface that promises an intuitive and enjoyable shopping experience, currently optimized for laptop usage.",
 		"value_project_shop_demo": "shop-frontend.vercel.app",
-		
+
 		"title_project_shop_admin": "02. Shop Admin",
 		"msg_project_shop_admin_description": "Presenting our Shopee-like project dashboard: a comprehensive toolkit for seamless process management. Powered by the latest technologies, it features a user-friendly interface inspired by the trending design style of glassmorphism. Currently tailored for laptops during its developmental phase, we're dedicated to introducing more features in the near future to enhance your experience.",
 		"value_project_shop_admin_demo": "shop-admin-frontend.vercel.app",
-		
+
 		"title_project_nespresso": "03. Nespresso Vietnam",
 		"msg_project_nespresso_description": "My freelance project, crafted for a Vietnamese client, involving the transformation of a Figma design into a fully functional website. I have reimagined the Nespresso website exclusively for the Vietnamese market, incorporating the latest cutting-edge technologies to ensure its development. This creation is designed to seamlessly adapt across a wide range of contemporary devices, providing a modern and accessible experience for users.",
 		"value_project_nespresso_demo": "nespresso-client.vercel.app",
-		
+
 		"title_project_rental": "04. Rental",
 		"msg_project_rental_description": "A complete revamp of a room rental website. This undertaking encompasses a full range of functionalities, underpinned by a constant influx of listing data collected through the use of \"puppeteer\" technology, resulting in a continuously updated collection of thousands of listings. Fueled by the latest cutting-edge technologies, the development focuses on laptop compatibility. As we look ahead, you can expect a steady stream of innovative features to enhance user experience.",
 		"value_project_rental_demo": "rental-frontend.vercel.app",
-		
+
 		"title_experience_company_yteso": "YTESO GIAAN",
 		"title_experience_company_itd": "ITD GROUP",
 		"label_position_frontend_developer": "Frontend Developer",
-		
+
 		"msg_experience_yteso_intro": "Developed and implemented projects for CIH International Hospital and Gia An 155 Hospital:",
 		"label_experience_hrm": "HRM: Human resource management",
 		"msg_experience_hrm_description": "Handled Electronic Medical Records, storing comprehensive medical data for each patient, including medical history, diagnosis, and treatment.",
@@ -76,20 +76,20 @@
 		"msg_experience_yteso_task_4": "Created report templates using \"report designer DevExpress\"",
 		"msg_experience_yteso_task_5": "Participated in project development meetings, contributed innovative solutions, and addressed potential risks",
 		"msg_experience_yteso_task_6": "Worked with agile scrum methodology",
-		
+
 		"label_experience_isecurity": "iSecurity",
 		"msg_experience_isecurity_description": "The system consolidates all security features within an area, integrates facial recognition, records, camera management, identification of passenger vehicles upon entry and exit, suggests intrusive behavior, object tracking on maps",
 		"msg_experience_isecurity_team": "Team size: 10. Main responsibilities:",
 		"msg_experience_isecurity_task_1": "Worked with AngularJs, Javascript, Fabricjs, Bootstrap",
 		"msg_experience_isecurity_task_2": "Responsible for maintaining, developing new features, and managing source code versions of the company's previous projects",
 		"msg_experience_isecurity_task_3": "Supported and guided students during their internship on various projects",
-		
+
 		"label_experience_iwater": "iWater",
 		"msg_experience_iwater_description": "Main features include management of water usage history, payment records, employee data",
 		"msg_experience_iwater_team": "Team size: 8. Main responsibilities:",
 		"msg_experience_iwater_task_1": "Worked with TypeScript, React, Redux, Material UI",
 		"msg_experience_iwater_task_2": "Read and comprehended BA documents to align with project requirements",
-		
+
 		"label_experience_ioki": "iOki: Objectives & Key Results",
 		"msg_experience_ioki_description": "Managed and scored OKR of employees every quarter",
 		"msg_experience_ioki_team": "Team size: 20. Main responsibilities:",
@@ -117,13 +117,13 @@
 		"placeholder_subject": "Enter subject",
 		"placeholder_phone": "Enter your phone number",
 		"placeholder_content": "Enter your message",
-		
+
 		"btn_send_message": "Send Message",
-		
+
 		"label_call_me": "Call Me",
 		"label_email_me": "Email Me",
 		"label_github_me": "GitHub",
-		
+
 		"value_contact_phone": "+84 972 712 621",
 		"value_contact_email": "truongvanchutoan1999@gmail.com",
 		"value_contact_github": "https://github.com/chutoan99",

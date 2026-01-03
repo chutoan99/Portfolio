@@ -3,8 +3,7 @@ import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import enTranslations from './locales/en.json'
 
-i18n
-	.use(LanguageDetector)
+i18n.use(LanguageDetector)
 	.use(initReactI18next)
 	.init({
 		resources: {
@@ -23,4 +22,3 @@ i18n
 	})
 
 export default i18n
-

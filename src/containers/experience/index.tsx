@@ -18,14 +18,14 @@ export default function Experience() {
 							<div
 								className='group rounded-xl bg-white flex flex-col justify-center w-full gap-[16px] md:gap-[25px] lt:w-[960px] px-[8px] sm:px-[10px] md:px-[16px] pt-[16px] md:pt-[28px] pb-[16px] md:pb-[32px]'
 								data-aos='zoom-in-up'>
-								<div className='flex flex-col lt:flex-row lt:items-start lt:justify-between gap-4 mb-4'>
+								<div className='flex flex-col lt:flex-row lt:items-start lt:justify-between gap-[16px] mb-4'>
 									<div className='space-y-2'>
 										<h3 className='font-semibold group-hover:text-primary transition-colors text-base leading-6'>
 											{t(
 												'common.label_position_frontend_developer'
 											)}
 										</h3>
-										<div className='flex items-center gap-4 self-stretch'>
+										<div className='flex items-center gap-[16px] self-stretch'>
 											<div className='flex items-center gap-[8px]'>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
@@ -37,7 +37,7 @@ export default function Experience() {
 													strokeWidth={2}
 													strokeLinecap='round'
 													strokeLinejoin='round'
-													className='lucide lucide-building2 h-4 w-4'>
+													className='lucide lucide-building2 h-[16px] w-[16px]'>
 													<path d='M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z' />
 													<path d='M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2' />
 													<path d='M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2' />
@@ -63,7 +63,7 @@ export default function Experience() {
 													strokeWidth={2}
 													strokeLinecap='round'
 													strokeLinejoin='round'
-													className='lucide lucide-map-pin h-4 w-4'>
+													className='lucide lucide-map-pin h-[16px] w-[16px]'>
 													<path d='M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0' />
 													<circle
 														cx={12}
@@ -89,7 +89,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-calendar h-4 w-4'>
+												className='lucide lucide-calendar h-[16px] w-[16px]'>
 												<path d='M8 2v4' />
 												<path d='M16 2v4' />
 												<rect
@@ -133,7 +133,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -162,7 +162,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -191,7 +191,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -221,7 +221,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -244,7 +244,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -267,7 +267,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -290,7 +290,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -313,7 +313,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -336,7 +336,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -359,7 +359,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -380,14 +380,14 @@ export default function Experience() {
 							<div
 								className='group rounded-xl bg-white flex flex-col justify-center w-full gap-[16px] md:gap-[25px] lt:w-[960px] px-[8px] sm:px-[10px] md:px-[16px] pt-[16px] md:pt-[28px] pb-[16px] md:pb-[32px]'
 								data-aos='zoom-in-up'>
-								<div className='flex flex-col lt:flex-row lt:items-start lt:justify-between gap-4 mb-4'>
+								<div className='flex flex-col lt:flex-row lt:items-start lt:justify-between gap-[16px] mb-4'>
 									<div className='space-y-2'>
 										<h3 className='font-semibold group-hover:text-primary transition-colors text-base leading-6'>
 											{t(
 												'common.label_position_frontend_developer'
 											)}
 										</h3>
-										<div className='flex items-center gap-4 self-stretch'>
+										<div className='flex items-center gap-[16px] self-stretch'>
 											<div className='flex items-center gap-[8px]'>
 												<svg
 													xmlns='http://www.w3.org/2000/svg'
@@ -399,7 +399,7 @@ export default function Experience() {
 													strokeWidth={2}
 													strokeLinecap='round'
 													strokeLinejoin='round'
-													className='lucide lucide-building2 h-4 w-4'>
+													className='lucide lucide-building2 h-[16px] w-[16px]'>
 													<path d='M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z' />
 													<path d='M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2' />
 													<path d='M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2' />
@@ -425,7 +425,7 @@ export default function Experience() {
 													strokeWidth={2}
 													strokeLinecap='round'
 													strokeLinejoin='round'
-													className='lucide lucide-map-pin h-4 w-4'>
+													className='lucide lucide-map-pin h-[16px] w-[16px]'>
 													<path d='M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0' />
 													<circle
 														cx={12}
@@ -451,7 +451,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-calendar h-4 w-4'>
+												className='lucide lucide-calendar h-[16px] w-[16px]'>
 												<path d='M8 2v4' />
 												<path d='M16 2v4' />
 												<rect
@@ -488,7 +488,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -517,7 +517,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -540,7 +540,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -563,7 +563,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -586,7 +586,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -611,7 +611,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -640,7 +640,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -663,7 +663,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -686,7 +686,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -711,7 +711,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -740,7 +740,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -764,7 +764,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>
@@ -787,7 +787,7 @@ export default function Experience() {
 												strokeWidth={2}
 												strokeLinecap='round'
 												strokeLinejoin='round'
-												className='lucide lucide-arrow-right h-3 w-3 text-primary flex-shrink-0 mt-[5px]'>
+												className='lucide lucide-arrow-right h-[12px] w-[12px] text-primary flex-shrink-0 mt-[5px]'>
 												<path d='M5 12h14' />
 												<path d='m12 5 7 7-7 7' />
 											</svg>

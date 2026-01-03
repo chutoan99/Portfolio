@@ -1,34 +1,33 @@
 const withAnalyzer = require('@next/bundle-analyzer')({
-  enabled:
-    process.env.ANALYZE === 'true' &&
-    process.env.NODE_ENV !== 'development'
+	enabled:
+		process.env.ANALYZE === 'true' && process.env.NODE_ENV !== 'development'
 })
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+	reactStrictMode: true,
 
-  webpack: (config, { isServer }) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      react: 'preact/compat',
-      'react-dom/test-utils': 'preact/test-utils',
-      'react-dom': 'preact/compat'
-    }
+	webpack: (config, { isServer }) => {
+		config.resolve.alias = {
+			...config.resolve.alias,
+			react: 'preact/compat',
+			'react-dom/test-utils': 'preact/test-utils',
+			'react-dom': 'preact/compat'
+		}
 
-    if (!isServer) {
-      config.module.rules.push({
-        test: /\b(?:graphql|graphql-request)\b/gi,
-        use: 'null-loader'
-      })
-    }
+		if (!isServer) {
+			config.module.rules.push({
+				test: /\b(?:graphql|graphql-request)\b/gi,
+				use: 'null-loader'
+			})
+		}
 
-    return config
-  },
+		return config
+	},
 
-  compiler: {
-    styledComponents: true
-  }
+	compiler: {
+		styledComponents: true
+	}
 }
 
 module.exports = withAnalyzer(nextConfig)

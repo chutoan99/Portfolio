@@ -17,7 +17,7 @@ export default function Header() {
 					<nav
 						className={`outer-menu ${menuVisible ? 'menu-visible' : ''}`}>
 						<button
-							className='hamburger w-6 h-6 flex items-center justify-center link relative'
+							className='hamburger w-[24px] h-[24px] flex items-center justify-center link relative'
 							onClick={setMenuVisible.bind(null, !menuVisible)}>
 							<div className='relative flex-none w-full bg-black duration-300 flex items-center justify-center'></div>
 						</button>

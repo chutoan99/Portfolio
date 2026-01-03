@@ -59,7 +59,10 @@ const Home: NextPage = () => {
 		typedSpanElement: MutableRefObject<HTMLSpanElement>
 	): Typed => {
 		return new Typed(typedSpanElement.current, {
-			strings: [t('common.msg_typed_frontend'), t('common.msg_typed_backend')],
+			strings: [
+				t('common.msg_typed_frontend'),
+				t('common.msg_typed_backend')
+			],
 			typeSpeed: 50,
 			backSpeed: 50,
 			backDelay: 8000,

@@ -23,18 +23,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 
 				{/* Primary Meta Tags */}
-				<meta
-					name='title'
-					content={t('common.title_page')}
-				/>
+				<meta name='title' content={t('common.title_page')} />
 				<meta
 					name='description'
 					content={t('common.meta_description')}
 				/>
-				<meta
-					name='keywords'
-					content={t('common.meta_keywords')}
-				/>
+				<meta name='keywords' content={t('common.meta_keywords')} />
 				<meta
 					name='keywords'
 					content='
@@ -66,10 +60,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					property='og:url'
 					content='https://portfolio-chutoan.vercel.app/'
 				/>
-				<meta
-					property='og:title'
-					content={t('common.title_page')}
-				/>
+				<meta property='og:title' content={t('common.title_page')} />
 				<meta
 					property='og:description'
 					content={t('common.meta_description')}
