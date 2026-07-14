@@ -3,8 +3,8 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		    "dev": "next dev",
-    "dev:turbo": "NEXT_DISABLE_WEBPACK=1 next dev --turbo",
+		"dev": "next dev",
+		"dev:turbo": "NEXT_DISABLE_WEBPACK=1 next dev --turbo",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
@@ -15,7 +15,6 @@
 	"dependencies": {
 		"@next/bundle-analyzer": "^12.1.6",
 		"aos": "^2.3.4",
-		"babel-plugin-styled-components": "^2.0.7",
 		"framer-motion": "^6.3.10",
 		"gsap": "^3.12.2",
 		"i18next": "^25.7.3",
@@ -33,7 +32,6 @@
 		"react-slick": "^0.30.3",
 		"sass": "^1.89.2",
 		"slick-carousel": "^1.8.1",
-		"styled-components": "^5.3.6",
 		"typed.js": "^2.0.16"
 	},
 	"devDependencies": {
@@ -42,7 +40,6 @@
 		"@types/react": "^18.2.0",
 		"@types/react-dom": "^18.2.0",
 		"@types/react-slick": "^0.23.13",
-		"@types/styled-components": "^5.1.34",
 		"autoprefixer": "^10.4.7",
 		"eslint": "8.13.0",
 		"eslint-config-next": "12.1.5",
