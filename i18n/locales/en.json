@@ -119,7 +119,13 @@
 		"placeholder_content": "Enter your message",
 		
 		"btn_send_message": "Send Message",
-		
+		"btn_sending": "Sending...",
+		"msg_success": "Thank you! Your message has been sent.",
+		"msg_error": "Sorry, something went wrong. Please try again later.",
+		"err_name": "Please enter your name",
+		"err_email": "Please enter a valid email address",
+		"err_message": "Please enter a message",
+
 		"label_call_me": "Call Me",
 		"label_email_me": "Email Me",
 		"label_github_me": "GitHub",

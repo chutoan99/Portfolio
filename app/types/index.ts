@@ -1,4 +1,4 @@
-// Shared content types for the data served from /server/api/*.
+// Shared content types for the bundled JSON data (app/data/*).
 
 export interface ProjectTechnology {
 	lable: string

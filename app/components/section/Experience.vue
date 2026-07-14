@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, Pagination } from 'swiper/modules'
 import { CarouselConfig } from '~/utils/carousel.config'
 
-// Experience cards are fetched from /api/experiences and rendered in a Swiper carousel
+// Experience cards are loaded from bundled JSON and rendered in a Swiper carousel
 // (react-slick -> Swiper: dots -> pagination, autoplay/loop/speed preserved, arrows
 // hidden via #experience CSS). Icons are inlined lucide SVGs (no sub-components).
-const { data: experiences } = await useExperiences()
+const experiences = useExperiences()
 </script>
 
 <template>

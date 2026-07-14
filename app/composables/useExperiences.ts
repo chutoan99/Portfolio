@@ -1,8 +1,7 @@
 import type { Experience } from '~/types'
+import experiences from '~~/public/data/experiences.json'
 
-export function useExperiences() {
-	return useFetch<Experience[]>('/api/experiences', {
-		key: 'experiences',
-		default: () => []
-	})
+// JSON in /public/data, imported at build time (SSR-rendered, static, no backend).
+export function useExperiences(): Experience[] {
+	return experiences as Experience[]
 }

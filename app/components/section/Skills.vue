@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import type { Skill } from '~/types'
 
-// Skills are fetched from /api/skills, then filtered by category on the client.
-// - Framer <AnimatePresence>+layout -> <TransitionGroup name="skill"> (fade + FLIP move,
-//   CSS in index.scss). whileHover/whileTap -> v-motion :hovered/:tapped.
-const { data: skills } = await useSkills()
+// Skills are loaded from /public/data/skills.json, then filtered by category on the client.
+// The grid is a plain reactive v-for (instant filtering — a TransitionGroup FLIP here
+// conflicts with the per-cell transition/transform and leaves stale nodes in the DOM).
+// whileHover/whileTap from Framer -> CSS scale on the card.
+const skills = useSkills()
 
 const tags: string[] = ['All', 'Front end', 'Back end', 'Database', 'Others']
 const currentTag = ref<string>('All')
 
 const filtered = computed<Skill[]>(() =>
 	currentTag.value === 'All'
-		? skills.value
-		: skills.value.filter((item) => item.type.includes(currentTag.value))
+		? skills
+		: skills.filter((item) => item.type.includes(currentTag.value))
 )
 
 const onFilter = (tag: string) => {
@@ -38,7 +39,7 @@ const cells = computed<Cell[]>(() => {
 })
 
 const cardClass =
-	'flex flex-col items-center justify-center bg-surface rounded-[12px] group w-[80px] h-[80px] gap-[5px]rounded-[16px] shadow-[0px_10px_10px_0px_rgba(31,13,64,0.10),_0px_0px_2px_0px_rgba(31,13,64,0.08)]'
+	'flex flex-col items-center justify-center bg-surface rounded-[12px] group w-[80px] h-[80px] gap-[5px]rounded-[16px] shadow-[0px_10px_10px_0px_rgba(31,13,64,0.10),_0px_0px_2px_0px_rgba(31,13,64,0.08)] transition-transform duration-300 hover:scale-[1.15] active:scale-90'
 const dividerClass =
 	'flex flex-col items-center justify-center bg-[rgba(255,255,255,0.75)] w-[80px] min-w-[80px] max-w-[80px] h-[80px] gap-[5px] border-[3px] border-dashed border-line-dashed rounded-[16px]'
 </script>
@@ -65,17 +66,12 @@ const dividerClass =
 				</ul>
 
 				<div class="w-full flex flex-col flex-wrap text-center min-h-[350px]">
-					<TransitionGroup
-						tag="div"
-						name="skill"
+					<div
 						:style="{ display: 'grid' }"
 						class="grid-cols-4 gap-[10px] [@media(min-width:600px)]:ml-0 [@media(min-width:600px)]:mr-0 [@media(min-width:600px)]:gap-[15px] [@media(min-width:600px)]:gap-[20px] [@media(min-width:600px)]:grid-cols-6 sm:ml-0 sm:mr-0 sm:gap-[20px] sm:grid-cols-7 md:grid-cols-8 [@media(min-width:912px)]:grid-cols-9 lt:min-h-[350px] lt:grid-cols-[repeat(13,minmax(0,1fr))]">
 						<div
 							v-for="cell in cells"
 							:key="cell.key"
-							v-motion
-							:hovered="cell.kind === 'icon' ? { scale: 1.15 } : {}"
-							:tapped="cell.kind === 'icon' ? { scale: 0.9 } : {}"
 							:class="cell.kind === 'icon' ? cardClass : dividerClass">
 							<template v-if="cell.kind === 'icon'">
 								<div
@@ -107,7 +103,7 @@ const dividerClass =
 								</div>
 							</template>
 						</div>
-					</TransitionGroup>
+					</div>
 				</div>
 			</div>
 		</div>

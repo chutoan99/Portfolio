@@ -79,8 +79,8 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    // Block private/data areas; sitemap is auto-declared by the module.
-    disallow: ['/api', '/admin', '/login', '/dashboard']
+    // Defensive disallow for conventional private areas; sitemap is auto-declared.
+    disallow: ['/admin', '/login', '/dashboard']
   },
 
   sitemap: {
@@ -91,7 +91,10 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      siteUrl: SITE_URL
+      siteUrl: SITE_URL,
+      // Contact form is fully client-side (Web3Forms) — no backend/SMTP needed.
+      // Set NUXT_PUBLIC_WEB3FORMS_KEY (free key from https://web3forms.com).
+      web3formsKey: ''
     }
   },
 
@@ -109,9 +112,7 @@ export default defineNuxtConfig({
     },
     // Hashed build assets — cache hard.
     '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-    '/assets/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
-    // Internal data endpoints must not be indexed.
-    '/api/**': { headers: { 'X-Robots-Tag': 'noindex' } }
+    '/assets/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } }
   },
 
   nitro: {

@@ -1,10 +1,8 @@
 import type { Project } from '~/types'
+import projects from '~~/public/data/projects.json'
 
-// Fetches project data from the Nitro API (SSR-friendly). Components consume this
-// instead of importing a local array, so the data source can move to a real backend.
-export function useProjects() {
-	return useFetch<Project[]>('/api/projects', {
-		key: 'projects',
-		default: () => []
-	})
+// Data lives as plain JSON in /public/data (editable, no backend). It is imported at
+// build time so it renders server-side (full SEO) and the site deploys fully static.
+export function useProjects(): Project[] {
+	return projects as Project[]
 }

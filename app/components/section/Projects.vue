@@ -1,6 +1,6 @@
 <script setup lang="ts">
-// Projects are fetched from /api/projects and each is rendered through <ProjectCard>.
-const { data: projects } = await useProjects()
+// Projects are loaded from /public/data/projects.json and rendered via <ProjectCard>.
+const projects = useProjects()
 </script>
 
 <template>

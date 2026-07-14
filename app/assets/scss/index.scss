@@ -389,18 +389,3 @@ video {
 	}
 }
 
-/* Skills filter grid (Framer Motion AnimatePresence -> TransitionGroup). */
-.skill-enter-active,
-.skill-leave-active {
-	transition: opacity 0.5s ease;
-}
-.skill-enter-from,
-.skill-leave-to {
-	opacity: 0;
-}
-.skill-move {
-	transition: transform 0.5s ease;
-}
-.skill-leave-active {
-	position: absolute;
-}
