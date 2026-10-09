@@ -3,7 +3,81 @@ import type { Project } from '~/types'
 
 // From components/project_info/index.tsx. `project: any` -> typed `Project`.
 // react-i18next -> $t; leftover next/image artifacts (data-nimg) dropped.
-defineProps<{ project: Project }>()
+const props = defineProps<{ project: Project }>()
+
+// Phones (< 640px) fit the technology chips into TECH_ROWS rows: the last slot becomes a
+// "+N" chip standing in for the rest (tapping it shows them all). Larger screens list every
+// chip. How many fit depends on the chip widths, so it is measured in the browser;
+// SSR_TECH_GUESS is only the server-rendered first guess.
+const TECH_ROWS = 2
+const SSR_TECH_GUESS = 6
+
+const total = props.project.technologies.length
+const chipsEl = ref<HTMLElement | null>(null)
+const visibleTech = ref(Math.min(total, SSR_TECH_GUESS))
+const showAllTech = ref(false)
+const measuring = ref(false)
+
+const isHidden = (index: number) =>
+	!showAllTech.value && !measuring.value && index >= visibleTech.value
+
+const measureTech = async () => {
+	const el = chipsEl.value
+	if (
+		!el ||
+		showAllTech.value ||
+		!window.matchMedia('(max-width: 639px)').matches
+	)
+		return
+
+	// Show every chip for one synchronous layout pass (no paint in between) to read widths.
+	measuring.value = true
+	await nextTick()
+	const widths = [...el.querySelectorAll<HTMLElement>('[data-chip]')].map(
+		(c) => c.getBoundingClientRect().width
+	)
+	const plusWidth =
+		el
+			.querySelector<HTMLElement>('[data-chip-more]')
+			?.getBoundingClientRect().width ?? 0
+	const gap = parseFloat(getComputedStyle(el).columnGap) || 0
+	const rowWidth = el.clientWidth
+	measuring.value = false
+
+	// Simulate flex-wrap: how many rows do these widths take?
+	const rowsFor = (items: number[]) => {
+		let rows = 1
+		let x = 0
+		for (const w of items) {
+			if (x > 0 && x + gap + w > rowWidth) {
+				rows++
+				x = w
+			} else x += (x > 0 ? gap : 0) + w
+		}
+		return rows
+	}
+
+	if (rowsFor(widths) <= TECH_ROWS) {
+		visibleTech.value = total
+		return
+	}
+	let count = total - 1
+	while (
+		count > 0 &&
+		rowsFor([...widths.slice(0, count), plusWidth]) > TECH_ROWS
+	)
+		count--
+	visibleTech.value = count
+}
+
+let lastWidth = 0
+onMounted(measureTech)
+useResizeObserver(chipsEl, (entries) => {
+	const width = entries[0]?.contentRect.width ?? 0
+	if (width === lastWidth) return
+	lastWidth = width
+	measureTech()
+})
 </script>
 
 <template>
@@ -28,15 +102,20 @@ defineProps<{ project: Project }>()
 			</div>
 		</div>
 
-		<p class="self-stretch text-gray-600 text-[18px] not-italic font-normal leading-[24px]">
+		<UiClampText
+			class="self-stretch text-gray-600 text-[16px] leading-[26px] sm:text-[18px] sm:leading-[24px] not-italic font-normal">
 			{{ $t(project.descriptionKey) }}
-		</p>
+		</UiClampText>
 
-		<div class="flex items-center content-center gap-[6px] self-stretch flex-wrap">
+		<div
+			ref="chipsEl"
+			class="flex items-center content-center gap-[6px] self-stretch flex-wrap">
 			<a
 				v-for="(item, index) in project.technologies"
 				:key="index"
-				class="flex cursor-pointer items-center gap-[5px] rounded-[5px] border border-black/10 px-[8px] py-[4px] font-medium text-neutral-500 text-[16px] duration-200 hover:bg-black/5 motion-reduce:transition-none dark:border-neutral-800 dark:text-white/50 dark:hover:border-neutral-700 dark:hover:bg-surface/5"
+				data-chip
+				:class="{ 'max-sm:hidden': isHidden(index) }"
+				class="flex cursor-pointer items-center gap-[5px] rounded-[5px] border border-black/10 px-[8px] py-[4px] font-medium text-neutral-500 text-[14px] sm:text-[16px] duration-200 hover:bg-black/5 motion-reduce:transition-none dark:border-neutral-800 dark:text-white/50 dark:hover:border-neutral-700 dark:hover:bg-surface/5"
 				href="https://reactjs.org/">
 				<img
 					:alt="`${item.lable} Logo`"
@@ -49,6 +128,19 @@ defineProps<{ project: Project }>()
 					:style="{ color: 'transparent' }" />
 				{{ item.lable }}
 			</a>
+			<button
+				v-if="measuring || (!showAllTech && visibleTech < total)"
+				type="button"
+				data-chip-more
+				class="sm:hidden flex items-center rounded-[5px] border border-primary/20 bg-primary/5 px-[10px] py-[4px] font-semibold text-primary text-[14px] leading-[20px] hover:bg-primary/10 transition-colors"
+				:aria-label="
+					$t('common.btn_show_more_count', {
+						count: total - visibleTech
+					})
+				"
+				@click="showAllTech = true">
+				+{{ total - visibleTech }}
+			</button>
 		</div>
 
 		<div class="flex flex-wrap w-full gap-x-[20px] gap-y-[8px] justify-start items-center px-0">
@@ -76,7 +168,7 @@ defineProps<{ project: Project }>()
 							stroke-linejoin="round" />
 					</svg>
 					<span
-						class="cursor-pointer text-gray-600 text-[18px] not-italic font-normal leading-[24px]">
+						class="cursor-pointer text-gray-600 text-[16px] sm:text-[18px] not-italic font-normal leading-[24px]">
 						{{ $t(item.contentKey) }}
 					</span>
 				</a>

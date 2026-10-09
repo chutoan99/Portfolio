@@ -25,35 +25,35 @@
 				<li>
 					<a
 						href="#home"
-						class="text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
+						class="text-[18px] sm:text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
 						{{ $t('footer.label_home') }}
 					</a>
 				</li>
 				<li>
 					<a
 						href="#about"
-						class="text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
+						class="text-[18px] sm:text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
 						{{ $t('footer.label_about') }}
 					</a>
 				</li>
 				<li>
 					<a
 						href="#projects"
-						class="text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
+						class="text-[18px] sm:text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
 						{{ $t('footer.label_projects') }}
 					</a>
 				</li>
 				<li>
 					<a
 						href="#skills"
-						class="text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
+						class="text-[18px] sm:text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
 						{{ $t('footer.label_skills') }}
 					</a>
 				</li>
 				<li>
 					<a
 						href="#contact"
-						class="text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
+						class="text-[18px] sm:text-[21px] font-normal leading-[150%] capitalize text-black hover:text-primary transition duration-150">
 						{{ $t('footer.label_contact') }}
 					</a>
 				</li>

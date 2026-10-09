@@ -35,6 +35,9 @@
 		"btn_view_gitlab": "View in GitLab",
 		"btn_view_swagger": "View Swagger API",
 		"btn_view_graphql": "View GraphQL API",
+		"btn_show_more": "Show more",
+		"btn_show_less": "Show less",
+		"btn_show_more_count": "+{count} more",
 
 		"label_filter_all": "All",
 		"label_filter_frontend": "Front End",

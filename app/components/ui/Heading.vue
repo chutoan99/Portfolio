@@ -8,16 +8,16 @@ defineProps<{ content: string }>()
 	<section>
 		<div
 			class="
-				bg-primary-tint/[0.15] pt-[16px] pb-[16px]
+				bg-primary-tint/[0.15] pt-[24px] pb-[24px]
 				sm:pt-[40px] sm:pb-[40px]
 				md:pt-[48px] md:pb-[48px]
 			">
 			<h2
 				class="
 					flex flex-col flex-shrink-0 justify-center text-center
-					text-heading font-medium not-italic leading-[60px] text-[27px]
-					h-[73px] max-w-[1200px] mx-auto
-					sm:text-[34px]
+					text-heading font-medium not-italic leading-[36px] text-[28px]
+					h-auto max-w-[1200px] mx-auto
+					sm:text-[34px] sm:leading-[60px] sm:h-[73px]
 					md:text-[50px]
 				">
 				{{ content }}

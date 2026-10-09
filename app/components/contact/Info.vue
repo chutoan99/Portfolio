@@ -20,7 +20,7 @@
 						</svg>
 					</div>
 					<span
-						class="h-[29px] w-full inline-block text-heading text-[20px] font-semibold leading-[28px]">
+						class="h-[29px] w-full inline-block text-heading text-[18px] sm:text-[20px] font-semibold leading-[28px]">
 						{{ $t('form.label_call_me') }}
 					</span>
 				</div>
@@ -30,7 +30,7 @@
 					<span class="w-[20px]" />
 					<a
 						href="#"
-						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[19px] font-normal leading-[28px]">
+						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[16px] leading-[24px] sm:text-[19px] sm:leading-[28px] font-normal">
 						{{ $t('form.value_contact_phone') }}
 					</a>
 				</div>
@@ -57,7 +57,7 @@
 						</svg>
 					</div>
 					<span
-						class="h-[29px] w-full inline-block text-heading text-[20px] font-semibold leading-[28px]">
+						class="h-[29px] w-full inline-block text-heading text-[18px] sm:text-[20px] font-semibold leading-[28px]">
 						{{ $t('form.label_email_me') }}
 					</span>
 				</div>
@@ -67,7 +67,7 @@
 					<span class="w-[20px]" />
 					<a
 						href="#"
-						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[19px] font-normal leading-[28px]">
+						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[16px] leading-[24px] sm:text-[19px] sm:leading-[28px] font-normal">
 						{{ $t('form.value_contact_email') }}
 					</a>
 				</div>
@@ -96,7 +96,7 @@
 						</svg>
 					</div>
 					<span
-						class="h-[29px] w-full inline-block text-heading text-[20px] font-semibold leading-[28px]">
+						class="h-[29px] w-full inline-block text-heading text-[18px] sm:text-[20px] font-semibold leading-[28px]">
 						{{ $t('form.label_github_me') }}
 					</span>
 				</div>
@@ -106,7 +106,7 @@
 					<span class="w-[20px]" />
 					<a
 						href="https://github.com/chutoan99"
-						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[19px] font-normal leading-[28px]">
+						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[16px] leading-[24px] sm:text-[19px] sm:leading-[28px] font-normal">
 						{{ $t('form.value_contact_github') }}
 					</a>
 				</div>
@@ -126,7 +126,7 @@
 						</svg>
 					</div>
 					<span
-						class="h-[29px] w-full inline-block text-heading text-[20px] font-semibold leading-[28px]">
+						class="h-[29px] w-full inline-block text-heading text-[18px] sm:text-[20px] font-semibold leading-[28px]">
 						{{ $t('common.label_location') }}
 					</span>
 				</div>
@@ -136,7 +136,7 @@
 					<span class="w-[20px]" />
 					<a
 						href="#"
-						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[19px] font-normal leading-[28px]">
+						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[16px] leading-[24px] sm:text-[19px] sm:leading-[28px] font-normal">
 						{{ $t('form.value_contact_location') }}
 					</a>
 				</div>

@@ -15,7 +15,7 @@
 			class="max-w-[1200px] mx-auto">
 			<div
 				class="
-					flex flex-col justify-center items-center gap-[30px] px-[20px] py-[50px]
+					flex flex-col justify-center items-center gap-[24px] px-[20px] py-0 sm:gap-[30px] sm:py-[50px]
 					md:flex-row md:items-start
 					lt:flex-row lt:justify-between lt:px-[20px] lt:py-[100px] min-[1240px]:px-0
 				">
@@ -27,71 +27,71 @@
 					data-aos-duration="800"
 					class="w-full h-full lt:flex-1 lt:min-w-0 lt:max-w-[800px] lt:h-auto lt:min-h-[489px]">
 					<h2
-						class="flex flex-col justify-center text-subtle font-semibold text-[18px] uppercase leading-[36px] tracking-[1px] h-[26px] lt:h-[100px]">
+						class="flex flex-col justify-center text-subtle font-semibold text-[14px] uppercase leading-[20px] tracking-[1px] h-auto sm:text-[18px] sm:leading-[36px] sm:h-[26px] lt:h-[100px]">
 						{{ $t('common.title_about_me') }}
 					</h2>
 					<h3
-						class="flex flex-col justify-center shrink-0 text-[32px] leading-[48px] text-heading font-normal w-full mt-[8px] lt:w-[375px] lt:text-[40px]">
+						class="flex flex-col justify-center shrink-0 text-[28px] leading-[36px] text-heading font-normal w-full mt-[8px] sm:text-[32px] sm:leading-[48px] lt:w-[375px] lt:text-[40px]">
 						{{ $t('common.value_name') }}
 					</h3>
 					<span
-						class="flex flex-col justify-center w-full text-[18px] leading-[26px] text-body font-normal mt-[12.8px] lt:max-w-[750px]">
+						class="flex flex-col justify-center w-full text-[16px] leading-[26px] sm:text-[18px] text-body font-normal mt-[12.8px] lt:max-w-[750px]">
 						{{ $t('common.msg_about_description') }}
 					</span>
 					<div class="shrink-0 border-t border-line mt-[16px] pt-[24px] sm:pt-[16px]">
 						<div class="flex flex-col mt-[5px] lt:grid lt:grid-cols-2 lt:gap-x-[24px]">
 							<div class="inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0">
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<label class="font-semibold leading-[29px] text-heading">
 										{{ $t('common.label_name') }}:
 									</label>
 								</div>
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<span class="font-normal text-muted">{{ $t('common.value_name') }}</span>
 								</div>
 							</div>
 							<div class="inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0">
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<label class="font-semibold leading-[29px] text-heading">
 										{{ $t('common.label_age') }}:
 									</label>
 								</div>
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<span class="font-normal text-muted">{{ $t('common.value_age') }}</span>
 								</div>
 							</div>
 						</div>
 						<div class="flex flex-col mt-[5px] lt:grid lt:grid-cols-2 lt:gap-x-[24px]">
 							<div class="inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0">
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<label class="font-semibold leading-[29px] text-heading">
 										{{ $t('common.label_phone') }}:
 									</label>
 								</div>
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<span class="font-normal text-muted">{{ $t('common.value_phone') }}</span>
 								</div>
 							</div>
 							<div class="inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0">
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<label class="font-semibold leading-[29px] text-heading">
 										{{ $t('common.label_location') }}:
 									</label>
 								</div>
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<span class="font-normal text-muted">{{ $t('common.value_location') }}</span>
 								</div>
 							</div>
 						</div>
 						<div class="flex flex-col mt-[5px] lt:grid lt:grid-cols-2 lt:gap-x-[24px]">
 							<div class="inline-flex flex-wrap pt-0 items-start min-h-[29px] pb-[1px] gap-x-[14.5px] min-w-0 lt:col-span-2">
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
+								<div class="h-[28px] flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
 									<label class="font-semibold leading-[29px] text-heading">
 										{{ $t('common.label_email') }}:
 									</label>
 								</div>
-								<div class="min-h-[28px] min-w-0 flex flex-col justify-center text-[19px] not-italic">
-									<a href="#" class="text-primary break-all max-[359px]:text-[17px]">{{ $t('common.value_email') }}</a>
+								<div class="min-h-[28px] min-w-0 flex flex-col justify-center text-[16px] sm:text-[19px] not-italic">
+									<a href="#" class="text-primary break-all">{{ $t('common.value_email') }}</a>
 								</div>
 							</div>
 						</div>
@@ -101,7 +101,7 @@
 						class="mt-[36px] flex items-center flex-col gap-[18px] sm:mt-[24px] lt:gap-[50px] lt:mt-[48px] lt:flex-row">
 						<button
 							class="
-								order-1 w-full h-[54px] shrink-0 rounded-[10px] bg-primary border border-primary
+								order-1 w-full h-[48px] sm:h-[54px] shrink-0 rounded-[10px] bg-primary border border-primary
 								hover:bg-primary-hover hover:border-primary hover:cursor-pointer hover:transition-all hover:duration-500 hover:ease-[cubic-bezier(0.4,0,0.2,1)]
 								lt:w-[277px]
 							">
@@ -134,7 +134,7 @@
 									</defs>
 								</svg>
 								<span
-									class="capitalize text-[18px] text-center text-white not-italic font-bold leading-[28px]">
+									class="capitalize text-[16px] sm:text-[18px] text-center text-white not-italic font-bold leading-[28px]">
 									{{ $t('common.btn_download_resume') }}
 								</span>
 							</a>

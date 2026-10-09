@@ -1,23 +1,41 @@
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, Pagination } from 'swiper/modules'
+import type { Swiper as SwiperClass } from 'swiper/types'
 import { CarouselConfig } from '~/utils/carousel.config'
 
 // Experience cards are loaded from bundled JSON and rendered in a Swiper carousel
 // (react-slick -> Swiper: dots -> pagination, autoplay/loop/speed preserved, arrows
 // hidden via #experience CSS). Icons are inlined lucide SVGs (no sub-components).
 const experiences = useExperiences()
+
+// On phones each bullet list shows its first MOBILE_ITEMS entries behind a "Show more" toggle.
+// Autoplay is paused while a list is open so the slide doesn't move away from the reader.
+const MOBILE_ITEMS = 4
+const expanded = ref<Record<number, boolean>>({})
+let swiper: SwiperClass | null = null
+
+const onSwiper = (instance: SwiperClass) => {
+	swiper = instance
+}
+
+const toggleItems = (index: number) => {
+	expanded.value[index] = !expanded.value[index]
+	if (Object.values(expanded.value).some(Boolean)) swiper?.autoplay?.stop()
+	else swiper?.autoplay?.start()
+}
 </script>
 
 <template>
 	<section
 		id="experience"
-		class="overflow-hidden mt-0 lt:mt-[120px] w-full h-full p-[20px] pt-[60px] pb-[50px] sm:pb-[100px] md:gap-[24px] bg-surface-alt">
+		class="overflow-hidden mt-0 lt:mt-[120px] w-full h-full px-[16px] pt-[40px] pb-[40px] sm:p-[20px] sm:pt-[60px] sm:pb-[100px] md:gap-[24px] bg-surface-alt">
 		<div class="grid wide">
 			<div class="row sm-gutter">
 				<div class="col l-1 mo-1" />
 				<div class="col l-10 m-0-10 c-12">
 					<Swiper
+						@swiper="onSwiper"
 						:modules="[Autoplay, Pagination]"
 						:slides-per-view="CarouselConfig.slidesPerView"
 						:loop="CarouselConfig.loop"
@@ -26,12 +44,12 @@ const experiences = useExperiences()
 						:pagination="CarouselConfig.pagination">
 						<SwiperSlide v-for="(exp, index) in experiences" :key="index">
 							<div
-								class="group rounded-xl bg-surface flex flex-col justify-center w-full gap-[16px] md:gap-[25px] lt:w-[960px] px-[8px] sm:px-[10px] md:px-[16px] pt-[16px] md:pt-[28px] pb-[16px] md:pb-[32px]"
+								class="group rounded-xl bg-surface flex flex-col justify-center max-sm:h-full max-sm:justify-start w-full gap-[16px] md:gap-[25px] lt:w-[960px] px-[16px] sm:px-[10px] md:px-[16px] pt-[16px] md:pt-[28px] pb-[16px] md:pb-[32px]"
 								data-aos="zoom-in-up">
 								<div class="flex flex-col lt:flex-row lt:items-start lt:justify-between gap-4 mb-4">
 									<div class="space-y-2">
 										<h3
-											class="font-semibold group-hover:text-primary transition-colors text-base leading-6">
+											class="font-semibold group-hover:text-primary transition-colors text-[20px] leading-[28px] sm:text-base sm:leading-6">
 											{{ $t(exp.position) }}
 										</h3>
 										<div class="flex items-center gap-4 self-stretch">
@@ -56,7 +74,7 @@ const experiences = useExperiences()
 													<path d="M10 14h4" />
 													<path d="M10 18h4" />
 												</svg>
-												<span class="font-medium text-[18px]">{{ $t(exp.company) }}</span>
+												<span class="font-medium text-[16px] sm:text-[18px]">{{ $t(exp.company) }}</span>
 											</div>
 											<div class="flex items-center gap-[8px]">
 												<!-- lucide map-pin -->
@@ -99,7 +117,7 @@ const experiences = useExperiences()
 												<rect width="18" height="18" x="3" y="4" rx="2" />
 												<path d="M3 10h18" />
 											</svg>
-											<span class="text-[18px] font-medium">{{ exp.period }}</span>
+											<span class="text-[15px] font-medium sm:text-[18px]">{{ exp.period }}</span>
 										</div>
 										<span
 											class="text-[13px] text-muted-foreground px-[8px] py-[4px] bg-surface-muted rounded-[5px] lt:rounded-[8px] w-fit">
@@ -110,10 +128,10 @@ const experiences = useExperiences()
 
 								<div
 									class="w-full items-start justify-start flex-col md:flex flex gap-[16px] md:gap-[40px] relative lt:flex-row">
-									<ul class="space-y-1">
+									<ul class="space-y-[6px] sm:space-y-1">
 										<li v-if="exp.intro" class="flex items-start gap-[5px] self-stretch">
 											<div>
-												<span class="text-gray-600 text-[18px] not-italic font-normal leading-[24px]">
+												<span class="text-gray-600 text-[16px] sm:text-[18px] not-italic font-normal leading-[24px]">
 													{{ $t(exp.intro) }}
 												</span>
 											</div>
@@ -121,6 +139,7 @@ const experiences = useExperiences()
 										<li
 											v-for="(item, i) in exp.items"
 											:key="i"
+											:class="{ 'max-sm:hidden': !expanded[index] && i >= MOBILE_ITEMS }"
 											class="flex items-start gap-[5px] self-stretch">
 											<!-- lucide arrow-right -->
 											<svg
@@ -140,17 +159,21 @@ const experiences = useExperiences()
 											<div>
 												<template v-if="item.label">
 													<span
-														class="text-[18px] not-italic leading-[24px] text-muted font-semibold">
+														class="text-[16px] sm:text-[18px] not-italic leading-[24px] text-muted font-semibold">
 														{{ $t(item.label) }}:
 													</span>
 													{{ ' ' }}
 												</template>
-												<span class="text-gray-600 text-[18px] not-italic font-normal leading-[24px]">
+												<span class="text-gray-600 text-[16px] sm:text-[18px] not-italic font-normal leading-[24px]">
 													{{ $t(item.desc) }}
 												</span>
 											</div>
 										</li>
 									</ul>
+									<UiShowMoreButton
+										v-if="exp.items.length > MOBILE_ITEMS"
+										:expanded="!!expanded[index]"
+										@toggle="toggleItems(index)" />
 								</div>
 							</div>
 						</SwiperSlide>

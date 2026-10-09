@@ -365,6 +365,12 @@ video {
 	.swiper {
 		padding-bottom: 55px;
 	}
+	/* Phones: stretch slides to the tallest one so a shorter card doesn't leave a gap below it. */
+	@media (max-width: 639px) {
+		.swiper-slide {
+			height: auto;
+		}
+	}
 	.swiper-pagination-bullet {
 		width: 10px;
 		height: 10px;
