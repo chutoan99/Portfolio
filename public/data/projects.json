@@ -6,71 +6,88 @@
     "technologies": [
       {
         "lable": "React",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_18_ajdsp8.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_18_ajdsp8.png",
+        "link": "https://react.dev"
       },
       {
         "lable": "Vite",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447344/Frame_dt4lks.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447344/Frame_dt4lks.png",
+        "link": "https://vite.dev"
       },
       {
         "lable": "Node",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_2_yrau2t.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_2_yrau2t.png",
+        "link": "https://nodejs.org"
       },
       {
         "lable": "Typescript",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_17_ankllr.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_17_ankllr.png",
+        "link": "https://www.typescriptlang.org"
       },
       {
         "lable": "Express",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074046/porfolio/layer1_cwk3ga.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074046/porfolio/layer1_cwk3ga.png",
+        "link": "https://expressjs.com"
       },
       {
         "lable": "Mongodb",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_6_epoblu.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_6_epoblu.png",
+        "link": "https://www.mongodb.com"
       },
       {
         "lable": "Mysql",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_4_nortik.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_4_nortik.png",
+        "link": "https://www.mysql.com"
       },
       {
         "lable": "Taiwindcss",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_10_owjsrs.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_10_owjsrs.png",
+        "link": "https://tailwindcss.com"
       },
       {
         "lable": "Sequelize",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Frame_2_e4orxp.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Frame_2_e4orxp.png",
+        "link": "https://sequelize.org"
       },
       {
         "lable": "Swagger",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447832/Frame_mik6vn.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447832/Frame_mik6vn.png",
+        "link": "https://swagger.io"
       },
       {
         "lable": "Redux toolkit query",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_1_ml3jzs.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_1_ml3jzs.png",
+        "link": "https://redux-toolkit.js.org/rtk-query/overview"
       },
       {
         "lable": "Socket.io",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Group_khom9w.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Group_khom9w.png",
+        "link": "https://socket.io"
       },
       {
         "lable": "Redis",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Frame_3_zv2qol.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Frame_3_zv2qol.png",
+        "link": "https://redis.io"
       },
       {
         "lable": "Passport",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448670/Frame_ml64bb.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448670/Frame_ml64bb.png",
+        "link": "https://www.passportjs.org"
       },
       {
         "lable": "Cloudinary",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png",
+        "link": "https://cloudinary.com"
       },
       {
         "lable": "Json Web Token",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448467/Frame_2_kwanrg.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448467/Frame_2_kwanrg.png",
+        "link": "https://jwt.io"
       },
       {
         "lable": "Node Mailer",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448469/Frame_1_xh5265.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448469/Frame_1_xh5265.png",
+        "link": "https://nodemailer.com"
       }
     ],
     "ref": "https://shop-front-end.netlify.app",
@@ -135,75 +152,93 @@
     "technologies": [
       {
         "lable": "Angular",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_aawdqh.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_aawdqh.png",
+        "link": "https://angular.dev"
       },
       {
         "lable": "Node",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_2_yrau2t.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_2_yrau2t.png",
+        "link": "https://nodejs.org"
       },
       {
         "lable": "Express",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074046/porfolio/layer1_cwk3ga.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074046/porfolio/layer1_cwk3ga.png",
+        "link": "https://expressjs.com"
       },
       {
         "lable": "Typescript",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_17_ankllr.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_17_ankllr.png",
+        "link": "https://www.typescriptlang.org"
       },
       {
         "lable": "Ngrx",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_3_vfhqur.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_3_vfhqur.png",
+        "link": "https://ngrx.io"
       },
       {
         "lable": "Rxjs",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/ghty5co3n0pblh4njvei.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/ghty5co3n0pblh4njvei.png",
+        "link": "https://rxjs.dev"
       },
       {
         "lable": "Taiwindcss",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_10_owjsrs.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_10_owjsrs.png",
+        "link": "https://tailwindcss.com"
       },
       {
         "lable": "Ant Design",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074700/porfolio/Frame_15_uub5u1.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074700/porfolio/Frame_15_uub5u1.png",
+        "link": "https://ng.ant.design"
       },
       {
         "lable": "Leaflet",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448878/Frame_1_hnizx6.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448878/Frame_1_hnizx6.png",
+        "link": "https://leafletjs.com"
       },
       {
         "lable": "Sass",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_9_bjjltz.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_9_bjjltz.png",
+        "link": "https://sass-lang.com"
       },
       {
         "lable": "Chartjs",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447736/Frame_4_j32uxe.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447736/Frame_4_j32uxe.png",
+        "link": "https://www.chartjs.org"
       },
       {
         "lable": "Sequelize",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Frame_2_e4orxp.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Frame_2_e4orxp.png",
+        "link": "https://sequelize.org"
       },
       {
         "lable": "Mysql",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_4_nortik.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_4_nortik.png",
+        "link": "https://www.mysql.com"
       },
       {
         "lable": "Swagger",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447832/Frame_mik6vn.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447832/Frame_mik6vn.png",
+        "link": "https://swagger.io"
       },
       {
         "lable": "Socket.io",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png",
+        "link": "https://socket.io"
       },
       {
         "lable": "Cloudinary",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png",
+        "link": "https://cloudinary.com"
       },
       {
         "lable": "Json Web token",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448467/Frame_2_kwanrg.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448467/Frame_2_kwanrg.png",
+        "link": "https://jwt.io"
       },
       {
         "lable": "Node Mailer",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448469/Frame_1_xh5265.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448469/Frame_1_xh5265.png",
+        "link": "https://nodemailer.com"
       }
     ],
     "ref": "https://shop-admin-front-end.netlify.app",
@@ -268,31 +303,38 @@
     "technologies": [
       {
         "lable": "Vue",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_1_a2yevf.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Frame_1_a2yevf.png",
+        "link": "https://vuejs.org"
       },
       {
         "lable": "Typescript",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_17_ankllr.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_17_ankllr.png",
+        "link": "https://www.typescriptlang.org"
       },
       {
         "lable": "Pug",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Pug_s9eylr.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Pug_s9eylr.png",
+        "link": "https://pugjs.org"
       },
       {
         "lable": "Sass",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_9_bjjltz.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_9_bjjltz.png",
+        "link": "https://sass-lang.com"
       },
       {
         "lable": "Storybook",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_12_xealla.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074279/porfolio/Frame_12_xealla.png",
+        "link": "https://storybook.js.org"
       },
       {
         "lable": "Swiper",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448877/Frame_lyemgx.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767448877/Frame_lyemgx.png",
+        "link": "https://swiperjs.com"
       },
       {
         "lable": "Figma",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074278/porfolio/Frame_14_einpl2.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074278/porfolio/Frame_14_einpl2.png",
+        "link": "https://www.figma.com"
       }
     ],
     "ref": "https://nespresso-client.vercel.app",
@@ -377,51 +419,63 @@
     "technologies": [
       {
         "lable": "Next.js",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Group_19_webnwi.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073501/porfolio/Group_19_webnwi.png",
+        "link": "https://nextjs.org"
       },
       {
         "lable": "Nest.js",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074046/porfolio/Frame_gnn9py.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074046/porfolio/Frame_gnn9py.png",
+        "link": "https://nestjs.com"
       },
       {
         "lable": "Typescript",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_17_ankllr.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_17_ankllr.png",
+        "link": "https://www.typescriptlang.org"
       },
       {
         "lable": "Graphql",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_7_jt8njm.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_7_jt8njm.png",
+        "link": "https://graphql.org"
       },
       {
         "lable": "React query",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_2_lryw7n.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_2_lryw7n.png",
+        "link": "https://tanstack.com/query"
       },
       {
         "lable": "Css",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_15_pdh5uo.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691073502/porfolio/Group_15_pdh5uo.png",
+        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
       },
       {
         "lable": "Styled Components",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/rxjqzh1jslkjlrhspe0a.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/rxjqzh1jslkjlrhspe0a.png",
+        "link": "https://styled-components.com"
       },
       {
         "lable": "Material",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/ciedavnuncqpauopxqnc.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1703352837/porfolio/ciedavnuncqpauopxqnc.png",
+        "link": "https://mui.com"
       },
       {
         "lable": "Postgresql",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_5_kojyi9.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074028/porfolio/Frame_5_kojyi9.png",
+        "link": "https://www.postgresql.org"
       },
       {
         "lable": "Cloudinary",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1691074741/porfolio/Frame_17_qhyqn7.png",
+        "link": "https://cloudinary.com"
       },
       {
         "lable": "Typeorm",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Frame_1_qkgmsf.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1767447343/Frame_1_qkgmsf.png",
+        "link": "https://typeorm.io"
       },
       {
         "lable": "Puppeteer",
-        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1708862529/porfolio/jx2yctrea4fofiddvoul.png"
+        "image": "https://res.cloudinary.com/dxcershra/image/upload/v1708862529/porfolio/jx2yctrea4fofiddvoul.png",
+        "link": "https://pptr.dev"
       }
     ],
     "ref": "https://rental-front-end.vercel.app",

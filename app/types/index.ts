@@ -3,6 +3,8 @@
 export interface ProjectTechnology {
 	lable: string
 	image: string
+	// Official site of the technology, opened from its chip.
+	link: string
 }
 
 export interface ProjectLink {

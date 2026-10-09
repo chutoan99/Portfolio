@@ -116,7 +116,9 @@ useResizeObserver(chipsEl, (entries) => {
 				data-chip
 				:class="{ 'max-sm:hidden': isHidden(index) }"
 				class="flex cursor-pointer items-center gap-[5px] rounded-[5px] border border-black/10 px-[8px] py-[4px] font-medium text-neutral-500 text-[14px] sm:text-[16px] duration-200 hover:bg-black/5 motion-reduce:transition-none dark:border-neutral-800 dark:text-white/50 dark:hover:border-neutral-700 dark:hover:bg-surface/5"
-				href="https://reactjs.org/">
+				:href="item.link"
+				target="_blank"
+				rel="noopener noreferrer">
 				<img
 					:alt="`${item.lable} Logo`"
 					loading="lazy"
