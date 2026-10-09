@@ -16,7 +16,6 @@ const { isDesktop } = useIsDesktop()
 		<UiHeading :content="t('common.title_projects')" />
 		<SectionProjects />
 
-		<UiHeading :content="t('common.title_skills')" />
 		<SectionSkills />
 
 		<UiHeading :content="t('common.title_contact')" />

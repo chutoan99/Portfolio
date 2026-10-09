@@ -1,111 +1,188 @@
 <script setup lang="ts">
 import type { Skill } from '~/types'
 
-// Skills are loaded from /public/data/skills.json, then filtered by category on the client.
-// The grid is a plain reactive v-for (instant filtering — a TransitionGroup FLIP here
-// conflicts with the per-cell transition/transform and leaves stale nodes in the DOM).
-// whileHover/whileTap from Framer -> CSS scale on the card.
+// Skills wall (modelled on tryorbt.com's sources wall): active skills from
+// /public/data/skills.json are dealt round-robin into ROWS marquee rows. Each track renders
+// its half twice and slides by -50%, so the loop is seamless; odd rows run in reverse.
+// Hovering a row pauses it.
+const ROWS = 5
+// A half must be wider than the viewport or a gap shows before the loop restarts, so short
+// rows repeat their items until a half has at least this many chips (~170px each).
+const MIN_ITEMS_PER_HALF = 16
+// Seconds per item, so rows with more items don't scroll faster.
+const SECONDS_PER_ITEM = 7
+// Slight per-row speed variance so the rows drift against each other.
+const SPEED_VARIANCE = [1, 1.16, 1.06, 1.22, 1.1]
+
 const skills = useSkills()
 
-const tags: string[] = ['All', 'Front end', 'Back end', 'Database', 'Others']
-const currentTag = ref<string>('All')
-
-const filtered = computed<Skill[]>(() =>
-	currentTag.value === 'All'
-		? skills
-		: skills.filter((item) => item.type.includes(currentTag.value))
-)
-
-const onFilter = (tag: string) => {
-	currentTag.value = tag
-}
-
-// Flatten to a single keyed list (icon card + trailing dashed divider, interleaved).
-// The divider count keys off the full filtered length, identical to the original index
-// comparison `index < filteredIcons.length - 1`.
-type Cell =
-	| { key: string; kind: 'icon'; icon: Skill }
-	| { key: string; kind: 'divider' }
-
-const cells = computed<Cell[]>(() => {
-	const active = filtered.value.filter((item) => item.active)
-	const total = filtered.value.length
-	const out: Cell[] = []
-	active.forEach((icon, index) => {
-		out.push({ key: `icon-${icon.name}`, kind: 'icon', icon })
-		if (index < total - 1) out.push({ key: `divider-${icon.name}`, kind: 'divider' })
-	})
-	return out
+const rows = computed(() => {
+	const active = skills.filter((item) => item.active)
+	const buckets: Skill[][] = Array.from({ length: ROWS }, () => [])
+	active.forEach((item, index) => buckets[index % ROWS]!.push(item))
+	return buckets
+		.filter((items) => items.length > 0)
+		.map((items, index) => {
+			const repeat = Math.ceil(MIN_ITEMS_PER_HALF / items.length)
+			const half = Array.from({ length: repeat }, () => items).flat()
+			return {
+				// Only the first copy is exposed to assistive tech; the rest are visual repeats.
+				count: items.length,
+				chips: [...half, ...half],
+				style: {
+					animationDuration: `${Math.round(half.length * SECONDS_PER_ITEM * SPEED_VARIANCE[index % SPEED_VARIANCE.length]!)}s`,
+					animationDirection: index % 2 === 0 ? 'normal' : 'reverse'
+				}
+			}
+		})
 })
-
-const cardClass =
-	'flex flex-col items-center justify-center bg-surface rounded-[12px] group w-[80px] h-[80px] gap-[5px]rounded-[16px] shadow-[0px_10px_10px_0px_rgba(31,13,64,0.10),_0px_0px_2px_0px_rgba(31,13,64,0.08)] transition-transform duration-300 hover:scale-[1.15] active:scale-90'
-const dividerClass =
-	'flex flex-col items-center justify-center bg-[rgba(255,255,255,0.75)] w-[80px] min-w-[80px] max-w-[80px] h-[80px] gap-[5px] border-[3px] border-dashed border-line-dashed rounded-[16px]'
 </script>
 
 <template>
-	<section id="skills" class="bg-surface-alt">
-		<div class="max-w-[1165px] px-[10px] mx-auto sm:px-[20px] md:px-[30px]">
+	<section id="skills" class="bg-surface py-[50px] lt:pt-[77px] lt:pb-[154px]">
+		<div class="skills-wall">
 			<div
-				class="h-full shrink-0 flex flex-col items-center justify-center py-[50px] lg:py-[100px]">
-				<ul
-					class="flex w-full flex-row items-center justify-start gap-[8px] overflow-x-scroll overflow-y-hidden scroll-snap-x snap-mandatory scrollbar-none pt-[15px] pb-[32px] list-none select-none sm:justify-center sm:overflow-x-hidden sm:gap-[10px] sm:pb-[32px]">
-					<li
-						v-for="(item, i) in tags"
-						:key="i"
-						class="px-[20px] py-[4px] mx-[4px] relative overflow-hidden bg-surface transition-all rounded-[11px] text-base font-medium leading-5 border border-primary before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-primary before:transition-all before:duration-500 hover:text-white hover:before:bg-primary hover:shadow-primary hover:before:left-0 hover:before:w-full hover:shadow-2xl"
-						:class="
-							item === currentTag
-								? 'text-white before:bg-primary shadow-primary before:left-0 before:w-full shadow-2xl'
-								: 'text-primary'
-						"
-						@click="onFilter(item)">
-						<span class="relative z-10" :style="{ backfaceVisibility: 'hidden' }">{{ item }}</span>
-					</li>
-				</ul>
-
-				<div class="w-full flex flex-col flex-wrap text-center min-h-[350px]">
+				v-for="(row, rowIndex) in rows"
+				:key="rowIndex"
+				class="skills-marquee">
+				<div class="skills-track" :style="row.style">
 					<div
-						:style="{ display: 'grid' }"
-						class="grid-cols-4 gap-[10px] [@media(min-width:600px)]:ml-0 [@media(min-width:600px)]:mr-0 [@media(min-width:600px)]:gap-[15px] [@media(min-width:600px)]:gap-[20px] [@media(min-width:600px)]:grid-cols-6 sm:ml-0 sm:mr-0 sm:gap-[20px] sm:grid-cols-7 md:grid-cols-8 [@media(min-width:912px)]:grid-cols-9 lt:min-h-[350px] lt:grid-cols-[repeat(13,minmax(0,1fr))]">
-						<div
-							v-for="cell in cells"
-							:key="cell.key"
-							:class="cell.kind === 'icon' ? cardClass : dividerClass">
-							<template v-if="cell.kind === 'icon'">
-								<div
-									class="flex items-center justify-center shrink-0 fill-[rgba(255,255,255,0.1)]">
-									<div class="relative w-[55px] h-[55px] cursor-pointer">
-										<div
-											class="absolute inset-0 opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-											<img
-												:src="`${cell.icon.path}/grey.svg`"
-												:alt="cell.icon.name"
-												width="100%"
-												height="100%" />
-										</div>
-										<div
-											class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-											<img
-												:src="`${cell.icon.path}/default.svg`"
-												:alt="cell.icon.name"
-												width="100%"
-												height="100%" />
-										</div>
-									</div>
-								</div>
-							</template>
-							<template v-else>
-								<div
-									class="flex items-center justify-center shrink-0 fill-[rgba(255,255,255,0.1)]">
-									<div class="w-0 h-0" />
-								</div>
-							</template>
-						</div>
+						v-for="(skill, index) in row.chips"
+						:key="`${skill.name}-${index}`"
+						class="skill-chip"
+						:aria-hidden="index >= row.count ? 'true' : undefined">
+						<span class="skill-chip__icon">
+							<img
+								:src="`${skill.path}/default.svg`"
+								:alt="index >= row.count ? '' : skill.name"
+								loading="lazy"
+								draggable="false" />
+						</span>
+						<span class="skill-chip__label">{{ skill.name }}</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 </template>
+
+<style scoped>
+.skills-wall {
+	width: 100%;
+}
+
+.skills-marquee {
+	width: 100%;
+	overflow: hidden;
+}
+
+.skills-track {
+	display: flex;
+	gap: 16px;
+	width: max-content;
+	padding: 8px;
+	animation: skills-scroll linear infinite;
+}
+
+.skills-track:hover {
+	animation-play-state: paused;
+}
+
+.skill-chip {
+	position: relative;
+	display: flex;
+	flex: 0 0 auto;
+	align-items: center;
+	gap: 14px;
+	padding: 15px 26px 15px 16px;
+	border-radius: 20px;
+	corner-shape: superellipse(1.4);
+	background: #f1f3f3;
+	will-change: transform;
+	transition:
+		transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+		box-shadow 0.3s,
+		background 0.3s;
+}
+
+.skill-chip__icon {
+	display: grid;
+	flex: 0 0 auto;
+	place-items: center;
+	width: 46px;
+	height: 46px;
+	opacity: 0.75;
+	transition: opacity 0.3s;
+}
+
+.skill-chip__icon img {
+	display: block;
+	width: 38px;
+	height: 38px;
+}
+
+/* Typography follows the site (same as the project tech chips), not orbt. */
+.skill-chip__label {
+	color: rgb(var(--color-muted));
+	font-size: 16px;
+	font-weight: 500;
+	white-space: nowrap;
+	transition: color 0.3s;
+}
+
+.skill-chip:hover {
+	z-index: 2;
+	background: #fff;
+}
+
+.skill-chip:hover .skill-chip__icon {
+	opacity: 1;
+}
+
+.skill-chip:hover .skill-chip__label {
+	color: rgb(var(--color-heading));
+}
+
+@keyframes skills-scroll {
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.skills-track {
+		animation: none !important;
+	}
+
+	.skills-marquee {
+		overflow-x: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.skills-track {
+		gap: 12px;
+		padding: 6px;
+	}
+
+	.skill-chip {
+		gap: 11px;
+		padding: 11px 18px 11px 12px;
+		border-radius: 15px;
+	}
+
+	.skill-chip__icon {
+		width: 36px;
+		height: 36px;
+	}
+
+	.skill-chip__icon img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.skill-chip__label {
+		font-size: 14px;
+	}
+}
+</style>
