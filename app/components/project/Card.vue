@@ -30,9 +30,9 @@ const deviceStyle = (i: number) => {
 
 <template>
 	<div
-		class="flex items-start gap-[50px] w-full p-[16px] rounded-xl lt:max-w-[1200px] lt:px-0 lt:w-[1200px]">
+		class="flex items-start gap-[50px] w-full p-[16px] rounded-xl lt:max-w-[1200px] lt:px-0">
 		<div
-			class="flex flex-col gap-[20px] lt:grid"
+			class="flex flex-col gap-[20px] w-full lt:grid"
 			:style="{ gridTemplateColumns: showcase.gridTemplate }">
 			<!-- Info-left layout (old projects_2 / projects_4) -->
 			<template v-if="showcase.reversed">
@@ -51,7 +51,7 @@ const deviceStyle = (i: number) => {
 					data-aos-duration="500"
 					class="order-1 hidden h-[200px] justify-center items-center flex-[1_0_0] self-stretch lt:h-full lt:flex">
 					<div
-						class="flex justify-center center items-center w-full relative h-[200px] scale-[0.5] lt:h-full lt:scale-[1]">
+						class="flex justify-center center items-center w-full relative h-[200px] scale-[0.5] lt:h-full lt:scale-[0.8] min-[1200px]:scale-100">
 						<div
 							v-for="(device, index) in showcase.devices"
 							:key="index"
@@ -80,7 +80,7 @@ const deviceStyle = (i: number) => {
 					data-aos-duration="500"
 					class="hidden h-[200px] justify-center items-center flex-[1_0_0] self-stretch lt:h-full lt:flex">
 					<div
-						class="flex justify-center center items-center w-full relative h-[200px] scale-[0.5] lt:h-full lt:scale-[1]">
+						class="flex justify-center center items-center w-full relative h-[200px] scale-[0.5] lt:h-full lt:scale-[0.8] min-[1200px]:scale-100">
 						<div
 							v-for="(device, index) in showcase.devices"
 							:key="index"

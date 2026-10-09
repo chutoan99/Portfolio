@@ -8,9 +8,9 @@
 		data-aos-anchor-placement="center-center"
 		class="w-full flex flex-col items-start gap-[15px] sm:gap-[15px] sm:p-[15px] md:gap-[20px] md:w-[45%] lg:w-[495px]">
 		<!-- phone -->
-		<div class="h-full sm:h-[55px] w-[495px]">
+		<div class="h-full sm:h-[55px] w-full">
 			<div class="flex gap-[24px] sm:w-full sm:gap-[16px]">
-				<div class="flex items-center gap-[24px] w-[495px] sm:w-full sm:gap-[16px]">
+				<div class="flex items-center gap-[24px] w-full sm:gap-[16px]">
 					<div
 						class="flex justify-center w-[20px] hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out">
 						<svg width="17" height="22" viewBox="0 0 17 22" fill="none">
@@ -26,11 +26,11 @@
 				</div>
 			</div>
 			<div class="flex gap-[24px] sm:w-full sm:gap-[16px]">
-				<div class="flex gap-[24px] w-[495px] sm:w-full sm:gap-[16px]">
+				<div class="flex gap-[24px] w-full sm:gap-[16px]">
 					<span class="w-[20px]" />
 					<a
 						href="#"
-						class="h-[27px] w-full inline-block text-muted text-[19px] font-normal leading-[28px]">
+						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[19px] font-normal leading-[28px]">
 						{{ $t('form.value_contact_phone') }}
 					</a>
 				</div>
@@ -38,9 +38,9 @@
 		</div>
 
 		<!-- email -->
-		<div class="h-full sm:h-[55px] w-[495px]">
+		<div class="h-full sm:h-[55px] w-full">
 			<div class="flex gap-[24px] sm:w-full sm:gap-[16px]">
-				<div class="flex items-center gap-[24px] w-[495px] sm:w-full sm:gap-[16px]">
+				<div class="flex items-center gap-[24px] w-full sm:gap-[16px]">
 					<div
 						class="flex justify-center w-[20px] hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out">
 						<svg width="18" height="18" viewBox="0 0 18 18" fill="none">
@@ -63,11 +63,11 @@
 				</div>
 			</div>
 			<div class="flex gap-[24px] sm:w-full sm:gap-[16px]">
-				<div class="flex gap-[24px] w-[495px] sm:w-full sm:gap-[16px]">
+				<div class="flex gap-[24px] w-full sm:gap-[16px]">
 					<span class="w-[20px]" />
 					<a
 						href="#"
-						class="h-[27px] w-full inline-block text-muted text-[19px] font-normal leading-[28px]">
+						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[19px] font-normal leading-[28px]">
 						{{ $t('form.value_contact_email') }}
 					</a>
 				</div>
@@ -75,9 +75,9 @@
 		</div>
 
 		<!-- github -->
-		<div class="h-full sm:h-[55px] w-[495px]">
+		<div class="h-full sm:h-[55px] w-full">
 			<div class="flex gap-[24px] sm:w-full sm:gap-[16px]">
-				<div class="flex items-center gap-[24px] w-[495px] sm:w-full sm:gap-[16px]">
+				<div class="flex items-center gap-[24px] w-full sm:gap-[16px]">
 					<div
 						class="flex justify-center w-[20px] hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out">
 						<svg width="25" height="25" viewBox="0 0 25 25" fill="none">
@@ -102,11 +102,11 @@
 				</div>
 			</div>
 			<div class="flex gap-[24px] sm:w-full sm:gap-[16px]">
-				<div class="flex gap-[24px] w-[495px] sm:w-full sm:gap-[16px]">
+				<div class="flex gap-[24px] w-full sm:gap-[16px]">
 					<span class="w-[20px]" />
 					<a
 						href="https://github.com/chutoan99"
-						class="h-[27px] w-full inline-block text-muted text-[19px] font-normal leading-[28px]">
+						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[19px] font-normal leading-[28px]">
 						{{ $t('form.value_contact_github') }}
 					</a>
 				</div>
@@ -114,9 +114,9 @@
 		</div>
 
 		<!-- location -->
-		<div class="h-full sm:h-[55px] w-[495px]">
+		<div class="h-full sm:h-[55px] w-full">
 			<div class="flex gap-[24px] sm:w-full sm:gap-[16px]">
-				<div class="flex items-center gap-[24px] w-[495px] sm:w-full sm:gap-[16px]">
+				<div class="flex items-center gap-[24px] w-full sm:gap-[16px]">
 					<div
 						class="flex justify-center w-[20px] hover:cursor-pointer hover:opacity-50 transition-all duration-150 ease-in-out">
 						<svg width="12" height="20" viewBox="0 0 12 20" fill="none">
@@ -132,11 +132,11 @@
 				</div>
 			</div>
 			<div class="flex gap-[24px] sm:w-full sm:gap-[16px]">
-				<div class="flex gap-[24px] w-[495px] sm:w-full sm:gap-[16px]">
+				<div class="flex gap-[24px] w-full sm:gap-[16px]">
 					<span class="w-[20px]" />
 					<a
 						href="#"
-						class="h-[27px] w-full inline-block text-muted text-[19px] font-normal leading-[28px]">
+						class="min-h-[27px] w-full min-w-0 inline-block break-words text-muted text-[19px] font-normal leading-[28px]">
 						{{ $t('form.value_contact_location') }}
 					</a>
 				</div>

@@ -12,7 +12,7 @@ defineProps<{ project: Project }>()
 			flex flex-col items-center gap-[16px] flex-[1_0_0] self-stretch rounded-[12px_0px_0px_12px]
 			lt:gap-[18px]
 		">
-		<div class="flex gap-[10px] items-center w-full lt:w-[500px] flex-col lt:flex-row">
+		<div class="flex gap-[10px] items-center w-full flex-col lt:flex-row lt:flex-wrap">
 			<h3
 				class="self-stretch overflow-hidden text-heading text-ellipsis text-xl not-italic font-semibold leading-7">
 				{{ $t(project.nameKey) }}:
@@ -22,7 +22,7 @@ defineProps<{ project: Project }>()
 					target="_blank"
 					rel="noopener noreferrer"
 					:href="project.ref"
-					class="text-gray-600 text-[16px] border-b-black border-b border-solid h-[20px] hover:text-primary transition duration-150">
+					class="text-gray-600 text-[16px] whitespace-nowrap border-b-black border-b border-solid h-[20px] hover:text-primary transition duration-150">
 					{{ $t(project.demoKey) }}
 				</a>
 			</div>
@@ -51,7 +51,7 @@ defineProps<{ project: Project }>()
 			</a>
 		</div>
 
-		<div class="flex w-full gap-[20px] justify-start items-center px-0">
+		<div class="flex flex-wrap w-full gap-x-[20px] gap-y-[8px] justify-start items-center px-0">
 			<span
 				v-for="(item, index) in project.link"
 				:key="index"

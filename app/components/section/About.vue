@@ -17,7 +17,7 @@
 				class="
 					flex flex-col justify-center items-center gap-[30px] px-[20px] py-[50px]
 					md:flex-row md:items-start
-					lt:flex-row lt:justify-between lt:px-0 lt:py-[100px]
+					lt:flex-row lt:justify-between lt:px-[20px] lt:py-[100px] min-[1240px]:px-0
 				">
 				<UiAvatarCard />
 				<div
@@ -25,7 +25,7 @@
 					data-aos-offset="300"
 					data-aos-easing="ease-in-sine"
 					data-aos-duration="800"
-					class="w-full h-full lt:w-[800px] lt:h-[489px]">
+					class="w-full h-full lt:flex-1 lt:min-w-0 lt:max-w-[800px] lt:h-auto lt:min-h-[489px]">
 					<h2
 						class="flex flex-col justify-center text-subtle font-semibold text-[18px] uppercase leading-[36px] tracking-[1px] h-[26px] lt:h-[100px]">
 						{{ $t('common.title_about_me') }}
@@ -35,11 +35,11 @@
 						{{ $t('common.value_name') }}
 					</h3>
 					<span
-						class="flex flex-col justify-center w-full text-[18px] leading-[26px] text-body font-normal mt-[12.8px] lt:w-[750px]">
+						class="flex flex-col justify-center w-full text-[18px] leading-[26px] text-body font-normal mt-[12.8px] lt:max-w-[750px]">
 						{{ $t('common.msg_about_description') }}
 					</span>
 					<div class="shrink-0 border-t border-line mt-[16px] pt-[24px] sm:pt-[16px]">
-						<div class="grid mt-[5px] lt:grid-cols-2">
+						<div class="flex flex-col mt-[5px] lt:grid lt:grid-cols-2 lt:gap-x-[24px]">
 							<div class="inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0">
 								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
 									<label class="font-semibold leading-[29px] text-heading">
@@ -61,7 +61,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="grid mt-[5px] lt:grid-cols-2">
+						<div class="flex flex-col mt-[5px] lt:grid lt:grid-cols-2 lt:gap-x-[24px]">
 							<div class="inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0">
 								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
 									<label class="font-semibold leading-[29px] text-heading">
@@ -83,15 +83,15 @@
 								</div>
 							</div>
 						</div>
-						<div class="grid mt-[5px] lt:grid-cols-2">
-							<div class="inline-flex pt-0 items-start h-[29px] pb-[1px] gap-[14.5px] shrink-0">
+						<div class="flex flex-col mt-[5px] lt:grid lt:grid-cols-2 lt:gap-x-[24px]">
+							<div class="inline-flex flex-wrap pt-0 items-start min-h-[29px] pb-[1px] gap-x-[14.5px] min-w-0 lt:col-span-2">
 								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
 									<label class="font-semibold leading-[29px] text-heading">
 										{{ $t('common.label_email') }}:
 									</label>
 								</div>
-								<div class="h-[28px] flex flex-col justify-center text-[19px] not-italic">
-									<a href="#" class="text-primary">{{ $t('common.value_email') }}</a>
+								<div class="min-h-[28px] min-w-0 flex flex-col justify-center text-[19px] not-italic">
+									<a href="#" class="text-primary break-all max-[359px]:text-[17px]">{{ $t('common.value_email') }}</a>
 								</div>
 							</div>
 						</div>

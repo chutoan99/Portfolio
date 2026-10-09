@@ -12,7 +12,7 @@ const experiences = useExperiences()
 <template>
 	<section
 		id="experience"
-		class="overflow-hidden mt-[120px] w-full h-full p-[20px] pt-[60px] pb-[50px] sm:pb-[100px] md:gap-[24px] bg-surface-alt">
+		class="overflow-hidden mt-0 lt:mt-[120px] w-full h-full p-[20px] pt-[60px] pb-[50px] sm:pb-[100px] md:gap-[24px] bg-surface-alt">
 		<div class="grid wide">
 			<div class="row sm-gutter">
 				<div class="col l-1 mo-1" />
