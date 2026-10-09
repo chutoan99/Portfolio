@@ -1,0 +1,44 @@
+[
+  {
+    "position": "common.label_position_frontend_developer",
+    "company": "common.title_experience_company_yteso",
+    "location": "Ho Chi Minh",
+    "period": "Sep 2022 - Present",
+    "type": "Full-time",
+    "intro": "common.msg_experience_yteso_intro",
+    "items": [
+      { "label": "common.label_experience_hrm", "desc": "common.msg_experience_hrm_description" },
+      { "label": "common.label_experience_erp", "desc": "common.msg_experience_erp_description" },
+      { "label": "common.label_experience_emr", "desc": "common.msg_experience_emr_description" },
+      { "desc": "common.msg_experience_yteso_team" },
+      { "desc": "common.msg_experience_yteso_task_1" },
+      { "desc": "common.msg_experience_yteso_task_2" },
+      { "desc": "common.msg_experience_yteso_task_3" },
+      { "desc": "common.msg_experience_yteso_task_4" },
+      { "desc": "common.msg_experience_yteso_task_5" },
+      { "desc": "common.msg_experience_yteso_task_6" }
+    ]
+  },
+  {
+    "position": "common.label_position_frontend_developer",
+    "company": "common.title_experience_company_itd",
+    "location": "Ho Chi Minh",
+    "period": "May 2022 - Jul 2022",
+    "type": "Full-time",
+    "items": [
+      { "label": "common.label_experience_isecurity", "desc": "common.msg_experience_isecurity_description" },
+      { "desc": "common.msg_experience_isecurity_team" },
+      { "desc": "common.msg_experience_isecurity_task_1" },
+      { "desc": "common.msg_experience_isecurity_task_2" },
+      { "desc": "common.msg_experience_isecurity_task_3" },
+      { "label": "common.label_experience_iwater", "desc": "common.msg_experience_iwater_description" },
+      { "desc": "common.msg_experience_iwater_team" },
+      { "desc": "common.msg_experience_iwater_task_1" },
+      { "desc": "common.msg_experience_iwater_task_2" },
+      { "label": "common.label_experience_ioki", "desc": "common.msg_experience_ioki_description" },
+      { "desc": "common.msg_experience_ioki_team" },
+      { "desc": "common.msg_experience_ioki_task_1" },
+      { "desc": "common.msg_experience_ioki_task_2" }
+    ]
+  }
+]
